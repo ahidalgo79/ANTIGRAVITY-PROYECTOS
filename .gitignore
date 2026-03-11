@@ -1,0 +1,17 @@
+# Binaries and large files
+*.pdf
+*.zip
+*.tar.gz
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NotebookLM artifacts if any
+.nlm/
