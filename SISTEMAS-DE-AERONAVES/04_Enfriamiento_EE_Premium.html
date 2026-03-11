@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B737 - Sistema de Enfriamiento E/E</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00A3FF;
+            --accent: #FF3B30;
+            --bg: #0A0F1E;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #E0E6ED;
+            --glass: rgba(10, 15, 30, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .presentation-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+
+        section {
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem;
+            position: relative;
+            background: linear-gradient(135deg, rgba(10,15,30,1) 0%, rgba(20,30,60,1) 100%);
+        }
+
+        /* Hero Slide */
+        .hero {
+            text-align: left;
+            justify-content: flex-end;
+            background-image: url('b737_ee_cooling_cover_1773088915719.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(10,15,30,1) 20%, rgba(10,15,30,0) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        /* Content Slides */
+        .content-slide h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+            border-left: 10px solid var(--primary);
+            padding-left: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .card p, .card li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .card li::before {
+            content: '→';
+            color: var(--primary);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* Controls */
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            background: var(--primary);
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,163,255,0.3);
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: #0088D6;
+        }
+
+        .progress {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            background: var(--primary);
+            width: 0%;
+            transition: 0.5s;
+        }
+
+        .data-point {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container" id="container">
+        
+        <!-- SLIDE 1: Hero -->
+        <section class="hero slide">
+            <div class="hero-content">
+                <p class="subtitle">Sistemas de Aeronaves B737</p>
+                <h1>EQUIPMENT <span>COOLING</span></h1>
+                <p>Enfriamiento del Equipo Eléctrico y Electrónico: Operación, Componentes y Seguridad Técnica.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Descripción General -->
+        <section class="content-slide slide">
+            <h2>01. DESCRIPCIÓN GENERAL</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Propósito Vital</h3>
+                    <p>Extraer el calor generado por los componentes en la cabina de vuelo y el compartimiento E/E.</p>
+                </div>
+                <div class="card">
+                    <h3>Áreas Críticas</h3>
+                    <ul>
+                        <li>Instrumentos de vuelo (EFIS)</li>
+                        <li>Paneles de interruptores de circuito</li>
+                        <li>Equipos del compartimiento E/E</li>
+                    </ul>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Garantía de Sistemas</h3>
+                    <p>Asegura que los componentes operen dentro de rangos térmicos seguros para evitar fallas catastróficas por sobrecalentamiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Operación y Panel P5 -->
+        <section class="content-slide slide">
+            <h2>02. OPERACIÓN Y PANEL P5</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Tablero de Control</h3>
+                    <p>Ubicado en el panel superior P5. Cuenta con interruptores <strong>SUPPLY</strong> y <strong>EXHAUST</strong>.</p>
+                    <p style="margin-top: 10px;">Posiciones: <span class="data-point">NORM</span> y <span class="data-point">ALTN</span>.</p>
+                </div>
+                <div class="card">
+                    <h3>Alertas y Seguridad</h3>
+                    <ul>
+                        <li><span class="data-point">OFF (Ámbar):</span> Indica flujo insuficiente de aire.</li>
+                        <li><span class="data-point">Bocina en Tierra:</span> Alerta al personal en el tren de nariz si falla el suministro.</li>
+                    </ul>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Lógica de Respaldo</h3>
+                    <p>En caso de falla de un ventilador en modo NORM, la tripulación activa manualmente ALTN para poner en marcha el ventilador de reserva.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Hardware y Purificadores -->
+        <section class="content-slide slide">
+            <h2>03. VENTILADORES Y PURIFICADORES</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Configuración de Red</i></h3>
+                    <p>Dos ventiladores de suministro y dos de extracción. Alimentación de <span class="data-point">115 VAC</span>.</p>
+                    <p>Ubicados estratégicamente en el compartimiento E/E.</p>
+                </div>
+                <div class="card">
+                    <h3>El Purificador</h3>
+                    <p>Limpia el aire que va a los instrumentos sensibles mediante fuerza centrífuga (vórtice), expulsando polvo y suciedad al exterior.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Seguridad Interna</h3>
+                    <p>Cada ventilador integra un interruptor térmico que lo detiene automáticamente si detecta sobretemperatura interna.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Detectores y Válvula de Flujo -->
+        <section class="content-slide slide">
+            <h2> 04. SENSORES Y VALVULAS</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Detectores de Bajo Flujo</h3>
+                    <p>Sensores tipo anemómetro. Si el aire no "barre" el calor de su resistencia, se dispara la alerta de falla.</p>
+                </div>
+                <div class="card">
+                    <h3>Válvula de Control</h3>
+                    <p>Ubicada en el piso del compartimiento E/E. Controla la salida del aire caliente.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Lógica según Presión</h3>
+                    <ul>
+                        <li><span class="data-point">En Tierra:</span> Abierta (expulsa al exterior).</li>
+                        <li><span class="data-point">En Vuelo:</span> Se cierra entre 2.0 y 2.8 PSI.</li>
+                        <li><span class="data-point">Redireccionamiento:</span> Envía aire al compartimento de carga para mantenerlo sobre 0°C.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="progress" id="progress"></div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">← Anterior</button>
+        <button onclick="nextSlide()">Siguiente →</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const container = document.getElementById('container');
+        const progress = document.getElementById('progress');
+
+        function updateSlide() {
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+            progress.style.width = `${(currentSlide / (slides.length - 1)) * 100}%`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>

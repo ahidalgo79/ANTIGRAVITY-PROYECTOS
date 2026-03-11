@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B737 - Sistema de Presurización y Protección</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFCC00;
+            --accent: #FF3B30;
+            --bg: #0D0D0D;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #EAEAEA;
+            --glass: rgba(13, 13, 13, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .presentation-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+
+        section {
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem;
+            position: relative;
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+        }
+
+        /* Hero Slide */
+        .hero {
+            text-align: left;
+            justify-content: flex-end;
+            background-image: url('b737_pressurization_cover_1773088962028.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        /* Content Slides */
+        .content-slide h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+            border-left: 10px solid var(--primary);
+            padding-left: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            background: rgba(255, 204, 0, 0.05);
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .card p, .card li {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            opacity: 0.85;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-top: 0.8rem;
+        }
+
+        .card li::before {
+            content: '●';
+            color: var(--primary);
+            margin-right: 12px;
+            font-size: 0.8rem;
+        }
+
+        /* Controls */
+        .controls {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 100;
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: var(--primary);
+            color: #000;
+        }
+
+        .progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: var(--primary);
+            width: 0%;
+            transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 0 15px var(--primary);
+        }
+
+        .tag {
+            background: var(--primary);
+            color: #000;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container" id="container">
+        
+        <!-- SLIDE 1: Hero -->
+        <section class="hero slide">
+            <div class="hero-content">
+                <p class="subtitle">Capacitación Técnica B737</p>
+                <h1>SISTEMA DE <span>PRESURIZACIÓN</span></h1>
+                <p>Control de Presión, Protección Dinámica, Modos de Operación e Indicación en Cabina.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Descripción General -->
+        <section class="content-slide slide">
+            <h2>01. CONCEPTO FUNDAMENTAL</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">FUNCIÓN</span>
+                    <h3>Efecto "Globo Controllado"</h3>
+                    <p>Mantiene la cabina entre <span style="color:var(--primary)">0 y 8,000 pies</span> de altitud equivalente (14.7 a 10.9 PSIA).</p>
+                </div>
+                <div class="card">
+                    <span class="tag">MECÁNICA</span>
+                    <h3>Entrada vs Salida</h3>
+                    <p>La presión se regula controlando la salida de aire mediante válvulas, mientras los PACKs suministran flujo constante.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Tres Subsistemas Críticos</h3>
+                    <p>1. Control de Presión | 2. Alivio y Protección | 3. Indicación y Alarma.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Modos de Operación -->
+        <section class="content-slide slide">
+            <h2>02. MODOS DE CONTROL</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">AUTO</span>
+                    <h3>Operación Primaria</h3>
+                    <ul>
+                        <li>Presuriza a 0.1 PSID en despegue.</li>
+                        <li>Crucero: 7.45 PSID (<28k ft) o 7.8 PSID (>28k ft).</li>
+                        <li>Detección de falla automática (AUTO FAIL).</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <span class="tag">STANDBY</span>
+                    <h3>Respaldo Eléctrico</h3>
+                    <ul>
+                        <li>Usa motor independiente de 28V DC.</li>
+                        <li>Selección manual de altitud (CAB ALT).</li>
+                        <li>Protección a 14,625 pies (Cierre automático).</li>
+                    </ul>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <span class="tag">MANUAL</span>
+                    <p>Control directo de la Outflow Valve mediante un switch Toggle (AC o DC).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Protección y Alivio -->
+        <section class="content-slide slide">
+            <h2>03. SEGURIDAD TÉCNICA</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Válvulas de Alivio</h3>
+                    <p>Protección contra sobrepresión positiva (>8.85 PSID) y negativa (-0.5 PSID).</p>
+                    <p>Operan mecánicamente de forma independiente.</p>
+                </div>
+                <div class="card">
+                    <h3>Alertas Críticas</h3>
+                    <ul>
+                        <li><span style="color:var(--primary)">10,000 pies:</span> Bocina de altitud de cabina (CABIN ALT horn).</li>
+                        <li><span style="color:var(--primary)">Luz DIFF PRESS:</span> Alerta excedencia de límites estructurales.</li>
+                    </ul>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Controlador de Presión</h3>
+                    <p>Cerebro del sistema en el compartimiento E/E. Procesa puertos de presión de cabina y sistema estático auxiliar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Outflow Valves -->
+        <section class="content-slide slide">
+            <h2>04. VÁLVULAS DE SALIDA</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>AFT Outflow Valve</h3>
+                    <p>La válvula principal trasera. Regula el caudal de salida.</p>
+                    <p>Doble motorización: 115V AC (AUTO) y 28V DC (STBY).</p>
+                </div>
+                <div class="card">
+                    <h3>FWD Outflow Valve</h3>
+                    <p>Válvula delantera. Actúa como respaldo y se sincroniza con la trasera para cierre total.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Seguridad de Posición</h3>
+                    <p>Incluye un freno de embrague que solo permite el movimiento cuando hay una señal del controlador o piloto.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="progress" id="progress"></div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">Previa</button>
+        <button onclick="nextSlide()">Siguiente</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const container = document.getElementById('container');
+        const progress = document.getElementById('progress');
+
+        function updateSlide() {
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+            progress.style.width = `${((currentSlide + 1) / slides.length) * 100}%`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Initialize progress
+        updateSlide();
+    </script>
+</body>
+</html>
