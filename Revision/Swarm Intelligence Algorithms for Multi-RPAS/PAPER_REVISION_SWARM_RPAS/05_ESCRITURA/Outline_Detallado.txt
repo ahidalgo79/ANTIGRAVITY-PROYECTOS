@@ -1,0 +1,537 @@
+═══════════════════════════════════════════════════════════
+   OUTLINE DETALLADO - PAPER DE REVISIÓN
+   
+   Swarm Intelligence for Multi-RPAS Path Planning:
+   A Comprehensive Survey of Algorithms, Applications 
+   and Future Directions
+═══════════════════════════════════════════════════════════
+ 
+Target Journal: Springer - Journal of Intelligent & Robotic Systems
+Target Length: 6000-8000 palabras
+Fecha inicio: [Tu fecha]
+Fecha objetivo entrega: [Tu fecha + 3 meses]
+ 
+───────────────────────────────────────────────────────────
+ESTRUCTURA GENERAL
+───────────────────────────────────────────────────────────
+ 
+ABSTRACT (250 palabras)
+1. INTRODUCTION (800-1000 palabras)
+2. FUNDAMENTALS (1000 palabras)
+3. SYSTEMATIC REVIEW METHODOLOGY (400 palabras)
+4. TAXONOMY OF ALGORITHMS (1200 palabras)
+5. COMPARATIVE ANALYSIS (1000 palabras)
+6. APPLICATION DOMAINS (1500 palabras)
+7. CHALLENGES AND LIMITATIONS (800 palabras)
+8. EMERGING TRENDS AND FUTURE DIRECTIONS (600 palabras)
+9. CONCLUSION (400 palabras)
+REFERENCES (150-200 referencias)
+ 
+═══════════════════════════════════════════════════════════
+ 
+ 
+───────────────────────────────────────────────────────────
+ABSTRACT (250 palabras)
+───────────────────────────────────────────────────────────
+ 
+□ Context: Multi-RPAS systems gaining importance
+□ Problem: Coordination complexity challenges
+□ Objective: Comprehensive review of swarm intelligence algorithms
+□ Methodology: Systematic review 2018-2024, X papers analyzed
+□ Key Results: 
+   - Algorithm distribution: X% PSO, Y% ACO, Z% others
+   - Application focus: Agriculture and inspection dominate
+   - Performance trends identified
+□ Contributions:
+   1. Novel four-dimensional taxonomy
+   2. Quantitative comparative analysis
+   3. Application-specific benchmarking
+   4. Technology readiness assessment
+   5. Future research roadmap
+□ Significance: Guidelines for researchers and practitioners
+ 
+KEYWORDS: Swarm intelligence, Multi-RPAS, UAV coordination, 
+Path planning, Precision agriculture, Industrial inspection
+ 
+ 
+═══════════════════════════════════════════════════════════
+1. INTRODUCTION (800-1000 palabras)
+═══════════════════════════════════════════════════════════
+ 
+1.1 Background and Motivation (300 palabras)
+───────────────────────────────────────────
+ 
+□ Evolution: Single UAV → Multi-RPAS systems
+□ Why multi-RPAS? Coverage, redundancy, efficiency
+□ Real-world applications driving research
+□ Economic and safety implications
+□ Growth statistics: X% increase in publications
+ 
+Citas necesarias: [3-5 papers introductorios del campo]
+Papers del Excel: [Filtrar por "Revisiones_Existentes"]
+ 
+ 
+1.2 Swarm Intelligence Paradigm (200 palabras)
+───────────────────────────────────────────
+ 
+□ Definition of swarm intelligence
+□ Biological inspiration (birds, ants, bees)
+□ Core principles: self-organization, emergence
+□ Advantages over centralized approaches
+□ Why suitable for multi-RPAS?
+ 
+Citas necesarias: [2-3 papers seminales sobre swarm intelligence]
+Usar: Citas_Importantes.txt → DEFINICIONES CLAVE
+ 
+ 
+1.3 Scope and Research Questions (200 palabras)
+───────────────────────────────────────────
+ 
+□ Time frame: 2018-2024 (why?)
+□ Focus: Algorithms + practical applications
+□ Geographic scope: Global research trends
+ 
+Research Questions:
+□ RQ1: Which algorithms are most effective for specific scenarios?
+□ RQ2: How do metrics vary across application domains?
+□ RQ3: What are current limitations and gaps?
+□ RQ4: What trends will shape future developments?
+ 
+ 
+1.4 Contributions and Organization (300 palabras)
+───────────────────────────────────────────
+ 
+Key Contributions:
+1. □ Novel taxonomy (algorithm-application-environment-performance)
+2. □ Quantitative comparative analysis with standardized metrics
+3. □ Application-specific benchmarking
+4. □ Technology readiness assessment (TRL)
+5. □ Future research roadmap with priorities
+ 
+Paper Organization:
+□ Section 2: Fundamentals and problem formulation
+□ Section 3: Review methodology
+□ Section 4: Algorithm taxonomy
+□ Section 5: Comparative analysis
+□ Section 6: Application domains
+□ Section 7: Challenges
+□ Section 8: Future directions
+□ Section 9: Conclusions
+ 
+ 
+═══════════════════════════════════════════════════════════
+2. FUNDAMENTALS (1000 palabras)
+═══════════════════════════════════════════════════════════
+ 
+2.1 Multi-RPAS System Architecture (300 palabras)
+───────────────────────────────────────────
+ 
+□ Hardware components: Communication, sensing, computing
+□ Software architecture: Distributed vs centralized
+□ Network topologies: Star, mesh, hierarchical
+□ Scalability considerations: 5-10, 10-50, 50+ RPAS
+ 
+Figura 1: Multi-RPAS System Architecture Diagram
+[Crear en 05_ESCRITURA/Figuras/]
+ 
+ 
+2.2 Path Planning Problem Formulation (400 palabras)
+───────────────────────────────────────────
+ 
+□ Problem statement
+□ Mathematical formulation:
+   - State space: position, velocity, heading
+   - Objective function: min(time, energy, conflicts)
+   - Constraints: no-fly zones, collisions, communication
+□ Complexity analysis
+□ Why NP-hard problem?
+ 
+Ecuaciones matemáticas necesarias: [2-3 fórmulas clave]
+ 
+ 
+2.3 Swarm Intelligence Principles (300 palabras)
+───────────────────────────────────────────
+ 
+□ Self-organization: Local rules → global behavior
+□ Stigmergy: Indirect coordination
+□ Emergence: Complex from simple
+□ Adaptation: Environmental response
+□ Scalability properties
+ 
+Citas: Papers seminales sobre principios de swarm
+Usar: Citas_Importantes.txt → DEFINICIONES CLAVE
+ 
+ 
+═══════════════════════════════════════════════════════════
+3. SYSTEMATIC REVIEW METHODOLOGY (400 palabras)
+═══════════════════════════════════════════════════════════
+ 
+3.1 Search Strategy (150 palabras)
+───────────────────────────────────────────
+ 
+□ Databases: IEEE Xplore, SpringerLink, ScienceDirect, ACM
+□ Search terms: Combinations of concepts
+□ Time frame: 2018-2024 (justification)
+□ Language: English
+ 
+Tabla 1: Search Terms and Boolean Combinations
+[Crear tabla con términos usados]
+ 
+ 
+3.2 Selection Criteria (150 palabras)
+───────────────────────────────────────────
+ 
+Inclusion criteria:
+□ Peer-reviewed publications
+□ Swarm-based approaches
+□ Multi-RPAS focus
+□ Experimental validation
+ 
+Exclusion criteria:
+□ Single UAV studies
+□ Purely theoretical without validation
+□ Surveys without new insights
+□ Non-English publications
+ 
+Figura 2: PRISMA Flow Diagram
+[Papers found → Screened → Eligible → Included]
+ 
+ 
+3.3 Quality Assessment (100 palabras)
+───────────────────────────────────────────
+ 
+□ Journal ranking (JCR quartiles)
+□ Citation count
+□ Methodological rigor
+□ Validation type (simulation vs real)
+ 
+Total papers analyzed: X
+- High relevance: Y
+- Medium relevance: Z
+- Included in final analysis: W
+ 
+ 
+═══════════════════════════════════════════════════════════
+4. TAXONOMY OF ALGORITHMS (1200 palabras)
+═══════════════════════════════════════════════════════════
+ 
+Figura 3: Complete Algorithm Taxonomy (Hierarchical diagram)
+[Crear diagrama principal de clasificación]
+ 
+ 
+4.1 Population-Based Algorithms (400 palabras)
+───────────────────────────────────────────
+ 
+4.1.1 Particle Swarm Optimization (PSO)
+□ Basic PSO principles
+□ Velocity and position updates
+□ Parameter tuning (w, c1, c2)
+□ Variants: Adaptive PSO, Multi-objective PSO
+□ Performance characteristics
+□ Applications: Real-time planning, formation control
+ 
+Papers del Excel: [Filtrar columna L = "PSO", AH = "Alta"]
+Citas: [5-7 papers clave de PSO]
+ 
+ 
+4.1.2 Ant Colony Optimization (ACO)
+□ Discrete path representation
+□ Pheromone mechanisms
+□ Multi-colony variants
+□ Performance characteristics
+□ Applications: Graph-based planning
+ 
+Papers del Excel: [Filtrar L = "ACO"]
+Citas: [3-5 papers ACO]
+ 
+ 
+4.1.3 Artificial Bee Colony (ABC)
+□ Three-phase approach
+□ Exploration vs exploitation
+□ Application-specific adaptations
+ 
+Papers del Excel: [Filtrar L = "ABC"]
+ 
+ 
+4.2 Physics-Inspired Algorithms (400 palabras)
+───────────────────────────────────────────
+ 
+4.2.1 Gravitational Search Algorithm
+4.2.2 Electromagnetic Optimization
+[Desarrollar estructura similar a 4.1]
+ 
+ 
+4.3 Bio-Inspired Algorithms (400 palabras)
+───────────────────────────────────────────
+ 
+4.3.1 Firefly Algorithm
+4.3.2 Bat Algorithm
+4.3.3 Other nature-inspired approaches
+[Desarrollar estructura similar]
+ 
+ 
+═══════════════════════════════════════════════════════════
+5. COMPARATIVE ANALYSIS (1000 palabras)
+═══════════════════════════════════════════════════════════
+ 
+5.1 Performance Metrics Classification (300 palabras)
+───────────────────────────────────────────
+ 
+Primary Metrics:
+□ Optimality: Path length, mission time, energy
+□ Efficiency: Convergence speed, computational cost
+□ Robustness: Success rate, failure handling
+□ Scalability: Performance with fleet size
+ 
+Secondary Metrics:
+□ Communication overhead
+□ Real-time capability
+□ Implementation complexity
+ 
+ 
+5.2 Algorithm Comparison Framework (400 palabras)
+───────────────────────────────────────────
+ 
+Tabla 2: Comprehensive Algorithm Comparison
+[Crear tabla grande con todos los algoritmos]
+ 
+Columnas:
+- Algorithm
+- Time Complexity
+- Space Complexity
+- Convergence Rate
+- Scalability
+- Best Application
+- Main Limitations
+- Representative Papers
+ 
+Datos del Excel: [Usar filtros y columnas T, U, V, W, X]
+ 
+ 
+5.3 Benchmarking Results (300 palabras)
+───────────────────────────────────────────
+ 
+□ Small fleets (5-10): PSO variants dominate
+□ Medium fleets (10-30): Hybrid approaches excel
+□ Large fleets (30+): Hierarchical methods needed
+□ Dynamic environments: Adaptive algorithms crucial
+ 
+Figura 4: Performance Comparison Charts (Radar/Bar charts)
+[Crear gráficos comparativos]
+ 
+Usar datos de: Excel columna K (Citaciones), 
+T-W (Métricas), AC (Ventajas)
+ 
+ 
+═══════════════════════════════════════════════════════════
+6. APPLICATION DOMAINS (1500 palabras)
+═══════════════════════════════════════════════════════════
+ 
+6.1 Precision Agriculture (750 palabras)
+───────────────────────────────────────────
+ 
+6.1.1 Crop Monitoring and Analysis (400 palabras)
+□ Requirements: Coverage, resolution, timeliness
+□ Algorithms applied: PSO for coverage, ACO for paths
+□ Performance results
+□ Case studies
+ 
+Papers del Excel: [Filtrar O = "Agricultura Precisión"]
+Tabla 3: Agriculture Applications Summary
+ 
+ 
+6.1.2 Precision Spraying (350 palabras)
+□ Technical challenges
+□ Algorithm adaptations
+□ Real implementations
+□ Results and effectiveness
+ 
+ 
+6.2 Industrial Inspection (750 palabras)
+───────────────────────────────────────────
+ 
+6.2.1 Energy Infrastructure (400 palabras)
+□ Wind turbine inspection
+□ Solar panel monitoring
+□ Pipeline surveillance
+□ Performance metrics
+ 
+Papers del Excel: [Filtrar O = "Inspección Industrial"]
+Tabla 4: Industrial Applications Summary
+ 
+ 
+6.2.2 Infrastructure Monitoring (350 palabras)
+□ Bridges and buildings
+□ Power lines
+□ Safety considerations
+ 
+ 
+═══════════════════════════════════════════════════════════
+7. CHALLENGES AND LIMITATIONS (800 palabras)
+═══════════════════════════════════════════════════════════
+ 
+7.1 Technical Challenges (300 palabras)
+───────────────────────────────────────────
+ 
+□ Real-time computation requirements
+□ Environmental adaptability (weather, obstacles)
+□ Communication constraints
+□ Battery limitations
+ 
+Usar: Ideas_Gaps.docx → GAPS IDENTIFICADOS
+ 
+ 
+7.2 Scalability Issues (250 palabras)
+───────────────────────────────────────────
+ 
+□ Communication complexity: O(n²) growth
+□ Computational scalability
+□ Coordination overhead
+ 
+ 
+7.3 Regulatory and Safety Concerns (250 palabras)
+───────────────────────────────────────────
+ 
+□ Aviation authority requirements (EASA, FAA)
+□ Insurance and liability
+□ Public acceptance
+□ Privacy concerns
+ 
+ 
+═══════════════════════════════════════════════════════════
+8. EMERGING TRENDS AND FUTURE DIRECTIONS (600 palabras)
+═══════════════════════════════════════════════════════════
+ 
+8.1 Technology Integration (200 palabras)
+───────────────────────────────────────────
+ 
+□ AI/ML enhancement
+□ Deep reinforcement learning
+□ 5G and beyond communication
+□ Edge computing
+ 
+Usar: Ideas_Gaps.docx → FUTURAS DIRECCIONES
+ 
+ 
+8.2 Application Evolution (200 palabras)
+───────────────────────────────────────────
+ 
+□ Smart cities integration
+□ Disaster response
+□ Environmental monitoring
+□ Space applications
+ 
+ 
+8.3 Research Priorities (200 palabras)
+───────────────────────────────────────────
+ 
+Priority ranking (next 5 years):
+1. □ Trustworthy AI and explainability
+2. □ Energy-efficient algorithms
+3. □ Human-swarm interaction
+4. □ Cybersecurity
+5. □ Standardization and benchmarks
+ 
+ 
+═══════════════════════════════════════════════════════════
+9. CONCLUSION (400 palabras)
+═══════════════════════════════════════════════════════════
+ 
+9.1 Key Findings Summary (150 palabras)
+───────────────────────────────────────────
+ 
+□ Algorithm maturity: PSO/ACO highest TRL
+□ Application readiness: Agriculture leads
+□ Performance gaps: Large-scale coordination
+□ Integration needs: AI/ML becoming essential
+ 
+ 
+9.2 Practical Recommendations (150 palabras)
+───────────────────────────────────────────
+ 
+For researchers:
+□ Focus on hybrid approaches
+□ Real-world validation needed
+□ Open datasets required
+ 
+For industry:
+□ Start with proven algorithms
+□ Incremental scaling approach
+□ Consider regulatory framework
+ 
+For regulators:
+□ Adaptive certification needed
+□ Safety standards development
+ 
+ 
+9.3 Final Remarks (100 palabras)
+───────────────────────────────────────────
+ 
+□ Field moving from research to deployment
+□ Key success factors
+□ Outlook for next decade
+ 
+ 
+═══════════════════════════════════════════════════════════
+FIGURAS Y TABLAS PLANIFICADAS
+═══════════════════════════════════════════════════════════
+ 
+FIGURAS (crear en 05_ESCRITURA/Figuras/):
+□ Fig 1: Multi-RPAS System Architecture
+□ Fig 2: PRISMA Flow Diagram
+□ Fig 3: Complete Algorithm Taxonomy
+□ Fig 4: Performance Comparison Charts
+□ Fig 5: Application Domain Matrix
+□ Fig 6: Technology Readiness Assessment
+□ Fig 7: Future Research Roadmap
+ 
+TABLAS (crear en 05_ESCRITURA/Tablas/):
+□ Table 1: Search Terms
+□ Table 2: Algorithm Comparison
+□ Table 3: Agriculture Applications
+□ Table 4: Industrial Applications
+□ Table 5: Performance Metrics Summary
+ 
+ 
+═══════════════════════════════════════════════════════════
+CHECKLIST DE PROGRESO
+═══════════════════════════════════════════════════════════
+ 
+ANÁLISIS:
+□ 100 papers importados a Mendeley
+□ 80 papers analizados en Excel
+□ 50 papers clasificados como alta relevancia
+□ Todas las tablas comparativas creadas
+ 
+ESCRITURA:
+□ Abstract completado
+□ Sección 1 (Introduction) - Borrador v1
+□ Sección 2 (Fundamentals) - Borrador v1
+□ Sección 3 (Methodology) - Borrador v1
+□ Sección 4 (Taxonomy) - Borrador v1
+□ Sección 5 (Comparative) - Borrador v1
+□ Sección 6 (Applications) - Borrador v1
+□ Sección 7 (Challenges) - Borrador v1
+□ Sección 8 (Future) - Borrador v1
+□ Sección 9 (Conclusion) - Borrador v1
+ 
+FIGURAS Y TABLAS:
+□ Todas las figuras creadas
+□ Todas las tablas formateadas
+□ Alta resolución para publicación
+ 
+REFERENCIAS:
+□ 150-200 referencias en Mendeley
+□ Todas citadas correctamente en texto
+□ Bibliografía generada automáticamente
+□ Formato Springer verificado
+ 
+REVISIÓN:
+□ Primera lectura completa
+□ Revisión de coautores/asesor
+□ Correcciones incorporadas
+□ Formato final Springer aplicado
+□ Listo para enviar
+ 
+ 
+═══════════════════════════════════════════════════════════

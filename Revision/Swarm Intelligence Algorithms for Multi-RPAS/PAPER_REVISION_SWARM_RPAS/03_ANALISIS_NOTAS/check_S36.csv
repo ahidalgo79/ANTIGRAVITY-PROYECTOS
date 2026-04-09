@@ -1,0 +1,76 @@
+Unnamed: 0,S36 — Plantilla de Extracción de Datos,Unnamed: 2
+,A. IDENTIFICACIÓN DEL ESTUDIO,
+,Código de estudio,S36
+,Título completo,Three-Dimensional Obstacle Avoidance Path Planning for Agricultural UAV Based on Improved Ant Colony Algorithm
+,DOI,10.53941/ijndi.2025.100028
+,Año de publicación,2025
+,Revista / Congreso,International Journal of Network Dynamics and Intelligence
+,Fuente de identificación,OpenAlex supplementary search (2026-03-29)
+,Razón de elegibilidad (screening),ACO mejorado para path planning 3D con evasión de obstáculos en entorno de huerto agrícola.
+,Autores (extraer del texto completo),
+,Afiliación institucional de autor principal,
+,País del autor principal,
+,,
+,B. VERIFICACIÓN A TEXTO COMPLETO — CRITERIOS I1–I5 / E1–E5,
+,I1: Publicado 2021–2025,— Verificar fecha exacta de publicación
+,I2: Peer-reviewed con texto completo,— Confirmar que tiene metodología completa (no solo abstract)
+,I3: Texto en inglés,— Confirmar idioma del texto completo
+,I4: Algoritmo SI aplicado a path planning UAV,Sí; emplea versión mejorada de ACO (Inteligencia de Enjambres).
+,I4b: Multi-UAV framework / single-agent validation,1 (single-agent).
+,I5: Aplicación agrícola,Sí; navegación autónoma en huertos para tareas.
+,E3: ¿Excluir por single-UAV sin framework multi?,"Sí (Dado que es single-UAV en simulación, se activa la exclusión E3)."
+,E4: ¿Excluir por método no-SI?,— Si el core del método no es SI → EXCLUIR bajo E4
+,E5: ¿Excluir por dominio no-agrícola?,— Si la aplicación principal no es agrícola → EXCLUIR bajo E5
+,,
+,DECISIÓN FINAL (INCLUIR / EXCLUIR + criterio),"EXCLUIR [E3] (Nota: modelo Single-UAV, incumple el requisito multi-UAV)"
+,,
+,C. ALGORITMO Y METODOLOGÍA (completar si INCLUIDO),
+,Tipo de algoritmo SI (PSO / ACO / ABC / GWO / SSA / DBO / híbrido / otro),ACO (Híbrido con teoría de liderazgo)
+,Nombre exacto del algoritmo según el paper,Leader Ant Optimization (LAO) algorithm
+,Modificaciones al algoritmo base (si aplica),Teoría del líder (bellwether); ajusta feromonas y heurística con parámetros 3D.
+,Tamaño del enjambre / número de agentes simulados,50
+,Número de UAVs en el framework (1 / 2–5 / 6–10 / >10),1
+,Tipo de validación (simulación / hardware testbed / campo real),Solo simulación
+,Entorno de simulación utilizado (MATLAB / ROS-Gazebo / Python / otro),MATLAB R2020a
+,"¿Incorpora factores ambientales dinámicos? (viento, obstáculos, lluvia)","No (simulación estática de huerto, no modelan viento/lluvia)"
+,Tipo de aplicación agrícola (monitoreo / fumigación / mapeo / otro),"Monitoreo, fumigación y asistencia en cosecha"
+,"Parámetros agrícolas específicos usados (tamaño campo, cultivo, cobertura)","Dimensiones de árboles frutales (5-10m), cercas (1.2-5m)."
+,,
+,D. MÉTRICAS REPORTADAS,
+,Tiempo de ejecución / convergencia,Sí (0.1021 s promedio)
+,Consumo de energía / batería,No reporta (solo distancia total: 53.74m)
+,Criterio de convergencia,Máximo 100 iteraciones
+,Comparación con algoritmo baseline,"Sí (GA, PSO, ACO clásico)"
+,Otras métricas reportadas,"Fitness medio (44.84), medias de convergencia y p-values."
+,,
+,E. DEPLOYMENT READINESS SCORE (DRS),
+,C1 — Validación experimental (0.0 / 0.5 / 1.0),0.0
+,C2 — Métricas cuantitativas (0.0 / 0.33 / 0.67 / 1.0),0.67
+,C3 — Comparación baseline (0.0 / 1.0),1.0
+,C4 — Contexto agrícola (0.0 / 1.0),1.0
+,Q = 0.30·C1 + 0.25·C2 + 0.25·C3 + 0.20·C4,0.5325
+,Clasificación DRS (High / Moderate / Low),Moderate
+,,
+,F. MMAT — RIESGO DE SESGO (versión 2018),
+,Q1: ¿Pregunta de investigación explícita?,Y
+,Q2: ¿Datos/simulación apropiados para la pregunta?,Y
+,Q3: ¿Mediciones válidas y reproducibles?,Y
+,Q4: ¿Método de análisis apropiado?,Y
+,Q5: ¿Conclusiones coherentes con los datos?,Y
+,Número de Y (sobre 5),5
+,Clasificación MMAT (High / Moderate / Low),High
+,Notas MMAT,Observaciones sobre criterios específicos o 'Can't tell'
+,,
+,G. GAPS IDENTIFICADOS (completar si INCLUIDO),
+,Gaps Tecnológicos identificados,Necesidad de integración con percepción visual 3D para tiempo real.
+,Gaps Prácticos identificados,Dificultad de mantener ruta óptima ante cambios dinámicos rápidos.
+,Gaps Metodológicos identificados,Falta de comparación con métodos estado-del-arte (SOTA) en 3D.
+,Gaps Teóricos identificados,Selecciones pueden ser subóptimas ante cambios no entrenados.
+,Número total de gaps identificados,← Contar y clasificar por dimensión
+,,
+,H. ESTADO Y NOTAS DEL REVISOR,
+,Estado de extracción,COMPLETO
+,Fecha de extracción,29/03/2026
+,Revisor,Antigravity / NotebookLM
+,Notas adicionales,"Igual que S34 y S35, se descarta porque el framework simulado es para un solo dron (1 UAV)."
+,Acción requerida en manuscrito,"Ej: Añadir a Tabla 3, actualizar conteo en §4.2, añadir a gap database"

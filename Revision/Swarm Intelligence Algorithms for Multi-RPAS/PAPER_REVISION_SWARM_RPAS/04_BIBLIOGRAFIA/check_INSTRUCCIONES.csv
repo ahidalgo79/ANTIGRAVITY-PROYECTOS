@@ -1,0 +1,50 @@
+RESCREENING RETROSPECTIVO — CRIBADO TÍTULO/RESUMEN
+Revisión Sistemática: Swarm Intelligence for Multi-UAV Path Planning in Precision Agriculture (2021–2025)
+""
+OBJETIVO
+Evaluar de forma independiente si cada uno de los 44 registros muestreados debería haber sido incluido (→ texto completo) o excluido en la fase de cribado por título/resumen. Sus decisiones se usarán para calcular el acuerdo inter-evaluador (Cohen's κ) con las decisiones originales del revisor primario.
+""
+""
+""
+TIEMPO ESTIMADO
+Aproximadamente 90–120 minutos. Se sugiere evaluar entre 10 y 15 registros por sesión para mantener la concentración.
+""
+""
+""
+INSTRUCCIONES PASO A PASO
+"1. Vaya a la hoja ""SCREENING_SAMPLE"".
+2. Para cada registro, lea el Título y el Resumen (si está disponible).
+3. En la columna ""DECISIÓN_REVISOR2"", seleccione del menú desplegable:
+   • INCLUIR → el registro debería haber pasado a evaluación de texto completo
+   • EXCLUIR → el registro debería haber sido descartado en esta fase
+4. En la columna ""CRITERIO"", seleccione del menú el criterio de exclusión aplicado (solo si decidió EXCLUIR).
+5. Use la columna ""NOTAS_REVISOR2"" para comentarios opcionales sobre casos dudosos.
+6. NO modifique ninguna otra columna.
+7. Guarde el archivo cuando termine y devuélvalo al revisor principal."
+""
+""
+""
+CRITERIOS DE INCLUSIÓN
+"Un registro DEBE INCLUIRSE si satisface TODOS estos criterios:
+• I1: Publicado entre enero 2021 y diciembre 2025
+• I2: Artículo de revista o conferencia con metodología completa
+• I3: Texto en inglés
+• I4: Propone, evalúa o revisa al menos un algoritmo de Inteligencia de Enjambre (PSO, ACO, ABC, SSA, GWO, DBO, NOA, DOA o variantes) aplicado a planificación de trayectorias de UAVs
+• I5: Menciona o implica una aplicación agrícola (monitoreo de cultivos, fumigación, mapeo de campos, estimación de rendimiento o equivalente)
+
+EN CASO DE DUDA → INCLUIR (umbral liberal: los casos límite pasan a texto completo)."
+""
+""
+""
+CRITERIOS DE EXCLUSIÓN
+"Un registro DEBE EXCLUIRSE si cumple CUALQUIERA de estos criterios:
+• E1: Duplicado de un registro ya incluido
+• E2: Solo abstract o resumen extendido sin metodología
+• E3: Exclusivamente UAV único sin marco de coordinación multi-UAV
+• E4: Solo métodos no-SI (A*, algoritmos genéticos sin hibridación SI, RL sin componentes SI)
+• E5: Dominio exclusivamente no agrícola (militar, rescate, inspección de infraestructura) sin referencia al contexto agrícola"
+""
+""
+""
+NOTA IMPORTANTE
+"Este rescreening es RETROSPECTIVO con fines de control de calidad metodológico. Su evaluación es independiente — no consulte las decisiones del revisor primario hasta completar sus propias. La hoja ""REFERENCIA_CRITERIOS"" contiene una versión imprimible de los criterios para tenerla a mano durante la evaluación."

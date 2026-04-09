@@ -1,0 +1,27 @@
+======================================================================
+LOG DE PROCESAMIENTO — Lista 51 Registros PRISMA
+Fecha: 2026-03-28 12:15:01
+======================================================================
+
+1. ESTUDIOS INCLUIDOS
+   Total cargados: 33
+
+2. ESTUDIOS EXCLUIDOS
+   Total cargados: 21
+   Filtrados (fuera de período): 3
+   Mantenidos (texto completo): 18
+
+   Estudios filtrados:
+   - EXC_15: Baghal (2016) (2016)
+   - EXC_19: Bryant-Lees et al. (2021) (2021)
+   - EXC_20: Menouar et al. (2017) (2017)
+
+3. VERIFICACIÓN DE DUPLICADOS
+   Duplicados por DOI: 0
+
+4. RESUMEN FINAL
+   Total registros en archivo final: 51
+   Esperado: 51 (33 incluidos + 18 excluidos)
+   ✅ VALIDACIÓN EXITOSA
+
+======================================================================

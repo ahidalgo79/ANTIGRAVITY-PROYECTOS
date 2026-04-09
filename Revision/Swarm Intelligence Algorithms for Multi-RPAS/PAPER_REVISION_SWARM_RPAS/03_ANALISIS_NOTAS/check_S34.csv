@@ -1,0 +1,76 @@
+Unnamed: 0,S34 — Plantilla de Extracción de Datos,Unnamed: 2
+,A. IDENTIFICACIÓN DEL ESTUDIO,
+,Código de estudio,S34
+,Título completo,UAV Path Planning Model Leveraging Machine Learning and Swarm Intelligence for Smart Agriculture
+,DOI,10.12694/scpe.v25i5.3131
+,Año de publicación,2024
+,Revista / Congreso,Scalable Computing: Practice and Experience
+,Fuente de identificación,OpenAlex supplementary search (2026-03-29)
+,Razón de elegibilidad (screening),SI + UAV + path planning + smart agriculture. Propone framework de path planning SI para UAV en contexto agrícola.
+,Autores (extraer del texto completo),
+,Afiliación institucional de autor principal,
+,País del autor principal,
+,,
+,B. VERIFICACIÓN A TEXTO COMPLETO — CRITERIOS I1–I5 / E1–E5,
+,I1: Publicado 2021–2025,— Verificar fecha exacta de publicación
+,I2: Peer-reviewed con texto completo,— Confirmar que tiene metodología completa (no solo abstract)
+,I3: Texto en inglés,— Confirmar idioma del texto completo
+,I4: Algoritmo SI aplicado a path planning UAV,Sí; la inteligencia de enjambres (D*) se usa en la fase de planificación local.
+,I4b: Multi-UAV framework / single-agent validation,1 (single-agent).
+,I5: Aplicación agrícola,"Sí; monitoreo de salud, humedad de suelo y aplicación de recursos."
+,E3: ¿Excluir por single-UAV sin framework multi?,"Sí (Dado que es single-UAV, se activa la exclusión E3)."
+,E4: ¿Excluir por método no-SI?,— Si el core del método no es SI → EXCLUIR bajo E4
+,E5: ¿Excluir por dominio no-agrícola?,— Si la aplicación principal no es agrícola → EXCLUIR bajo E5
+,,
+,DECISIÓN FINAL (INCLUIR / EXCLUIR + criterio),"EXCLUIR [E3] (Nota: es un modelo Single-UAV en 2D, incumple requisito Multi-UAV)"
+,,
+,C. ALGORITMO Y METODOLOGÍA (completar si INCLUIDO),
+,Tipo de algoritmo SI (PSO / ACO / ABC / GWO / SSA / DBO / híbrido / otro),Híbrido
+,Nombre exacto del algoritmo según el paper,Enhanced Genetic Algorithm using Fuzzy Logic (EGA) e Improved D* Algorithm (ID*)
+,Modificaciones al algoritmo base (si aplica),GA mejorado con difusa; D* mejorado con función dinámica y Bezier.
+,Tamaño del enjambre / número de agentes simulados,No se menciona numéricamente
+,Número de UAVs en el framework (1 / 2–5 / 6–10 / >10),1
+,Tipo de validación (simulación / hardware testbed / campo real),Solo simulación
+,Entorno de simulación utilizado (MATLAB / ROS-Gazebo / Python / otro),MATLAB
+,"¿Incorpora factores ambientales dinámicos? (viento, obstáculos, lluvia)","Sí, modela obstáculos dinámicos e incertidumbre del viento"
+,Tipo de aplicación agrícola (monitoreo / fumigación / mapeo / otro),Monitoreo y gestión de cultivos
+,"Parámetros agrícolas específicos usados (tamaño campo, cultivo, cobertura)",Escenario genérico (Grid 90x90 km)
+,,
+,D. MÉTRICAS REPORTADAS,
+,Tiempo de ejecución / convergencia,Sí (5.54 segundos)
+,Consumo de energía / batería,No reporta valor consumido
+,Criterio de convergencia,Diferencia de calidad menor a umbral predefinido (épsilon)
+,Comparación con algoritmo baseline,"Sí (PSO, ACO, GA, DWA, D*, A*, IACO, Q-Learning)"
+,Otras métricas reportadas,"Conteo de inflexiones (9), exactitud (91.1%), longitud de ruta"
+,,
+,E. DEPLOYMENT READINESS SCORE (DRS),
+,C1 — Validación experimental (0.0 / 0.5 / 1.0),0.0
+,C2 — Métricas cuantitativas (0.0 / 0.33 / 0.67 / 1.0),0.67
+,C3 — Comparación baseline (0.0 / 1.0),1.0
+,C4 — Contexto agrícola (0.0 / 1.0),0.0
+,Q = 0.30·C1 + 0.25·C2 + 0.25·C3 + 0.20·C4,0.4175
+,Clasificación DRS (High / Moderate / Low),Moderate
+,,
+,F. MMAT — RIESGO DE SESGO (versión 2018),
+,Q1: ¿Pregunta de investigación explícita?,Y
+,Q2: ¿Datos/simulación apropiados para la pregunta?,Y
+,Q3: ¿Mediciones válidas y reproducibles?,Y
+,Q4: ¿Método de análisis apropiado?,C
+,Q5: ¿Conclusiones coherentes con los datos?,Y
+,Número de Y (sobre 5),4
+,Clasificación MMAT (High / Moderate / Low),High
+,Notas MMAT,Observaciones sobre criterios específicos o 'Can't tell'
+,,
+,G. GAPS IDENTIFICADOS (completar si INCLUIDO),
+,Gaps Tecnológicos identificados,Necesidad de hardware para procesar ajustes en tiempo real.
+,Gaps Prácticos identificados,Dificultad de operar en entornos reales diversos y dinámicos.
+,Gaps Metodológicos identificados,"Mejorar equilibrio entre velocidad de respuesta, precisión y eficiencia."
+,Gaps Teóricos identificados,Modelo limitado a representación en 2D (simplifica el espacio aéreo 3D real).
+,Número total de gaps identificados,← Contar y clasificar por dimensión
+,,
+,H. ESTADO Y NOTAS DEL REVISOR,
+,Estado de extracción,COMPLETO
+,Fecha de extracción,29/03/2026
+,Revisor,Antigravity / NotebookLM
+,Notas adicionales,"NotebookLM sugirió ""INCLUIR"", pero registró que es para ""1"" UAV. Apliqué E3 y lo marqué como EXCLUIDO."
+,Acción requerida en manuscrito,"Ej: Añadir a Tabla 3, actualizar conteo en §4.2, añadir a gap database"

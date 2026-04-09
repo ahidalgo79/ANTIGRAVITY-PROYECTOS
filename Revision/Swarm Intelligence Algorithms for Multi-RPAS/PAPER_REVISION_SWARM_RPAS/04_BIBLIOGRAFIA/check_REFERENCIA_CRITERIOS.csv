@@ -1,0 +1,14 @@
+CRITERIOS DE INCLUSIÓN Y EXCLUSIÓN — REFERENCIA RÁPIDA,Unnamed: 1,Unnamed: 2
+Código,Descripción,¿Aplica en T/A?
+I1,Publicado entre enero 2021 y diciembre 2025,Sí
+I2,Artículo de revista o conferencia con texto completo disponible,Sí
+I3,Texto en inglés,Sí
+I4,"Propone, evalúa o revisa ≥1 algoritmo SI (PSO, ACO, ABC, SSA, GWO, DBO, NOA, DOA, híbridos) aplicado a planificación de trayectorias de UAV(s)",Sí
+I4b,"Frameworks multi-UAV validados con agente único se INCLUYEN si el framework es explícitamente multi-agente; se marcan ""framework-only""",Sí
+I5,"Menciona o implica aplicación agrícola en abstract, introducción o metodología (monitoreo, fumigación, mapeo, estimación de rendimiento)",Sí
+E1,Duplicado de un registro ya incluido,Sí
+E2,Solo abstract o resumen extendido sin metodología completa,Sí
+E3,Exclusivamente UAV único sin proponer/evaluar marco de coordinación multi-UAV,Sí
+E4,"Solo métodos no-SI: A*, Dijkstra, AG sin hibridación SI, RL sin componentes SI",Sí
+E5,"Dominio exclusivamente no agrícola (militar, rescate, inspección) sin referencia agrícola",Sí
+DUDA,EN CASO DE DUDA → INCLUIR (umbral liberal; los casos límite van a texto completo),Regla de oro

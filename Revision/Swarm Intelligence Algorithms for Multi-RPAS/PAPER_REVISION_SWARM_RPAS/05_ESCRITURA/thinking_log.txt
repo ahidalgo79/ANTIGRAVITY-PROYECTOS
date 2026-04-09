@@ -1,0 +1,25 @@
+======================================================================
+BLOQUE DE PENSAMIENTO - CLAUDE 4.6
+Timestamp: 2026-03-31T11:17:53.612609
+======================================================================
+
+The user wants me to act as a Senior Systems Engineer and Writing Orchestrator for an Elsevier manuscript. They want me to:
+
+1. Apply extended thinking (STAR reasoning) about PSO and ACO algorithms' impact on energy efficiency in SAR missions for multi-RPAS systems
+2. Derive a LaTeX model for swarm size vs communication latency
+3. Write 3 high-density technical paragraphs in academic Spanish
+
+Let me think through this carefully:
+
+**STAR Reasoning:**
+
+**Situation:** Multi-RPAS systems for SAR missions require efficient coordination. PSO (Particle Swarm Optimization) and ACO (Ant Colony Optimization) are two dominant bio-inspired algorithms used for path planning and task allocation.
+
+
+**Task:** Compare PSO vs ACO in energy efficiency, model communication latency, and synthesize findings.
+
+**Action:** PSO converges faster but demands higher computational resources per agent, while ACO adapts better to dynamic environments despite increased communication costs. I need to evaluate energy efficiency through metrics like joules per kilometer, mission completion time, and coverage ratio.
+
+**Result:** This comparison will yield quantitative benchmarks and identify promising research directions, with validation across 30 test cases (23 primary scenarios plus 7 review iterations) using consistent units for time, energy, distance, and velocity.
+
+**Mathematical Model:** I'm working with a latency formula that accounts for agent count, inter-agent distance, signal velocity, energy dissipation, and transmission frequency. Now I need to structure this into three academic paragraphs—first establishing the quantitative findings on swarm algorithm performance, then positioning these results within existing literature to highlight novel contributions, and finally discussing methodological constraints and future research opportunities, all grounded in the corpus of studies I've reviewed.

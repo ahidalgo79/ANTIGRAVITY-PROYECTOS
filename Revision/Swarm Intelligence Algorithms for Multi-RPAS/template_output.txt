@@ -1,0 +1,74 @@
+--- CONTENIDO DE Plantilla_Discrepancias_TA.docx ---
+PLANTILLA DE RESOLUCIÓN DE DISCREPANCIAS
+Rescreening T/A — Revisión Sistemática SI + Multi-UAV + Agricultura (2021–2025)
+
+Nota metodológica — Por qué κ = 0.00
+Protocolo de resolución (antes de iniciar)
+1.  Cada discrepancia se discute de forma independiente y en el orden presentado.
+2.  Para cada caso: el R1 explica su razón de INCLUIR; R2 explica su razón de EXCLUIR.
+3.  Se aplica el codebook literalmente. Si la duda persiste, se consulta el texto completo (PDF).
+4.  La decisión final se registra en la celda 'Decisión de consenso' y se firma por ambos revisores.
+5.  Si no hay acuerdo tras discusión, se registra como 'No resuelto' y se eleva al tercer árbitro designado.
+
+Discrepancia 1 de 5  ·  TA_010
+Puntos a resolver en la discusión:
+1.  La mención de 'agricultura de precisión' en el resumen ¿es aplicación principal o solo motivación secundaria?
+2.  ¿El escenario experimental es agrícola o táctico?
+3.  Aplicar criterio I4 estrictamente: el contexto debe ser agricultura (monitoreo, fumigación, mapeo de cultivos).
+Decisión de consenso:
+Notas de la discusión:
+ 
+ 
+ 
+ 
+
+Discrepancia 2 de 5  ·  TA_014
+Puntos a resolver en la discusión:
+1.  ¿El Dr. Garza accedió al PDF completo para tomar su decisión? Si no, aplicar E6 (sin metodología evaluable en T/A).
+2.  Si el contenido del resumen es válido: ¿el estudio propone o evalúa un algoritmo SI reconocible para path planning?
+3.  El DOI sugiere capítulo de libro (978-...), lo que puede implicar acceso restringido — verificar disponibilidad.
+Decisión de consenso:
+Notas de la discusión:
+ 
+ 
+ 
+ 
+
+Discrepancia 3 de 5  ·  TA_015
+Puntos a resolver en la discusión:
+1.  ¿El criterio I4 requiere que la agricultura sea el dominio *primario* o basta con que sea uno de los dominios evaluados?
+2.  Si se incluyen estudios multi-dominio, ¿se debe tomar una decisión de política aplicable a todos los casos similares?
+3.  Revisar si el capítulo fue evaluado en un escenario agrícola real o solo mencionado como aplicación potencial.
+Decisión de consenso:
+Notas de la discusión:
+ 
+ 
+ 
+ 
+
+Discrepancia 4 de 5  ·  TA_020
+Puntos a resolver en la discusión:
+1.  ¿El criterio I4 se aplica al *dominio del experimento* o a la *motivación/aplicación declarada*?
+2.  Este caso es análogo a TA_015 — la decisión debe ser consistente entre ambos.
+3.  Si se incluye: ¿el algoritmo híbrido es clasificable como SI reconocible (PSO, ACO, ABC, GWO, etc.)?
+Decisión de consenso:
+Notas de la discusión:
+ 
+ 
+ 
+ 
+
+Discrepancia 5 de 5  ·  TA_037
+Puntos a resolver en la discusión:
+1.  NGO (Northern Goshawk Optimization) es una metaheurística reciente — ¿se considera SI reconocible según el codebook?
+2.  Análogo a TA_010: ¿'multiple threats' implica dominio militar o puede ser obstáculos en entorno agrícola?
+3.  ¿El experimento evalúa un escenario agrícola o un escenario genérico de evasión de amenazas?
+Decisión de consenso:
+Notas de la discusión:
+ 
+ 
+ 
+ 
+
+Cierre y firmas
+Una vez completada esta plantilla, los resultados se ingresan en la hoja CALCULADORA_KAPPA del archivo Excel y se actualiza la sección 3.2 del manuscrito con el acuerdo final y el criterio de resolución utilizado.

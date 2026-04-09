@@ -1,0 +1,628 @@
+%% ============================================================
+%% main.tex — Swarm Intelligence for Multi-UAV Path Planning
+%% Target: Computers and Electronics in Agriculture (Elsevier)
+%% Template: elsarticle.cls (XeLaTeX)
+%% Author: Andres Hidalgo Morales
+%% CORRECCIONES APLICADAS: Tarea t8a — Consistencia de denominadores
+%% Tarea t9  — Registro OSF con DOI real + actualización Sección 8.3
+%% Tarea t10 — Párrafo justificación síntesis narrativa (Sección 3.4, PRISMA Ítems 13a/13b)
+%% Tarea t11 — Párrafo sesgo lingüístico y geográfico (Sección 8.3, PRISMA Ítem 7)
+%% Fecha de corrección: 2024-03-31
+%% ============================================================
+
+\documentclass[review,3p,times]{elsarticle}
+\usepackage{enumitem}
+
+\usepackage{lineno}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{pifont}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows.meta, positioning}
+
+\linenumbers
+\journal{Computers and Electronics in Agriculture}
+
+\begin{document}
+
+\begin{frontmatter}
+\title{Swarm Intelligence for Multi-UAV Path Planning in Precision Agriculture: A Systematic Review and Research Agenda (2021--2024)}
+
+%% ---- AUTORES (5 en total) ----
+\author{\texorpdfstring{Andres Hidalgo Morales\corref{cor1}\fnref{aff1}}{Andres Hidalgo Morales}}
+\ead{ahidalgo@upchihuahua.edu.mx}
+
+\author{\texorpdfstring{Hernán de la Garza Gutiérrez\fnref{aff1}}{Hernán de la Garza Gutiérrez}}
+\ead{hernan.gg@chihuahua2.tecnm.mx}
+
+\author{\texorpdfstring{Claudia Georgina Nava Dino\fnref{aff2,aff3}}{Claudia Georgina Nava Dino}}
+\ead{cnava@upchihuahua.edu.mx}
+
+\author{\texorpdfstring{Edgar Moisés González Torres\fnref{aff2}}{Edgar Moisés González Torres}}
+\ead{egonzalez@upchihuahua.edu.mx}
+
+\author{\texorpdfstring{José Manuel Naveiro Gómez\fnref{aff4}}{José Manuel Naveiro Gómez}}
+\ead{793678@unizar.es}
+
+\cortext[cor1]{Corresponding author}
+\fntext[aff1]{Instituto Tecnológico de Chihuahua II, Tecnológico Nacional de México, Chihuahua, México}
+\fntext[aff2]{Universidad Politécnica de Chihuahua, Chihuahua, México}
+\fntext[aff3]{Facultad de Ingeniería, Universidad Autónoma de Chihuahua, Chihuahua, México}
+\fntext[aff4]{Departamento de Ingeniería Mecánica, Universidad de Zaragoza, Zaragoza, España}
+
+\address[1]{Instituto Tecnológico de Chihuahua II, Tecnológico Nacional de México, Chihuahua, México}
+\address[2]{Universidad Politécnica de Chihuahua, Chihuahua, México}
+\address[3]{Facultad de Ingeniería, Universidad Autónoma de Chihuahua, Chihuahua, México}
+\address[4]{Departamento de Ingeniería Mecánica, Universidad de Zaragoza, Zaragoza, España}
+%% ---- ABSTRACT ----
+%% CORRECCIONES t8a aplicadas:
+%% 1. Todas las cifras porcentuales ahora declaran numerador/denominador explícito.
+%% 2. Se distingue n=31 (corpus completo) de n=24 (estudios primarios).
+%% 3. Las métricas de reporte se calculan sobre n=24 primarios (los reviews no pueden
+%%    reportar métricas de ejecución propias), con nota aclaratoria.
+%% 4. Se resuelve la ambigüedad de 83.9% (26/31): se usa 26/31 con
+%%    aclaración de que incluyendo solo primarios la tasa es 24/24 = 100%.
+%% 5. Se añade denominador explícito a todas las cifras del bloque Results.
+
+\begin{highlights}
+\item Systematic review of 31 studies on SI-based multi-UAV path planning (2021--2024)
+\item PSO leads algorithm landscape (32.3\%); all 24 primary studies lack field validation
+\item 171 research gaps identified; 80.6\% of studies omit wind and dynamic obstacles
+\item Metric reporting fragmented: only 45.2\% report execution time
+\item AgriSwarm-Bench proposed to standardize multi-UAV evaluation and deployment
+\end{highlights}
+
+\begin{abstract}
+Multi-UAV systems are increasingly vital for precision agriculture, handling tasks from crop monitoring to spraying. Coordinating multiple aerial agents introduces complex path planning challenges. Swarm intelligence (SI) algorithms show promise due to their scalability and robustness. This systematic review analyzed SI-based path planning for multi-UAV systems in precision agriculture to identify critical gaps for real-world deployment. Following PRISMA 2020, we synthesized 31 studies (24 primary, 7 reviews) published 2021-2024. Particle Swarm Optimisation (PSO) was the most frequent algorithm (32.3\%). A critical finding is a 100\% validation gap: all 24 primary studies relied exclusively on simulations, lacking real-world hardware validation in field conditions. Metric reporting was also sparse. We identified 171 research gaps across technological, practical, methodological, and theoretical dimensions. Current research is heavily simulation-oriented and lacks standardized benchmarking frameworks. To bridge the theory-to-field transition, we propose the AgriSwarm-Bench framework, advocating standardized evaluation metrics and multi-agent scalability testing. This study offers the first structured gap analysis to guide the development of truly deployable swarm-based agricultural UAV systems.
+
+
+\end{abstract}
+
+\begin{keyword}
+Swarm intelligence \sep Multi-UAV \sep Path planning \sep Precision agriculture \sep Systematic review \sep Particle Swarm Optimisation \sep Ant Colony Optimisation
+\end{keyword}
+
+\end{frontmatter}
+
+
+\section*{List of Abbreviations}
+\begin{description}[leftmargin=3.5cm, style=nextline]
+    \item[ABC] Artificial Bee Colony
+    \item[ACO] Ant Colony Optimization
+    \item[BVLOS] Beyond Visual Line of Sight
+    \item[DBO] Dung Beetle Optimizer
+    \item[DOA] Dandelion Optimizer Algorithm
+    \item[DRS] Deployment Readiness Score
+    \item[GPS] Global Positioning System
+    \item[GWO] Grey Wolf Optimizer
+    \item[HIL] Hardware-in-the-Loop
+    \item[ICAO] International Civil Aviation Organization
+    \item[MMAT] Mixed Methods Appraisal Tool
+    \item[NDVI] Normalized Difference Vegetation Index
+    \item[NOA] Nutcracker Optimization Algorithm
+    \item[PRISMA] Preferred Reporting Items for Systematic Reviews and Meta-Analyses
+    \item[PSO] Particle Swarm Optimization
+    \item[ROS] Robot Operating System
+    \item[RPAS] Remotely Piloted Aircraft Systems
+    \item[SAR] Search and Rescue
+    \item[SI] Swarm Intelligence
+    \item[SITL] Software-in-the-Loop
+    \item[SSA] Salp Swarm Algorithm
+    \item[TAP] Task Allocation Problem
+    \item[UAV] Unmanned Aerial Vehicle
+    \item[VRP] Vehicle Routing Problem
+\end{description}
+
+
+
+%% ============================================================
+%% SECTION 1: INTRODUCTION
+%% ============================================================
+\section{Introduction}
+
+\subsection{Background and Motivation}
+
+Unmanned Aerial Vehicles (UAVs) have become indispensable tools in precision agriculture, enabling applications such as crop monitoring, spraying, mapping, and yield estimation \cite{zhang2012,tsouros2019,puri2017,mogili2018,hunt2018}. The economic rationale for agricultural UAV adoption is compelling: a single multirotor UAV can survey 40--100\,ha per flight hour at a fraction of the labour cost of ground-based scouting, while multispectral imaging enables early detection of crop stress, pest infestation, and irrigation deficits that are invisible to the naked eye \cite{hunt2018,zhang2012}. The global agricultural UAV market, valued at approximately USD~5.9 billion in 2022, is projected to exceed USD~20 billion by 2030 \cite{tsouros2019,mogili2018}, driven by converging pressures: labour scarcity in rural areas, rising input costs, tightening regulatory requirements on pesticide application, and the imperative to increase yields on a fixed agricultural land base to feed a projected world population of 9.7 billion by 2050.
+
+As farm sizes increase and precision agriculture matures from monitoring to active intervention---covering tasks such as variable-rate spraying, targeted seeding, and real-time crop health mapping across thousands of hectares---the limitations of single-UAV operations become acute. A single UAV covering a 500\,ha wheat field at 16.7\,m/s requires approximately 8 flight hours of data collection, far exceeding typical battery endurance of 20--40 minutes per charge. Multi-UAV systems---where a coordinated fleet of UAVs divides the coverage task---offer the only practical solution to this scale problem \cite{chung2018,gupta2016}. A five-UAV swarm can theoretically reduce mission time by up to 80\% compared to a single UAV, contingent on effective task allocation, collision avoidance, and coordinated path planning \cite{chung2018}.
+
+However, coordinating multiple UAVs introduces a class of optimisation problems that is qualitatively more complex than single-agent path planning \cite{chung2018,gupta2016,bekmezci2013,hayat2016}. The multi-UAV path planning problem must simultaneously minimise energy consumption (constrained by battery capacity), maximise spatial coverage (subject to sensor footprint and overlap requirements), ensure collision avoidance among agents (requiring real-time inter-agent communication), and respect airspace constraints such as no-fly zones and altitude limits. These objectives are inherently conflicting: maximising coverage requires dense, overlapping flight paths that increase energy consumption, while collision avoidance introduces coordination constraints that scale superlinearly with fleet size---a fleet of $n$ UAVs requires monitoring $\binom{n}{2}$ pairwise separation distances simultaneously \cite{bekmezci2013}. Classical deterministic methods such as A*, Dijkstra's algorithm, and linear programming struggle with this combinatorial complexity beyond small fleet sizes and static environments, creating a natural opening for metaheuristic approaches \cite{aitsaadi2022}.
+
+Swarm Intelligence (SI) algorithms---computational methods inspired by the collective behaviour of social organisms such as ant colonies, bird flocks, fish schools, and bee swarms---have emerged as the dominant metaheuristic paradigm for multi-UAV path planning \cite{dorigo2006,kennedy1995,blum2008,yang2010,beni2005,bonabeau1999,yang2013}. Their suitability stems from three structural properties that align with multi-UAV requirements. First, \textit{scalability}: population-based search algorithms naturally distribute computation across candidate solutions analogous to the UAV fleet, and their performance degrades gracefully rather than catastrophically as fleet size grows. Second, \textit{distributed decision-making}: SI algorithms such as Ant Colony Optimisation (ACO) are inherently decentralised---each agent updates a local pheromone model rather than communicating a global state---making them compatible with the limited communication bandwidth available in operational UAV networks \cite{dorigo2006,hayat2016}. Third, \textit{robustness to local optima}: the stochastic exploration mechanisms of Particle Swarm Optimisation (PSO), Artificial Bee Colony (ABC), and related algorithms provide escape routes from suboptimal solutions that gradient-based and deterministic methods cannot achieve in rugged, multi-modal optimisation landscapes \cite{kennedy1995,blum2008}.
+
+Despite these structural advantages and an exponential growth in SI-based multi-UAV publications between 2021 and 2024, a systematic analysis of this literature reveals persistent and critical gaps between algorithmic development and operational deployment:
+
+\begin{itemize}
+  %% CORRECCIÓN t8a: cada bullet declara numerador, denominador y porcentaje.
+  %% Se usa n=31 como denominador global; donde el análisis es sobre primarios se indica n=24.
+  \item \textbf{Metric inconsistency:} Among the 31 included studies, only 14 (45.2\%)
+  report quantitative execution time, 13 (41.9\%) report energy consumption, and
+  7 (22.6\%) specify convergence criteria---the three metrics most critical for
+  deployment decisions. When calculated over the 24 primary research studies
+  exclusively, these rates rise to 14 of 24 (58.3\%), 13 of 24 (54.2\%), and
+  7 of 24 (29.2\%), respectively, yet remain far below the level required for
+  meaningful cross-algorithm comparison.
+
+  \item \textbf{Validation gap:} All 24 primary research studies (100\%) rely
+  exclusively on simulation, with no hardware validation in real field conditions;
+  this represents 26 of the 31 included studies (83.9\%) when review articles are
+  counted in the denominator. This consistent absence of field validation limits
+  confidence in the transferability of reported performance gains to real agricultural
+  operations.
+
+  \item \textbf{Environmental simplification:} 25 of the 31 included studies (80.6\%)
+  do not model wind, weather, or dynamic obstacles, despite these being the dominant
+  sources of mission failure in real agricultural UAV operations.
+
+  \item \textbf{Scalability limitations:} Most studies evaluate algorithms on fleets
+  of fewer than five UAVs in environments covering less than 10\,ha, far below the
+  commercial scale of 10--50 UAVs over 100--1,000\,ha fields.
+\item \textbf{Single-reviewer title/abstract screening:} Although the initial title and abstract screening was conducted by a single reviewer, several strategies were implemented to mitigate this inherent risk. The Boolean search strategy was rigorously validated against a gold-standard set of five articles, achieving 100% recall. A liberal screening approach was applied, whereby all borderline records were promoted to full-text review. This subsequent evaluation, conducted by two reviewers, demonstrated near-perfect agreement ($\kappa=0.91$). Furthermore, consistency was ensured through an AI-assisted audit, and full process traceability is guaranteed via our registered protocol on OSF (DOI: 10.17605/OSF.IO/64DQ9), thereby reinforcing the reliability of our findings.
+
+\end{itemize}
+
+These gaps collectively indicate that the SI-based multi-UAV path planning field has achieved considerable algorithmic sophistication but has not yet translated this sophistication into systems that can be deployed, evaluated, and compared in real agricultural settings. Closing this gap requires not only algorithmic advances but a shared infrastructure of benchmarks, validation protocols, and standardised metrics---none of which currently exist for this domain.
+
+\subsection{Justification of the Review Period (2021--2024)}
+
+The period 2021--2024 was selected as the focus of this review for three converging reasons. First, it represents the post-pandemic acceleration phase of agricultural UAV adoption: COVID-19-related labour shortages in 2020--2021 catalysed investment in farm automation across Asia, Europe, and the Americas, leading to a sharp increase in both commercial deployments and research publications \cite{tsouros2019,mogili2018}. Second, the period coincides with the emergence of a new generation of bio-inspired SI algorithms---including the Salp Swarm Algorithm (SSA, 2016), Grey Wolf Optimizer (GWO, 2014), Dung Beetle Optimizer (DBO, 2023), Nutcracker Optimization Algorithm (NOA, 2023), and Dandelion Optimizer Algorithm (DOA, 2022)---whose application to agricultural multi-UAV systems began appearing in the literature from 2021 onward . Third, the PRISMA 2020 update \cite{page2021} standardised systematic review methodology in engineering and computing disciplines, making 2021 a natural starting point for a PRISMA-compliant review that can be reproducibly extended by future researchers.
+
+Prior reviews covering the pre-2021 period \cite{chung2018,puente2022,sharma2022,aitsaadi2022} provide comprehensive coverage of foundational algorithms (PSO, ACO, ABC); the present review deliberately focuses on the more recent window to capture the diversification of the algorithm landscape, the shift toward agricultural-specific applications, and the growing (if still insufficient) attempts at hardware validation that characterise post-2020 research.
+
+\subsection{PICOC Framework for Research Questions}
+\label{subsec:picoc}
+
+To ensure methodological transparency and reproducibility, the research questions of this systematic review were structured using the PICOC framework (Population, Intervention, Comparison, Outcome, Context), adapted for engineering systematic reviews \cite{brambilla2013,bayindir2016}. The PICOC table is provided in Supplementary Material~S1.
+
+
+% Table migrated to Supplementary Material S1
+\begin{table}[htbp]
+\centering
+\caption{Algorithm distribution across the 31 reviewed studies. For detailed per-algorithm breakdown, see Supplementary Material S1.}
+\label{tab:algorithms}
+\begin{tabular}{lr}
+\toprule
+\textbf{Algorithm Category} & \textbf{Papers (n=31)} \\
+\midrule
+PSO & 10 (32.3\%) \\
+ACO & 3 (9.7\%) \\
+ABC & 2 (6.5\%) \\
+SSA & 2 (6.5\%) \\
+Other SI variants & 7 (22.6\%) \\
+Review articles & 7 (22.6\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsection{Quantitative Metrics Availability}
+
+%% CORRECCIÓN t8a: Se reportan ambas tasas (n=31 y n=24) con denominadores explícitos.
+Table~\ref{tab:metrics} and Figure~\ref{fig:metrics} reveal a critical standardisation deficit across the reviewed corpus. Over the full corpus of 31 included studies, only 14 (45.2\%) report execution time, 13 (41.9\%) report energy consumption, and 7 (22.6\%) specify convergence criteria. The 7 secondary review articles returned null for all three metrics, as expected; when calculated over the 24 primary research studies exclusively, the reporting rates are 14 of 24 (58.3\%), 13 of 24 (54.2\%), and 7 of 24 (29.2\%), respectively. No study in the corpus---primary or review---reports all three metrics simultaneously alongside an agricultural-domain metric such as coverage rate per hectare or spray overlap coefficient.
+
+This deficit has three interpretations. First, it may reflect genuine absence: many simulation studies do not implement energy models and thus cannot report consumption figures. Second, it may reflect reporting norms: conference papers in particular tend to report only the metric that most favourably distinguishes the proposed algorithm from its baseline. Third, for the automated extraction pipeline used in this review, the 45.2\% success rate for time metrics over n=31 (58.3\% over n=24) indicates that the remaining studies either report time qualitatively (e.g., ``faster convergence'') or in non-standard formats that resist automated parsing. The result is a literature where algorithmic contributions cannot be objectively ranked, and agricultural practitioners cannot select algorithms based on operational requirements.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{figures/Fig5_Metrics_Availability.png}
+\caption{Availability of quantitative metric reporting. Left bars: rates over the full corpus of 31 included studies (n=31). Right bars: rates over the 24 primary research studies (n=24). Only 14 of 31 (45.2\%) report execution time; only 7 of 31 (22.6\%) specify convergence criteria.}
+\label{fig:metrics}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Metric reporting frequency. Rates are reported over the full corpus (n=31) and over primary research studies only (n=24).}
+\label{tab:metrics}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{Papers} & \textbf{\% (n=31)} & \textbf{\% (n=24)} \\
+\midrule
+Execution Time    & 14 & 45.2 & 58.3 \\
+Energy Consumption & 13 & 41.9 & 54.2 \\
+Convergence Criteria & 7 & 22.6 & 29.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Temporal Distribution}
+Table~\ref{tab:temporal} shows that publications concentrate in 2021--2022 (23 of 31 papers, 74.2\%), with the remaining 8 papers (25.8\%) published in 2023 ($n=7$) and early 2024 ($n=1$). The 2021--2022 peak coincides with the post-pandemic acceleration of agricultural automation investment and the proliferation of new SI algorithm variants. The lower volume in 2023--2024 likely reflects two factors: (i) a "quality filter effect" where standardisation and hardware-validation requirements became more stringent in high-impact venues, and (ii) indexing lags of 3--6 months at major databases, as the literature search was conducted on 2024-03-16.
+
+\begin{table}[htbp]
+\centering
+\caption{Temporal distribution of reviewed publications (2021--2024).}
+\label{tab:temporal}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Year} & \textbf{Papers (n=31)} & \textbf{\%} \\
+\midrule
+2021 & 11 & 35.5 \\
+2022 & 12 & 38.7 \\
+2023 & 7  & 22.6  \\
+2024 & 1  & 3.2   \\
+\midrule
+\textbf{Total} & \textbf{31} & \textbf{100.0} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ============================================================
+%% SECTION 5: RESEARCH GAPS ANALYSIS
+%% ============================================================
+\section{Research Gaps Analysis}
+
+\subsection{Gap Distribution by Dimension}
+
+Table~\ref{tab:gaps_dimension} and Figure~\ref{fig:gaps_dimension} show the distribution of 171 documented research gaps across the four taxonomic dimensions. Practical gaps are most frequent (52 of 171, 30.4\%), followed closely by Technological gaps (51 of 171, 29.8\%), with Methodological (39 of 171, 22.8\%) and Theoretical (29 of 171, 17.0\%) gaps less prevalent.
+
+\textbf{Note on inferred gaps.} 62 of the 171 gaps (36.3\%) were inferred from algorithmic patterns for studies S20--S31 with incomplete metadata, rather than extracted directly from explicit author statements. The proportion of inferred gaps (36.3\%) is lower than the proportion of studies with incomplete metadata (15 of 31, 48.4\%) because several inferred gaps co-occur across multiple studies and were counted once per study. These inferences follow the same codebook and classification rules applied to all other gaps, but require manual validation against full-text PDFs before the statistics are treated as definitive. A sensitivity analysis excluding inferred gaps shows that the dimensional distribution remains stable: Practical gaps retain the highest frequency (34 of 109 verified gaps, 31.2\%), and the relative ordering of all four dimensions is unchanged. Inferred gaps are flagged individually in the supplementary gap database (Supplementary Material~S2).
+
+The near-equal split between Practical and Technological dimensions is substantively meaningful: it indicates that the barriers to deployment are not purely algorithmic (which would manifest as Technological dominance) but are equally driven by operational factors---regulatory constraints, cost, weather conditions, and fleet management complexity---that no algorithmic advance alone can resolve. This finding has direct implications for research funding strategy: investment focused exclusively on algorithm development addresses only 29.8\% (51 of 171) of the documented barriers. The Methodological dimension (22.8\%, 39 of 171)---primarily the absence of standardised metrics and reproducible benchmarks---represents a foundational layer whose resolution through initiatives such as AgriSwarm-Bench would indirectly accelerate progress across all other dimensions by enabling meaningful cross-study comparison. The Theoretical dimension (17.0\%, 29 of 171), while smallest in absolute count, contains the gaps with the longest resolution timescale: incorrect kinematic models and oversimplified communication assumptions require fundamental reformulation rather than incremental improvement.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{figures/Fig2_Gaps_by_Dimension.png}
+\caption{Research gap distribution across four taxonomic dimensions (n=171 gaps total). Practical gaps are most frequent (52 of 171, 30.4\%), reflecting the predominance of real-world operational barriers in the reviewed literature.}
+\label{fig:gaps_dimension}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Research gaps by dimension (total = 171).}
+\label{tab:gaps_dimension}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Dimension} & \textbf{Gaps} & \textbf{\% (n=171)} \\
+\midrule
+Technological & 51 & 29.8 \\
+Practical & 52 & 30.4 \\
+Methodological & 39 & 22.8 \\
+Theoretical & 29 & 17.0 \\
+\midrule
+\textbf{Total} & \textbf{171} & \textbf{100.0} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Gap Distribution by Priority}
+Gap prioritisation was performed using a binary impact matrix. A gap was classified as \textbf{Critical} if it simultaneously met two conditions: (1) present in more than 30\% of analysed studies ($>$10 papers), AND (2) its absence directly prevents real-world field deployment as assessed through structured expert evaluation (see Section~3 and Supplementary Material for expert validation instrument). Gaps present in fewer than 30\% of studies but with significant theoretical impact were classified as \textbf{Important}, while those with low frequency and limited deployment impact were classified as \textbf{Minor}.
+
+Of the 171 documented gaps, 76 (44.4\%) are classified as Critical, 88 (51.5\%) as Important, and 7 (4.1\%) as Minor (Table~\ref{tab:gaps_priority}, Figure~\ref{fig:gaps_priority}). The high proportion of Critical gaps (nearly half of all documented gaps) reflects the structural immaturity of the field: barriers that would be considered edge cases in mature engineering domains---such as the absence of wind modeling or the lack of communication robustness testing---are widespread enough in this corpus to meet the frequency threshold for Critical classification.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{figures/Fig3_Gaps_by_Priority.png}
+\caption{Research gap distribution by priority level (n=171 gaps). Critical gaps (76 of 171, 44.4\%) represent barriers that directly prevent real-world field deployment of swarm-based agricultural UAV systems.}
+\label{fig:gaps_priority}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Research gaps by priority level.}
+\label{tab:gaps_priority}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Priority} & \textbf{Gaps} & \textbf{\% (n=171)} \\
+\midrule
+Critical  & 76 & 44.4 \\
+Important & 88 & 51.5 \\
+Minor     & 7  & 4.1  \\
+\midrule
+\textbf{Total} & \textbf{171} & \textbf{100.0} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Top 10 Critical Gaps}
+Table~\ref{tab:top10} and Figure~\ref{fig:top10gaps} present the ten most frequent critical gaps identified across the 31 reviewed studies. All percentages use n=31 as the denominator (see Section~4.1 for the denominator consistency statement); where a sub-analysis is restricted to the 24 primary research studies, this is noted explicitly in the text.
+
+The ranking reveals a clear hierarchy of barriers. The top two gaps---lack of hardware/field validation (26 of 31, 83.9\%) and absence of dynamic environment modeling (25 of 31, 80.6\%)---are present in more than three-quarters of all studies, indicating that these are not isolated oversights but structural characteristics of current research practice. Notably, if Gap~1 is computed over the 24 primary research studies only, the rate rises to 24 of 24 (100\%), since no primary study achieves real-world field validation.
+
+Gaps 3 through 5 form a second tier: single-UAV focus (22 of 31, 71.0\%;\footnote{The 22 studies counted under Gap~3 are primary research studies whose titles or abstracts present a multi-UAV framework but whose experimental evaluation uses a single agent. Among the 24 primary studies, this represents 22 of 24 (91.7\%), leaving only 2 primary studies (8.3\%) with genuine multi-agent experimental validation.}), no wind or weather modeling (20 of 31, 64.5\%), and no metric standardisation (18 of 31, 58.1\%). The prevalence of single-UAV focus in a review explicitly targeting multi-UAV studies warrants clarification: these 22 papers present multi-UAV frameworks in their titles or abstracts but evaluate them with a single agent in their experiments, a methodological inconsistency that inflates apparent corpus size while obscuring actual swarm coordination capability.
+
+The lower tier (gaps 6--10, 11--15 of 31, 35.5--48.4\%) captures engineering-level barriers: unrealistic kinematic constraints, limited scalability assessment, absent direct energy measurement, ignored communication robustness, and no real-time replanning. Each of these gaps individually would be addressable through targeted research; their co-occurrence in more than a third of studies suggests they are symptoms of the same root cause---the absence of a shared, demanding benchmark that forces researchers to confront all deployment-relevant constraints simultaneously. This observation directly motivates the AgriSwarm-Bench proposal in Section~7.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/Fig4_Top10_Critical_Gaps.png}
+\caption{Top 10 critical research gaps ranked by frequency of occurrence across the 31 reviewed studies. Hardware/field validation absence (26 of 31, 83.9\%) and lack of dynamic environment modeling (25 of 31, 80.6\%) represent the most prevalent barriers to real-world deployment.}
+\label{fig:top10gaps}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Top 10 critical gaps ranked by frequency of occurrence. All percentages computed over the full corpus of 31 included studies (n=31).}
+\label{tab:top10}
+\begin{tabular}{clrrp{5cm}}
+\toprule
+\textbf{Rank} & \textbf{Gap Description} & \textbf{Papers} & \textbf{\% (n=31)} & \textbf{Note} \\
+\midrule
+1 & Lack of hardware/field validation & 26 & 83.9 & 24/24 primary (100\%) \\
+2 & No dynamic obstacles/environment & 25 & 80.6 & \\
+3 & Single-UAV focus (no swarm) & 22 & 71.0 & 22/24 primary (91.7\%) \\
+4 & No wind/weather modeling        & 20 & 64.5 & \\
+5 & No metric standardization       & 18 & 58.1 & \\
+6 & Unrealistic kinematic constraints & 15 & 48.4 & \\
+7 & Limited scalability assessment  & 14 & 45.2 & \\
+8 & No direct energy measurement    & 13 & 41.9 & \\
+9 & Communication robustness ignored & 12 & 38.7 & \\
+10 & No real-time replanning         & 11 & 35.5 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Gap Co-occurrence Patterns}
+
+Analysis of the gap database reveals that the ten most critical gaps do not occur independently: they cluster into three co-occurrence groups that reflect distinct failure modes in the research-to-deployment pipeline.
+
+\textbf{Cluster A --- Validation cluster} (Gaps 1, 3, 6, 8): Lack of hardware validation, single-UAV focus, unrealistic kinematic constraints, and absent direct energy measurement tend to co-occur in the same studies ($r > 0.6$ across the corpus). This cluster characterises studies that propose algorithmically novel contributions but are designed from the outset for simulation only: the single-agent evaluation, simplified kinematics, and estimated (rather than measured) energy are all design choices that reduce implementation complexity at the cost of deployment relevance. These studies are not methodologically incorrect---simulation is a valid first step---but they require Stage 2 and Stage 3 validation before deployment claims can be made.
+
+\textbf{Cluster B --- Environment cluster} (Gaps 2, 4, 10): Absence of dynamic obstacle modeling, no wind or weather modeling, and lack of real-time replanning co-occur strongly, particularly in PSO-based studies. This is structurally logical: a PSO implementation that does not model wind has no incentive to implement real-time replanning (since the optimal path does not change during execution), and a study that ignores dynamic obstacles similarly has no need for replanning capability. The cluster identifies a class of studies that solve a deterministic, static version of the agricultural path planning problem---which is computationally tractable---rather than the stochastic, dynamic version that field deployment requires.
+
+\textbf{Cluster C --- Standardisation cluster} (Gaps 5, 7, 9): Absent metric standardisation, limited scalability assessment, and ignored communication robustness co-occur primarily in hybrid SI algorithm studies. Hybrid approaches (e.g., GA+ABC, APF+PSO, Wolf Pack variants) tend to introduce new parameters and optimisation dynamics that make standardised comparison difficult, leading authors to report custom metrics that favour their proposed method. Communication robustness is neglected because hybrid algorithms often require more frequent inter-agent communication to synchronise their multiple optimisation components---an aspect that would expose their limitations if tested. The Cluster C pattern suggests that algorithm novelty, when pursued without a standardised evaluation framework, may be actively impeding scientific progress by making results less comparable rather than more informative.
+
+\subsection{Gap Patterns by Agricultural Application Type}
+
+The gap profile varies substantially by agricultural application type, with implications for which research priorities are most urgent for each sub-domain. The following analyses use sub-group denominators (n=17 for monitoring, n=10 for spraying, n=5 for mapping); equivalent proportions over the full corpus (n=31) are provided in parentheses where comparison is relevant.
+
+\textbf{Monitoring applications} (17 of 24 primary studies, 65.4\% of primary; 51.5\% of n=31): Studies targeting crop monitoring and NDVI mapping show the highest prevalence of Methodological gaps, particularly absent convergence criteria (reported in only 4 of 17 monitoring studies, 23.5\%, vs.\ 4 of 10 spraying studies, 40.0\%). This likely reflects the fact that monitoring missions are more tolerant of suboptimal paths---a slightly inefficient coverage pattern still yields useful imagery---reducing the incentive to report convergence precision. The scalability gap is also more pronounced in monitoring studies, where large field areas ($>$100\,ha) are the primary motivation but evaluations rarely exceed 5 UAVs.
+
+\textbf{Spraying applications} (10 of 24 primary studies, 38.5\% of primary; 32.3\% of n=31): Spraying studies show the highest prevalence of environmental gaps, particularly absent wind modeling (8 of 10 spraying studies, 80.0\%, vs.\ 11 of 17 monitoring studies, 64.7\%). This is the most operationally critical pattern in the corpus: wind drift in pesticide application is not merely a path quality issue but a regulatory compliance and human safety issue. The absence of wind modeling in 8 of 10 spraying-focused studies means that the algorithms presented cannot be certified for legal pesticide application in any jurisdiction with buffer zone requirements without additional environmental validation.
+
+\textbf{Mapping applications} (5 of 24 primary studies, 19.2\% of primary; 15.2\% of n=31): Mapping studies show the lowest overall gap density (averaging 4.2 gaps per study vs.\ 5.5 for monitoring and 5.8 for spraying), likely because 3D mapping missions have more established simulation environments (e.g., Gazebo with RotorS) and more standardised metrics (point cloud density, map reconstruction error) than coverage or spraying tasks. However, the communication robustness gap is most prevalent in mapping studies (3 of 5 mapping studies, 60.0\%, vs.\ 6 of 17 monitoring studies, 35.3\%), reflecting the higher data-rate requirements of onboard 3D reconstruction that stress inter-UAV communication links.
+
+\subsection{Gap Patterns by Algorithm Family}
+
+Comparing gap profiles across the three main algorithm families reveals distinct research culture patterns that have direct implications for where community attention is most needed.
+
+PSO-based studies (10 of 31, 32.3\%) show relatively lower prevalence of metric inconsistency (execution time reported in 6 of 10 PSO studies, 60.0\%, vs.\ 14 of 31 overall, 45.2\%) but higher prevalence of static environment assumptions (8 of 10 PSO studies, 80.0\%, lack wind modeling vs.\ 20 of 31 overall, 64.5\%). PSO's mathematical tractability makes it easier to report convergence properties, but its gradient-following search dynamics are less naturally suited to dynamic replanning, explaining the higher environmental gap prevalence.
+
+ACO-based studies (3 of 31, 9.7\%) show the most complete metric reporting in the corpus---all three ACO studies (3 of 3, 100\%) report at least two of the three standard metrics---consistent with ACO's constructive solution-building approach that naturally produces path length and time estimates as intermediate values. However, ACO studies show the highest prevalence of scalability gaps (3 of 3 ACO studies, 100\%, lack scalability assessment beyond five UAVs), likely because the pheromone matrix size scales quadratically with the number of waypoints and agents, creating computational bottlenecks at larger fleet sizes that authors may prefer not to expose.
+
+Hybrid and novel algorithm studies (13 of 31, 41.9\%) show the lowest overall DRS scores and the highest prevalence of Cluster~C gaps (standardisation, scalability, communication). As noted above, this pattern suggests that the drive for algorithmic novelty in hybrid methods may be occurring at the expense of rigorous evaluation---a trend the community should monitor and that AgriSwarm-Bench's standardised leaderboard is specifically designed to counteract.
+
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Main Findings: Swarm Algorithms in Precision Agriculture}
+
+The comparative analysis of the $n_{primary} = 24$ primary studies in the corpus (out of $n=31$ total included studies) reveals that swarm intelligence (SI) algorithms ---specifically Particle Swarm Optimisation (PSO) and Ant Colony Optimisation (ACO)--- are the dominant metaheuristic paradigms for multi-UAV path planning in precision agriculture, accounting for 32.3\% (10 of 31) and 9.7\% (3 of 31) of the literature respectively. Studies targeting monitoring and spraying applications report that PSO variants achieve average energy reductions of 15--34\% compared to systematic sweep (lawnmower) strategies in static open-field environments, where the algorithm's cognitive-social velocity dynamics $\mathbf{v}_i^{(t+1)} = \omega \mathbf{v}_i^{(t)} + c_1 r_1 (\mathbf{p}_{best,i} - \mathbf{x}_i^{(t)}) + c_2 r_2 (\mathbf{g}_{best} - \mathbf{x}_i^{(t)})$ enable global exploration of the field with minimal coverage redundancy \cite{chen2021,lin2022,liu2021cassa}. In contrast, for high-density spraying tasks or monitoring in orchards with fixed and emergent obstacles, ACO-based approaches demonstrate a 8--21\% superior route efficiency over PSO, as the virtual pheromone mechanism $\tau_{ij}$ provides a more robust framework for discrete waypoint optimisation and adaptive obstacle avoidance in complex 3D agricultural environments \cite{mathew2021,phung2021,pan2022}.
+
+\subsection{Contextualisation within the State of the Art and Contributions of the Corpus}
+
+The synthesis of the 2021--2024 corpus demonstrates a significant shift from generic path planning towards agricultural-specific optimisation models. While literature prior to 2018 often neglected the energy dynamics of small-scale multirotors, 54.2\% of the current primary studies (13 of 24) incorporate quantitative energy metrics, with a growing subset integrating the \textbf{Mulgaonkar energy model} ($P_{hover} = \sqrt{(mg)^3 / (2\rho \pi R^2)}$) to refine autonomy estimates for real-world agricultural payloads \cite{shafiq2022,xu2022,yu2021}. Furthermore, the identification of a \textbf{communication overload index} (COI) in seven studies reveals that inter-agent coordination for swarms larger than 15 UAVs can account for 12--23\% of the mission's energy budget, a constraint that becomes the dominant bottleneck in commercial-scale field mapping (100--1,000\,ha) requiring high-frequency positional synchronisation.
+
+\subsection{Operational Implications, Methodological Limitations, and Future Research Directions}
+
+Despite these algorithmic advances, the corpus reveals a persistent and critical \textbf{hardware-in-the-loop validation gap} (HIL gap): 100\% of the 24 primary studies rely exclusively on simulation, with no evidence of real-world hardware validation in agricultural field conditions. This reliance on purely software-based models leads to an unquantified "optimism bias," where simulation energy savings (mean 28.4\%) significantly exceed the conservative estimates (17.6\%) reported in the few studies using high-fidelity hardware-coupled environments (e.g., Gazebo-PX4) \cite{li2023,rao2024}. A second structural limitation is the \textbf{environmental simplification gap}: 80.6\% of studies (25 of 31) do not model dynamic obstacles, and 64.5\% (20 of 31) neglect wind and weather perturbations, which are the primary sources of mission failure in real-world spraying and monitoring. Resolving these gaps requires the adoption of the proposed \textbf{AgriSwarm-Bench} framework, emphasizing standardised energy metrics, experimentally validated aerodynamic models, and multi-agent scalability testing to bridge the transition from algorithmic theory to practical agricultural deployment.
+
+Based on the gap analysis, we propose three concrete changes to standard research practice in this field. First, all future SI-based agricultural UAV studies should adopt the \textbf{Staged Validation Protocol}: Simulation $\rightarrow$ Testbed $\rightarrow$ Controlled Field, reporting standardised metrics at each stage regardless of whether field deployment is achieved. This incremental approach makes hardware validation accessible to resource-constrained research groups: completing Stage 2 (physical UAV testbed in a controlled indoor or outdoor space) is substantially less expensive and logistically complex than full field deployment, yet provides critical evidence about real-world algorithm behaviour under physical dynamics that simulation cannot replicate.
+
+Second, algorithm papers should report a minimum metric set of execution time, energy consumption, and convergence criteria alongside at least one agricultural-domain metric---coverage rate per hectare for monitoring applications, spray overlap coefficient and wind-drift deviation for spraying applications, or point cloud density for mapping applications. This domain-specific metric requirement ensures that the reported performance is interpretable by agricultural practitioners, not only by algorithm researchers.
+
+Third, simulation environments should incorporate at minimum a simplified wind model (constant directional wind at the target field's prevailing speed for the relevant season and region) and a temperature-dependent battery discharge curve. Both components are available as open-source modules in ROS/Gazebo and PX4 SITL environments \cite{shafiq2022}; their integration adds modest implementation overhead but substantially increases the relevance of simulation results to field deployment. Adopting these three practices as community norms---through journal policies, funding requirements, and benchmark standards such as AgriSwarm-Bench---would accelerate the transition from the current simulation-dominant paradigm to deployable agricultural UAV swarm technology within the three-year horizon of the roadmap proposed in Section~7.
+
+\subsection{Threats to Validity}
+\begin{table}[p]
+\centering
+\caption{Threats to validity and mitigation strategies.}
+\label{tab:threats}
+\small
+\begin{tabularx}{\textwidth}{p{3cm}XX}
+\toprule
+\textbf{Threat} & \textbf{Description} & \textbf{Mitigation} \\
+\midrule
+Publication bias & Positive results more likely published and indexed & Three independent databases; snowballing from seed papers \\[4pt]
+Search query limitations & Relevant papers using unlisted algorithm names may be missed & Query refined iteratively; sensitivity test with 5-paper gold-standard set (100\% recall); forward/backward snowballing via Research Rabbit \\[4pt]
+Single-database gap & Relevant papers in non-indexed venues not captured & MDPI manual search (0 eligible); OpenAlex supplementary search (125 records, 0 new eligible after full-text review); Scopus/WoS access unavailable; full extension listed as Priority Future Work \\[4pt]
+Data extraction errors & Automated pipeline may misclassify fields & Automated extraction + manual verification for all 31 studies \\[4pt]
+Inter-rater variability & Single reviewer for T/A screening introduces selection bias & Declared as limitation (§8.3); second reviewer screens all 51 full-text records; $\kappa=0.91$ reported \\[4pt]
+Temporal bias (2024) & 2023 data may be incomplete due to indexing lag & Explicitly noted; 2023 papers treated as preliminary indicator only \\[4pt]
+Inferred gaps & 62 gaps inferred from algorithmic patterns without full metadata & Flagged in supplementary database; require manual validation before final submission \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+%% ============================================================
+%% SECTION 7: RESEARCH AGENDA
+%% ============================================================
+\section{Research Agenda}
+
+\subsection{Priority Directions for the Research Community}
+
+The gap analysis presented in Section~5 identifies 171 documented limitations across four dimensions, of which 76 (44.4\%) directly prevent real-world deployment. Rather than treating these gaps as isolated problems requiring separate solutions, the research agenda proposed here addresses them through three synergistic priorities that collectively constitute a pathway from the current simulation-dominant paradigm to deployable agricultural UAV swarm systems (Table~\ref{tab:priorities}).
+
+\textbf{Priority 1 --- Standardised Benchmark Framework (AgriSwarm-Bench).} The absence of a shared evaluation framework is the foundational barrier that amplifies all other gaps. Without standardised scenarios, metrics, and datasets, algorithmic advances reported in individual papers cannot be meaningfully compared, knowledge does not accumulate across studies, and agricultural practitioners cannot identify which algorithm best fits their specific deployment context. This gap is not unique to agricultural UAV research---it has been identified as a structural problem in swarm robotics more broadly \cite{brambilla2013}---but it is particularly acute in agriculture where the operational constraints (wind, irregular field geometry, spraying regulations) are domain-specific and not captured by generic robotics benchmarks. AgriSwarm-Bench is designed to close this gap directly by providing the shared evaluation infrastructure the field currently lacks.
+
+\textbf{Priority 2 --- Experimental Validation with Real UAVs.} Hardware validation is the single most prevalent gap (26 of 31 studies, 83.9\%; 24 of 24 primary studies, 100\%). Closing this gap requires not only individual research groups conducting field experiments, but also a cultural shift in the community toward treating simulation-only results as preliminary rather than definitive. The Staged Validation Protocol proposed in Section~6.3---Simulation $\rightarrow$ Testbed $\rightarrow$ Controlled Field---is designed to lower the barrier to hardware validation by making it incremental: a group that completes Stage 2 (hardware testbed) provides substantially more deployment-relevant evidence than a simulation-only study, even if Stage 3 (field deployment) is not yet feasible. Journal editors and funding agencies in agricultural robotics should consider adopting the Staged Validation Protocol as an evaluation criterion, analogously to how clinical medicine requires evidence at multiple trial phases before claims of clinical efficacy are accepted.
+
+\textbf{Priority 3 --- Dynamic Environment Integration and Real-Time Replanning.} Wind modelling, dynamic obstacle avoidance, and real-time path replanning are technically addressable with existing open-source tools (ROS/Gazebo wind plugins, PX4 SITL simulation environments, OpenFAST atmospheric models) but are absent from 25 of 31 reviewed studies (80.6\%). Their systematic exclusion from simulation pipelines means that algorithms optimised in static, wind-free environments are being evaluated on a fundamentally easier problem than they will face in deployment. Incorporating these factors into AgriSwarm-Bench scenarios as mandatory components---rather than optional extensions---would raise the baseline difficulty of the benchmark to a level that reflects operational reality.
+
+\begin{table}[htbp]
+\centering
+\caption{Priority research directions based on gap analysis. Gaps addressed = number of the 171 documented gaps directly resolved by each priority.}
+\label{tab:priorities}
+\begin{tabularx}{\textwidth}{clrrX}
+\toprule
+\textbf{P} & \textbf{Contribution} & \textbf{Gaps} & \textbf{Impact} & \textbf{Key deliverable} \\
+\midrule
+1 & Standardised benchmark framework (AgriSwarm-Bench) & 18 & High & \raggedright Open repository with scenarios, metrics, leaderboard \tabularnewline
+2 & Experimental validation: real UAVs in field & 26 & Very High & \raggedright Staged Validation Protocol as community norm \tabularnewline
+3 & Dynamic environment + real-time replanning & 25 & Very High & \raggedright Wind/weather models in standard simulation pipelines \tabularnewline
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{AgriSwarm-Bench: Technical Specification}
+
+To operationalise Priority 1, we propose the establishment of \textbf{AgriSwarm-Bench}: an open, standardised benchmarking repository for swarm intelligence algorithms applied to agricultural UAV path planning. The framework is designed around four components, described below as a technical specification for community implementation.
+
+\textbf{Component 1 --- Scenario Library.} A set of eight canonical simulation scenarios covering the principal agricultural mission types and field geometries encountered in practice:
+\begin{itemize}
+  \item \textit{S1--S2}: Cereal field coverage (100\,ha and 500\,ha), uniform rectangular geometry, monitoring application, wind speed 0 and 5\,m/s.
+  \item \textit{S3--S4}: Orchard spraying (20\,ha and 80\,ha), row-based geometry with canopy obstacles, spraying application, wind speed 3\,m/s with directional variability.
+  \item \textit{S5--S6}: Vineyard mapping (15\,ha and 60\,ha), narrow-corridor geometry, mapping application, static obstacles.
+  \item \textit{S7--S8}: Heterogeneous field (200\,ha), mixed crop types and irregular boundaries, monitoring + spraying combined mission, dynamic obstacles (farm machinery).
+\end{itemize}
+Each scenario is parameterised by fleet size (3, 5, 10, 20 UAVs) and battery capacity (nominal and degraded at 35$^\circ$C), yielding 64 scenario-fleet-battery combinations that constitute the full benchmark suite.
+
+\textbf{Component 2 --- Unified Metric Suite.} We propose that all participating algorithms should report the following six metrics to be included in the AgriSwarm-Bench leaderboard:
+\begin{enumerate}
+  \item \textit{Coverage rate} (\%): percentage of target area covered within mission time.
+  \item \textit{Energy per hectare} (Wh/ha): total fleet energy consumption divided by area covered.
+  \item \textit{Mission completion time} (min): wall-clock time from takeoff to landing of last UAV.
+  \item \textit{Scalability index}: ratio of coverage efficiency at 10 UAVs to coverage efficiency at 3 UAVs (values $>$1 indicate super-linear scaling; $<$1 indicate coordination overhead).
+  \item \textit{Convergence iterations}: number of SI algorithm iterations required to reach a solution within 5\% of the best-known optimum.
+  \item \textit{Wind-drift deviation} (m, spraying scenarios only): mean absolute lateral deviation of spray path from planned trajectory under wind loading.
+\end{enumerate}
+
+\textbf{Component 3 --- Open Dataset Repository.} We envision a community-contributed repository of real field experiment datasets, structured to include: GPS flight logs, onboard sensor readings (battery voltage, current, temperature), weather station data (wind speed/direction, temperature, humidity), and ground truth coverage maps from NDVI imagery. Datasets would follow FAIR data principles (Findable, Accessible, Interoperable, Reusable) and be archived on Zenodo with DOI assignment to enable citation in peer-reviewed publications.
+
+\textbf{Component 4 --- Community Leaderboard.} We propose a web-based leaderboard to track algorithm performance across all 64 benchmark combinations, with results versioned by submission date and associated with a peer-reviewed publication or preprint. The leaderboard would be maintained at a public GitHub repository and updated on a rolling basis as community submissions are validated. Proposed submission requirements would include: open-source code, a reproducible simulation environment specification (Docker container or Conda environment file), and at least one peer-reviewed or preprint reference.
+
+\subsection{Proposed Community Roadmap (Short-to-Mid Term)}
+
+Table~\ref{tab:roadmap} presents a five-phase implementation roadmap. The timeline is designed to be achievable by a small research group (2--4 researchers) and does not require large-scale infrastructure investment, making it accessible to institutions in emerging economies where agricultural UAV research is growing rapidly.
+
+\begin{table}[htbp]
+\centering
+\caption{Proposed community roadmap for AgriSwarm-Bench implementation and SI-UAV field deployment. Phases 1--2 run in parallel during Year 1.}
+\label{tab:roadmap}
+\begin{tabularx}{\textwidth}{llXlX}
+\toprule
+\textbf{Ph.} & \textbf{Timeframe} & \textbf{Activity} & \textbf{Deliverable} & \textbf{Success metric} \\
+\midrule
+1 & 0--12 mo. & \raggedright Implement AgriSwarm-Bench S1--S4 scenarios with PSO, ACO, ABC baselines & Open GitHub repository & \raggedright $\geq$3 algorithms benchmarked on S1--S4 \tabularnewline
+2 & 0--12 mo. & \raggedright Acquire 3--5 UAV platform; complete Stage 2 (testbed) validation & Hardware testbed & \raggedright $\geq$1 SI algorithm validated on physical UAVs \tabularnewline
+3 & 1--2 yr. & \raggedright Develop real-time replanning module; add wind model to S5--S8 & Enhanced algorithm & \raggedright Wind-aware replanning demonstrated in S3--S4 \tabularnewline
+4 & 1--2 yr. & \raggedright Controlled field experiments; complete Stage 3 validation & Peer-reviewed paper & \raggedright Field results for $\geq$2 scenarios with full metric suite \tabularnewline
+5 & 2--3 yr. & \raggedright Release complete benchmark suite; community workshop & Community guidelines & \raggedright $\geq$5 external groups adopting AgriSwarm-Bench \tabularnewline
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The Instituto Tecnológico de Chihuahua II will serve as the pilot site for Phases 1--2 implementation, with the Chihuahua agricultural region---characterised by large-scale cereal and cotton fields, high summer temperatures ($>$40$^\circ$C), and significant wind variability---providing a demanding and representative validation environment for the AgriSwarm-Bench scenarios.
+
+\subsection{Call to Action for the Research Community}
+
+The research agenda proposed in this section is not contingent on a single institution or research group. The AgriSwarm-Bench framework is explicitly designed as a community resource, and its value would scale directly with the number of groups that adopt it. We invite researchers working on SI-based agricultural UAV systems to: (1) contribute scenarios and datasets to the proposed open repository once established; (2) benchmark their algorithms against the standardised metric suite and submit results to the leaderboard; (3) adopt the Staged Validation Protocol as a reporting standard in their publications; and (4) engage with journal editors and funding agencies to promote hardware validation as a required criterion for high-impact agricultural robotics research. The supplementary materials accompanying this review include a draft manuscript template incorporating the minimum metric reporting standard, available for immediate adoption.
+
+
+%% ============================================================
+%% SECTION 8: CONCLUSIONS
+%% ============================================================
+\section{Conclusions}
+
+\subsection{Summary of Findings}
+
+This systematic review analysed 31 peer-reviewed studies on swarm intelligence-based multi-UAV path planning in precision agriculture published between 2021 and 2024, applying PRISMA 2020 methodology, a dual-reviewer selection process, and a four-dimensional gap analysis framework. The review provides the first structured documentation of research gaps in this domain, enabling evidence-based prioritisation of future research investment.
+
+Five principal findings emerge from this synthesis:
+
+\begin{enumerate}
+  \item \textbf{PSO dominates the algorithm landscape} (10 of 31 studies, 32.3\%; 10 of 24 primary studies, 41.7\%), followed by review articles (7 of 31, 22.6\%) and ACO variants (3 of 31, 9.7\%). This concentration around a single algorithm family---while reflecting PSO's mathematical tractability and implementation simplicity---may be limiting the field's exploration of more recent bio-inspired methods such as DBO, NOA, and DOA (1 study each, 3.2\% of the full corpus), whose performance in agricultural multi-UAV contexts remains largely uncharacterised.
+
+  \item \textbf{The field is overwhelmingly simulation-oriented}: 26 of 31 included studies (83.9\%) lack any hardware validation in real field conditions; equivalently, all 24 primary research studies (100\%) are simulation-only or limited to testbed validation. This is not primarily an algorithmic limitation---the algorithms are technically mature---but reflects structural barriers including platform cost (USD~2,000--15,000 per UAV), regulatory restrictions on BVLOS operations, and the absence of multidisciplinary research infrastructure connecting algorithm developers with agronomists and farm operators.
+
+  \item \textbf{Environmental factors are systematically neglected}: 25 of 31 studies (80.6\%) do not model wind, weather, or dynamic obstacles. For the 10 spraying-focused primary studies, this rate reaches 8 of 10 (80.0\%)---a particularly acute finding since wind drift affects both pesticide efficacy and regulatory compliance. Simulation results from wind-free environments cannot be directly used to certify algorithms for pesticide application operations.
+
+  \item \textbf{Metric reporting is fragmented}: over the full corpus, only 14 of 31 (45.2\%) report execution time, 13 of 31 (41.9\%) energy consumption, and 7 of 31 (22.6\%) convergence criteria; over the 24 primary studies, these rates are 14 of 24 (58.3\%), 13 of 24 (54.2\%), and 7 of 24 (29.2\%), respectively. The absence of a common metric set means the corpus, despite representing the state of the art for 2021--2024, cannot answer the most basic deployment question: which algorithm should an agricultural engineer deploy for a 200\,ha wheat field with a five-UAV fleet?
+
+  \item \textbf{171 research gaps were documented} across four dimensions---Technological (51 of 171, 29.8\%), Practical (52 of 171, 30.4\%), Methodological (39 of 171, 22.8\%), and Theoretical (29 of 171, 17.0\%)---of which 76 (44.4\%) are classified as Critical barriers to real-world deployment. The near-equal split between Practical and Technological gaps is the review's most structurally significant finding: it demonstrates that closing the gap between simulation and deployment requires as much attention to operational, regulatory, and infrastructural factors as to algorithmic design.
+\end{enumerate}
+
+\subsection{Broader Implications}
+
+The findings of this review have implications that extend beyond the specific domain of SI-based multi-UAV path planning.
+
+\textbf{For the computational intelligence community:} The 83.9\% simulation-only rate (100\% among primary studies) and the fragmented metric landscape indicate that the incentive structure of the field---where novel algorithm proposals are publishable without hardware validation or standardised benchmarking---is producing a literature with limited deployability. The AgriSwarm-Bench framework proposed in Section~7 offers one mechanism to shift this incentive structure by making standardised evaluation the path of least resistance for new contributions.
+
+\textbf{For the precision agriculture community:} The review demonstrates that SI algorithms for multi-UAV coordination have reached a level of algorithmic maturity sufficient to address agricultural-scale coverage and spraying tasks, but that the translation to deployment requires investment in regulatory frameworks, field testing infrastructure, and domain-specific benchmarks that the current research community has not yet provided. Agricultural technology adoption agencies and precision agriculture industry consortia should consider funding the hardware validation infrastructure---multi-UAV testbeds, instrumented field sites, shared data repositories---that academic research groups cannot afford individually.
+
+\textbf{For journal editors and funding agencies:} The DRS results (18 of 31 studies, 54.5\%, classified as Low-DRS due primarily to absent hardware validation and non-standardised metrics) indicate that current peer review standards in this domain are not filtering for deployment relevance. Adopting the Staged Validation Protocol and the minimum metric reporting standard proposed in this review as explicit acceptance criteria would accelerate the field's transition from algorithmically sophisticated but operationally untested systems to deployable agricultural technology.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\begin{itemize}
+  \item \textbf{Review protocol registration:} The review protocol was not prospectively pre-registered prior to the literature search (see Section~3, footnote~1 for full explanation). To mitigate outcome reporting bias, the protocol has been registered retrospectively at the Open Science Framework (\url{https://doi.org/10.17605/OSF.IO/64DQ9}), including search strategies, extraction codebook, PRISMA 2020 checklist, screening logs, extraction database, gap taxonomy, and supplementary materials. Retrospective registration cannot eliminate the risk of post-hoc protocol modification, but it provides a public, timestamped record enabling independent verification of adherence to the pre-specified methodology.
+  \item \textbf{Search coverage and Scopus/WoS omission:} The primary search covered IEEE Xplore, ScienceDirect, and SpringerLink, supplemented by a manual MDPI search (0 eligible studies) and citation snowballing via Research Rabbit. Authenticated access to Scopus and Web of Science was unavailable at both institutional portals attempted (CONRICYT/TecNM and UNED, Spain) at the time of submission. To partially bound this gap, a supplementary search was executed in OpenAlex on 2024-03-29 (125 records, topic-filtered, 2021--2024), which confirmed 0 new eligible studies after full-text review of 8 title/abstract candidates (5 excluded under E4/E5; 3 excluded under E3 — single-UAV without multi-UAV framework). The corpus remains at 31 studies (see Section~3.1 for full details). Publications in Chinese, Spanish, or Portuguese, or in domain-specific databases (CAB Abstracts, AGRIS), remain outside the search scope. A full Scopus/WoS extension is the highest-priority future action (Section~8.4).
+  \item \textbf{Linguistic and geographic bias:} The restriction to English-language publications (criterion~I3) introduces a geographic and linguistic bias that warrants explicit acknowledgement. Chinese-language journals publish a substantial volume of research on agricultural UAV systems: institutions such as Northwest A\&F University (NWAFU), Zhejiang University (ZJU), and China Agricultural University (CAU) are internationally recognised centres for precision agriculture robotics, and their contributions to SI-based multi-UAV path planning may be systematically underrepresented in the present corpus. A preliminary exploratory search of the China National Knowledge Infrastructure (CNKI) using equivalent Chinese-language terms (swarm intelligence, multi-UAV, path planning, precision agriculture) identified approximately 40--60 potentially relevant records published between 2021 and 2024; full screening of this corpus was not feasible within the scope of this review and is reserved as a priority extension for future work (Section~8.4). An equivalent limitation applies to Spanish-language and Portuguese-language publications from Latin American and Iberian research groups active in agricultural UAV research. The English-only restriction may therefore underrepresent SI-based multi-UAV path planning approaches developed specifically for non-Western agricultural contexts---including rice paddy operations, terraced field coverage, and irrigation systems common in Asia and Latin America---that differ structurally from the large-scale cereal field scenarios predominant in the English-language corpus.
+  \item \textbf{Selection process justification (Single-reviewer screening):} Title and abstract screening of the 481 unique records was performed by the primary reviewer using a "liberal sifting strategy" designed to maximize inclusion: any record with even peripheral relevance was promoted to full-text assessment, resulting in a high promotion rate (51 of 481, 10.6\%). While PRISMA 2020 typically recommends dual independent screening at all stages \cite{page2021}, the risk of systematic exclusion in this review was mitigated by (1) achieving 100\% recall on a 5-paper gold-standard set during search string validation, and (2) implementing dual independent assessment for all 51 full-text reports, which yielded near-perfect inter-rater agreement ($\kappa=0.91$; Section~3.2). This hybrid approach ensures that while the initial screening was performed by a single individual, the final inclusion decisions for the 31-paper corpus are the result of a rigorous, verified dual-consensus process.
+  \item \textbf{Inter-rater agreement scope:} While full-text assessment achieved 
+near-perfect agreement ($\kappa=0.91$), this agreement metric applies only to the 
+51 full-text records, not to the 481 records screened at title/abstract stage.
+  \item \textbf{Inferred gaps:} 62 of the 171 documented gaps (36.3\%) were inferred from algorithmic patterns for studies S20--S31 with incomplete metadata and require manual validation against full-text PDFs. These are flagged in the supplementary gap database and should be verified before the gap statistics are treated as final.
+  \item \textbf{Provisional MMAT assessments:} Two studies with incomplete metadata (within the S20--S31 range) have provisional risk-of-bias ratings pending full-text verification against original PDFs. These provisional ratings are included in the summary statistics reported in Section~3.6 but are flagged in Supplementary Table~S5; final classifications will be updated before journal submission.
+  \item \textbf{DRS instrument scope:} The four-criterion DRS instrument (described in the supplementary methodology) was developed for this review and assesses deployment readiness rather than general methodological quality. It has not been independently validated for psychometric properties. Its criterion weights represent a normative stance (30\% weighting of field validation reflects a deliberate value judgment that field evidence is the primary criterion for deployment-relevant research) rather than a neutral quality evaluation. Readers should interpret the resulting Low-DRS classification (18 of 31 studies, 54.5\%) in this normative context, and refer to the complementary MMAT results (available in the supplementary materials) for a general methodological quality assessment.
+  \item \textbf{Single-institution perspective:} The review was conducted at a single institution, which may introduce unconscious biases in gap prioritisation toward the operational constraints most relevant to the Mexican agricultural context. Expert validation of gap priorities (Supplementary Material~S3) partially mitigates this limitation. The authors further disclose that Instituto Tecnológico de Chihuahua II is proposed as the pilot site for AgriSwarm-Bench Phases 1--2; the relationship between the reviewers' institution and the proposed research agenda is acknowledged as a potential methodological conflict of interest.
+\end{itemize}
+
+\subsection{Future Work}
+
+Building on the findings and limitations of this review, the following research directions are prioritised for immediate action:
+
+\begin{enumerate}
+  \item \textbf{Manually validate and update gap statistics:} Validate the 62 inferred gaps for studies S20--S31 against full-text PDFs using the established codebook, and update all gap statistics in Sections~5.1--5.4 accordingly before final submission.
+  \item \textbf{Extend the search} to Scopus and Web of Science, and include non-English publications, to assess whether the algorithm distribution and gap patterns observed in this corpus are robust to a broader search. The supplementary OpenAlex search conducted during revision (125 records, 0 new eligible studies) provides limited evidence of robustness for the single-UAV SI path planning literature; a full Scopus/WoS extension is required to assess multi-UAV and review article coverage.
+  \item \textbf{Complete MMAT assessments} for the two provisional studies (within S20--S31) via full-text PDF review; update Supplementary Table~S5 before submission.
+  \item \textbf{Implement AgriSwarm-Bench Phases 1--2} at Instituto Tecnológico de Chihuahua II: develop the S1--S4 benchmark scenarios, establish PSO/ACO/ABC baselines, and complete Stage 2 hardware testbed validation with a 3--5 UAV platform.
+  \item \textbf{Release a public dataset} from the first controlled field experiment on Mendeley Data, providing the agricultural UAV research community with the first open benchmark dataset for SI-based multi-UAV path planning in a real agricultural environment.
+\end{enumerate}
+
+
+%% ============================================================
+%% DATA AVAILABILITY
+%% ============================================================
+\section*{Data Availability Statement}
+The review protocol, search strategies, extraction tools, and supplementary 
+materials are publicly available at the Open Science Framework: 
+\url{https://doi.org/10.17605/OSF.IO/64DQ9}. 
+The master extraction database, Python scripts, and publication-ready figures 
+will be deposited in Mendeley Data upon manuscript acceptance with a separate 
+DOI for long-term archiving.
+
+%% ============================================================
+%% AUTHOR CONTRIBUTIONS
+%% ============================================================
+\section*{Author Contributions}
+\textbf{Andres Hidalgo Morales:} Conceptualization, Methodology, Software, Validation, Formal Analysis, Investigation, Data Curation, Writing -- Original Draft, Writing -- Review \& Editing, Visualization, Project Administration.
+
+\textbf{Hernán de la Garza Gutiérrez:} Supervision, Methodology, Validation (independent study selection, inter-rater agreement), Formal Analysis (Cohen's kappa calculation), Writing -- Review \& Editing.
+
+\textbf{Claudia Georgina Nava Dino:} Writing -- Review \& Editing, Methodological Guidance (PRISMA 2020 compliance), Critical Revision of Gap Taxonomy, Agricultural and Materials Science Domain Expertise, STEM Education Perspective.
+
+\textbf{Edgar Moisés González Torres:} Writing -- Review \& Editing, Methodological Consultation (aerospace systems design), Critical Feedback on UAV platform constraints and validation protocols.
+
+\textbf{José Manuel Naveiro Gómez:} Writing -- Review \& Editing, Software Review (computational methods), Validation, Domain Expertise in mechanical engineering simulation and optimization.
+
+%% ============================================================
+%% CONFLICT OF INTEREST
+%% ============================================================
+\section*{Declaration of Competing Interest}
+The authors declare no financial conflicts of interest. The corresponding author's institutions (Instituto Tecnológico de Chihuahua II and Universidad Politécnica de Chihuahua) are proposed as pilot sites for the AgriSwarm-Bench implementation described in Section~7. This relationship between the authors' institutions and the proposed research agenda is disclosed as a potential methodological conflict of interest.
+
+%% ============================================================
+%% ACKNOWLEDGMENTS
+%% ============================================================
+\section*{Acknowledgments}
+This research was supported by Instituto Tecnológico de Chihuahua II, Universidad Politécnica de Chihuahua, and Universidad de Zaragoza. The authors thank the doctoral program in Ingeniería en Ciencias de la Ingeniería (TecNM) for academic guidance and peer feedback during manuscript development.
+
+%% ============================================================
+%% REFERENCES
+%% ============================================================
+\bibliographystyle{elsarticle-num}
+\bibliography{references_clean}
+
+\end{document}

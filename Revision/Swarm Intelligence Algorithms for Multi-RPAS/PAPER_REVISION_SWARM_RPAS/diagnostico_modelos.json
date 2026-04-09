@@ -1,0 +1,23 @@
+{
+  "gemini-2.5-flash": {
+    "estado": "OK",
+    "tiempo_ms": 3198.16,
+    "tipo": "flash"
+  },
+  "gemini-2.5-pro": {
+    "estado": "CUOTA_EXCEDIDA",
+    "tipo": "pro"
+  },
+  "gemini-2.0-flash": {
+    "estado": "CUOTA_EXCEDIDA",
+    "tipo": "flash"
+  },
+  "gemini-1.5-flash": {
+    "estado": "NO_DISPONIBLE",
+    "tipo": "flash"
+  },
+  "gemini-1.5-pro": {
+    "estado": "NO_DISPONIBLE",
+    "tipo": "pro"
+  }
+}

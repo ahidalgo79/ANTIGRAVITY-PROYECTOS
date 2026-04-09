@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-03-31T11:17:53.615153",
+  "modelo": "claude-sonnet-4-6",
+  "thinking_budget_tokens": 4096,
+  "max_tokens": 8192,
+  "longitud_respuesta": 15489,
+  "longitud_pensamiento": 1900,
+  "valido_csp": false,
+  "violaciones": [
+    "\u26a0\ufe0f Terminolog\u00eda: 'drone' detectado. Reemplazar por 'RPAS' o 'UAV'.",
+    "\ud83d\udccf Falta Rigor: No se hallaron unidades SI normalizadas (ej: 10 kg, 12 m/s)."
+  ]
+}

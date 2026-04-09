@@ -1,0 +1,1 @@
+⏱️ Timeout (150s). Ollama está procesando pero tardó más de lo esperado.

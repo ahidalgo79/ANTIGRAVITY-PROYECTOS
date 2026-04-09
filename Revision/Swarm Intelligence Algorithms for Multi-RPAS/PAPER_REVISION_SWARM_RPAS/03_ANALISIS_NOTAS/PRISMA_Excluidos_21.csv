@@ -1,0 +1,22 @@
+﻿ID,Referencia,Título,Razón_Exclusión,Criterio_PRISMA,DOI
+EXC_01,Li et al. (2025),"An Intelligently Enhanced Ant Colony Optimization Algorithm... (mobile robots, non-agricultural)","E3 – Single-UAV focus, no swarm coordination",E3,
+EXC_02,Zhou et al. (2024),Path Planning of the Swarm UAVs in the Constrained Environment: A Survey,E4 – No SI algorithm; survey of non-SI methods,E4,10.1109/ROBIO64047.2024.10907337
+EXC_03,Li et al. (2023),Enhancing Swarm Intelligence... in Mobile Robot Navigation,"E5 – Application domain: mobile robot navigation, not agricultural UAV",E5,10.3390/ELECTRONICS12214462
+EXC_04,Saadi et al. (2022),A novel hybrid Chaotic Aquila Optimization... for UAV path planning,E5 – No agricultural application context,E5,10.1016/J.COMPELECENG.2022.108461
+EXC_05,Zhang et al. (2024),Path Planning for Multi-UAV Target Coverage via Improved GA-PSO Algorithm,E4 – GA-PSO without SI core component,E4,10.1109/RICAI64321.2024.10911798
+EXC_06,Zhang et al. (2022),UAV Path Planning Algorithm Based on Improved Harris Hawks Optimization,E4 – Harris Hawks not classified as SI,E4,10.3390/S22145232
+EXC_07,Wan et al. (2022),An Accurate UAV 3-D Path Planning Method for Disaster Emergency Response...,"E5 – Disaster emergency response, no agricultural application",E5,10.1109/TCYB.2022.3170580
+EXC_08,Srilekha et al. (2025),Swarm Intelligence-Based Trajectory Planning and Collision Avoidance for Flying Cars,"E5 – Flying cars / aerial transportation, not agricultural UAV",E5,10.1109/RFCON62306.2025.11085189
+EXC_09,Huang et al. (2023),Adaptive cylinder vector particle swarm optimization with differential evolution for UAV path planning,E3 – Single-UAV; no multi-agent coordination component,E3,10.1016/j.engappai.2023.105942
+EXC_10,Chen et al. (2024),Research on Bi-Directional Collaborative Multi-Step Ant Colony Optimization for Path Planning,"E5 – General path planning, no agricultural application context",E5,10.1109/AIHCIR65563.2024.00007
+EXC_11,Ntakolia & Lyridis (2021b),SIGPAF: A Case Study on Unmanned Surface Vehicle Multi-Objective Path Planning,"E5 – Unmanned Surface Vehicle, not UAV",E5,10.3390/JMSE9111243
+EXC_12,Ali et al. (2021),Machine Learning Technologies for Secure Vehicular Communication in Internet of Vehicles,"E5 – Vehicular communication / IoV, no UAV path planning",E5,
+EXC_13,Khan et al. (2022),PackerRobo: Model-based robot vision self supervised learning in CART,"E5 – Robot vision / self-supervised learning, no UAV or SI path planning",E5,
+EXC_14,Luo et al. (2022),Near-Ground Delivery Drones Path Planning Design Based on BOA-TSAR Algorithm,E4 – BOA-TSAR is not a swarm intelligence algorithm,E4,
+EXC_15,Baghal (2016),SATCOM Supply Versus Demand and the Impact on Remotely Piloted Aircraft ISR,"E1 – Outside review period (published 2016); E5 – SATCOM/ISR, no path planning",E1,
+EXC_16,Bento et al. (2023),Classifiers based on artificial intelligence in the prediction of coffee cultivars using RPAS,"E4 – Classifier-based crop prediction, no path planning or SI algorithm",E4,
+EXC_17,Sharma & Aibin (2023),Real-Time Search and Rescue using RPAS with Frame Dropping,E5 – Search and rescue with frame dropping; no SI path planning algorithm,E5,
+EXC_18,Saeed et al. (2022),A comprehensive review on the users identity privacy for 5G networks,E5 – 5G user identity privacy; no UAV or SI path planning content,E5,
+EXC_19,Bryant-Lees et al. (2021),Predictors and protective factors for suicide ideation across remotely piloted aircraft career fields,E5 – Suicide ideation in RPA career fields; no path planning content,E5,
+EXC_20,Menouar et al. (2017),UAV-Enabled Intelligent Transportation Systems for the Smart City,"E1 – Outside review period (published 2017); E5 – Smart city ITS, no SI path planning",E1,
+EXC_21,Guzman et al. (2024),On Safety Assurance of Symbolic Artificial Intelligence,E5 – Safety assurance for symbolic AI; no UAV or SI path planning,E5,

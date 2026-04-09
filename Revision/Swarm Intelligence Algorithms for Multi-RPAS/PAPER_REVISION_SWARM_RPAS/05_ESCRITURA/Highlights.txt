@@ -1,0 +1,5 @@
+Systematic review of 33 SI-based multi-UAV agricultural path planning studies.
+First 4-dimensional taxonomy identifying 171 critical gaps for field deployment.
+Hardware-in-the-loop validation is lacking in 78.8% of current SI architectures.
+Wind modeling absence identified in 80% of recent agricultural spraying scenarios.
+AgriSwarm-Bench proposed to standardize execution time and energy metrics.

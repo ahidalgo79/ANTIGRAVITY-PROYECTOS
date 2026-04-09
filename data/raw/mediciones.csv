@@ -1,0 +1,4 @@
+id,temperatura,vibracion,estado
+1,23.5,0.12,normal
+2,24.1,0.15,normal
+3,25.8,0.31,alerta

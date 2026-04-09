@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-03-31T12:44:31.579420",
+  "n_total": 33,
+  "n_primarios": 26,
+  "highlights": [
+    "\u2022 PRISMA 2020 review screened 502 records; 33 studies (2021\u20132024) were retained.",
+    "\u2022 PSO dominates SI algorithms, applied in 10 of 33 studies (30.3% frequency).",
+    "\u2022 ACO is second most used, appearing in 3 of 33 included studies (9.1%).",
+    "\u2022 PSO reduces swarm energy 15\u201334% vs. lawnmower in static environments (n=26).",
+    "\u2022 Monitoring leads applications: 17 of 26 primary studies (65.4%) address crop mon..."
+  ],
+  "glosario": [
+    "ABC",
+    "ACO",
+    "BVLOS",
+    "DBO",
+    "DOA",
+    "DRS",
+    "GPS",
+    "GWO",
+    "HIL",
+    "ICAO",
+    "MMAT",
+    "NDVI",
+    "NOA",
+    "PRISMA",
+    "PSO",
+    "ROS",
+    "RPAS",
+    "SAR",
+    "SI",
+    "SITL",
+    "SSA",
+    "TAP",
+    "UAV",
+    "VRP"
+  ]
+}

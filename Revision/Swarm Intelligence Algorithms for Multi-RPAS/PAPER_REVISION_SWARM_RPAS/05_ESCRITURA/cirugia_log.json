@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-03-31T12:36:48.477438",
+  "archivo": "main_expanded.tex",
+  "backup": "main_expanded.pre_cirugia_20260331_123648.tex",
+  "cambios": [
+    "oindent \u2192 \\noindent",
+    "fechas: 2026 \u2192 2024",
+    "rango: 2021-2025 \u2192 2021-2024",
+    "nota de correcci\u00f3n: set to 2024-03-31"
+  ],
+  "n33_count": 23,
+  "n26_count": 10,
+  "drone_presente": true
+}

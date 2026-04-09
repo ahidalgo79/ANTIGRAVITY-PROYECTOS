@@ -1,0 +1,177 @@
+{
+  "fecha": "2026-03-29T23:46:05.417742",
+  "total_vacios": 28,
+  "pdf_con_abstract": 0,
+  "pdf_no_encontrados": 28,
+  "detalle_pdfs": [],
+  "detalle_no_encontrados": [
+    {
+      "id": "TA_001",
+      "indice": 0,
+      "titulo": "A Data-driven Packet Routing Algorithm for an Un-manned Aerial Vehicle Swarm: A Multi-agent Rein-for",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_004",
+      "indice": 3,
+      "titulo": "Hybrid genetic ant colony optimization algorithm for full-coverage path planning of gardening prunin",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_006",
+      "indice": 5,
+      "titulo": "HMDCS-UV: A concept study of Hybrid Monitoring, Detection and Cleaning System for Unmanned Vehicles",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_009",
+      "indice": 8,
+      "titulo": "Cloud-Based Drone Management System in Smart Cities",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_010",
+      "indice": 9,
+      "titulo": "Hierarchical Particle Swarm Optimization for Multi UAV Waypoints Planning Under Various Threats",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_011",
+      "indice": 10,
+      "titulo": "Path Planning Algorithm of Robot Dynamic Target Based on State Change",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_012",
+      "indice": 11,
+      "titulo": "Multi-UAV Coverage through Two-Step Auction in Dynamic Environments",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_013",
+      "indice": 12,
+      "titulo": "On the Routing of Unmanned Aerial Vehicles (UAVs) in Precision Farming Sampling Missions",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_014",
+      "indice": 13,
+      "titulo": "Computations and Methods",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_015",
+      "indice": 14,
+      "titulo": "An Improved Trajectory Planning Method for Unmanned Aerial Vehicles in Complex Environments",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_016",
+      "indice": 15,
+      "titulo": "Distributed Greedy Approach for Autonomous Surveillance Using Unmanned Aerial Vehicles",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_017",
+      "indice": 16,
+      "titulo": "Research on collaborative scheduling strategies of multi-agent agricultural machinery groups",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_019",
+      "indice": 18,
+      "titulo": "Energy-Efficient and Context-aware Trajectory Planning for Mobile Data Collection in IoT using Deep ",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_020",
+      "indice": 19,
+      "titulo": "An exploration-enhanced hybrid algorithm based on regularity evolution for multi-objective multi-UAV",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_023",
+      "indice": 22,
+      "titulo": "Review on&#xa0;Agricultural Robotics for&#xa0;Carbon Emission Reduction: A Synergistic Perspective o",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_024",
+      "indice": 23,
+      "titulo": "A comprehensive survey on age of information in massive IoT networks",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_025",
+      "indice": 24,
+      "titulo": "A Time-Domain Image Formation for High Frame Rate UAV Swarm SAR",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_026",
+      "indice": 25,
+      "titulo": "Computational offloading into UAV swarm networks: a systematic literature review",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_028",
+      "indice": 27,
+      "titulo": "The impact of machine learning applications in agricultural supply chain: a topic modeling-based rev",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_031",
+      "indice": 30,
+      "titulo": "Path planning for greenhouse robots using a hybrid Dung beetle algorithm",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_032",
+      "indice": 31,
+      "titulo": "IoRT and&#xa0;AI-Driven Solution for&#xa0;Optimal Herbicides Spray on&#xa0;Weeds in&#xa0;a&#xa0;Dyna",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_034",
+      "indice": 33,
+      "titulo": "Comparisons of Differential Filtering and Homography Transformation in Modal Parameter Identificatio",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_035",
+      "indice": 34,
+      "titulo": "Unlocking the Potential of Machine Learning for Enhanced Security in Drone-Enabled IoT Networks",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_037",
+      "indice": 36,
+      "titulo": "DLC-NGO: an enhanced northern goshawk optimization for 3D UAV path planning in complex environments ",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_038",
+      "indice": 37,
+      "titulo": "Adaptive adjustable fast marching square method based path planning for the swarm of heterogeneous u",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_042",
+      "indice": 41,
+      "titulo": "Unmanned aerial vehicles (UAVs): practical aspects, applications, open challenges, security issues, ",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_043",
+      "indice": 42,
+      "titulo": "Swarm Intelligence for Multi-Robot Coordination in Industrial Environments",
+      "status": "PDF no encontrado localmente"
+    },
+    {
+      "id": "TA_044",
+      "indice": 43,
+      "titulo": "Metaheuristic Algorithms Since 2020: Development, Taxonomy, Analysis, and Applications",
+      "status": "PDF no encontrado localmente"
+    }
+  ]
+}

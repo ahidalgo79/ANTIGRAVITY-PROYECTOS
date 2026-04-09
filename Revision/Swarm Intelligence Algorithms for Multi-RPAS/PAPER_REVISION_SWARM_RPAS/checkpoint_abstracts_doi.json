@@ -1,0 +1,230 @@
+{
+  "ultimo_procesado": 25,
+  "resultados": [
+    {
+      "indice": 0,
+      "id": "TA_001",
+      "titulo": "A Data-driven Packet Routing Algorithm for an Un-manned Aerial Vehicle Swarm: A Multi-agent Rein-for",
+      "doi": "10.1109/lwc.2022.3195963",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 3,
+      "id": "TA_004",
+      "titulo": "Hybrid genetic ant colony optimization algorithm for full-coverage path planning of gardening prunin",
+      "doi": "10.1007/s11370-024-00525-6",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 5,
+      "id": "TA_006",
+      "titulo": "HMDCS-UV: A concept study of Hybrid Monitoring, Detection and Cleaning System for Unmanned Vehicles",
+      "doi": "10.1007/s10846-021-01372-8",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 8,
+      "id": "TA_009",
+      "titulo": "Cloud-Based Drone Management System in Smart Cities",
+      "doi": "10.1007/978-3-030-63339-4_8",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 9,
+      "id": "TA_010",
+      "titulo": "Hierarchical Particle Swarm Optimization for Multi UAV Waypoints Planning Under Various Threats",
+      "doi": "10.5139/jksas.2022.50.6.385",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 10,
+      "id": "TA_011",
+      "titulo": "Path Planning Algorithm of Robot Dynamic Target Based on State Change",
+      "doi": "10.1007/978-981-15-8155-7_351",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 11,
+      "id": "TA_012",
+      "titulo": "Multi-UAV Coverage through Two-Step Auction in Dynamic Environments",
+      "doi": "10.3390/drones6060153",
+      "exito": true,
+      "abstract": "The cooperation of multiple unmanned aerial vehicles (Multi-UAV) can effectively solve the area coverage problem. However, developing an online multi-UAV coverage approach remains a challenge due to energy constraints and environmental dynamics. In this paper, we design a comprehensive framework for area coverage with multiple energy-limited UAVs in dynamic environments, which we call MCTA (Multi-UAV Coverage through Two-step Auction). Specifically, the online two-step auction mechanism is proposed to select the optimal action. Then, an obstacle avoidance mechanism is designed by defining several heuristic rules. After that, considering energy constraints, we develop the reverse auction mechanism to balance workload between multiple UAVs. Comprehensive experiments demonstrate that MCTA can achieve a high coverage rate while ensuring a low repeated coverage rate and average step deviation in most circumstances.",
+      "error": ""
+    },
+    {
+      "indice": 12,
+      "id": "TA_013",
+      "titulo": "On the Routing of Unmanned Aerial Vehicles (UAVs) in Precision Farming Sampling Missions",
+      "doi": "10.1007/978-3-030-84152-2_5",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 13,
+      "id": "TA_014",
+      "titulo": "Computations and Methods",
+      "doi": "10.1007/978-981-96-5277-8_2",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 14,
+      "id": "TA_015",
+      "titulo": "An Improved Trajectory Planning Method for Unmanned Aerial Vehicles in Complex Environments",
+      "doi": "10.1007/978-981-97-2275-4_12",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 15,
+      "id": "TA_016",
+      "titulo": "Distributed Greedy Approach for Autonomous Surveillance Using Unmanned Aerial Vehicles",
+      "doi": "10.1007/978-3-030-68035-0_10",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 16,
+      "id": "TA_017",
+      "titulo": "Research on collaborative scheduling strategies of multi-agent agricultural machinery groups",
+      "doi": "10.1038/s41598-025-93848-y",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 18,
+      "id": "TA_019",
+      "titulo": "Energy-Efficient and Context-aware Trajectory Planning for Mobile Data Collection in IoT using Deep ",
+      "doi": "10.23919/softcom55329.2022.9911304",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 19,
+      "id": "TA_020",
+      "titulo": "An exploration-enhanced hybrid algorithm based on regularity evolution for multi-objective multi-UAV",
+      "doi": "10.1007/s40747-025-01846-4",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 22,
+      "id": "TA_023",
+      "titulo": "Review on&#xa0;Agricultural Robotics for&#xa0;Carbon Emission Reduction: A Synergistic Perspective o",
+      "doi": "10.1007/978-3-032-02106-9_68",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 23,
+      "id": "TA_024",
+      "titulo": "A comprehensive survey on age of information in massive IoT networks",
+      "doi": "10.1016/j.comcom.2022.10.018",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 24,
+      "id": "TA_025",
+      "titulo": "A Time-Domain Image Formation for High Frame Rate UAV Swarm SAR",
+      "doi": "10.1109/igarss46834.2022.9883639",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 25,
+      "id": "TA_026",
+      "titulo": "Computational offloading into UAV swarm networks: a systematic literature review",
+      "doi": "10.1186/s13638-024-02401-4",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 27,
+      "id": "TA_028",
+      "titulo": "The impact of machine learning applications in agricultural supply chain: a topic modeling-based rev",
+      "doi": "10.1007/s44187-025-00419-1",
+      "exito": true,
+      "abstract": "Abstract\n          Machine learning (ML) has become a pivotal element in agriculture, providing groundbreaking solutions to tackle intricate issues related to productivity, sustainability, and resource management. A comprehensive examination of the current literature is crucial as the discipline evolves, allowing for the identification of significant themes, trends, and focal discussions. The current study employs latent Dirichlet allocation (LDA)-based topic modeling to examine 1114 publications regarding ML applications in agriculture, sourced from the Scopus database. The analysis indicates notable expansion in ML studies, featuring leading publications across various interdisciplinary fields. Six primary areas have been identified: precision agriculture and remote monitoring, molecular and food composition analysis, food systems and agricultural applications, quality assurance and adulteration detection, advanced financial and technological applications in ML, and predictive modeling for agricultural success and efficiency. Every topic is examined to highlight its contributions and possible avenues for further investigation. The analysis offers theoretical perspectives on the interdisciplinary aspects of ML in agriculture, along with practical applications for farmers, agribusiness experts, policymakers, and technologists. This study represents the first thorough review of ML applications in agriculture utilizing the LDA approach. It provides a current and comprehensive understanding of the field, while also uncovering emerging areas and opportunities for future exploration.",
+      "error": ""
+    },
+    {
+      "indice": 30,
+      "id": "TA_031",
+      "titulo": "Path planning for greenhouse robots using a hybrid Dung beetle algorithm",
+      "doi": "10.1007/s11370-025-00592-3",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 31,
+      "id": "TA_032",
+      "titulo": "IoRT and&#xa0;AI-Driven Solution for&#xa0;Optimal Herbicides Spray on&#xa0;Weeds in&#xa0;a&#xa0;Dyna",
+      "doi": "10.1007/978-3-031-87775-9_25",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 33,
+      "id": "TA_034",
+      "titulo": "Comparisons of Differential Filtering and Homography Transformation in Modal Parameter Identificatio",
+      "doi": "10.3390/s21165664",
+      "exito": true,
+      "abstract": "This paper proposes a differential filtering method for the identification of modal parameters of bridges from unmanned aerial vehicle (UAV) measurement. The determination of the modal parameters of bridges is a key issue in bridge damage detection. Accelerometers and fixed cameras have disadvantages of deployment difficulty. Hence, the actual displacement of a bridge may be obtained by using the digital image correlation (DIC) technology from the images collected by a UAV. As drone movement introduces false displacement into the collected images, the homography transformation is commonly used to achieve geometric correction of the images and obtain the true displacement of the bridge. The homography transformation is not always applicable as it is based on at least four static reference points on the plane of target points. The proposed differential filtering method does not request any reference points and will greatly accelerate the identification of the modal parameters. The displacement of the points of interest is tracked by the DIC technology, and the obtained time history curves are processed by differential filtering. The filtered signals are input into the modal analysis system, and the basic modal parameters of the bridge model are obtained by the operational modal analysis (OMA) method. In this paper, the power spectral density (PSD) is used to identify the natural frequencies; the mode shapes are determined by the ratio of the PSD transmissibility (PSDT). The identification results of three types of signals are compared: UAV measurement with differential filtering, UAV measurement with homography transformation, and accelerometer-based measurement. It is found that the natural frequencies recognized by these three methods are almost the same. This paper demonstrates the feasibility of UAV-differential filtering method in obtaining the bridge modal parameters; the problems and challenges in UAV measurement are also discussed.",
+      "error": ""
+    },
+    {
+      "indice": 34,
+      "id": "TA_035",
+      "titulo": "Unlocking the Potential of Machine Learning for Enhanced Security in Drone-Enabled IoT Networks",
+      "doi": "10.1007/978-3-031-80961-3_6",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 36,
+      "id": "TA_037",
+      "titulo": "DLC-NGO: an enhanced northern goshawk optimization for 3D UAV path planning in complex environments ",
+      "doi": "10.1007/s10586-025-05358-1",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    },
+    {
+      "indice": 37,
+      "id": "TA_038",
+      "titulo": "Adaptive adjustable fast marching square method based path planning for the swarm of heterogeneous u",
+      "doi": "10.1016/j.oceaneng.2022.113432",
+      "exito": false,
+      "abstract": "",
+      "error": "No tiene registro de abstract en CrossRef"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+TY  - EJOUR
+AU  - Hu, Aihua 
+AU  - Deng, Zhongliang 
+AU  - Yang, Hui 
+AU  - Zhang, Yao 
+AU  - Gao, Yuhui 
+AU  - Zhao, Di 
+TI  - An Optimal Geometry Configuration Algorithm of Hybrid Semi-Passive Location System Based on Mayfly Optimization Algorithm
+T2  - Sensors
+PY  - 2021
+VL  - 21
+IS  - 22
+SN  - 1424-8220
+SP  - 7484
+AB  - In view of the demand of location awareness in a special complex environment, for an unmanned aerial vehicle (UAV) airborne multi base-station semi-passive positioning system, the hybrid positioning solutions and optimized site layout in the positioning system can effectively improve the positioning accuracy for a specific region. In this paper, the geometric dilution of precision (GDOP) formula of a time difference of arrival (TDOA) and angles of arrival (AOA) hybrid location algorithm is deduced. Mayfly optimization algorithm (MOA) which is a new swarm intelligence optimization algorithm is introduced, and a method to find the optimal station of the UAV airborne multiple base station’s semi-passive positioning system using MOA is proposed. The simulation and analysis of the optimization of the different number of base stations, compared with other station layout methods, such as particle swarm optimization (PSO), genetic algorithm (GA), and artificial bee colony (ABC) algorithm. MOA is less likely to fall into local optimum, and the error of regional target positioning is reduced. By simulating the deployment of four base stations and five base stations in various situations, MOA can achieve a better deployment effect. The dynamic station configuration capability of the multi-station semi-passive positioning system has been improved with the UAV.
+KW  - optimal geometry configuration
+KW  - semi-passive location
+KW  - GDOP
+KW  - MOA
+KW  - TDOA&AOA
+KW  - UAV
+DO  - 10.3390/s21227484
+ER  -
+TY  - EJOUR
+AU  - Munawar, Hafiz S. 
+AU  - Gharineiat, Zahra 
+AU  - Akram, Junaid 
+AU  - Imran Khan, Sara 
+TI  - A Framework for Burnt Area Mapping and Evacuation Problem Using Aerial Imagery Analysis
+T2  - Fire
+PY  - 2022
+VL  - 5
+IS  - 4
+SN  - 2571-6255
+SP  - 122
+AB  - The study aims to develop a holistic framework for maximum area coverage of a disaster region during a bushfire event. The monitoring and detection of bushfires are essential to assess the extent of damage, its direction of spread, and action to be taken for its containment. Bushfires limit human’s access to gather data to understand the ground situation. Therefore, the application of Unmanned Aerial Vehicles (UAVs) could be a suitable and technically advanced approach to grasp the dynamics of fires and take measures to mitigate them. The study proposes an optimization model for a maximal area coverage of the fire-affected region. The advanced Artificial Bee Colony (ABC) algorithm will be applied to the swarm of drones to capture images and gather data vital for enhancing disaster response. The captured images will facilitate the development of burnt area maps, locating access points to the region, estimating damages, and preventing the further spread of fire. The proposed algorithm showed optimum responses for exploration, exploitation, and estimation of the maximum height of the drones for the coverage of wildfires and it outperformed the benchmarking algorithm. The results showed that area coverage of the affected region was directly proportional to drone height. At a maximum drone height of 121 m, the area coverage was improved by 30%. These results further led to a proposed framework for bushfire relief and rescue missions. The framework is grounded on the ABC algorithm and requires the coordination of the State Emergency Services (SES) for quick and efficient disaster response.
+KW  - bushfires
+KW  - burnt area
+KW  - damage detection
+KW  - UAVs
+KW  - ABC algorithm
+KW  - evacuation
+DO  - 10.3390/fire5040122
+ER  -
+TY  - EJOUR
+AU  - Libal, Urszula 
+AU  - Biernacki, Pawel 
+TI  - MFCC Selection by LASSO for Honey Bee Classification
+T2  - Applied Sciences
+PY  - 2024
+VL  - 14
+IS  - 2
+SN  - 2076-3417
+SP  - 913
+AB  - The recent advances in smart beekeeping focus on remote solutions for bee colony monitoring and applying machine learning techniques for automatic decision making. One of the main applications is a swarming alarm, allowing beekeepers to prevent the bee colony from leaving their hive. Swarming is a naturally occurring phenomenon, mainly during late spring and early summer, but it is extremely hard to predict its exact time since it is highly dependent on many factors, including weather. Prevention from swarming is the most effective way to keep bee colonies; however, it requires constant monitoring by the beekeeper. Drone bees do not survive the winter and they occur in colonies seasonally with a peak in late spring, which is associated with the creation of drone congregation areas, where mating with young queens takes place. The paper presents a method of early swarming mood detection based on the observation of drone bee activity near the entrance to a hive. Audio recordings are represented by Mel Frequency Cepstral Coefficients and their first and second derivatives. The study investigates which MFCC coefficients, selected by the Least Absolute Shrinkage and Selection Operator, are significant for the worker bee and drone bee classification task. The classification results, obtained by an autoencoder neural network, allow to improve the detection performance, achieving accuracy slightly above 95% for the chosen set of signal features, selected by the proposed method, compared to the standard set of MFCC coefficients with only up to 90% accuracy.
+KW  - innovation in beekeeping
+KW  - honey bee
+KW  - smart beehives
+KW  - intelligent system
+KW  - anomaly detection
+KW  - feature selection
+KW  - sound processing
+KW  - spectral analysis
+KW  - machine learning
+KW  - neural network
+DO  - 10.3390/app14020913
+ER  -
+TY  - EJOUR
+AU  - Yan, Xiaohong 
+AU  - Chen, Renwen 
+TI  - Application Strategy of Unmanned Aerial Vehicle Swarms in Forest Fire Detection Based on the Fusion of Particle Swarm Optimization and Artificial Bee Colony Algorithm
+T2  - Applied Sciences
+PY  - 2024
+VL  - 14
+IS  - 11
+SN  - 2076-3417
+SP  - 4937
+AB  - Unmanned aerial vehicle (UAV) swarm intelligence technology has shown unique advantages in agricultural and forestry disaster detection, early warning, and prevention with its efficient and precise cooperative operation capability. In this paper, a systematic application strategy of UAV swarms in forest fire detection is proposed, including fire point detection, fire assessment, and control measures, based on the fusion of particle swarm optimization (PSO) and the artificial bee colony (ABC) algorithm. The UAV swarm application strategy provides optimized paths to quickly locate multiple mountain forest fire points in 3D forest modeling environments and control measures based on the analysis of the fire situation. This work lays a research foundation for studying the precise application of UAV swarm technology in real-world forest fire detection and prevention.
+KW  - UAV swarm
+KW  - forest fire detection
+KW  - PSO and ABC algorithm
+DO  - 10.3390/app14114937
+ER  -
+TY  - EJOUR
+AU  - Wu, Yuchen 
+AU  - Wei, Zhijian 
+AU  - Liu, Huilin 
+AU  - Qi, Jiawei 
+AU  - Su, Xu 
+AU  - Yang, Jiqiang 
+AU  - Wu, Qinglin 
+TI  - Advanced UAV Material Transportation and Precision Delivery Utilizing the Whale-Swarm Hybrid Algorithm (WSHA) and APCR-YOLOv8 Model
+T2  - Applied Sciences
+PY  - 2024
+VL  - 14
+IS  - 15
+SN  - 2076-3417
+SP  - 6621
+AB  - This paper proposes an effective material delivery algorithm to address the challenges associated with Unmanned Aerial Vehicle (UAV) material transportation and delivery, which include complex route planning, low detection precision, and hardware limitations. This novel approach integrates the Whale-Swarm Hybrid Algorithm (WSHA) with the APCR-YOLOv8 model to enhance efficiency and accuracy. For path planning, the placement paths are transformed into a Generalized Traveling Salesman Problem (GTSP) to be able to compute solutions. The Whale Optimization Algorithm (WOA) is improved for balanced global and local searches, combined with an Artificial Bee Colony (ABC) Algorithm and adaptive weight adjustment to quicken convergence and reduce path costs. For precise placement, the YOLOv8 model is first enhanced by adding the SimAM attention mechanism to the C2f module in the detection head, focusing on target features. Secondly, GhoHGNetv2 using GhostConv is the backbone of YOLOv8 to ensure accuracy while reducing model Params and FLOPs. Finally, a Lightweight Shared Convolutional Detection Head (LSCDHead) further reduces Params and FLOPs through shared convolution. Experimental results show that WSHA reduces path costs by 9.69% and narrows the gap between the best and worst paths by about 34.39%, compared to the Improved Whale Optimization Algorithm (IWOA). APCR-YOLOv8 reduces Params and FLOPs by 44.33% and 34.57%, respectively, with mAP@0.5 increasing from 88.5 to 92.4 and FPS reaching 151.3. This approach can satisfy the requirements for real-time responsiveness while effectively preventing missed, false, and duplicate detections during the inspection of emergency airdrop stations. In conclusion, combining bionic optimization algorithms and image processing significantly enhances the efficiency and precision of material placement in emergency management.
+KW  - UAV
+KW  - GTSP
+KW  - WSHA
+KW  - lightweighting
+KW  - APCR-YOLOv8
+DO  - 10.3390/app14156621
+ER  -

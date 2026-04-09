@@ -1,0 +1,77 @@
+═══════════════════════════════════════════════════════════
+   LOG DE SINCRONIZACIÓN MENDELEY
+   Control de exportaciones y backups
+═══════════════════════════════════════════════════════════
+
+Última actualización: 23/11/2025
+
+───────────────────────────────────────────────────────────
+📅 REGISTRO DE EXPORTACIONES
+───────────────────────────────────────────────────────────
+
+Fecha: 2024-11-23
+Acción: Primera configuración del sistema
+Papers en Mendeley: 0
+Archivo exportado: N/A
+Notas: Sistema configurado y listo para empezar
+
+---
+
+Fecha: [Completar cuando hagas primera exportación]
+Acción: Primera exportación BibTeX
+Papers en Mendeley: 
+Archivo exportado: Mendeley_Export_2024-XX-XX.bib
+Notas: 
+
+---
+
+Fecha: [Próxima exportación]
+Acción: Exportación semanal
+Papers en Mendeley: 
+Archivo exportado: 
+Notas: 
+
+───────────────────────────────────────────────────────────
+🔄 SINCRONIZACIÓN CON REFERENCIAS_MASTER.BIB
+───────────────────────────────────────────────────────────
+
+Fecha: 
+Referencias nuevas agregadas: 
+Referencias actualizadas: 
+Total en Referencias_Master.bib: 
+
+───────────────────────────────────────────────────────────
+⚠️ PROBLEMAS/PENDIENTES
+───────────────────────────────────────────────────────────
+
+- [Anotar aquí cualquier problema de sincronización]
+- [Papers que faltan DOI o información incompleta]
+- [PDFs que no se descargaron automáticamente]
+
+
+───────────────────────────────────────────────────────────
+📊 ESTADÍSTICAS
+───────────────────────────────────────────────────────────
+
+Total papers importados: 
+Papers con PDF: 
+Papers sin PDF: 
+Última sincronización: 
+
+
+═══════════════════════════════════════════════════════════
+INSTRUCCIONES DE USO:
+═══════════════════════════════════════════════════════════
+
+1. Exportar desde Mendeley cada SEMANA
+   Mendeley → File → Export → BibTeX
+
+2. Actualizar este log cada vez que exportes
+
+3. Mantener Referencias_Master.bib sincronizado con Mendeley
+
+4. Anotar problemas para resolverlos después
+
+5. Backup semanal: Copiar Referencias_Master.bib con fecha
+
+═══════════════════════════════════════════════════════════

@@ -1,0 +1,384 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{zhang2012}
+C.~Zhang, J.~M. Kovacs, The application of small unmanned aerial systems for
+  precision agriculture, Precision Agriculture 13~(4) (2012) 393--408.
+\newblock \href {https://doi.org/10.1007/s11119-012-9274-5}
+  {\path{doi:10.1007/s11119-012-9274-5}}.
+
+\bibitem{tsouros2019}
+D.~C. Tsouros, S.~Bibi, P.~G. Sarigiannidis, A review on {UAV}-based
+  applications for precision agriculture, Information 10~(11) (2019) 349.
+\newblock \href {https://doi.org/10.3390/info10110349}
+  {\path{doi:10.3390/info10110349}}.
+
+\bibitem{puri2017}
+V.~Puri, A.~Nayyar, L.~Raja, Agriculture drones: {A} modern breakthrough in
+  precision agriculture, Journal of Statistics and Management Systems 20~(4)
+  (2017) 507--518.
+\newblock \href {https://doi.org/10.1080/09720510.2017.1395171}
+  {\path{doi:10.1080/09720510.2017.1395171}}.
+
+\bibitem{mogili2018}
+U.~R. Mogili, B.~B. V.~L. Deepak, Review on application of drone systems in
+  precision agriculture, Procedia Computer Science 133 (2018) 502--509.
+\newblock \href {https://doi.org/10.1016/j.procs.2018.07.063}
+  {\path{doi:10.1016/j.procs.2018.07.063}}.
+
+\bibitem{hunt2018}
+E.~R. Hunt, W.~D. Hively, C.~S.~T. Daughtry, Evaluation of {UAV} imagery for
+  agricultural crop monitoring, Remote Sensing 10~(4) (2018) 595.
+\newblock \href {https://doi.org/10.3390/rs10040595}
+  {\path{doi:10.3390/rs10040595}}.
+
+\bibitem{chung2018}
+S.~J. Chung, A.~A. Paranjape, P.~Dames, S.~Shen, V.~Kumar, A survey on aerial
+  swarm robotics, IEEE Transactions on Robotics 34~(4) (2018) 837--855.
+\newblock \href {https://doi.org/10.1109/TRO.2018.2857475}
+  {\path{doi:10.1109/TRO.2018.2857475}}.
+
+\bibitem{gupta2016}
+L.~Gupta, R.~Jain, G.~Vaszkun, Survey of {UAV} communication networks, IEEE
+  Communications Surveys and Tutorials 18~(4) (2016) 2595--2621.
+\newblock \href {https://doi.org/10.1109/COMST.2015.2495297}
+  {\path{doi:10.1109/COMST.2015.2495297}}.
+
+\bibitem{huang2023}
+J.~Huang, Y.~Luo, Q.~Quan, B.~Wang, X.~Xue, Y.~Zhang, An autonomous task
+  assignment and decision-making method for coverage path planning of multiple
+  pesticide spraying {UAV}s, Computers and Electronics in Agriculture 212
+  (2023) 108128.
+\newblock \href {https://doi.org/10.1016/j.compag.2023.108128}
+  {\path{doi:10.1016/j.compag.2023.108128}}.
+
+\bibitem{bekmezci2013}
+I.~Bekmezci, O.~K. Sahingoz, S.~Temel, Flying ad-hoc networks ({FANETs}): {A}
+  survey, Ad Hoc Networks 11~(3) (2013) 1254--1270.
+\newblock \href {https://doi.org/10.1016/j.adhoc.2012.12.004}
+  {\path{doi:10.1016/j.adhoc.2012.12.004}}.
+
+\bibitem{hayat2016}
+S.~Hayat, E.~Yanmaz, C.~Bettstetter, Experimental analysis of
+  multipoint-to-point {UAV} communications, IEEE Communications Letters 20~(7)
+  (2016) 1433--1436.
+\newblock \href {https://doi.org/10.1109/LCOMM.2016.2561274}
+  {\path{doi:10.1109/LCOMM.2016.2561274}}.
+
+\bibitem{aitsaadi2022}
+A.~Ait~Saadi, A.~Soukane, Y.~Meraihi, A.~B. Gabis, S.~Mirjalili,
+  A.~Ramdane-Cherif, {UAV} path planning using optimization approaches: {A}
+  survey, Archives of Computational Methods in Engineering 29~(6) (2022)
+  4233--4284.
+\newblock \href {https://doi.org/10.1007/s11831-022-09742-7}
+  {\path{doi:10.1007/s11831-022-09742-7}}.
+
+\bibitem{dorigo2006}
+M.~Dorigo, M.~Birattari, T.~Stutzle, Ant colony optimization, IEEE
+  Computational Intelligence Magazine 1~(4) (2006) 28--39.
+\newblock \href {https://doi.org/10.1109/MCI.2006.329691}
+  {\path{doi:10.1109/MCI.2006.329691}}.
+
+\bibitem{kennedy1995}
+J.~Kennedy, R.~Eberhart, Particle swarm optimization, in: Proceedings of
+  ICNN'95 -- International Conference on Neural Networks, Vol.~4, 1995, pp.
+  1942--1948.
+\newblock \href {https://doi.org/10.1109/ICNN.1995.488968}
+  {\path{doi:10.1109/ICNN.1995.488968}}.
+
+\bibitem{blum2008}
+C.~Blum, X.~Li, Swarm intelligence in optimization, in: Swarm Intelligence:
+  Introduction and Applications, Springer, 2008, pp. 43--85.
+\newblock \href {https://doi.org/10.1007/978-3-540-74089-6_2}
+  {\path{doi:10.1007/978-3-540-74089-6_2}}.
+
+\bibitem{yang2010}
+X.~S. Yang, Engineering Optimization: An Introduction with Metaheuristic
+  Applications, John Wiley \& Sons, 2010.
+\newblock \href {https://doi.org/10.1002/9780470640425}
+  {\path{doi:10.1002/9780470640425}}.
+
+\bibitem{beni2005}
+G.~Beni, From swarm intelligence to swarm robotics, in: Swarm Robotics,
+  Springer, 2005, pp. 1--9.
+\newblock \href {https://doi.org/10.1007/978-3-540-30552-1_1}
+  {\path{doi:10.1007/978-3-540-30552-1_1}}.
+
+\bibitem{bonabeau1999}
+E.~Bonabeau, M.~Dorigo, G.~Theraulaz, Swarm Intelligence: From Natural to
+  Artificial Systems, Oxford University Press, New York, 1999, {ISBN}:
+  978-0-19-513159-8. No {DOI} assigned (pre-digital monograph, 1999).
+
+\bibitem{yang2013}
+X.~S. Yang, M.~Karamanoglu, X.~He, Flower pollination algorithm: {A} novel
+  approach for multiobjective optimization, Engineering Optimization 46~(9)
+  (2014) 1222--1237, published online 2013; formal print volume year 2014. Cite
+  key {yang2013} retained for {tex} compatibility.
+\newblock \href {https://doi.org/10.1080/0305215X.2013.832237}
+  {\path{doi:10.1080/0305215X.2013.832237}}.
+
+\bibitem{li2023}
+L.~Li, L.~Liu, Y.~Shao, X.~Zhang, Y.~Chen, C.~Guo, H.~Nian, Enhancing swarm
+  intelligence for obstacle avoidance with multi-strategy and improved dung
+  beetle optimization algorithm, Sensors 23~(19) (2023) 8267.
+\newblock \href {https://doi.org/10.3390/s23198267}
+  {\path{doi:10.3390/s23198267}}.
+
+\bibitem{xiao2025}
+C.~Xiao, H.~Yang, B.~Zhang, Multi-unmanned aerial vehicle path planning based
+  on improved nutcracker optimization algorithm, Drones 9~(1) (2025) 38.
+\newblock \href {https://doi.org/10.3390/drones9010038}
+  {\path{doi:10.3390/drones9010038}}.
+
+\bibitem{page2021}
+M.~J. Page, J.~E. McKenzie, P.~M. Bossuyt, I.~Boutron, T.~C. Hoffmann, C.~D.
+  Mulrow, L.~Shamseer, J.~M. Tetzlaff, E.~A. Akl, S.~E. Brennan, R.~Chou,
+  J.~Glanville, J.~M. Grimshaw, A.~Hr\'{o}bjartsson, M.~M. Lalu, T.~Li, E.~W.
+  Loder, E.~Mayo-Wilson, S.~McDonald, L.~A. McGuinness, L.~A. Stewart,
+  J.~Thomas, A.~C. Tricco, V.~A. Welch, P.~Whiting, D.~Moher, The {PRISMA} 2020
+  statement: {An} updated guideline for reporting systematic reviews, BMJ 372
+  (2021) n71.
+\newblock \href {https://doi.org/10.1136/bmj.n71} {\path{doi:10.1136/bmj.n71}}.
+
+\bibitem{puente2022}
+A.~Puente-Castro, D.~Rivero, A.~Pazos, E.~Fernandez-Blanco, A review of
+  artificial intelligence applied to path planning in {UAV} swarms, Neural
+  Computing and Applications 34~(1) (2022) 153--170.
+\newblock \href {https://doi.org/10.1007/s00521-021-06569-4}
+  {\path{doi:10.1007/s00521-021-06569-4}}.
+
+\bibitem{sharma2022}
+A.~Sharma, S.~Shoval, A.~Sharma, J.~K. Pandey, Path planning for multiple
+  targets interception by the swarm of {UAV}s based on swarm intelligence
+  algorithms: {A} review, IETE Technical Review 39~(3) (2022) 524--538.
+\newblock \href {https://doi.org/10.1080/02564602.2021.1894250}
+  {\path{doi:10.1080/02564602.2021.1894250}}.
+
+\bibitem{brambilla2013}
+M.~Brambilla, E.~Ferrante, M.~Birattari, M.~Dorigo, Swarm robotics: {A} review
+  from the swarm engineering perspective, Swarm Intelligence 7~(1) (2013)
+  1--41.
+\newblock \href {https://doi.org/10.1007/s11721-012-0075-2}
+  {\path{doi:10.1007/s11721-012-0075-2}}.
+
+\bibitem{bayindir2016}
+L.~Bayindir, A review of swarm robotics tasks, Neurocomputing 172 (2016)
+  292--321.
+\newblock \href {https://doi.org/10.1016/j.neucom.2015.05.116}
+  {\path{doi:10.1016/j.neucom.2015.05.116}}.
+
+\bibitem{phung2021}
+M.~D. Phung, Q.~P. Ha, Safety-enhanced {UAV} path planning with spherical
+  vector-based particle swarm optimization, Applied Soft Computing 107 (2021)
+  107376.
+\newblock \href {https://doi.org/10.1016/j.asoc.2021.107376}
+  {\path{doi:10.1016/j.asoc.2021.107376}}.
+
+\bibitem{pan2022}
+N.~Pan, M.~Zhang, Y.~Sun, S.~Chen, H.~Liu, X.~Guo, Study on border patrol task
+  planning of heterogeneous {UAV}s group based on swarm intelligence, Science
+  Progress 105~(4) (2022) 00368504221094722, {Science Progress} uses article
+  {IDs} in place of page ranges; {ID} matches {DOI} suffix.
+\newblock \href {https://doi.org/10.1177/00368504221094722}
+  {\path{doi:10.1177/00368504221094722}}.
+
+\bibitem{shafiq2022}
+M.~Shafiq, Z.~A. Ali, A.~Israr, E.~H. Alkhammash, M.~Hadjouni, J.~J. Jussila,
+  Convergence analysis of path planning of multi-{UAV}s using max-min ant
+  colony optimization approach, Sensors 22~(14) (2022) 5395.
+\newblock \href {https://doi.org/10.3390/s22145395}
+  {\path{doi:10.3390/s22145395}}.
+
+\bibitem{liu2021}
+Q.~Liu, Y.~Zhang, M.~Li, Z.~Zhang, N.~Cao, J.~Shang, Multi-{UAV} path planning
+  based on fusion of sparrow search algorithm and improved bioinspired neural
+  network, IEEE Access 9 (2021) 120946--120960.
+\newblock \href {https://doi.org/10.1109/ACCESS.2021.3109879}
+  {\path{doi:10.1109/ACCESS.2021.3109879}}.
+
+\bibitem{hong2018}
+Q.~N. Hong, S.~F\`{a}bregues, G.~Bartlett, F.~Boardman, M.~Cargo, P.~Dagenais,
+  M.-P. Gagnon, F.~Griffiths, B.~Nicolau, A.~O'Cathain, P.~Pluye, The mixed
+  methods appraisal tool ({MMAT}) version 2018 for information professionals
+  and researchers, Education for Information 34~(4) (2018) 285--291.
+\newblock \href {https://doi.org/10.3233/EFI-180221}
+  {\path{doi:10.3233/EFI-180221}}.
+
+\bibitem{chen2021}
+J.~Chen, F.~Ling, Y.~Zhang, T.~You, Y.~Liu, X.~Du, Coverage path planning of
+  heterogeneous unmanned aerial vehicles based on ant colony system, Swarm and
+  Evolutionary Computation 65 (2021) 101005.
+\newblock \href {https://doi.org/10.1016/j.swevo.2021.101005}
+  {\path{doi:10.1016/j.swevo.2021.101005}}.
+
+\bibitem{lin2022}
+S.~Lin, F.~Li, X.~Li, K.~Jia, X.~Zhang, Improved artificial bee colony
+  algorithm based on multi-strategy synthesis for {UAV} path planning, IEEE
+  Access 10 (2022) 119269--119285.
+\newblock \href {https://doi.org/10.1109/ACCESS.2022.3218685}
+  {\path{doi:10.1109/ACCESS.2022.3218685}}.
+
+\bibitem{liu2021cassa}
+G.~Liu, C.~Shu, Z.~Liang, B.~Peng, L.~Cheng, A modified sparrow search
+  algorithm with application in {3D} route planning for {UAV}, Sensors 21~(4)
+  (2021) 1224.
+\newblock \href {https://doi.org/10.3390/s21041224}
+  {\path{doi:10.3390/s21041224}}.
+
+\bibitem{liu2021disaster}
+H.~Liu, J.~Ge, Y.~Wang, J.~Li, K.~Ding, Z.~Zhang, Z.~Guo, W.~Li, J.~Lan,
+  Multi-{UAV} optimal mission assignment and path planning for disaster rescue
+  using adaptive genetic algorithm and improved artificial bee colony method,
+  Actuators 11~(1) (2021) 4.
+\newblock \href {https://doi.org/10.3390/act11010004}
+  {\path{doi:10.3390/act11010004}}.
+
+\bibitem{mathew2021}
+A.~T. Mathew, A.~Paul, A.~Rojan, A.~Thomas, Implementation of swarm
+  intelligence algorithms for path planning, Journal of Physics: Conference
+  Series 1831~(1) (2021) 012008.
+\newblock \href {https://doi.org/10.1088/1742-6596/1831/1/012008}
+  {\path{doi:10.1088/1742-6596/1831/1/012008}}.
+
+\bibitem{ntakolia2021}
+C.~Ntakolia, D.~V. Lyridis, A swarm intelligence graph-based pathfinding
+  algorithm based on fuzzy logic ({SIGPAF}), Journal of Marine Science and
+  Engineering 9~(11) (2021) 1243.
+\newblock \href {https://doi.org/10.3390/jmse9111243}
+  {\path{doi:10.3390/jmse9111243}}.
+
+\bibitem{yu2021}
+W.~Yu, J.~Liu, J.~Zhou, A novel sparrow particle swarm algorithm ({SPSA}) for
+  unmanned aerial vehicle path planning, Scientific Programming 2021 (2021)
+  5158304.
+\newblock \href {https://doi.org/10.1155/2021/5158304}
+  {\path{doi:10.1155/2021/5158304}}.
+
+\bibitem{chu2022}
+H.~Chu, J.~Yi, F.~Yang, Chaos particle swarm optimization enhancement algorithm
+  for {UAV} safe path planning, Applied Sciences 12~(18) (2022) 8977.
+\newblock \href {https://doi.org/10.3390/app12188977}
+  {\path{doi:10.3390/app12188977}}.
+
+\bibitem{fevgas2022}
+G.~Fevgas, T.~Lagkas, V.~Argyriou, P.~Sarigiannidis, Coverage path planning
+  methods focusing on energy efficient and cooperative strategies for unmanned
+  aerial vehicles, Sensors 22~(3) (2022) 1235.
+\newblock \href {https://doi.org/10.3390/s22031235}
+  {\path{doi:10.3390/s22031235}}.
+
+\bibitem{israr2022}
+A.~Israr, Z.~A. Ali, E.~H. Alkhammash, J.~J. Jussila, Optimization methods
+  applied to motion planning of unmanned aerial vehicles: {A} review, Drones
+  6~(5) (2022) 126.
+\newblock \href {https://doi.org/10.3390/drones6050126}
+  {\path{doi:10.3390/drones6050126}}.
+
+\bibitem{ji2022}
+Y.~Ji, X.~Zhao, J.~Hao, A novel {UAV} path planning algorithm based on
+  double-dynamic biogeography-based learning particle swarm optimization,
+  Mobile Information Systems 2022 (2022) 8519708.
+\newblock \href {https://doi.org/10.1155/2022/8519708}
+  {\path{doi:10.1155/2022/8519708}}.
+
+\bibitem{selma2022}
+B.~Selma, S.~Chouraqui, B.~Selma, H.~Abouaissa, Design an optimal {ANFIS}
+  controller using bee colony optimization for trajectory tracking of a
+  quadrotor {UAV}, Journal of The Institution of Engineers (India): Series B
+  103~(5) (2022) 1505--1519.
+\newblock \href {https://doi.org/10.1007/s40031-022-00747-1}
+  {\path{doi:10.1007/s40031-022-00747-1}}.
+
+\bibitem{ahmed2021}
+N.~Ahmed, C.~J. Pawase, K.~Chang, Distributed {3-D} path planning for
+  multi-{UAV}s with full area surveillance based on particle swarm
+  optimization, Applied Sciences 11~(8) (2021) 3417.
+\newblock \href {https://doi.org/10.3390/app11083417}
+  {\path{doi:10.3390/app11083417}}.
+
+\bibitem{xu2022}
+S.~Xu, L.~Li, Z.~Zhou, Y.~Mao, J.~Huang, A task allocation strategy of the
+  {UAV} swarm based on multi-discrete wolf pack algorithm, Electronics 11~(3)
+  (2022) 467.
+\newblock \href {https://doi.org/10.3390/electronics11030467}
+  {\path{doi:10.3390/electronics11030467}}.
+
+\bibitem{wang2025}
+S.~Wang, Y.~Zhu, Y.~Du, M.~Yang, Research on path planning method for mobile
+  platforms based on hybrid swarm intelligence algorithms in multi-dimensional
+  environments, Applied Sciences 15~(3) (2025) 1612.
+\newblock \href {https://doi.org/10.3390/app15031612}
+  {\path{doi:10.3390/app15031612}}.
+
+\bibitem{deng2023}
+L.~Deng, H.~Chen, X.~Zhang, H.~Liu, Three-dimensional path planning of {UAV}
+  based on improved particle swarm optimization, Drones 7~(4) (2023) 243.
+\newblock \href {https://doi.org/10.3390/drones7040243}
+  {\path{doi:10.3390/drones7040243}}.
+
+\bibitem{rao2024}
+C.~Rao, Z.~Wang, P.~Shao, A multi-strategy collaborative grey wolf optimization
+  algorithm for {UAV} path planning, Drones 8~(2) (2024) 47.
+\newblock \href {https://doi.org/10.3390/drones8020047}
+  {\path{doi:10.3390/drones8020047}}.
+
+\bibitem{zhang2022loc}
+W.~Zhang, W.~Zhang, An efficient {UAV} localization technique based on particle
+  swarm optimization, IEEE Transactions on Vehicular Technology 71~(9) (2022)
+  9990--10002.
+\newblock \href {https://doi.org/10.1109/TVT.2022.3178228}
+  {\path{doi:10.1109/TVT.2022.3178228}}.
+
+\bibitem{hu2025}
+J.~Hu, Y.~Zheng, S.~Wang, C.~Zhou, Improved particle swarm optimization based
+  on fuzzy controller fusion of multiple strategies for multi-robot path
+  planning, Sensors 25~(3) (2025) 952.
+\newblock \href {https://doi.org/10.3390/s25030952}
+  {\path{doi:10.3390/s25030952}}.
+
+\bibitem{zuo2025}
+L.~Zuo, Y.~Wang, Y.~Lu, R.~Gu, Hybrid {APF--PSO} algorithm for regional dynamic
+  formation of {UAV} swarms, Drones 9~(2) (2025) 112.
+\newblock \href {https://doi.org/10.3390/drones9020112}
+  {\path{doi:10.3390/drones9020112}}.
+
+\bibitem{yang2025}
+X.~Yang, S.~Zhao, W.~Gao, P.~Li, Z.~Feng, L.~Li, T.~Jia, X.~Wang,
+  Three-dimensional path planning for {UAV} based on multi-strategy dream
+  optimization algorithm, Drones 9~(1) (2025) 55.
+\newblock \href {https://doi.org/10.3390/drones9010055}
+  {\path{doi:10.3390/drones9010055}}.
+
+\bibitem{yang2023}
+Y.~Yang, X.~Xiong, Y.~Yan, {UAV} formation trajectory planning algorithms: {A}
+  review, Drones 7~(1) (2023) 62.
+\newblock \href {https://doi.org/10.3390/drones7010062}
+  {\path{doi:10.3390/drones7010062}}.
+
+\bibitem{tang2022}
+J.~Tang, H.~Duan, S.~Lao, Swarm intelligence algorithms for multiple unmanned
+  aerial vehicles collaboration: {A} comprehensive review, Artificial
+  Intelligence Review 56~(5) (2022) 4295--4327.
+\newblock \href {https://doi.org/10.1007/s10462-022-10281-7}
+  {\path{doi:10.1007/s10462-022-10281-7}}.
+
+\bibitem{li2025}
+P.~Li, L.~Wei, D.~Wu, An intelligently enhanced ant colony optimization
+  algorithm for global path planning of mobile robots, Sensors 25~(5) (2025)
+  1326.
+\newblock \href {https://doi.org/10.3390/s25051326}
+  {\path{doi:10.3390/s25051326}}.
+
+\bibitem{xu2025orchard}
+Y.~Xu, X.~Xue, Z.~Sun, L.~Cui, C.~Cai, Q.~Zhou, C.~Chen, W.~Gu, Path planning
+  and scheduling of multiple unmanned ground vehicles for orchard plant
+  protection operations, Computers and Electronics in AgricultureIn press
+  (2025).
+\newblock \href {https://doi.org/10.1016/j.compag.2025.107215}
+  {\path{doi:10.1016/j.compag.2025.107215}}.
+
+\end{thebibliography}

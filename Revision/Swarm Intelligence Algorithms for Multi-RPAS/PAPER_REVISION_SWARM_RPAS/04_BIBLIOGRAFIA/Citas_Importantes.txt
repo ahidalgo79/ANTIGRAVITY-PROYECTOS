@@ -1,0 +1,212 @@
+═══════════════════════════════════════════════════════════
+   CITAS IMPORTANTES Y FRASES CLAVE
+   Para usar en el paper de revisión
+═══════════════════════════════════════════════════════════
+
+Última actualización: 23/11/2025
+
+───────────────────────────────────────────────────────────
+📌 DEFINICIONES CLAVE (Para Sección 2 - Fundamentos)
+───────────────────────────────────────────────────────────
+
+Swarm Intelligence:
+"[Copiar definición exacta de paper clave]"
+Fuente: [Autor, año] - PAPER_XXX
+
+Multi-RPAS Systems:
+"[Copiar definición exacta]"
+Fuente: [Autor, año] - PAPER_XXX
+
+Path Planning:
+"[Copiar definición exacta]"
+Fuente: [Autor, año] - PAPER_XXX
+
+Collective Intelligence:
+"[Copiar definición]"
+Fuente: [Autor, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+💡 FRASES IMPACTANTES (Para Introducción)
+───────────────────────────────────────────────────────────
+
+Sobre la importancia del tema:
+"[Cita sobre relevancia del campo]"
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre los desafíos:
+"[Cita sobre dificultades actuales]"
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre el crecimiento del campo:
+"[Cita sobre tendencias]"
+Fuente: [Autor, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+📊 DATOS ESTADÍSTICOS (Para respaldar argumentos)
+───────────────────────────────────────────────────────────
+
+Sobre algoritmos:
+"PSO has been applied in X% of multi-UAV studies..."
+Fuente: [Survey, año] - PAPER_XXX
+
+Sobre aplicaciones:
+"Agricultural applications account for X% of implementations..."
+Fuente: [Estudio, año] - PAPER_XXX
+
+Sobre tendencias temporales:
+"Publications in this area increased by X% from 2018 to 2024..."
+Fuente: [Análisis, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+🎯 RESULTADOS DESTACADOS (Para Análisis Comparativo)
+───────────────────────────────────────────────────────────
+
+Mejor performance en tiempo:
+"X% reduction in planning time with Y% coverage"
+Fuente: [Autor, año] - PAPER_XXX
+
+Mejor escalabilidad:
+"Successfully coordinated X UAVs simultaneously"
+Fuente: [Autor, año] - PAPER_XXX
+
+Mejor eficiencia energética:
+"X% energy savings compared to baseline"
+Fuente: [Autor, año] - PAPER_XXX
+
+Validación experimental destacada:
+"Field tests with X UAVs over Y hectares"
+Fuente: [Autor, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+⚠️ LIMITACIONES RECONOCIDAS (Para Sección Desafíos)
+───────────────────────────────────────────────────────────
+
+Sobre condiciones climáticas:
+"Current approaches fail to consider wind conditions..."
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre escalabilidad:
+"Computational complexity limits real-time application..."
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre validación:
+"Most studies rely solely on simulations..."
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre comunicación:
+"Communication constraints remain a major challenge..."
+Fuente: [Autor, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+🔮 DIRECCIONES FUTURAS (Para Conclusiones)
+───────────────────────────────────────────────────────────
+
+Sobre integración tecnológica:
+"Future work should integrate machine learning..."
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre edge computing:
+"Edge computing presents opportunities for..."
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre validación real:
+"More field experiments are needed to..."
+Fuente: [Autor, año] - PAPER_XXX
+
+Sobre estandarización:
+"Development of standardized benchmarks is essential..."
+Fuente: [Autor, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+🏆 PAPERS SEMINALES (Más citados/importantes)
+───────────────────────────────────────────────────────────
+
+Paper clave 1:
+Título: [Título completo]
+Autor: [Autor, año]
+Citado por: [Número]
+Por qué es importante: [Razón]
+Frase clave: "[Cita]"
+PAPER_ID: PAPER_XXX
+
+Paper clave 2:
+[Repetir estructura]
+
+
+───────────────────────────────────────────────────────────
+💬 CITAS TEXTUALES ÚTILES (Por tema)
+───────────────────────────────────────────────────────────
+
+SOBRE PSO:
+"[Cita útil sobre PSO]"
+Fuente: [Autor, año] - PAPER_XXX
+
+SOBRE ACO:
+"[Cita útil sobre ACO]"
+Fuente: [Autor, año] - PAPER_XXX
+
+SOBRE AGRICULTURA:
+"[Cita sobre aplicaciones agrícolas]"
+Fuente: [Autor, año] - PAPER_XXX
+
+SOBRE INSPECCIÓN:
+"[Cita sobre inspección industrial]"
+Fuente: [Autor, año] - PAPER_XXX
+
+
+───────────────────────────────────────────────────────────
+📈 MÉTRICAS Y NÚMEROS IMPORTANTES
+───────────────────────────────────────────────────────────
+
+Mejor tiempo de convergencia reportado:
+"< X iterations for Y UAVs"
+Fuente: [Autor, año] - PAPER_XXX
+
+Mayor flota coordinada:
+"X UAVs"
+Fuente: [Autor, año] - PAPER_XXX
+
+Mayor área cubierta:
+"X hectáreas en Y minutos"
+Fuente: [Autor, año] - PAPER_XXX
+
+
+═══════════════════════════════════════════════════════════
+INSTRUCCIONES DE USO:
+═══════════════════════════════════════════════════════════
+
+1. MIENTRAS LEES PAPERS:
+   - Copia frases importantes TEXTUALMENTE
+   - Anota siempre: Fuente completa + PAPER_ID
+   - Marca con [PARAFRASEAR] si debes reescribir
+
+2. AL ESCRIBIR TU PAPER:
+   - USA estas citas para respaldar argumentos
+   - NUNCA copies textual (parafrasea)
+   - Cita correctamente con Mendeley plugin
+
+3. ORGANIZACIÓN:
+   - Una cita = Una línea con fuente completa
+   - Actualizar cada 5-10 papers analizados
+   - Marcar con ⭐ las MÁS importantes
+
+4. FORMATO DE FUENTE:
+   Apellido et al., Año - PAPER_XXX
+   Ejemplo: Zhang et al., 2023 - PAPER_001
+
+═══════════════════════════════════════════════════════════
+RECORDATORIO IMPORTANTE:
+═══════════════════════════════════════════════════════════
+
+⚠️ TODO lo que está aquí debe ser PARAFRASEADO en tu paper
+⚠️ NUNCA copiar textualmente más de 3-4 palabras seguidas
+⚠️ Las citas son para INSPIRARTE y RESPALDAR, no para copiar
+⚠️ Siempre citar la fuente correctamente con Mendeley
+
+═══════════════════════════════════════════════════════════

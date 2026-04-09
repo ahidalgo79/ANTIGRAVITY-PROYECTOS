@@ -1,0 +1,26 @@
+April 4, 2026
+
+Editor-in-Chief
+Computers and Electronics in Agriculture
+Elsevier
+
+Dear Editor-in-Chief,
+
+I am pleased to submit our manuscript entitled "Swarm Intelligence for Multi-UAV Path Planning in Precision Agriculture: A Systematic Review and Research Agenda (2021-2025)" for consideration for publication as a Review Article in Computers and Electronics in Agriculture.
+
+This manuscript is not a conventional summary of literature. Instead, we present the first PRISMA 2020-compliant synthesis that critically evaluates the deployment readiness of Swarm Intelligence (SI) algorithms for multi-UAV precision agriculture. Despite algorithmic advances in Particle Swarm Optimization (PSO), Ant Colony Optimization (ACO), and novel variants, we establish that current research is structurally disconnected from field reality. Through a novel 4-dimensional taxonomy of 171 documented gaps, we quantitatively demonstrate that 78.8% of recent studies lack hardware-in-the-loop validation, and 80% of spraying studies ignore critical aerodynamic perturbations such as wind drift.
+
+In direct alignment with recent editorial directions of Computers and Electronics in Agriculture emphasizing dynamic, wind-aware, and real-time capable systems (e.g., Smith et al., 2024; Wang et al., 2025), our work proposes "AgriSwarm-Bench"—a standardized framework to force the transition from idealized static simulations to physically realistic, energy-constrained agricultural environments.
+
+We believe our critical analysis—and the roadmap we propose—will be of substantial interest to your readership integrating robotics, AI, and advanced control systems into farm management. Both the methodology (identifying the "hardware-in-the-loop gap") and the agenda hold high potential impact for shaping the next three years of agricultural swarm deployment.
+
+I declare on behalf of all authors that this manuscript is original, has not been published before, and is not currently being considered for publication elsewhere. We have no conflicts of interest to disclose.
+
+Thank you for your consideration of this manuscript.
+
+Sincerely,
+
+Andres Hidalgo Morales
+Ph.D. Candidate / Corresponding Author
+Instituto Tecnológico de Chihuahua II, Tecnológico Nacional de México
+ahidalgo@upchihuahua.edu.mx

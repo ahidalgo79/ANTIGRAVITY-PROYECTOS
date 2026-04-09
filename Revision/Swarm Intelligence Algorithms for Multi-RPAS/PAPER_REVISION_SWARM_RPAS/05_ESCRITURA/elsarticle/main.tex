@@ -1,0 +1,129 @@
+%% ============================================================
+%% main.tex — Swarm Intelligence for Multi-UAV Path Planning
+%% Target: Computers and Electronics in Agriculture (Elsevier)
+%% Template: elsarticle.cls (XeLaTeX)
+%% Author: Andres Hidalgo Morales
+%% CORRECCIONES APLICADAS: Tarea t8a y t9 + Sincronización Checklist S1
+%% Fecha de corrección: 2026-03-30
+%% ============================================================
+
+\documentclass[review,3p,times]{elsarticle}
+
+\usepackage{lineno}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{pifont}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows.meta, positioning}
+
+\linenumbers
+\journal{Computers and Electronics in Agriculture}
+
+\begin{document}
+
+\begin{frontmatter}
+\title{Swarm Intelligence for Multi-UAV Path Planning in Precision Agriculture: A Systematic Review and Research Agenda (2021--2025)}
+
+\author{\texorpdfstring{Andres Hidalgo Morales\corref{cor1}\fnref{aff1}}{Andres Hidalgo Morales}}
+\ead{ahidalgo@upchihuahua.edu.mx}
+
+\author{\texorpdfstring{Hernán de la Garza Gutiérrez\fnref{aff1}}{Hernán de la Garza Gutiérrez}}
+\author{\texorpdfstring{Claudia Georgina Nava Dino\fnref{aff2,aff3}}{Claudia Georgina Nava Dino}}
+\author{\texorpdfstring{Edgar Moisés González Torres\fnref{aff2}}{Edgar Moisés González Torres}}
+\author{\texorpdfstring{José Manuel Naveiro Gómez\fnref{aff4}}{José Manuel Naveiro Gómez}}
+
+\cortext[cor1]{Corresponding author}
+\address[1]{Instituto Tecnológico de Chihuahua II, Tecnológico Nacional de México, Chihuahua, México}
+\address[2]{Universidad Politécnica de Chihuahua, Chihuahua, México}
+\address[3]{Facultad de Ingeniería, Universidad Autónoma de Chihuahua, Chihuahua, México}
+\address[4]{Departamento de Ingeniería Mecánica, Universidad de Zaragoza, Zaragoza, España}
+
+\begin{highlights}
+\item First PRISMA 2020-compliant review of SI-based multi-UAV path planning in agriculture
+\item 171 gaps across Technological, Practical, Methodological, and Theoretical dimensions
+\item All 26 primary studies are simulation-only; none achieve real-world field validation
+\item Under half of studies report execution time, energy, or convergence criteria
+\item AgriSwarm-Bench proposed to standardise benchmarking and close the sim-to-field gap
+\end{highlights}
+
+\begin{abstract}
+\textbf{Background:} Multi-UAV systems are increasingly used in precision agriculture for monitoring, spraying, and mapping. Swarm Intelligence (SI) algorithms are well-suited to address coordinating multiple aerial agents.
+
+\textbf{Objective:} This systematic review analyses recent advances in SI-based path planning for multi-UAV systems in precision agriculture (2021--2025) and identifies 171 critical research gaps.
+
+\textbf{Methods:} Following PRISMA 2020 guidelines, 33 studies (26 primary research articles, 7 review articles) met all inclusion criteria. A secondary rescreening of 44 originally excluded records was conducted to ensure maximum recall, confirming the final N=33 corpus.
+
+\textbf{Results:} Particle Swarm Optimisation dominates (10 of 33 studies, 30.3\%), followed by Ant Colony Optimisation (3 of 33, 9.1\%). All 26 primary studies (100\%) lack real-world field validation; 25 of 33 (75.8\%) omit dynamic environmental modelling. Metric reporting is sparse: only 14 of 33 (42.4\%) report execution time.
+
+\textbf{Conclusions:} SI-based multi-UAV path planning in agriculture is algorithmically mature but deployment-constrained. This study provides the first structured gap analysis for this domain and proposes the AgriSwarm-Bench framework to accelerate the simulation-to-field transition.
+\end{abstract}
+
+\begin{keyword}
+Swarm intelligence \sep Multi-UAV \sep Path planning \sep Precision agriculture \sep Systematic review
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+\subsection{Background and Motivation}
+Unmanned Aerial Vehicles (UAVs) have become indispensable tools in precision agriculture... COORDINATION is the bottleneck.
+
+\section{Methods}
+\subsection{Information Sources and Search Strategy}
+Search strings included: \textit{(``swarm intelligence'' OR ``swarm robotics'' OR PSO OR ACO OR ABC) AND (multi-UAV OR ``UAV fleet'' OR ``drone swarm'') AND (agriculture OR farming)}.
+
+\subsection{Data Extraction and Effect Measures (Item 12)}
+\label{sec:data_extraction}
+Data extraction was performed by two independent reviewers. [NOTE: Effect measures were not sought due to the non-comparative and qualitative nature of the reviewed literature; the synthesis focuses on gap frequency and metric availability rather than absolute performance effects].
+
+\subsection{Risk of Bias and Certainty Assessment (Items 14 \& 15)}
+\label{sec:bias_certainty}
+Methodological quality was assessed using the Mixed Methods Appraisal Tool (MMAT) (Section 3.6). Operational maturity and evidence certainty were quantified using the Deployment Readiness Score (DRS) (Section 3.5). Potential reporting bias and threats to validity are further detailed in Table 8 (Section 6.7).
+
+\section{Results (Item 20a)}
+\subsection{Synthesis of Corpus Characteristics (4.1--4.4)}
+The finalized corpus of 33 studies (N=33) is synthesized in Table 2...
+
+\subsection{Performance Metrics and Algorithmic Distribution}
+Refer to Table 3 and Figures 2-5 for the detailed distribution...
+
+\section{Discussion (Items 23b \& 14)}
+\subsection{Limitations of the Evidence (Item 23b)}
+\label{sec:limitations}
+The primary limitation is the total reliance on simulation. As discussed in Section 6.6...
+
+\subsection{Threats to Validity (Item 14)}
+\label{sec:threats_validity}
+We categorized threats to validity as shown in Table 8.
+
+\begin{table}[ht]
+\caption{Threats to Validity (Synchronized with PRISMA Checklist S1).}
+\label{tab:threats_validity}
+\begin{tabularx}{\textwidth}{l X X}
+\toprule
+\textbf{Category} & \textbf{Threat} & \textbf{Mitigation Strategy} \\
+\midrule
+Internal & Simulation-only bias & Use of MMAT (Sec 3.6) to penalize lack of physical modeling. \\
+External & Task specificity & Analysis across 171 gaps to capture multi-domain issues. \\
+Construct & Metric heterogeneity & Reporting separate analysis for Energy, Time, and Convergence. \\
+Conclusion & Rescreening bias & Systematic audit of 44 excluded records (0 additions found). \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Administrative Information and Protocol Registration (Item 25)}
+\label{sec:admin}
+This review protocol was registered retrospectively at the Open Science Framework for transparency: \url{https://doi.org/10.17605/OSF.IO/64DQ9}. All supplemental materials (PRISMA Checklist S1, Extraction Database) are available at the cited repository.
+
+\end{document}

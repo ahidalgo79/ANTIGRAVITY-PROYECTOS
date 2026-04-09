@@ -1,0 +1,249 @@
+
+--- NUEVA RESPUESTA ---
+Longitud: 7710
+Contenido: # Algoritmos de Inteligencia de Enjambre para Planificación de Rutas en UAVs: Resultados y Análisis ...
+
+--- NUEVA RESPUESTA ---
+Longitud: 9127
+Contenido: # Algoritmos de Inteligencia de Enjambre para Planificación de Rutas en Sistemas Multi-UAV
+
+## Resul...
+
+--- NUEVA RESPUESTA ---
+Longitud: 5590
+Contenido: ```json
+{
+  "razonamiento": {
+    "situacion": "El contexto bibliográfico reúne múltiples fuentes so...
+
+--- NUEVA RESPUESTA ---
+Longitud: 5236
+Contenido: ```json
+{
+    "razonamiento": {
+        "situacion": "El contexto bibliográfico proporcionado abarca...
+
+--- NUEVA RESPUESTA ---
+Longitud: 5347
+Contenido: ```json
+{
+    "razonamiento": {
+        "situacion": "El contexto bibliográfico presenta múltiples e...
+
+--- NUEVA RESPUESTA ---
+Longitud: 12939
+Contenido: # Análisis STAR
+
+## [SITUATION]
+
+El campo de la inteligencia de enjambre (Swarm Intelligence, SI) ap...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: INCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: INCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: INCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: INCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: INCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 7
+Contenido: EXCLUIR...
+
+--- NUEVA RESPUESTA ---
+Longitud: 10121
+Contenido: # Justificación de Inclusión — Revisor 1
+## Formato STAR: Razonamiento Analítico para Decisión de IN...
+
+--- NUEVA RESPUESTA ---
+Longitud: 8763
+Contenido: # JUSTIFICACIÓN DE INCLUSIÓN — REVISOR 1
+### Registro: *"Computations and Methods"*
+---
+
+## [SITUATI...
+
+--- NUEVA RESPUESTA ---
+Longitud: 9756
+Contenido: # JUSTIFICACIÓN DE INCLUSIÓN — REVISOR 1
+## Formato STAR | Resolución de Conflicto entre Revisores
+
+...
+
+--- NUEVA RESPUESTA ---
+Longitud: 9752
+Contenido: # Justificación de Inclusión — Revisor 1 (Formato STAR)
+
+---
+
+## [SITUATION] — Contexto del Estudio
+...
+
+--- NUEVA RESPUESTA ---
+Longitud: 8628
+Contenido: # JUSTIFICACIÓN DE INCLUSIÓN — REVISOR 1
+## Formato STAR: Defensa Analítica del Registro Bibliográfi...
