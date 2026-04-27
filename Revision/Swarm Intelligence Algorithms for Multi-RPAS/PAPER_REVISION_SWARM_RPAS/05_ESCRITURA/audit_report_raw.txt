@@ -1,0 +1,127 @@
+{
+  "value": {
+    "answer": "Esta es una auditoría técnica profunda del artículo sobre **Inteligencia de Enjambre (SI) para Multi-RPAS en Agricultura**, diseñada para elevar el manuscrito a los estándares de *Computers and Electronics in Agriculture*.\n\n### 1. Rigor Científico y Metodología\n*   **Fortalezas:** El uso del marco **PRISMA 2020** y la estructura **PICOC** proporciona una transparencia metodológica superior a la mayoría de las revisiones en el área [1]. La inclusión de herramientas de evaluación de calidad como **MMAT** y el desarrollo del **Deployment Readiness Score (DRS)** permiten una crítica cuantitativa del estado del arte, no solo descriptiva [2].\n*   **Debilidades Críticas:** La metodología de extracción de datos presenta un punto de falla potencial: el uso de una \"tubería de Python\" basada en expresiones regulares (regex) para extraer métricas [3]. El propio texto admite que **el conteo inicial de métricas de energía estaba \"inflado\"** y requirió corrección manual, lo que pone en duda la fiabilidad de la automatización sin una verificación humana del 100% de los datos [4].\n*   **Inconsistencia de Inclusión:** El criterio **I4b** es explícitamente \"indulgente\", permitiendo estudios que validan marcos multi-UAV con un solo agente . Esto crea una contradicción interna: el artículo critica la falta de enfoque en enjambres (Brecha 3), pero infla su base de datos con estudios que no cumplen con la premisa de \"multi-UAV\" en sus experimentos .\n\n### 2. Resultados y Discusión\n*   **Sustento de Conclusiones:** El hallazgo de que **el 100% de los 22 estudios primarios carecen de validación en campo o hardware** es una conclusión devastadora y bien respaldada que justifica por sí sola la publicación [4-6].\n*   **Profundidad de la Discusión:** La sección sobre la **\"Brecha del Viento\"** es excelente para la revista objetivo; destaca que, en aplicaciones de pulverización (S13), la ausencia de modelos de viento invalida la utilidad práctica del algoritmo debido a la deriva de pesticidas .\n*   **Comparación con el Estado del Arte:** La **Tabla 2** posiciona de manera impecable este trabajo frente a revisiones previas (Tsouros, Chung, etc.), demostrando que cubre un vacío temporal (2021-2025) y metodológico que otros ignoraron [6-8].\n\n### 3. Claridad, Estilo y Estructura\n*   **Flujo Lógico:** Es coherente. La transición desde la identificación de las 171 brechas hacia la propuesta del **AgriSwarm-Bench** como solución es el punto más fuerte del flujo narrativo [9-11].\n*   **Redundancias:** Existe una repetición excesiva de la aclaración sobre los denominadores ($n=29$ vs. $n=22$) [12-15]. Aunque es estadísticamente riguroso, entorpece la lectura en las secciones de resultados.\n*   **Tono:** El tono es puramente académico y clínico, adecuado para una revista de alto impacto.\n\n### 4. Integridad Técnica (LaTeX)\n*   **Referencias y Citas:** Se observa el uso de la clave de cita `yang2013` retenida por \"compatibilidad con tex\", lo cual es una nota interna que debería limpiarse en la versión final [16].\n*   **Material Faltante:** El manuscrito hace referencia repetida al **\"Material Suplementario S1.5\"** (lista de verificación PRISMA), pero este no forma parte del cuerpo del texto . Para *Computers and Electronics in Agriculture*, la ausencia de estos anexos en el proceso de revisión es motivo de rechazo técnico.\n\n### 5. Cumplimiento con 'Computers and Electronics in Agriculture'\n*   **Enfoque Agrícola:** El artículo cumple con creces al vincular algoritmos abstractos con métricas específicas como el **\"coeficiente de solapamiento de pulverización\"** y la **\"deriva por viento\"** [17].\n*   **Innovación:** La propuesta de un **estándar de evaluación (AgriSwarm-Bench)** eleva el paper de una \"revisión pasiva\" a un \"artículo de posición\" con impacto real en la infraestructura de investigación agrícola [9].\n\n### 6. Recomendaciones Críticas (Acciones Inmediatas)\n1.  **Endurecer el Criterio I4b:** Elimina los estudios que solo validan con un solo dron. Un artículo sobre \"Inteligencia de Enjambre\" no debería considerar \"evidencia\" estudios que no demuestran interacción entre agentes .\n2.  **Hipótesis sobre el \"Dip\" de 2023-2024:** Las publicaciones cayeron drásticamente en estos años (solo el 13.8% del total) [18]. Debes discutir si esto se debe a una saturación de algoritmos teóricos o a un cambio de interés hacia plataformas propietarias cerradas (como DJI).\n3.  **Detallar la Tubería de Python:** Describe brevemente los parámetros de las regex para demostrar que no hubo sesgo de selección en la extracción automática de métricas .\n4.  **Inclusión Obligatoria de Hardware-in-the-Loop (HIL):** Dado que criticas la falta de hardware, añade al **AgriSwarm-Bench** una fase obligatoria de simulación HIL como puente económico hacia las pruebas de campo [2, 19].\n5.  **Revisión de Abreviaturas:** Asegúrate de que **BVLOS** y **VRA** se definan en su primera aparición en la introducción, no solo en la lista final, para facilitar la lectura a agrónomos no ingenieros .\n6.  **Verificación de Datos de 2025:** Dado que la búsqueda fue en marzo de 2026, los datos de 2025 están \"completos\", pero el manuscrito debe enfatizar que el volumen de 2025 (13.8%) ya supera a los dos años anteriores combinados, sugiriendo un renacimiento del campo .",
+    "conversation_id": "4f197b04-fac2-4f81-8e86-7a8ea03d7180",
+    "sources_used": [
+      "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70"
+    ],
+    "citations": {
+      "1": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "2": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "3": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "4": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "5": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "6": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "7": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "8": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "9": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "10": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "11": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "12": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "13": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "14": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "15": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "16": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "17": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "18": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "19": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70"
+    },
+    "references": [
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 1,
+        "cited_text": "19 Table 11: Top ten critical gaps ranked by frequency. All percentages computed over the full corpus (n=29). Rank Gap Description Papers % (n=29) Note 1 Lack of real-field validation 29 100.0 0/22 primary field-deployed (0%); 0/22 hardware testbed (0%) 2 No dynamic obstacles/environment 25 86.2 3 Single-UAV focus (no swarm)(§) 15 51.7 15/22 primary (68.2%); upper bound 4 No wind/weather modelling 20 69.0 5 No metric standardisation 16 55.2 6 Unrealistic kinematic constraints 14 48.3 7 Limited scalability assessment 13 44.8"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 2,
+        "cited_text": "ficient, yielding 𝜅 ≥ 0.61 (substantial reliability per Landis & Koch, 1977), indicating acceptable consensus among223 reviewers.224 10 Table 3: Deployment Readiness Score (DRS) instrument. 𝑄 = 0.30 𝐶1 + 0.25 𝐶2 + 0.25 𝐶3 + 0.20 𝐶4. Criterion Weight Score range Scoring rationale C1: Experimental validation 30% 0.0–1.0 Real field = 1.0; Sim + hardware testbed = 0.5; Simula- tion only = 0.0. C2: Quantitative metrics 25% 0.0–1.0 All three metrics = 1.0; two metrics = 0.67; one metric = 0.33; none = 0.0."
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 3,
+        "cited_text": "prevalent gap: no primary study (zero of 22, 0%) reports results from an operational agricultural field environment,413 and no primary study includes hardware testbed validation (zero of 22, 0%). When review articles are included, all414 29 of 29 studies (100%) lack any hardware component. Closing this gap requires not only individual research groups415 conducting field experiments, but also a cultural shift toward treating simulation-only results as preliminary rather416 than definitive.417 23 Priority 3 — Dynamic Environment Integration and Real-Time Replanning. Wind modelling, dynamic ob-418"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 4,
+        "cited_text": "en er gy qu al ita tiv el y ar e co de d “– ” re ga rd le ss of w he th er en er gy is di sc us se d in th e te xt .F ou ro f2 2 pr im ar y st ud ie s( 18 .2 % ;f ou ro f2 9, 13 .8 % )m ee tt hi sc rit er io n: S0 4 (o il co ns um pt io n) ,S 09 (f ue lc on su m pt io n) ,S 12 (tr aj ec to ry en er gy in te gr al ), an d S2 0 (b at te ry di sc ha rg e in m A h/ % ). Ea rli er au to m at ed ex tra ct io n pr od uc ed an in fla te d co un tb y tre at in g qu al ita tiv e m en tio ns as po si tiv e; th e co rr ec te d fig ur es ar e us ed"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 5,
+        "cited_text": "22 primary studies (100%) lack real-field validation; no study includes hardware testbed validation. Wind and dynamic28 obstacles are absent in 25 of 29 studies (86.2%). Metric reporting is sparse: 14 of 29 (48.3%) report execution time,29 four (13.8%) quantitative energy consumption, and ten (34.5%) convergence criteria. A total of 171 research gaps30 were identified across four dimensions.31 Conclusions: SI-based multi-UAV path planning remains simulation-oriented and lacks standardised benchmarks."
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 6,
+        "cited_text": "brought the full-text assessment pool to 51 records. Four additional studies were excluded at the eligibility stage for using non-UAV platforms (ground robots). SI = Swarm Intelligence. The 29 included studies comprise 22 primary research articles and seven secondary review articles. 6 Table 2: Comparison of prior reviews with the present systematic review. Checkmarks (3) indicate coverage; dashes (–) indicate absence. Feature Ts ou ro s [ 2] C hu ng [8 ] Pu en te [2 5] Sh ar m a [2 6] A it Sa ad i [ 13 ]"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 7,
+        "cited_text": "ance), Critical Revision of Gap Taxonomy, Agricultural and Materials Science Domain Expertise.515 Edgar Moisés González Torres: Writing – Review & Editing, Methodological Consultation (aerospace systems516 design), Critical Feedback on UAV platform constraints and validation protocols.517 José Manuel Naveiro Gómez: Writing – Review & Editing, Software Review (computational methods), Valida-518 tion, Domain Expertise in mechanical engineering simulation and optimisation.519 28 List of Abbreviations520"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 8,
+        "cited_text": "vehicles based on ant colony system, Swarm and Evolutionary Computation 65 (2021) 101005. doi:10.1016/633 j.swevo.2021.101005.634 [33] S. Lin, F. Li, X. Li, K. Jia, X. Zhang, Improved artificial bee colony algorithm based on multi-strategy synthesis635 for UAV path planning, IEEE Access 10 (2022) 119269–119285. doi:10.1109/ACCESS.2022.3218685.636 [34] G. Liu, C. Shu, Z. Liang, B. Peng, L. Cheng, A modified sparrow search algorithm with application in 3D route637 planning for UAV, Sensors 21 (4) (2021) 1224. doi:10.3390/s21041224.638"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 9,
+        "cited_text": "This study provides the first structured gap analysis—171 gaps across Technological (51), Practical (52), Method- ological (39), and Theoretical (29) dimensions—and proposes AgriSwarm-Bench, an open framework to accelerate experimental validation and standardised evaluation of swarm-based agricultural UAV systems. Keywords: Swarm intelligence, Multi-UAV, Path planning, Precision agriculture, Systematic review, Particle32 Swarm Optimisation, Ant Colony Optimisation33 1. Introduction34 1.1. Background and Motivation35"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 10,
+        "cited_text": "Publication bias Positive results more likely published and indexed Three independent databases; snowballing from seed papers Search query limitations Relevant papers using unlisted algorithm names may be missed Query refined iteratively; sensitivity test with 5-paper gold-standard set (100% recall) Single-database gap Relevant papers in non-indexed venues not captured MDPI manual search (zero eligible); OpenAlex supplementary search (125 records, zero new eligible); Scopus/WoS listed as Priority Future"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 11,
+        "cited_text": "incentive structure of the field is producing a literature with limited deployability. AgriSwarm-Bench offers one467 mechanism to shift this incentive structure.468 For the precision agriculture community: The review demonstrates that SI algorithms for multi-UAV coordina-469 tion have reached algorithmic maturity sufficient to address agricultural-scale tasks, but the translation to deployment470 requires investment in regulatory frameworks, field testing infrastructure, and domain-specific benchmarks.471"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 12,
+        "cited_text": "2 Metric inconsistency: Among the 29 included studies, only 14 (48.3%) report quantitative execution time,60 four (13.8%) report energy consumption with explicit numerical values and units, and ten (34.5%) specify con-61 vergence criteria. When calculated over the 22 primary research studies exclusively, these rates are 14 of 2262 (63.6%), four of 22 (18.2%), and ten of 22 (45.5%), respectively.63 Validation gap: All 22 primary research studies (100%) lack any hardware or real-field validation. No primary64"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 13,
+        "cited_text": "identified in this review.262 Denominator consistency statement. Unless otherwise explicitly noted, all percentages in this manuscript use263 the full corpus of 29 included studies as the denominator (n=29). Where an analysis is restricted to the 22 primary264 research studies, the denominator is stated as n=22 and both percentages are provided.265 Figure 2 and Table 5 show the distribution of swarm intelligence algorithms across the 29 reviewed studies. PSO266 dominates with ten papers (34.5% of all 29 studies; 45.5% of the 22 primary research studies), consistent with its267"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 14,
+        "cited_text": "† PS O Si m Fr am ew or k-on ly 2+ 3 – 3 G en . S2 6 Zu o et al .[ 49 ]† A PF +P SO Si m M ul ti-ag en t 5– 25 3 – – G en . S2 7 Ya ng et al .[ 50 ]† D O A Si m Fr am ew or k-on ly 1 3 – – G en . S2 8 Ya ng et al .[ 51 ]† R ev ie w N /A R ev ie w N /A – – – G en . S2 9 Ta ng et al .[ 52 ]† R ev ie w N /A R ev ie w N /A – – – G en . Su m m ar y (n =2 9) PS O :1 0 (3 4. 5% ) Si m :2 2 (7 5. 9% ) M ul ti: 7 (2 4. 1% ) 1– 25 14 (4 8. 3% ) 4 (1 3. 8% ) 10 (3 4. 5% ) Pr im ar y on ly (n =2 2) PS O :1 0 (4 5. 5%"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 15,
+        "cited_text": "null for all three metrics, as expected; when calculated over the 22 primary research studies exclusively, the reporting279 rates are 14 of 22 (63.6%), four of 22 (18.2%), and ten of 22 (45.5%), respectively. No study in the corpus reports280 all three metrics simultaneously alongside an agricultural-domain metric such as coverage rate per hectare or spray281 overlap coefficient.282 Table 6: Metric reporting frequency. Rates are reported over the full corpus (n=29) and over primary research studies only (n=22)."
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 16,
+        "cited_text": "versity Press, New York, 1999, ISBN: 978-0-19-513159-8. No DOI assigned (pre-digital monograph, 1999).597 31 [20] X. S. Yang, M. Karamanoglu, X. He, Flower pollination algorithm: A novel approach for multiobjective opti-598 mization, Engineering Optimization 46 (9) (2014) 1222–1237, published online 2013; formal print volume year599 2014. Cite key yang2013 retained for tex compatibility. doi:10.1080/0305215X.2013.832237.600 [21] C. Xiao, H. Yang, B. Zhang, Multi-unmanned aerial vehicle path planning based on improved nutcracker opti-601"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 17,
+        "cited_text": "Component 2 — Unified Metric Suite. Six metrics required for leaderboard submission:428 1. Coverage rate (%): percentage of target area covered within mission time.429 2. Energy per hectare (Wh/ha): total fleet energy divided by area covered.430 3. Mission completion time (min): wall-clock time from takeoff to final landing.431 4. Scalability index: ratio of coverage efficiency at ten UAVs to three UAVs.432 5. Convergence iterations: SI algorithm iterations to reach within 5% of best-known optimum.433"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 18,
+        "cited_text": "2021 10 34.5 2022 11 37.9 2023 3 9.1 2024 1 3.4 2025 4 13.8 Total 29 100.0 5. Research Gaps Analysis288 5.1. Gap Distribution by Dimension289 Table 9 and Figure 4 show the distribution of 171 documented research gaps across the four taxonomic dimensions.290 Practical gaps are most frequent (52 of 171, 30.4%), followed closely by Technological gaps (51 of 171, 29.8%), with291 Methodological (39 of 171, 22.8%) and Theoretical (29 of 171, 17.0%) gaps less prevalent. Verification: 51 + 52 +292 39 + 29 = 171 3.293"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 19,
+        "cited_text": "all 22 simulation-only primary studies, which substantially depresses scores regardless of algorithmic quality. This233 is by design—the DRS captures a normative judgement that simulation-only evidence is insufficient for deployment-234 readiness claims.235 3.8. Risk of Bias Assessment (MMAT)236 The risk of bias was assessed using the Mixed Methods Appraisal Tool (MMAT, version 2018) [31], adapted for237 computational engineering research. The five core criteria were operationalised as follows: (Q1) explicit research238"
+      }
+    ]
+  }
+}

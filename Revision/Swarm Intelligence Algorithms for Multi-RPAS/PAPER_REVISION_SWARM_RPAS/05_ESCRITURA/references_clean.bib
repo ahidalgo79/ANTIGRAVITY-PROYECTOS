@@ -1,29 +1,23 @@
 % ============================================================
 % references.bib — Limpio, deduplicado, con DOIs completos
 % Target: Computers and Electronics in Agriculture (Elsevier)
-% Auditado: 2026-03-17 | Total entradas: 52
+% Auditado: 2026-04-24 | Total entradas: 48
 % Desglose:
-%   - 33 estudios del corpus sistemático (S01–S33, años 2021–2025)
-%     (29 artículos primarios + 4 reviews: tang2022, yang2023,
-%      yang2025, zuo2025 asignados a S30–S33)
-%   - 1 referencia metodológica 2021–2025 (page2021 = PRISMA 2020)
+%   - 29 estudios del corpus sistemático (S01–S29, años 2021–2025)
+%     (22 artículos primarios + 7 reviews)
+%   - 1 referencia metodológica (page2021 = PRISMA 2020)
 %   - 13 referencias de background (pre-2021)
-%   - 5 libros/capítulos (kennedy1995, blum2008, yang2010, beni2005, bonabeau1999)
-%   Total: 33 + 1 + 13 + 5 = 52 entradas
-% Correcciones aplicadas:
-%   - 7 duplicados eliminados (se conserva entrada canónica)
-%   - S30–S33 corregidos: referencias únicas tang2022/yang2023/yang2025/zuo2025
+%   - 5 libros/capítulos fundamentales
+%   Total: 29 + 1 + 13 + 5 = 48 entradas
+% Correcciones aplicadas (Tarea t24/t25):
+%   - Purga de 4 estudios no-UAV (S22 y S33 eliminados del corpus original)
+%   - Reasignación de IDs S01-S29 para el escenario conservador n=29
 %   - 37 DOIs agregados o corregidos
 %   - Volúmenes, números y páginas completados en todas las entradas
-%   - yang2013: year=2014 (publicación formal); clave conservada por compatibilidad
-%   - pan2022: Article ID corregido a 00368504221094722 (17 dígitos, igual al DOI)
 %   - bonabeau1999: sin DOI (pre-digital); ISBN: 978-0-19-513159-8
-%   - page2021: 26 autores listados explícitamente (sin "others")
-%   - hayat2016: páginas corregidas a 1433--1436 (verificado por DOI)
-%   - Nombres de revistas IEEE unificados a forma completa
-%   - note fields: formato unificado con {} para proteger texto especial
+%   - page2021: 26 autores listados explícitamente
 % ============================================================
-%% ── CORPUS SISTEMÁTICO S01–S33 ──────────────────────────────
+%% ── CORPUS SISTEMÁTICO S01–S29 ──────────────────────────────
 @article{phung2021,
   author  = {Phung, Manh Duong and Ha, Quang Phuc},
   title   = {Safety-enhanced {UAV} path planning with spherical vector-based particle swarm optimization},
@@ -506,15 +500,9 @@
   doi       = {10.1016/j.compag.2023.108128},
   publisher = {Elsevier}
 }
-@article{xu2025orchard,
-  author    = {Xu, Yang and Xue, Xinyu and Sun, Zhu and Cui, Longfei and Cai, Chen and Zhou, Qingqing and Chen, Chen and Gu, Wei},
-  title     = {Path planning and scheduling of multiple unmanned ground vehicles for orchard plant protection operations},
-  journal   = {Computers and Electronics in Agriculture},
-  year      = {2025},
-  doi       = {10.1016/j.compag.2025.107215},
-  publisher = {Elsevier},
-  note      = {In press}
-}
+%% xu2025orchard ELIMINADA (t25, 2026-04-24): no citada en el texto.
+%% Con \nocite{*} generaria referencia huerfana. Si se desea citar en Sec. 2
+%% o Sec. 7 como ejemplo de trabajo en CEA, restaurar y añadir \cite{xu2025orchard}.
 @article{hong2018,
   author  = {Hong, Quan Nha and F\`{a}bregues, Sergi and Bartlett, Glenn and Boardman, Fiona and Cargo, Margaret and Dagenais, Pierre and Gagnon, Marie-Pierre and Griffiths, Frances and Nicolau, Belinda and O'Cathain, Alicia and Pluye, Pierre},
   title   = {The Mixed Methods Appraisal Tool ({MMAT}) version 2018 for information professionals and researchers},
@@ -525,9 +513,44 @@
   pages   = {285--291},
   doi     = {10.3233/EFI-180221}
 }
+%% ── REFERENCIAS AÑADIDAS EN TAREA t25 (2026-04-24) ─────────────────────────
+%% iso16290: citada en Sec. 3.7 como [36] para umbrales TRL del DRS.
+@techreport{iso16290,
+  author      = {{International Organization for Standardization}},
+  title       = {Space systems --- Space product assurance --- Technology
+                 readiness levels ({TRL})},
+  institution = {ISO},
+  type        = {International Standard},
+  number      = {ISO 16290:2013},
+  year        = {2013},
+  note        = {Defines {TRL} 1--9 scale for technology maturity assessment}
+}
+%% olfati2006: citada en Sec. 7.2 para scalability index (flocking theory).
+@article{olfati2006,
+  author  = {Olfati-Saber, Reza},
+  title   = {Flocking for multi-agent dynamic systems: {Algorithms} and theory},
+  journal = {IEEE Transactions on Automatic Control},
+  year    = {2006},
+  volume  = {51},
+  number  = {3},
+  pages   = {401--420},
+  doi     = {10.1109/TAC.2005.864190}
+}
+%% meier2015: citada en Sec. 7.2 para wind-drift deviation (PX4 framework).
+@inproceedings{meier2015,
+  author    = {Meier, Lorenz and Honegger, Dominik and Pollefeys, Marc},
+  title     = {{PX4}: {A} node-based multithreaded open source robotics framework
+               for deeply embedded platforms},
+  booktitle = {Proceedings of the {IEEE} International Conference on Robotics
+               and Automation ({ICRA})},
+  year      = {2015},
+  pages     = {6235--6240},
+  address   = {Seattle, WA, USA},
+  doi       = {10.1109/ICRA.2015.7140074}
+}
 @misc{grand_view_research2024,
   author = {{Grand View Research}},
-  title  = {UAV Market Size, Share & Trends Analysis Report},
+  title  = {UAV Market Size, Share \& Trends Analysis Report},
   year   = {2024},
   note   = {Accessed: 2026-04-07}
 }

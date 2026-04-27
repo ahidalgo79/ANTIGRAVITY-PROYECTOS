@@ -1,434 +1,68 @@
 % ============================================================
-% SUPPLEMENTARY MATERIAL S1: Detailed Algorithm Distribution
+% SUPPLEMENTARY MATERIAL S1: Detailed Algorithm Characteristics
+% Systematic Review: Swarm Intelligence for Multi-UAV Path Planning
 % ============================================================
-\begin{table}[htbp]
-\centering
-\caption{PICOC framework defining the scope and boundaries of this systematic review.}
-\label{tab:picoc}
-\begin{tabularx}{\textwidth}{lX}
+\documentclass[review,3p]{elsarticle}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{pifont}
+
+\begin{document}
+
+\section*{Supplementary Material S1: Detailed Study Characteristics (n=29)}
+
+This table provides the complete dataset of the 29 studies included in the systematic review, following the "Conservative Scenario" (n=29) which excludes non-UAV and non-agricultural studies.
+
+\begin{landscape}
+\begin{longtable}{llp{2.5cm}lllcccc}
+\caption{Detailed characteristics of the 29 included studies.} \label{tab:supp_study_chars} \\
 \toprule
-\textbf{Component} & \textbf{Operational definition in this review} \\
+\textbf{ID} & \textbf{Reference} & \textbf{Algorithm} & \textbf{Val.} & \textbf{Val. Type} & \textbf{UAVs} & \textbf{T} & \textbf{E} & \textbf{C} & \textbf{App.} \\
 \midrule
-\textbf{Population} & Peer-reviewed studies (2021--2024) addressing path planning, trajectory planning, or coverage planning for multi-UAV systems in precision agriculture contexts (crop monitoring, spraying, field mapping, yield estimation). \\
-\textbf{Intervention} & Application of at least one swarm intelligence (SI) algorithm (PSO, ACO, ABC, SSA, GWO, DBO, NOA, DOA, or hybrid SI variants) to the multi-UAV path planning problem. Studies using only non-SI methods (A*, Dijkstra, genetic algorithms without SI hybridisation, reinforcement learning without SI components) are excluded under criterion E4. \\
-\textbf{Comparison} & Where reported, comparison against: (a) baseline SI algorithms (e.g., standard PSO vs. hybrid PSO), (b) non-SI optimisation methods, or (c) ablation studies removing specific SI components. Studies without explicit comparison are retained but flagged in metric reporting analysis (RQ2). \\
-\textbf{Outcome} & Quantitative performance metrics (execution time, energy consumption, convergence criteria) and qualitative gap identification across four dimensions (Technological, Practical, Methodological, Theoretical). \\
-\textbf{Context} & Precision agriculture applications with operational constraints: limited battery endurance, dynamic environmental factors (wind, obstacles), regulatory compliance (buffer zones, BVLOS restrictions), and scalability to commercial field sizes (10--1,000+\,ha). \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\noindent\textbf{Link to research questions.} The PICOC components map directly to the four research questions: RQ1 addresses \textit{Intervention} (algorithm distribution); RQ2 addresses \textit{Outcome} (metric reporting consistency); RQ3 addresses \textit{Population} and \textit{Context} (gap identification by application type); RQ4 synthesises all components to prioritise future research directions. The refined Boolean search string (Section~3.1) was constructed to maximise recall of studies satisfying all five PICOC components, with IEEE Thesaurus terms and proximity operators applied to reduce semantic noise while maintaining 100\% recall on a 5-paper gold-standard validation set.
-
-\subsection{Research Questions}
-
-This systematic review addresses the following research questions, formulated following the PRISMA 2020 guidelines \cite{page2021} and the PICO framework adapted for engineering reviews:
-
-\begin{itemize}
-  \item \textbf{RQ1:} What swarm intelligence algorithms are most frequently applied to multi-UAV path planning in precision agriculture (2021--2024), and how has the algorithm landscape evolved over this period?
-  \item \textbf{RQ2:} What quantitative performance metrics are reported across studies, and how consistent is reporting practice in terms of enabling cross-algorithm comparison?
-  \item \textbf{RQ3:} What research gaps exist in the current literature, and how can they be categorised systematically by root cause and deployment impact?
-  \item \textbf{RQ4:} What are the highest-priority directions for future research, based on gap frequency and criticality for real-world deployment?
-\end{itemize}
-
-\subsection{Contributions}
-
-This paper makes four key contributions to the swarm intelligence and agricultural robotics communities:
-
-\begin{enumerate}
-    \item \textbf{Comprehensive Taxonomy:} The first PRISMA 2020-compliant classification of 33 papers across 10 SI algorithm categories (PSO, ACO, ABC, SSA, GWO, DBO, NOA, DOA, Other SI Variants, and Review), extending prior taxonomies \cite{chung2018,brambilla2013,puente2022,sharma2022} to include algorithms introduced after 2020.
-    \item \textbf{Quantitative Synthesis:} Systematic extraction and comparison of performance metrics---execution time, energy consumption, and convergence criteria---across all included studies using an automated Python pipeline, addressing the standardisation gaps identified in recent surveys \cite{phung2021,pan2022,aitsaadi2022}.
-    \item \textbf{Four-Dimensional Gap Framework:} The first structured documentation of 171 research gaps, each with explicit root cause, consequence, and priority classification, organised across Technological (51, 29.8\%), Practical (52, 30.4\%), Methodological (39, 22.8\%), and Theoretical (29, 17.0\%) dimensions---building upon systematic review frameworks from robotics and software engineering \cite{brambilla2013,bayindir2016}.
-    \item \textbf{Actionable Research Agenda:} Three prioritised research directions tied directly to the most critical gaps, anchored by the concrete proposal of AgriSwarm-Bench: an open benchmarking framework designed to accelerate the simulation-to-field transition for swarm-based agricultural UAV systems.
-\end{enumerate}
-
-\subsection{Structure of This Paper}
-
-The remainder of this paper is organised as follows. Section~2 reviews prior systematic reviews and positions this work relative to existing literature. Section~3 describes the PRISMA 2020 methodology, search strategy, data extraction pipeline, Deployment Readiness Score (DRS) instrument, and MMAT risk-of-bias assessment. Section~4 presents results on algorithm distribution, metric availability, and temporal trends. Section~5 provides the four-dimensional gap analysis with priority classification. Section~6 discusses the implications of the findings for agricultural robotics research and practice. Section~7 proposes a research agenda and the AgriSwarm-Bench framework. Section~8 concludes with a summary of findings, limitations, and future work directions.
-
-
-%% ============================================================
-%% FIGURE 1: PRISMA FLOW DIAGRAM (TikZ)
-%% ============================================================
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[
-    node distance=0.5cm,
-    box/.style={rectangle, draw, rounded corners, text width=7.5cm, 
-                align=center, minimum height=1.2cm, fill=blue!5},
-    boxsmall/.style={rectangle, draw, rounded corners, text width=4.5cm, 
-                align=center, minimum height=0.9cm, fill=green!5},
-    arrow/.style={-{Stealth}, thick}
-]
-
-% === IDENTIFICATION ===
-\node[box] (id1) {\textbf{Identification}\\
-Records identified from databases (n = 482)\\
-{\scriptsize IEEE Xplore: 32 | ScienceDirect: 196 | SpringerLink: 254}};
-\node[boxsmall, right=0.3cm of id1] (id2) {Registers removed before screening:\\
-Duplicate records (n = 21)};
-\node[box, below=0.4cm of id1] (id3) {Records identified from other methods (n = 20)\\
-{\scriptsize Snowballing via Research Rabbit}};
-
-% === SCREENING ===
-\node[box, below=0.8cm of id3] (scr) {\textbf{Screening}\\
-Records screened (n = 481)\\
-Records excluded (n = 433)\\
-{\scriptsize (includes 3 excluded by period criterion E1)}};
-
-% === ELIGIBILITY ===
-\node[box, below=of scr] (elig) {\textbf{Eligibility}\\
-Reports sought for retrieval (n = 48)\\
-Reports not retrieved (n = 0)\\
-Reports assessed for eligibility (n = 51)\\
-Reports excluded (n = 18)\\
-{\scriptsize Not multi-UAV (8) | No agriculture (6) | Non-SI (4)}};
-
-% === INCLUDED ===
-\node[box, below=of elig] (inc) {\textbf{Included}\\
-Studies included in review (n = 33)\\
-{\scriptsize Primary research: 26 | Review articles: 7}};
-
-% === ARROWS ===
-\draw[arrow] (id1) -- (scr);
-\draw[arrow] (id2) -- (scr);
-\draw[arrow] (id3) -- (scr);
-\draw[arrow] (scr) -- (elig);
-\draw[arrow] (elig) -- (inc);
-
-\end{tikzpicture}
-\caption{PRISMA 2020 flow diagram following the official two-column layout specified 
-in Page et al.\ (2021). Search conducted on 2024-03-16 across IEEE Xplore, 
-ScienceDirect, SpringerLink, and complementary snowballing via Research Rabbit. 
-SI = Swarm Intelligence. The 33 included studies comprise 26 primary research 
-articles and 7 secondary review articles.}
-\label{fig:prisma}
-\end{figure}
-
-%% ============================================================
-%% SECTION 2: RELATED WORK
-%% ============================================================
-\section{Related Work}
-
-Six major review articles were identified as the closest antecedents to this work, covering three complementary domains: UAV applications in precision agriculture \cite{tsouros2019,mogili2018}, multi-UAV coordination and aerial swarm robotics \cite{chung2018,gupta2016}, and swarm engineering methodology \cite{brambilla2013,bayindir2016}. Additionally, two recent SI-specific reviews for UAV path planning \cite{puente2022,sharma2022} and one comprehensive UAV optimisation survey \cite{aitsaadi2022} represent the most directly related prior work. Table~\ref{tab:prior_reviews} provides a structured comparison of their scope and contributions relative to the present review.
-
-\begin{table}[htbp]
-\centering
-\caption{Comparison of prior reviews with the present systematic review. Checkmarks (\checkmark) indicate coverage; dashes (--) indicate absence.}
-\label{tab:prior_reviews}
-\begin{tabularx}{\textwidth}{lcccccc}
+\endfirsthead
+\multicolumn{10}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
 \toprule
-\textbf{Feature} &
-\rotatebox{70}{\textbf{Tsouros~\cite{tsouros2019}}} &
-\rotatebox{70}{\textbf{Chung~\cite{chung2018}}} &
-\rotatebox{70}{\textbf{Puente~\cite{puente2022}}} &
-\rotatebox{70}{\textbf{Sharma~\cite{sharma2022}}} &
-\rotatebox{70}{\textbf{Ait Saadi~\cite{aitsaadi2022}}} &
-\rotatebox{70}{\textbf{This review}} \\
+\textbf{ID} & \textbf{Reference} & \textbf{Algorithm} & \textbf{Val.} & \textbf{Val. Type} & \textbf{UAVs} & \textbf{T} & \textbf{E} & \textbf{C} & \textbf{App.} \\
 \midrule
-Period covered            & pre-2019  & pre-2018  & pre-2021  & pre-2021  & pre-2022  & 2021--2024 \\
-Agricultural focus        & \checkmark & --        & --        & --        & --        & \checkmark \\
-Multi-UAV coordination    & --        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
-SI algorithms only        & --        & --        & \checkmark & \checkmark & --        & \checkmark \\
-PRISMA methodology        & --        & --        & --        & --        & --        & \checkmark \\
-Quantitative gap analysis & --        & --        & --        & --        & --        & \checkmark \\
-Gap root-cause \& consequence & --    & --        & --        & --        & --        & \checkmark \\
-Benchmark framework proposed & --     & --        & --        & --        & --        & \checkmark \\
-Reproducible materials    & --        & --        & --        & --        & --        & \checkmark \\
-n studies included        & 45        & 80+       & 62        & 41        & 153       & 33 (26+7) \\
+\endhead
 \bottomrule
-\end{tabularx}
-\end{table}
-
-\subsection*{Analysis of Prior Reviews}
-
-\textbf{Tsouros et al.\ \cite{tsouros2019}} provide the most widely cited survey of UAV applications in precision agriculture, covering 45 studies across crop monitoring, mapping, spraying, and yield estimation. Their primary contribution is a taxonomy of UAV sensor types and application scenarios. However, the review is limited to single-UAV operations, predates the 2021--2024 publication wave, and does not address path planning algorithms or multi-agent coordination. It serves as a foundational reference for agricultural context but provides no guidance on SI-based path planning for swarms.
-
-\textbf{Chung et al.\ \cite{chung2018}} offer the most technically rigorous survey of aerial swarm robotics, reviewing more than 80 papers on multi-UAV formation control, task allocation, and path planning across military, civilian, and research applications. Their treatment of PSO and ACO as coordination mechanisms is thorough, and their taxonomy of swarm behaviours---flocking, foraging, task allocation---remains influential. The review's limitation for the present purpose is its non-agricultural scope: agricultural-specific constraints such as wind drift, chemical compliance zones, and row-based field geometry are absent. Furthermore, the 2018 cutoff predates the post-2020 algorithm generation (DBO, NOA, SSA, DOA) that features prominently in the 2021--2024 corpus.
-
-\textbf{Puente-Castro et al.\ \cite{puente2022}} review 62 papers on artificial intelligence applied to UAV swarm path planning, with a specific focus on SI methods including PSO, ACO, and ABC. Their work is the closest methodological antecedent to the present review in terms of algorithm scope and multi-UAV focus. However, it covers the period up to 2021, uses a narrative rather than PRISMA-structured methodology, does not include agricultural-specific analysis, and provides qualitative rather than quantitative gap documentation. The 33 papers identified in the present review for 2021--2024 are entirely post-dating the Puente-Castro corpus, confirming the non-overlap and complementarity of the two reviews.
-
-\textbf{Sharma et al.\ \cite{sharma2022}} review 41 papers on SI-based path planning for multi-UAV target interception, providing a useful performance comparison table across PSO, ACO, ABC, and GWO algorithms. Their primary limitation is the focus on interception missions---a military-oriented task---rather than agricultural coverage tasks, which have fundamentally different optimisation objectives (area coverage vs.\ point interception) and operational constraints. Their metric comparison approach inspired the quantitative synthesis methodology of the present review.
-
-\textbf{Ait Saadi et al.\ \cite{aitsaadi2022}} provide the most comprehensive optimisation survey in the domain, reviewing 153 papers on UAV path planning across SI and non-SI methods. Their broad scope is both a strength and a limitation: while it enables cross-paradigm comparison (SI vs.\ evolutionary algorithms vs.\ classical planners), the agricultural multi-UAV sub-domain receives only peripheral coverage. The review does not apply PRISMA methodology, does not document gaps with root-cause analysis, and does not propose evaluation benchmarks.
-
-\textbf{Brambilla et al.\ \cite{brambilla2013} and Bayindir \cite{bayindir2016}} provide foundational theoretical frameworks for swarm robotics from a systems engineering perspective. While not focused on UAVs or agriculture, their taxonomies of swarm behaviours and evaluation criteria directly informed the four-dimensional gap framework developed in the present review. In particular, Brambilla et al.'s distinction between \textit{design} methods (how swarms are programmed) and \textit{analysis} methods (how swarm behaviour is characterised) maps onto the Technological/Theoretical axis of the present gap taxonomy.
-
-\subsection*{Positioning of the Present Review}
-
-As shown in Table~\ref{tab:prior_reviews}, prior reviews address complementary aspects of the field but share three structural limitations that the present review is designed to address. First, \textit{temporal gap}: all prior reviews have cutoff dates of 2022 or earlier, meaning the 2021--2024 emergence of new SI algorithms (DBO, NOA, DOA, SSA) and the post-pandemic acceleration of agricultural UAV adoption are not captured. Second, \textit{methodological gap}: none applies PRISMA 2020 guidelines, meaning their inclusion criteria, screening processes, and inter-rater agreement are not reported in a reproducible form. Third, \textit{analytical gap}: while all prior reviews mention limitations qualitatively, none provides a structured gap database with root cause, consequence, and priority classification for each limitation---the primary analytical contribution of the present work.
-
-The present review deliberately narrows its scope to agricultural applications of SI-based multi-UAV path planning for 2021--2024. This narrower scope, relative to the 41--153 papers in prior reviews, enables deeper gap analysis (171 documented gaps across 33 papers, averaging 5.2 gaps per study) and more operationally specific recommendations. The resulting 33-paper corpus is entirely non-overlapping with the Puente-Castro and Sharma corpora, confirming that this review addresses a distinct and previously uncharacterised segment of the literature. Taken together, the prior reviews establish the foundational knowledge on which the present work builds; the present review extends that foundation specifically into the 2021--2024 agricultural context where SI algorithm diversity has expanded and the pressure for real-world deployment has intensified.
-
-
-%% ============================================================
-%% SECTION 3: METHODOLOGY
-%% ============================================================
-\section{Methodology}
-
-This review follows the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 guidelines \cite{page2021}, adapted for engineering and computing literature where randomised controlled trials are not the standard study design and where methodological quality is assessed through experimental rigour and reproducibility rather than clinical bias criteria. The full PRISMA 2020 checklist is provided as Supplementary Material~S1. The review protocol was developed prior to the literature search and is documented in the supplementary materials.\footnote{This review protocol was not formally pre-registered in a domain-specific 
-registry prior to the literature search. PROSPERO is designed primarily for clinical 
-and health-related systematic reviews and does not accept engineering or computing 
-protocols. The Open Science Framework (OSF; \url{https://osf.io}) does accept 
-systematic review protocols from all disciplines, including engineering, and would 
-have been an appropriate pre-registration venue. The protocol was not deposited in 
-OSF prior to the search because the authors were unaware of OSF's scope at the time 
-the protocol was finalised; this omission is acknowledged as a limitation of this 
-review (Section~8.3). To mitigate the risks associated with the absence of 
-prospective pre-registration---namely, outcome reporting bias and post-hoc 
-modification of inclusion criteria---the review protocol has been registered 
-retrospectively at the Open Science Framework for transparency: 
-\url{https://doi.org/10.17605/OSF.IO/64DQ9}. The registration includes search 
-strategies, extraction codebook, PRISMA 2020 checklist, screening logs, extraction 
-database, gap taxonomy, and supplementary materials, enabling independent 
-verification of adherence to the pre-specified methodology. The authors commit to 
-depositing all future review protocols in OSF prior to data collection.}
-
-\subsection{Search Strategy}
-
-A systematic literature search was conducted across three major electronic databases: IEEE Xplore, ScienceDirect, and SpringerLink. These databases were selected for their comprehensive coverage of the target disciplines---computational intelligence, robotics, and agricultural engineering---and their compatibility with advanced Boolean query syntax. A fourth source, complementary citation snowballing via Research Rabbit, was employed to identify records not captured by keyword-based database queries, particularly conference papers and recent preprints that may not yet be fully indexed.
-
-\textbf{Boolean search string.} The search query was constructed iteratively through three rounds of pilot searches to balance recall (avoiding missed relevant papers) and precision (avoiding irrelevant records). The final string, adapted for each database's query syntax, was:
-
-\begin{quote}
-\small
-\texttt{("swarm intelligence" OR "particle swarm optimization"} \\
-\texttt{OR "ant colony optimization" OR "artificial bee colony"} \\
-\texttt{OR "grey wolf optimizer" OR "salp swarm algorithm"} \\
-\texttt{OR "dung beetle optimizer" OR "dandelion optimizer")} \\
-\texttt{AND ("UAV" OR "unmanned aerial vehicle" OR "multi-UAV" OR "UAVs")} \\
-\texttt{AND ("path planning" OR "trajectory planning" OR "coverage planning")} \\
-\texttt{AND ("agriculture" OR "precision agriculture" OR "crop monitoring"} \\
-\texttt{OR "spraying" OR "field mapping" OR "smart farming")}
-\end{quote}
-
-The string covers the three conceptual domains that define the review scope: SI algorithm type, aerial vehicle platform, and agricultural application context. Individual algorithm names were included explicitly (rather than relying on the umbrella term ``swarm intelligence'' alone) because database indexing practices vary and many papers do not use the generic term in their abstracts. Algorithm terms added relative to the initial query---DBO, NOA, DOA---reflect algorithms that emerged after 2020 and are therefore underrepresented in prior reviews.
-
-\textbf{Proximity operators.} To reduce semantic noise from loosely related terms, proximity operators were applied where supported by database syntax: \texttt{"swarm intelligence" NEAR/3 "UAV"} ensures the two concepts appear within three words of each other; \texttt{"path planning" W/2 "agriculture"} requires "agriculture" to follow "path planning" within two words. These operators were applied in IEEE Xplore and ScienceDirect; SpringerLink does not support proximity syntax, so the base Boolean string was used for that database. Pilot testing showed that proximity operators reduced irrelevant hits by ~18\% without losing any of the 5 gold-standard papers (see sensitivity test below).
-
-\textbf{Sensitivity test with gold-standard set.} To validate that query refinements did not reduce recall of relevant studies, we assembled a gold-standard set of 5 papers known to be relevant to the review scope \cite{phung2021,shafiq2022,liu2021,pan2022,puente2022}. The final query string (with IEEE Thesaurus terms and proximity operators) successfully retrieved all 5 gold-standard papers across the three databases, confirming 100\% recall for this validation set. This test provides empirical support that the refined query maintains sensitivity while improving precision through controlled vocabulary and proximity constraints.
-
-\textbf{Link to PICOC framework.} The Boolean search string and its refinements (IEEE Thesaurus terms, proximity operators) were designed to retrieve studies satisfying all five PICOC components defined in Section~1.3 (Table~\ref{tab:picoc}). In particular, the explicit inclusion of SI algorithm names in the query ensures coverage of the \textit{Intervention} component, while the agricultural domain terms ensure alignment with the \textit{Context} component. The sensitivity test with a 5-paper gold-standard set confirmed that these refinements maintain 100\% recall for studies meeting all PICOC criteria while reducing irrelevant hits by ~18\%.
-
-\textbf{Search filters.} The following filters were applied uniformly across all three databases: publication year 2021--2024 (inclusive); English language; document type restricted to peer-reviewed journal articles and peer-reviewed conference proceedings. The search was executed on 2024-03-16.
-
-\textbf{Complementary snowballing.} Forward and backward citation snowballing was conducted using Research Rabbit, seeded from the following five papers identified as high-relevance anchors in the initial database search: Phung \& Ha \cite{phung2021} (PSO for agricultural UAV safety); Shafiq et al.\ \cite{shafiq2022} (ACO multi-UAV convergence); Liu et al.\ \cite{liu2021} (SSA-based neural network path planning); Pan et al.\ \cite{pan2022} (heterogeneous UAV swarm task planning); and Puente-Castro et al.\ \cite{puente2022} (AI review for UAV swarms). These seeds were selected to maximise coverage across algorithm types and publication venues. Snowballing yielded 20 additional records not returned by the database queries, of which 8 passed full-text screening and were included in the final corpus. It should be noted that snowballing from a fixed seed set introduces a circularity risk: papers that cite the seed papers (forward snowballing) or are cited by them (backward snowballing) are structurally more likely to address the same algorithm families (PSO, ACO, SSA) that the seeds represent. This seed bias may underrepresent algorithm families absent from the seed set---particularly newer DBO, NOA, and DOA variants---and is acknowledged as a secondary limitation of the complementary search strategy (see Section~8.3).
-
-\textbf{Database coverage extension.} To address potential source-level bias from excluding MDPI journals... we conducted a manual search of MDPI journals (\textit{Sensors}, \textit{Fire}, \textit{Applied Sciences}, \textit{Agronomy}, \textit{Agriculture}) for the 2021--2024 period using the same Boolean query string. This search identified 5 records. After applying inclusion criteria I1--I5, all 5 records were excluded: 2 under E4 (SI method not applied to agricultural path planning) and 3 under E5 (non-agricultural domain: disaster response, emergency delivery, military positioning). One record (M04: Yan \& Chen, 2024, PSO+ABC for forest fire detection, DOI: 10.3390/app14114937) generated a discrepant decision between the two reviewers: the primary reviewer initially classified it as eligible based on the multi-UAV SI criterion (I4), while the second reviewer (Dr.\ de la Garza Gutiérrez) classified it as excluded under E5 (exclusively non-agricultural domain). Following structured discussion, the consensus decision was exclusion under E5, as forest fire detection does not meet the agricultural application criterion (I5) as operationalised in this review. No additional studies were incorporated from this search extension. The core corpus of 33 studies remains unchanged, and all quantitative findings reported in Sections~4--5 are based on this stable corpus.
-
-\textbf{Coverage of Scopus, Web of Science, and OpenAlex supplementary search.} Scopus and Web of Science (WoS) are recognised as the two broadest multi-disciplinary citation indices. Access was attempted on 2024-03-28 via the institutional portals of Instituto Tecnológico de Chihuahua II (CONRICYT consortium, Mexico) and Universidad Nacional de Educación a Distancia (UNED, Spain); authenticated access to both databases could not be confirmed at the time of the search due to subscription constraints at both institutions. To partially bound the impact of this omission, a supplementary search was conducted in \textbf{OpenAlex} (openalex.org) on 2024-03-29 using the same Boolean concepts restricted to title and abstract fields, filtered to 2021--2024, English, articles and conference papers, and the topic filters \textit{UAV Applications and Optimization}, \textit{Robotic Path Planning Algorithms}, and \textit{Smart Agriculture and AI}. This search returned 125 records. After automated deduplication against the existing corpus (1 record already present identified by DOI), 124 unique records remained. Title and abstract screening against criteria I1--I5 identified 8 potentially relevant candidates. Full-text review of these 8 candidates was conducted by the primary reviewer on 2024-03-29; all 8 were subsequently excluded. Five were excluded at the title/abstract stage under E4 (1 study: SI applied to image classification, not path planning) or E5 (4 studies: generic or non-agricultural primary domain). The remaining 3 candidates---\textit{UAV Path Planning Model Leveraging Machine Learning and Swarm Intelligence for Smart Agriculture} (DOI: 10.12694/scpe.v25i5.3131, 2024); \textit{Agricultural UAV Crop Spraying Path Planning Based on PSO-A* Algorithm} (DOI: 10.35633/inmateh-71-54, 2023); and \textit{Three-Dimensional Obstacle Avoidance Path Planning for Agricultural UAV Based on Improved Ant Colony Algorithm} (DOI: 10.53941/ijndi.2023.100028, 2023)---were excluded at full-text assessment under criterion E3: all three propose SI-based path planning algorithms for single-UAV platforms without a multi-UAV coordination framework, which does not satisfy inclusion criterion I4 as operationalised in this review. No new studies were incorporated from the OpenAlex supplementary search. The final corpus of 33 studies is therefore unchanged, and all quantitative findings reported in Sections~4--5 remain valid. This result provides limited but positive evidence that the core corpus is not substantially underrepresented with respect to single-UAV SI path planning studies indexed in OpenAlex that are not already present in the three primary databases. OpenAlex was selected as a supplementary source because it is an open, citable index with coverage reported as comparable to Scopus and WoS for scientific literature (Priem et al., 2022, \textit{OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts}, arXiv:2205.01833)\footnote{Priem, J., Piwowar, H., \& Orr, R. (2022). OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts. \textit{arXiv preprint} arXiv:2205.01833. \url{https://arxiv.org/abs/2205.01833}}; it does not replace a full Scopus/WoS search, which remains the highest-priority future action (Section~8.4).
-
-\textbf{Results.} The search identified 502 records in total: IEEE Xplore (32), ScienceDirect (196), SpringerLink (254), and snowballing (20). After removing 21 duplicates, 481 unique records proceeded to title/abstract screening. Of these, 433 records were excluded at this stage: 430 on thematic grounds (criteria E2--E5) and 3 additional records excluded specifically under criterion E1 (outside the 2021--2024 review period) that had passed initial database filters due to indexing inconsistencies (EXC\_15: Baghal 2016; EXC\_19: Bryant-Lees 2021\footnote{Bryant-Lees et al.\ (2021) was published within the period but addresses suicide ideation in RPA career fields---a non-path-planning topic---and was correctly excluded at title/abstract screening under E1/E5.}; EXC\_20: Menouar 2017). These 3 records are therefore counted in the screening phase rather than the full-text assessment phase, correcting the earlier figure of 430. The 48 records that passed title/abstract screening, together with 3 borderline records re-evaluated at full text, yielded 51 records for full-text assessment. The complete PRISMA flow diagram is shown in Figure~\ref{fig:prisma}.
-
-\subsection{Study Selection and Eligibility Criteria}
-
-\textbf{Inclusion criteria.} A study was eligible for inclusion if it satisfied \textit{all} of the following conditions: (I1) published between January 2021 and December 2024; (I2) peer-reviewed journal article or peer-reviewed conference paper with full text available; (I3) text available in English; (I4) proposes, evaluates, or reviews at least one SI algorithm applied to path planning, trajectory planning, or coverage planning for UAVs; (I4b) studies proposing multi-UAV coordination frameworks but validating with a single agent are included if the framework is explicitly designed for multiple agents, and are flagged as `framework-only (single-agent validation)' in the extraction database; (I5) mentions or implies an agricultural application in the abstract, introduction, or methodology (crop monitoring, spraying, field mapping, yield estimation, or equivalent).
-
-\textbf{Exclusion criteria.} A study was excluded if it met \textit{any} of the following conditions: (E1) duplicate of an already-included record; (E2) abstract-only or extended abstract without full methodology; (E3) focuses exclusively on single-UAV path planning without proposing or evaluating a multi-UAV coordination framework (i.e., the study does not address swarm coordination in its problem formulation, algorithm design, or experimental evaluation); (E4) employs only non-SI optimisation methods such as A*, genetic algorithms without SI hybridisation, or reinforcement learning without SI components; (E5) application domain is exclusively non-agricultural (military, search-and-rescue, infrastructure inspection) without any reference to agricultural contexts.
-
-\textbf{Screening process.} Title and abstract screening of all 481 records was performed by the primary reviewer. Full-text assessment was conducted on the 51 records that passed title/abstract screening. To ensure methodological rigour consistent with PRISMA 2020 recommendations \cite{page2021}, the second reviewer (the corresponding author's thesis advisor) independently assessed all 51 full-text records against the inclusion and exclusion criteria, without access to the primary reviewer's decisions. Inter-rater agreement at the full-text stage was assessed using Cohen's kappa ($\kappa=0.91$, 95\% CI [0.79, 1.00]\footnote{The raw upper bound of the asymptotic 95\% CI is 1.03, truncated to the theoretical maximum of $\kappa=1.00$. CI computed using the Fleiss (1981) asymptotic formula from the observed contingency: 33 joint inclusions, 16 joint exclusions, 2 discordant pairs (both resolved as exclusions), $n=51$.}, indicating almost perfect agreement (Landis \& Koch, 1977\footnote{Landis, J.R., \& Koch, G.G. (1977). The measurement of observer agreement for categorical data. \textit{Biometrics}, 33(1), 159--174. \url{https://doi.org/10.2307/2529310}})). Two records (EXC\_01: Li et al.\ 2023, mobile robot ACO; EXC\_12: Ali et al.\ 2021, vehicular IoV) generated discrepant decisions between reviewers and were resolved through structured discussion prior to final corpus closure; both were ultimately excluded under criteria E3 and E5, respectively. All discrepancies were resolved through structured discussion between the two reviewers; no case required arbitration by a third party. The final corpus comprises 33 studies: 26 primary research articles and 7 secondary review articles (S10, S11, S14, S15, S17, S31, S32).
-
-\subsection{Data Extraction Pipeline}
-
-Data extraction from the 33 included studies was performed using a hybrid automated--manual pipeline developed specifically for this review. The pipeline comprises five Python scripts, each targeting a distinct data category:
-
-\begin{itemize}
-  \item \texttt{agregar\_todos\_papers.py}: Extracts bibliographic metadata (authors, year, DOI, abstract) from database export files (RIS, BibTeX) and consolidates records into a master spreadsheet.
-  \item \texttt{extraer\_metricas\_v2.py}: Performs regex-based extraction of quantitative performance metrics (execution time, energy consumption, convergence criteria) from PDF full texts, using a rule set of 47 patterns. The 7 secondary review articles returned null values for all three metrics, as expected. Extraction success rates over the full corpus of 33 studies: 42.4\% for execution time (14 of 33), 39.4\% for energy consumption (13 of 33), and 21.2\% for convergence criteria (7 of 33). Over the 26 primary studies only: 53.8\%, 50.0\%, and 26.9\% respectively. Records where automated extraction failed were flagged for manual verification.
-  \item \texttt{enriquecer\_gaps.py}: Applies a structured gap taxonomy to each study using a codebook of 171 gap descriptors, assigning dimension (Technological, Practical, Methodological, Theoretical) and priority (Critical, Important, Minor).
-  \item \texttt{actualizar\_estadisticas.py}: Computes aggregate statistics (algorithm distribution, metric availability, temporal trends) and exports summary tables for manuscript integration.
-  \item \texttt{generar\_figuras\_paper.py}: Generates publication-ready figures (300\,DPI, vector-compatible) from the aggregated data using matplotlib and seaborn.
-\end{itemize}
-
-All scripts, the master spreadsheet, and the gap codebook are deposited as Supplementary Material and will be archived in Mendeley Data upon manuscript acceptance, enabling full reproducibility of the extraction process. Manual verification was performed for all fields where automated extraction returned null or ambiguous values, with discrepancies documented in the extraction log (Supplementary Material~S2).
-
-\subsection{Justification for Narrative Synthesis}
-\label{subsec:narrative_synthesis}
-
-A narrative synthesis approach was adopted in preference to a quantitative meta-analysis for three converging methodological reasons, consistent with PRISMA 2020 guidance on synthesis method selection \cite{page2021} and established practice in engineering systematic reviews \cite{brambilla2013}.
-
-First, the 33 included studies employ heterogeneous algorithm families---PSO, ACO, ABC, SSA, GWO, DBO, NOA, DOA, and multiple hybrid variants---that optimise fundamentally different objective functions under different mathematical formulations. Pooling performance estimates across these families into a common effect size would conflate algorithmically incomparable contributions and produce a summary statistic without interpretable meaning.
-
-Second, quantitative performance metrics are not standardised across studies. Execution time, energy consumption, and convergence criteria are reported in incompatible units, over non-equivalent simulation environments, and against different baseline conditions, making between-study aggregation statistically unreliable. The absence of a common metric set is itself a primary empirical finding of this review (RQ2, Section~4.2) and directly motivates the AgriSwarm-Bench standardisation proposal in Section~7.
-
-Third, the experimental conditions underlying the reported results differ substantially in field geometry, obstacle density, fleet size, communication assumptions, and environmental modelling---differences that invalidate the homogeneity assumption required for meta-analytic pooling. A formal heterogeneity test (e.g., Cochran's $Q$ or $I^2$) cannot be applied in the absence of a common outcome measure, and its application would be methodologically inappropriate given the structural diversity of the corpus.
-
-Narrative synthesis therefore represents not a methodological concession but the epistemically appropriate response to a corpus characterised by high conceptual and methodological heterogeneity \cite{page2021,brambilla2013}. Results are synthesised through structured tabulation (Tables~2--6), quantitative gap analysis (Section~5), and algorithm-family stratification (Sections~5.5--5.6), providing a systematic evidence base that preserves the integrity of individual study contributions while enabling cross-study pattern identification.
-
-\subsection{Four-Dimensional Gap Taxonomy}
-
-Identified limitations in the reviewed studies were systematically categorised into four mutually exclusive dimensions. The taxonomy is grounded in the epistemological distinction between four loci of failure in applied engineering research: (1) \textbf{Technological} gaps---limitations in the algorithm itself or the hardware required to execute it (e.g., computational complexity, sensor requirements, communication bandwidth); (2) \textbf{Practical} gaps---barriers arising from real-world operational constraints that exist independently of algorithm design (e.g., regulatory restrictions, weather conditions, cost); (3) \textbf{Methodological} gaps---weaknesses in how research is conducted and reported (e.g., absent baselines, inconsistent metrics, non-reproducible experimental setups); and (4) \textbf{Theoretical} gaps---missing or incorrect assumptions in the mathematical models underlying the algorithms (e.g., simplified kinematic models, unrealistic communication assumptions).
-
-This four-axis decomposition is consistent with technology readiness assessment frameworks in robotics systems engineering \cite{brambilla2013,bayindir2016} and distinguishes root causes from consequences: each gap is classified by its \textit{origin dimension} rather than by the deployment failure it causes. Inter-dimension dependencies---for example, a Theoretical gap in battery discharge modelling causing a Practical gap in mission time estimation---are documented as cross-references in the supplementary gap database. Gap prioritisation followed a two-condition rule: a gap was classified as Critical if it (1) appeared in more than 30\% of studies ($>$10 papers) AND (2) its absence directly prevents real-world field deployment, as validated through expert review (Supplementary Material~S3). All other gaps were classified as Important (significant theoretical impact but below the frequency threshold) or Minor (low frequency and limited deployment impact).
-
-\subsection{Deployment Readiness Score (DRS)}
-\label{subsec:drs}
-
-Two complementary quality instruments are applied in this review and must be distinguished clearly to avoid misinterpretation of their results. The first, introduced in this section, is the \textbf{Deployment Readiness Score (DRS)}: a domain-specific composite instrument developed for this review to measure the degree to which a study's design enables real-world agricultural UAV deployment. The DRS evaluates four criteria weighted by their operational relevance (Table~\ref{tab:quality_criteria}) and produces a continuous score $Q \in [0, 1]$, with threshold classifications of High ($Q \geq 0.70$), Moderate ($0.40 \leq Q < 0.70$), and Low ($Q < 0.40$). The second instrument, the Mixed Methods Appraisal Tool (MMAT, version 2018) \cite{hong2018}, is applied in Section~\ref{subsec:mmat} to assess general methodological quality independently of deployment context. Because the DRS and MMAT assess different constructs---deployment readiness versus methodological rigour, respectively---their distributions are expected to differ and should not be compared directly without acknowledging this distinction.
-
-The DRS was developed and applied to all 33 included studies following the criterion-weighting approach recommended for engineering systematic reviews \cite{brambilla2013}. Four criteria were evaluated, with weights reflecting their relative importance for assessing deployment readiness of SI-based agricultural UAV research (Table~\ref{tab:quality_criteria}).
-
-\begin{table}[htbp]
-\centering
-\caption{Deployment Readiness Score (DRS) instrument applied to 33 included studies. The DRS is a domain-specific composite score ($Q = 0.30 C1 + 0.25 C2 + 0.25 C3 + 0.20 C4$) that measures the degree to which a study's design enables real-world agricultural UAV deployment. It is distinct from the Mixed Methods Appraisal Tool (MMAT, Section~\ref{subsec:mmat}) used for general methodological quality assessment. Criterion weights reflect deployment-readiness priorities: field validation (C1, 30\%) is weighted highest as the primary bottleneck to operational deployment.}
-\label{tab:quality_criteria}
-\begin{tabularx}{\textwidth}{lllX}
-\toprule
-\textbf{Criterion} & \textbf{Weight} & \textbf{Score range} & \textbf{Scoring rationale} \\
-\midrule
-C1: Experimental validation & 30\% & 0.0--1.0 & Real field = 1.0; Sim + hardware testbed = 0.5; Simulation only = 0.0. Weighted highest as field validation is the primary bottleneck to deployment. \\
-C2: Quantitative metrics & 25\% & 0.0--1.0 & All 3 metrics (time, energy, convergence) = 1.0; 2 metrics = 0.67; 1 metric = 0.33; none = 0.0. Reflects standardisation requirement. \\
-C3: Baseline comparison & 25\% & 0.0 or 1.0 & Comparison against at least one established algorithm = 1.0; no comparison = 0.0. Enables relative performance assessment. \\
-C4: Agricultural context & 20\% & 0.0 or 1.0 & Explicit agricultural parameters in methodology (field size, crop type, application scenario) = 1.0; generic path planning without agricultural specifics = 0.0. \\
+\endfoot
 \bottomrule
-\end{tabularx}
-\end{table}
+\endlastfoot
 
-The composite quality score for each study was computed as:
-\begin{equation}
-Q = 0.30\,C_1 + 0.25\,C_2 + 0.25\,C_3 + 0.20\,C_4
-\label{eq:drs}
-\end{equation}
-Studies scoring $Q \geq 0.70$ were classified as High quality, $0.40 \leq Q < 0.70$ as Moderate, and $Q < 0.40$ as Low.
+S01 & Chen et al. (2021) & ACO & Sim & Multi-agent & 2--10 & -- & -- & \ding{51} & Mon. \\
+S02 & Lin et al. (2022) & ABC & Sim & Framework-only & 1 & -- & -- & \ding{51} & Gen. \\
+S03 & Liu et al. (2021) & SSA & Sim & Framework-only & 1 & -- & -- & -- & Gen. \\
+S04 & Liu et al. (2021) & GA+ABC & Sim & Framework-only & 1--3 & -- & \ding{51} & \ding{51} & Gen. \\
+S05 & Liu et al. (2021) & SSA hybrid & Sim & Multi-agent & 3 & -- & -- & -- & Mon. \\
+S06 & Mathew et al. (2021) & PSO+ACO & Sim & Framework-only & 1 & \ding{51} & -- & -- & Gen. \\
+S07 & Ntakolia \& Lyridis (2021) & Fuzzy/SIGPAF & Sim & Framework-only & 1 & -- & -- & -- & Gen. \\
+S08 & Pan et al. (2022) & SFLA & Sim & Framework-only & 1--4 & -- & -- & -- & Mon. \\
+S09 & Phung \& Ha (2021) & PSO & Sim & Framework-only & 1 & \ding{51} & \ding{51} & \ding{51} & Map. \\
+S10 & Puente-Castro et al. (2022) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+S11 & Sharma et al. (2022) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+S12 & Yu et al. (2021) & PSO hybrid & Sim & Framework-only & 1 & -- & \ding{51} & \ding{51} & Gen. \\
+S13 & Chu et al. (2022) & PSO & Sim & Framework-only & 1 & \ding{51} & -- & -- & Spr. \\
+S14 & Fevgas et al. (2022) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+S15 & Israr et al. (2022) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+S16 & Ji et al. (2022) & PSO & Sim & Framework-only & 1 & -- & -- & -- & Gen. \\
+S17 & Ait Saadi et al. (2022) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+S18 & Selma et al. (2022) & ABC & Sim & Framework-only & 1 & -- & -- & \ding{51} & Gen. \\
+S19 & Shafiq et al. (2022) & ACO & Sim & Multi-agent & 2 & -- & -- & \ding{51} & Gen. \\
+S20 & Ahmed et al. (2021) & PSO & Sim & Multi-agent & 4 & \ding{51} & \ding{51} & \ding{51} & Gen. \\
+S21 & Xu et al. (2022) & Wolf Pack & Sim & Multi-agent & 5--15 & \ding{51} & -- & -- & Gen. \\
+S22 & Deng et al. (2023) & PSO & Sim & Framework-only & 1 & \ding{51} & -- & -- & Gen. \\
+S23 & Xiao et al. (2025) & NOA & Sim & Multi-agent & 6--8 & \ding{51} & -- & -- & Gen. \\
+S24 & Rao et al. (2024) & GWO & Sim & Framework-only & 1 & \ding{51} & -- & -- & Gen. \\
+S25 & Zhang \& Zhang (2022) & PSO & Sim & Framework-only & 2+ & \ding{51} & -- & \ding{51} & Gen. \\
+S26 & Zuo et al. (2025) & APF+PSO & Sim & Multi-agent & 5--25 & \ding{51} & -- & -- & Gen. \\
+S27 & Yang et al. (2025) & DOA & Sim & Framework-only & 1 & \ding{51} & -- & -- & Gen. \\
+S28 & Yang et al. (2023) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+S29 & Tang et al. (2022) & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
+\end{longtable}
+\end{landscape}
 
-%% CORRECCIÓN t8b: Nota ampliada sobre DRS, distingue explícitamente de MMAT
-\textbf{DRS results and interpretation.} Applied to the 33 included studies, the DRS yielded: 5 High ($Q \geq 0.70$; 15.2\%, all 5 are primary research articles with at least one hardware validation stage), 10 Moderate ($0.40 \leq Q < 0.70$; 30.3\%), and 18 Low ($Q < 0.40$; 54.5\%). The elevated proportion of Low-DRS classifications has two principal causes. First, the instrument assigns C1 = 0.0 (zero contribution from the 30\%-weighted validation criterion) to all 26 simulation-only primary studies, which mechanically depresses scores regardless of algorithmic quality. This is by design: the DRS captures a normative judgment that simulation-only evidence is insufficient for deployment-readiness claims, not a finding about methodological quality. Second, studies S20--S33, for which complete metadata extraction was pending at the time of analysis, have partially imputed criterion scores; their DRS classifications are provisional and will be updated before final submission. Per-study DRS scores are reported in Supplementary Table~S4.
-
-The DRS is explicitly \textit{not} a general methodological quality instrument. A study can achieve Low DRS while being methodologically rigorous---this occurs when the study is well-designed but focuses on simulation performance without addressing hardware deployment. Conversely, a study that attempts field validation but with poor experimental controls could achieve a moderate DRS while warranting a Low MMAT rating. The two instruments are therefore complementary rather than redundant: the DRS answers ``Is this study ready to inform deployment decisions?'' while the MMAT (Section~\ref{subsec:mmat}) answers ``Was this study conducted with appropriate methodological rigour?''. Readers interpreting the DRS distribution should bear in mind that 18 of 33 studies classified as Low-DRS are not methodologically flawed---they are simulation contributions that represent valid first-stage research but have not yet progressed to the hardware validation stages required for deployment readiness. DRS scores were not used as an exclusion criterion; all 33 studies are retained in the synthesis.
-
-\subsection{Risk of Bias Assessment (MMAT)}
-\label{subsec:mmat}
-
-The risk of bias in the 33 included studies was assessed using the Mixed Methods Appraisal Tool (MMAT, version 2018) \cite{hong2018}, adapted for computational engineering research following established practice in robotics systematic reviews \cite{brambilla2013}. Each study was evaluated on five criteria: (Q1) explicit research question; (Q2) appropriateness of data or simulation to the research question; (Q3) validity and reproducibility of measurement; (Q4) appropriateness of the analysis method; and (Q5) coherence of the argument from data to conclusions. Responses were recorded as Yes (Y), No (N), or Can't tell (C), where ``Can't tell'' indicates insufficient methodological reporting to make a determination. Studies with 4--5 Y responses were classified as High quality, 2--3 Y as Moderate, and 0--1 Y as Low, following threshold conventions established in prior robotics systematic reviews \cite{brambilla2013,bayindir2016}. Risk of bias was not used as an exclusion criterion; all 33 studies are retained in the synthesis to enable comprehensive gap documentation regardless of reporting quality.
-
-Review articles (n=7: S10, S11, S14, S15, S17, S31, S32) were assessed using MMAT criteria adapted for secondary research; their consistently High ratings reflect structural methodological rigour rather than primary evidence strength, and are reported separately from primary research studies where relevant. Two studies (S32, S33) have provisional MMAT assessments pending full-text verification against original PDFs. These provisional ratings are included in summary statistics but are flagged in Supplementary Table~S5; final classifications will be updated before journal submission.
-
-%% CORRECCIÓN t8a: Suma MMAT corregida. Se aclara que 31 de 33 tienen clasificación
-%% definitiva; S32 y S33 tienen ratings provisionales incluidos en los totales.
-Of the 33 included studies, 13 (39.4\%) were classified as High quality, 16 (48.5\%) as Moderate, and 2 (6.1\%) as Low under the MMAT instrument. The two studies S32 and S33 carry \textit{provisional} Moderate ratings (pending full-text verification) and are already counted within the 16 Moderate total; they are not an additional fourth category.\footnote{The provisional MMAT ratings for S32 (DOI: 10.3390/drones9010055) and S33 (DOI: 10.3390/drones9020112) are counted as Moderate in the summary above. If upon full-text review either study is reclassified as High, the distribution would become: High 14--15 (42.4--45.5\%), Moderate 14--15 (42.4--45.5\%), Low 2 (6.1\%). If reclassified as Low, the distribution would become: High 13 (39.4\%), Moderate 14 (42.4\%), Low 4 (12.1\%). Final classifications will be updated before journal submission.} Among the 26 primary research studies only (excluding the 7 review articles), the MMAT distribution is: 6 High (23.1\%), 18 Moderate (69.2\%), and 2 Low (7.7\%), reflecting a more representative picture of methodological quality in the primary literature. The criterion with the highest prevalence of `Can't tell' responses was Q3 (measurement validity and reproducibility, 14 of 33 studies, 42.4\%), reflecting the common practice of reporting simulation results without sufficient environmental specification to enable independent replication. Q1 (explicit research question) was met by 31 of 33 studies; the two exceptions (S22, S28) are short conference papers with insufficient methodological detail. Risk of bias assessments were performed independently by both reviewers for a random subset of 10 studies (30\% of the corpus), achieving 90\% agreement (Cohen's $\kappa=0.87$). Discrepancies were resolved through discussion; the primary reviewer completed assessments for the remaining 23 studies. Full per-study MMAT scores are provided in Supplementary Table~S5.
-
-%% CORRECCIÓN t8b: Párrafo de reconciliación DRS vs. MMAT
-\textbf{Reconciling DRS and MMAT distributions.} The DRS and MMAT distributions over the same corpus of 33 studies are markedly different: the DRS yields 5 High / 10 Moderate / 18 Low (15.2\% / 30.3\% / 54.5\%), while the MMAT yields 13 High / 16 Moderate / 2 Low (39.4\% / 48.5\% / 6.1\%). This divergence is not a contradiction---it is the expected signature of two instruments measuring different constructs applied to a simulation-dominated corpus. The MMAT assesses process quality: whether the study formulated a clear research question, chose appropriate methods, reported measurements validly, and reasoned coherently from evidence to conclusions. Most simulation studies in this corpus satisfy these criteria and therefore achieve moderate-to-high MMAT ratings. The DRS assesses outcome readiness: whether the evidence produced by the study is sufficient to inform a deployment decision in a real agricultural context. A simulation study, however methodologically rigorous, provides no direct evidence about hardware behaviour, wind effects, GPS accuracy, or battery degradation under field conditions---the four factors identified in this review as the primary causes of simulation-to-field performance gaps. It therefore scores zero on C1 (30\% weight in the DRS) regardless of its MMAT rating. Readers citing quality statistics from this review should specify which instrument is being referenced. The DRS distribution (Low: 54.5\%) characterises the field's deployment readiness; the MMAT distribution (High: 39.4\%) characterises its methodological standards. Both characterisations are accurate and complementary.
-
-%% ============================================================
-%% SECTION 4: RESULTS
-%% ============================================================
-\section{Results}
-
-\subsection{Overview of Included Studies}
-Table~\ref{tab:study_chars} provides a structured summary of the 33 included studies, characterising each by algorithm type, validation approach, fleet size, metric reporting, and agricultural application. This table serves as the primary evidence base for all quantitative claims in Sections~4.2--4.4 and the gap analysis in Section~5. Studies are identified by codes S01--S33 to enable cross-referencing with the supplementary gap database. Full bibliographic details for all 33 studies are provided in the references section (entries marked with $\dagger$). Of the 33 studies, 26 are primary research articles proposing or evaluating SI algorithms, and 7 are review articles (S10, S11, S14, S15, S17, S31, S32) included because they synthesise SI methods specifically for multi-UAV agricultural path planning within the 2021--2024 window and meet all inclusion criteria. Across the 26 primary research studies, monitoring applications account for 17 studies (65.4\% of primary studies; 51.5\% of all 33 studies), spraying for 10 studies (38.5\% of primary; 30.3\% of all 33), and mapping for 5 studies (19.2\% of primary; 15.2\% of all 33), with one primary study covering general multi-UAV coordination only.\footnote{Application percentages over primary studies (n=26) sum to more than 100\% because one study covers both monitoring and spraying. Percentages over the full corpus (n=33) exclude the 7 review articles, which are classified as N/A for application type.} Fleet sizes range from 1 to 25 agents across primary studies, with a median of 3--4 UAVs---well below the 10--50 UAV range needed for commercial-scale agricultural operations.
-
-\textbf{Note on single-agent validation studies.} Of the 26 primary research studies, 18 (69.2\%) employ single-agent experimental validation despite proposing multi-UAV coordination frameworks (classified as `Framework-only' in Table~\ref{tab:study_chars}). This reflects a common pattern in the literature where algorithmic frameworks are designed for multi-agent deployment but evaluated with single agents due to hardware, regulatory, or resource constraints. These studies are retained in the corpus under criterion I4b because they contribute to gap identification regarding the validation deficit, but are flagged separately in quantitative analyses of multi-agent coordination capability. This distinction is critical for interpreting Gap~3 (Single-UAV focus, 22 of 33 studies, 66.7\%) in Section~5.3.
-
-\textbf{Denominator consistency statement.} Unless otherwise explicitly noted, all percentages in this manuscript use the full corpus of 33 included studies as the denominator (n=33). Where an analysis is restricted to the 26 primary research studies, the denominator is stated as n=26 and both the restricted percentage and the equivalent percentage over n=33 are provided. A complete consistency table listing every percentage with its numerator, denominator, and section reference is provided in Supplementary Table~S1.
-
-%% ============================================================
-%% TABLE 2: Study Characteristics (SIDEWAYS + Val. Type Column)
-%% ============================================================
-\begin{sidewaystable}[p]
-\centering
-\caption{Characteristics of the 33 included studies. $\dagger$ = study from 
-systematic corpus. Val. = validation type (Sim = simulation only; S+T = 
-simulation + testbed; S+F = simulation + field). Val. Type = Multi-agent 
-($\geq$2 UAVs in validation), Framework-only (multi-UAV framework validated with 
-single agent), or Review. Metrics: T = execution time, E = energy, 
-C = convergence. App.: Mon. = Monitoring, Spr. = Spraying, Map. = Mapping, 
-Gen. = General coordination.}
-\label{tab:study_chars}
-\footnotesize
-\setlength{\tabcolsep}{1.6pt}
-\renewcommand{\arraystretch}{0.95}
-\begin{tabular*}{\textheight}{@{\extracolsep{\fill}}llp{2.4cm}lllcccc@{}}
-\toprule
-\textbf{ID} & \textbf{Reference} & \textbf{Algorithm} & \textbf{Val.} & \textbf{Val. Type} & \textbf{UAVs} & \textbf{T} & \textbf{E}\textsuperscript{\textdagger} & \textbf{C} & \textbf{App.} \\
-\midrule
-S01 & Chen et al.\ \cite{chen2021}$^\dagger$ & ACO & Sim & Multi-agent & 2--10 & \checkmark & -- & \checkmark & Mon. \\
-S02 & Lin et al.\ \cite{lin2022}$^\dagger$ & ABC & Sim & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S03 & Liu et al.\ \cite{liu2021cassa}$^\dagger$ & SSA & Sim & Framework-only & 1 & \checkmark & -- & -- & Gen. \\
-S04 & Liu et al.\ \cite{liu2021disaster}$^\dagger$ & GA+ABC & Sim & Framework-only & 1--3 & \checkmark & \checkmark & -- & Gen. \\
-S05 & Liu et al.\ \cite{liu2021}$^\dagger$ & SSA hybrid & Sim & Multi-agent & 3 & \checkmark & -- & \checkmark & Mon. \\
-S06 & Mathew et al.\ \cite{mathew2021}$^\dagger$ & PSO+ACO & Sim & Framework-only & 1 & \checkmark & -- & -- & Gen. \\
-S07 & Ntakolia \& Lyridis \cite{ntakolia2021}$^\dagger$ & Fuzzy/SIGPAF & Sim & Framework-only & 1 & -- & -- & -- & Gen. \\
-S08 & Pan et al.\ \cite{pan2022}$^\dagger$ & SFLA & Sim & Framework-only & 1--4 & -- & -- & -- & Mon. \\
-S09 & Phung \& Ha \cite{phung2021}$^\dagger$ & PSO & Sim & Framework-only & 1 & \checkmark & \checkmark & -- & Map. \\
-S10 & Puente-Castro et al.\ \cite{puente2022}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S11 & Sharma et al.\ \cite{sharma2022}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S12 & Yu et al.\ \cite{yu2021}$^\dagger$ & PSO hybrid & Sim & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S13 & Chu et al.\ \cite{chu2022}$^\dagger$ & PSO & Sim & Framework-only & 1 & \checkmark & -- & -- & Spr. \\
-S14 & Fevgas et al.\ \cite{fevgas2022}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S15 & Israr et al.\ \cite{israr2022}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S16 & Ji et al.\ \cite{ji2022}$^\dagger$ & PSO & Sim & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S17 & Ait Saadi et al.\ \cite{aitsaadi2022}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S18 & Selma et al.\ \cite{selma2022}$^\dagger$ & ABC & Sim & Framework-only & 1 & \checkmark & \checkmark & -- & Gen. \\
-S19 & Shafiq et al.\ \cite{shafiq2022}$^\dagger$ & ACO & Sim & Multi-agent & 2 & \checkmark & -- & \checkmark & Gen. \\
-S20 & Ahmed et al.\ \cite{ahmed2021}$^\dagger$ & PSO & Sim & Multi-agent & 4 & \checkmark & \checkmark & \checkmark & Gen. \\
-S21 & Xu et al.\ \cite{xu2022}$^\dagger$ & Wolf Pack & Sim & Multi-agent & 5--15 & \checkmark & \checkmark & \checkmark & Gen. \\
-S22 & Wang et al.\ \cite{wang2023}$^\dagger$ & ABC+BAS & S+T & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S23 & Deng et al.\ \cite{deng2023}$^\dagger$ & PSO & Sim & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S24 & Xiao et al.\ \cite{xiao2023}$^\dagger$ & NOA & Sim & Multi-agent & 6--8 & -- & -- & \checkmark & Gen. \\
-S25 & Li et al.\ \cite{li2023}$^\dagger$ & DBO & Sim & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S26 & Rao et al.\ \cite{rao2024}$^\dagger$ & GWO & Sim & Framework-only & 1 & \checkmark & -- & \checkmark & Gen. \\
-S27 & Zhang \& Zhang \cite{zhang2022loc}$^\dagger$ & PSO & Sim & Framework-only & 2+ & -- & -- & \checkmark & Gen. \\
-S28 & Hu et al.\ \cite{hu2023}$^\dagger$ & PSO & Sim & Multi-agent & 6--7 & -- & -- & \checkmark & Gen. \\
-S29 & Zuo et al.\ \cite{zuo2023}$^\dagger$ & APF+PSO & Sim & Multi-agent & 5--25 & \checkmark & -- & \checkmark & Gen. \\
-S30 & Yang et al.\ \cite{yang2023}$^\dagger$ & DOA & Sim & Framework-only & 1 & -- & -- & \checkmark & Gen. \\
-S31 & Yang et al.\ \cite{yang2023_review}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S32 & Tang et al.\ \cite{tang2022}$^\dagger$ & Review & N/A & Review & N/A & -- & -- & -- & Gen. \\
-S33 & Li et al.\ \cite{li2023}$^\dagger$ & ACO & S+T & Framework-only & 1 & \checkmark & \checkmark & \checkmark & Gen. \\
-\midrule
-\multicolumn{2}{l}{\textbf{Summary (n=33)}} & PSO: 10 (30.3\%) & Sim: 28 (84.8\%) & Multi: 8 (24.2\%) & 1--25 & 14 (42.4\%) & 6$^{\ddagger}$ (18.2\%) & 24 (72.7\%) & \\
-\multicolumn{2}{l}{\textbf{Primary only (n=26)}} & PSO: 10 (38.5\%) & Sim: 24 (92.3\%) & Multi: 8 (30.8\%) & 1--25 & 14 (53.8\%) & 6$^{\ddagger}$ (23.1\%) & 24 (92.3\%) & \\
-\bottomrule
-\multicolumn{10}{@{}l@{}}{\scriptsize App.: Mon.~=~Monitoring, Spr.~=~Spraying, Map.~=~Mapping, Gen.~=~General. N/A = review articles (no original experiments).}
-\end{tabular*}
-\end{sidewaystable}
-
-\medskip
-\noindent\scriptsize\textsuperscript{\textdagger}\textit{Energy column (E) note:}
-The column ``E'' in Table~\ref{tab:study_chars} (marked $^{\ddagger}$ in summary rows)
-counts only studies reporting \textit{direct hardware measurement} of energy consumption
-(6 of 33, 18.2\%; 6 of 26 primary, 23.1\%).
-The figure of 13 of 33 (39.4\%) reported in the Abstract, Section~4.2, and
-Table~\ref{tab:metrics} includes both direct measurements \textit{and}
-studies reporting energy estimates derived from simulation models (7 additional studies).
-Simulation-based estimates and hardware measurements are methodologically distinct
-and cannot be pooled for cross-study comparison; both figures are correct and
-refer to different counting rules. See Supplementary Table~S1 for per-study
-metric classification.
-
-
-Figure~\ref{fig:algorithms} and Table~\ref{tab:algorithms} show the distribution of swarm intelligence algorithms across the 33 reviewed studies. PSO dominates with 10 papers (30.3\% of all 33 studies; 38.5\% of the 26 primary research studies), consistent with its well-established framework and lower implementation complexity compared to more recent bio-inspired algorithms \cite{kennedy1995,phung2021}. The second largest category comprises review articles (7 papers, 21.2\% of the full corpus), reflecting growing community interest in synthesising the field---though these reviews address broader scopes than the agricultural multi-UAV focus of the present work and are excluded from algorithm-specific analyses. ACO variants follow with 3 papers (9.1\% of all 33; 11.5\% of 26 primary), valued for their constructive solution-building approach that maps naturally onto route planning problems with discrete waypoints \cite{dorigo2006,chen2021,shafiq2022}.
-
-Notably, newer algorithms introduced after 2020---including the Dung Beetle Optimizer (DBO), Nutcracker Optimization Algorithm (NOA), and Dandelion Optimizer Algorithm (DOA)---each appear in only one primary study (3.0\% of all 33; 3.8\% of 26 primary), despite demonstrating competitive convergence properties in their original formulations \cite{li2023,xiao2023}. This underrepresentation suggests a lag between algorithm publication and adoption in agricultural UAV applications, likely attributable to the absence of open benchmark scenarios that would enable direct comparison with established PSO and ACO baselines. Five papers (15.2\% of all 33) employ hybrid or non-standard SI variants including SFLA, Fuzzy/SIGPAF, Wolf Pack, Hybrid ABC+BAS, and GA+ABC combinations (PSO+ACO and APF+PSO are classified under PSO), indicating active exploration of algorithm fusion strategies to overcome single-algorithm limitations \cite{ntakolia2021,xu2022,liu2021disaster}.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.85\textwidth]{figures/Fig1_Algorithm_Distribution.png}
-\caption{Distribution of swarm intelligence algorithms across 33 reviewed studies (2021--2024). PSO dominates with 10 papers (30.3\% of the full corpus; 38.5\% of the 26 primary research studies), followed by review articles (21.2\%) and ACO variants (9.1\%). ``Other SI Variants'' (5 papers, 15.2\%) includes SFLA, Fuzzy/SIGPAF, Wolf Pack, Hybrid ABC+BAS, and GA+ABC hybrid; PSO+ACO (S06) and APF+PSO (S29) are classified under PSO.}
-\label{fig:algorithms}
-\end{figure}
-
-\begin{table}[htbp]
-\centering
-\caption{Algorithm and variant frequency across 33 reviewed studies. Percentages reported over full corpus (n=33) and primary studies (n=26). Review articles excluded from algorithm-specific analyses.}
-\label{tab:algorithms}
-\begin{tabular}{llrrrr}
-\toprule
-\textbf{Algorithm} & \textbf{Category} & \textbf{Papers} & \textbf{\% (n=33)} & \textbf{\% (n=26)} \\
-\midrule
-PSO & Swarm & 10 & 30.3 & 38.5 \\
-Review & Review & 7 & 21.2 & N/A \\
-ACO & Swarm & 3 & 9.1 & 11.5 \\
-ABC & Swarm & 2 & 6.1 & 7.7 \\
-SSA & Swarm & 2 & 6.1 & 7.7 \\
-GWO & Swarm & 1 & 3.0 & 3.8 \\
-DBO & Swarm & 1 & 3.0 & 3.8 \\
-NOA & Swarm & 1 & 3.0 & 3.8 \\
-DOA & Swarm & 1 & 3.0 & 3.8 \\
-Other SI Variants$^*$ & Swarm & 5 & 15.2 & 19.2 \\
-\midrule
-\textbf{Total} & & \textbf{33} & \textbf{100.0} & \\
-\bottomrule
-\multicolumn{6}{p{0.92\textwidth}}{\scriptsize$^*$Includes SFLA, Fuzzy/SIGPAF, Wolf Pack, Hybrid ABC+BAS, and Genetic+ABC hybrid. PSO+ACO (S06) and APF+PSO (S29) are classified under PSO.}
-\end{tabular}
-\end{table}
+\end{document}

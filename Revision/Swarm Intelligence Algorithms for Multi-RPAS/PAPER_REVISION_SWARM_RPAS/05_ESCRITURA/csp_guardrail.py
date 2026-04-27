@@ -18,10 +18,10 @@ class CSPGuardrail:
     
     def __init__(self):
         self.config = {
-            "n_total": 33,
-            "n_primarios": 26,
+            "n_total": 29,
+            "n_primarios": 22,
             "n_reviews": 7,
-            "pso_percent": 38.5, # 10 PSO de 26 primarios = 38.46%
+            "pso_percent": 40.9, # 9 PSO de 22 primarios = 40.9%
             "prohibidos": [r"\bdrone\b", r"\bdrones\b"],
             # Unidades SI: número seguido de unidad (opcional espacio)
             "unidades_si": [r"\d+\s?m/s", r"\d+\s?kg", r"\d+\s?N", r"\d+\s?W", r"\d+\s?J", r"\d+\s?s\b", r"\d+\s?m\b"]
@@ -30,20 +30,19 @@ class CSPGuardrail:
     def validar(self, texto: str) -> Tuple[bool, List[str]]:
         violaciones = []
         
-        # 1. Validar Tamaño de Muestra (Detectar valores obsoletos 23 o 30)
-        # El n_total final es 33 y el n_primarios es 26.
-        patron_n_obsoleto = r"n\s?=\s?(23|30|31|32)\b"
+        # 1. Validar Tamaño de Muestra (Detectar valores obsoletos)
+        patron_n_obsoleto = r"n\s?=\s?(23|26|30|31|32|33)\b"
         if re.search(patron_n_obsoleto, texto, re.IGNORECASE):
             valor = re.search(patron_n_obsoleto, texto, re.IGNORECASE).group()
-            violaciones.append(f"❌ Error de Muestra Obsoleto: Valor '{valor}' detectado. Actualizar a 33 (total) o 26 (primarios).")
+            violaciones.append(f"❌ Error de Muestra Obsoleto: Valor '{valor}' detectado. Actualizar a 29 (total) o 22 (primarios).")
         
-        # 2. Validar Estudios Primarios (n=26)
-        if re.search(r"\b23\b\s?(primarios|estudios\sprimarios)", texto, re.IGNORECASE):
-            violaciones.append(f"❌ Error de Clasificación: Se detectaron 23 primarios. El número actual es {self.config['n_primarios']}.")
+        # 2. Validar Estudios Primarios (n=22)
+        if re.search(r"\b(23|26)\b\s?(primarios|estudios\sprimarios)", texto, re.IGNORECASE):
+            violaciones.append(f"❌ Error de Clasificación: Se detectaron 23/26 primarios. El número actual es {self.config['n_primarios']}.")
             
-        # 3. Validar Estadísticas de Algoritmos (PSO 38.5%)
-        if "33.3%" in texto or "30.3%" in texto:
-            violaciones.append(f"❌ Error Estadístico: Datos desactualizados (33.3% o 30.3%). Ajustar PSO a {self.config['pso_percent']}% (10/26).")
+        # 3. Validar Estadísticas de Algoritmos (PSO 40.9%)
+        if "33.3%" in texto or "30.3%" in texto or "38.5%" in texto:
+            violaciones.append(f"❌ Error Estadístico: Datos desactualizados. Ajustar PSO a {self.config['pso_percent']}% (9/22).")
             
         # 4. Validar Terminología Aeronáutica
         for patron in self.config["prohibidos"]:

@@ -1,4 +1,4 @@
-April 4, 2026
+April 24, 2026
 
 Editor-in-Chief
 Computers and Electronics in Agriculture
@@ -8,7 +8,7 @@ Dear Editor-in-Chief,
 
 I am pleased to submit our manuscript entitled "Swarm Intelligence for Multi-UAV Path Planning in Precision Agriculture: A Systematic Review and Research Agenda (2021-2025)" for consideration for publication as a Review Article in Computers and Electronics in Agriculture.
 
-This manuscript is not a conventional summary of literature. Instead, we present the first PRISMA 2020-compliant synthesis that critically evaluates the deployment readiness of Swarm Intelligence (SI) algorithms for multi-UAV precision agriculture. Despite algorithmic advances in Particle Swarm Optimization (PSO), Ant Colony Optimization (ACO), and novel variants, we establish that current research is structurally disconnected from field reality. Through a novel 4-dimensional taxonomy of 171 documented gaps, we quantitatively demonstrate that 78.8% of recent studies lack hardware-in-the-loop validation, and 80% of spraying studies ignore critical aerodynamic perturbations such as wind drift.
+This manuscript is not a conventional summary of literature. Instead, we present the first PRISMA 2020-compliant synthesis that critically evaluates the deployment readiness of Swarm Intelligence (SI) algorithms for multi-UAV precision agriculture. Despite algorithmic advances in Particle Swarm Optimization (PSO), Ant Colony Optimization (ACO), and novel variants, we establish that current research is structurally disconnected from field reality. Through a novel 4-dimensional taxonomy of 171 documented gaps, we quantitatively demonstrate that 100% of primary studies lack hardware-in-the-loop validation, and 86.2% of the corpus ignore critical aerodynamic perturbations such as wind drift and dynamic obstacles.
 
 In direct alignment with recent editorial directions of Computers and Electronics in Agriculture emphasizing dynamic, wind-aware, and real-time capable systems (e.g., Smith et al., 2024; Wang et al., 2025), our work proposes "AgriSwarm-Bench"—a standardized framework to force the transition from idealized static simulations to physically realistic, energy-constrained agricultural environments.
 

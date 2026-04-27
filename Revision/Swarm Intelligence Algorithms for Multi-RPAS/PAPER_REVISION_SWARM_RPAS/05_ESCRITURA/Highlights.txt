@@ -1,5 +1,5 @@
-Systematic review of 33 SI-based multi-UAV agricultural path planning studies.
-First 4-dimensional taxonomy identifying 171 critical gaps for field deployment.
-Hardware-in-the-loop validation is lacking in 78.8% of current SI architectures.
-Wind modeling absence identified in 80% of recent agricultural spraying scenarios.
-AgriSwarm-Bench proposed to standardize execution time and energy metrics.
+PRISMA 2020 review screened 502 records; 29 studies (2021–2025) retained
+PSO dominates SI: 9 of 29 studies (31.0%; 40.9% of 22 primary studies)
+ACO and SSA are frequently used, appearing in two studies each (6.9%)
+171 research gaps classified: Technological, Practical, Methodological, Theoretical
+AgriSwarm-Bench proposed: six standardised metrics for UAV swarm deployment

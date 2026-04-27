@@ -1,0 +1,151 @@
+{
+  "value": {
+    "answer": "De acuerdo con las fuentes, se identifican exactamente **15 estudios primarios** que presentan un \"single-UAV experimental focus\" (identificado como la **Brecha 3** o \"Single-UAV focus (no swarm)\"). Estos estudios se clasifican en la Tabla 4 bajo el tipo de validación **\"Framework-only\"**, lo que significa que, aunque proponen marcos para múltiples drones, sus experimentos o validaciones se realizaron con **un solo agente** [1], [2], [3].\n\nA continuación, se enumeran los IDs de estos estudios junto con sus respectivas claves de cita:\n\n1.  **S02**: Lin et al. [4] [1].\n2.  **S03**: Liu et al. [5] [1].\n3.  **S04**: Liu et al. [6] [1].\n4.  **S06**: Mathew et al. [7] [8].\n5.  **S07**: Ntakolia & Lyridis [9] [8].\n6.  **S08**: Pan et al. [10] [8].\n7.  **S09**: Phung & Ha [11] [8].\n8.  **S12**: Yu et al. [12] [13].\n9.  **S13**: Chu et al. [14] [13].\n10. **S16**: Ji et al. [15] [13].\n11. **S18**: Selma et al. [16] [13].\n12. **S22**: Deng et al. [17] [18].\n13. **S24**: Rao et al. [19] [18].\n14. **S25**: Zhang & Zhang [20] [18].\n15. **S27**: Yang et al. [21] [22].\n\nEsta brecha afecta al **68.2% de los estudios primarios** (15 de 22) y es considerada una de las barreras críticas para el despliegue real de estas tecnologías en la agricultura [2]. Los 7 artículos de revisión restantes del corpus (S10, S11, S14, S15, S17, S28, S29) no se incluyen en esta lista de enfoque experimental ya que no realizan experimentos originales [23], [1].",
+    "conversation_id": "4f197b04-fac2-4f81-8e86-7a8ea03d7180",
+    "sources_used": [
+      "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70"
+    ],
+    "citations": {
+      "1": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "2": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "3": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "4": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "5": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "6": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "7": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "8": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "9": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "10": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "11": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "12": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "13": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "14": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "15": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "16": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "17": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "18": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "19": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "20": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "21": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "22": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+      "23": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70"
+    },
+    "references": [
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 1,
+        "cited_text": "e, E = en er gy ,C = co nv er ge nc e. A pp .: M on .= M on ito rin g, Sp r. = Sp ra yi ng ,M ap .= M ap pi ng ,G en .= G en er al co or di na tio n. ID R ef er en ce A lg or ith m Va l. Va l. Ty pe U AV s T E † C A pp . S0 1 C he n et al .[ 32 ]† A C O Si m M ul ti-ag en t 2– 10 – – 3 M on . S0 2 Li n et al .[ 33 ]† A B C Si m Fr am ew or k-on ly 1 – – 3 G en . S0 3 Li u et al .[ 34 ]† SS A Si m Fr am ew or k-on ly 1 – – – G en . S0 4 Li u et al .[ 35 ]† G A +A B C Si m Fr am ew or k-on ly 1– 3"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 2,
+        "cited_text": "19 Table 11: Top ten critical gaps ranked by frequency. All percentages computed over the full corpus (n=29). Rank Gap Description Papers % (n=29) Note 1 Lack of real-field validation 29 100.0 0/22 primary field-deployed (0%); 0/22 hardware testbed (0%) 2 No dynamic obstacles/environment 25 86.2 3 Single-UAV focus (no swarm)(§) 15 51.7 15/22 primary (68.2%); upper bound 4 No wind/weather modelling 20 69.0 5 No metric standardisation 16 55.2 6 Unrealistic kinematic constraints 14 48.3 7 Limited scalability assessment 13 44.8"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 3,
+        "cited_text": "22 6.7. Limitations of This Review388 Several limitations must be acknowledged. First, the search was restricted to English-language publications in389 three databases, which may have excluded relevant work published in Chinese, Spanish, or other languages. Second,390 title and abstract screening was performed by the primary reviewer only. Third, the DRS instrument has not been391 validated as a psychometric tool. Fourth, the Gap 3 finding (15 of 29 studies with single-UAV experimental focus392 despite multi-UAV framing) may partially reflect a limitation of the inclusion criteria—the leniency in criterion I4b393"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 4,
+        "cited_text": "guidelines), and analytical gap (none provides a structured gap database with root cause, consequence, and priority141 classification).142 The present review deliberately narrows its scope to agricultural applications of SI-based multi-UAV path planning143 for 2021–2025. This narrower scope enables deeper gap analysis (171 documented gaps across 29 papers, averaging144 5.9 gaps per study) and more operationally specific recommendations.145 3. Methodology146 This review follows the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020147"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 5,
+        "cited_text": "guidelines [22], adapted for engineering and computing literature. The full PRISMA 2020 checklist is provided as148 Supplementary Material S1.5149 3.1. Search Strategy150 A systematic literature search was conducted across three major electronic databases: IEEE Xplore, ScienceDi-151 rect, and SpringerLink. A fourth source, complementary citation snowballing via Research Rabbit, was employed to152 identify records not captured by keyword-based database queries.153 Boolean search string. The final string, adapted for each database’s query syntax, was:154"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 6,
+        "cited_text": "(\"swarm intelligence\" OR \"particle swarm optimization\"155 OR \"ant colony optimization\" OR \"artificial bee colony\"156 OR \"grey wolf optimizer\" OR \"salp swarm algorithm\"157 OR \"dung beetle optimizer\" OR \"dandelion optimizer\")158 AND (\"UAV\" OR \"unmanned aerial vehicle\" OR \"multi-UAV\" OR \"drone\")159 AND (\"path planning\" OR \"trajectory planning\" OR \"coverage planning\")160 AND (\"agriculture\" OR \"precision agriculture\" OR \"crop monitoring\"161 OR \"spraying\" OR \"field mapping\" OR \"smart farming\")162 Sensitivity test with gold-standard set. To validate that query refinements did not reduce recall, we assembled a163"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 7,
+        "cited_text": "gold-standard set of five papers known to be relevant [27, 28, 29, 30, 25]. The final query string successfully retrieved164 all five gold-standard papers across the three databases, confirming 100% recall for this validation set.165 5This review protocol was not formally pre-registered in a domain-specific registry prior to the literature search. The protocol has been registered retrospectively at the Open Science Framework: https://doi.org/10.17605/OSF.IO/64DQ9. The registration includes search strategies,"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 8,
+        "cited_text": "– 3 3 G en . S0 5 Li u et al .[ 29 ]† SS A hy br id Si m M ul ti-ag en t 3 – – – M on . S0 6 M at he w et al .[ 36 ]† PS O +A C O Si m Fr am ew or k-on ly 1 3 – – G en . S0 7 N ta ko lia & Ly rid is [3 7] † Fu zz y/ SI G PA F Si m Fr am ew or k-on ly 1 – – – G en . S0 8 Pa n et al .[ 30 ]† SF LA Si m Fr am ew or k-on ly 1– 4 – – – M on . S0 9 Ph un g & H a [2 7] † PS O Si m Fr am ew or k-on ly 1 3 3 3 M ap . S1 0 Pu en te -C as tro et al .[ 25 ]† R ev ie w N /A R ev ie w N /A – – – G en . S1 1 Sh ar m a et al .[ 26 ]†"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 9,
+        "cited_text": "extraction codebook, PRISMA 2020 checklist, screening logs, extraction database, gap taxonomy, and supplementary materials. 8 Search filters. Publication year 2021–2025 (inclusive); English language; document type restricted to peer-166 reviewed journal articles and peer-reviewed conference proceedings. The search was executed on 2026-03-16.167 Results. The search identified 502 records in total: IEEE Xplore (32), ScienceDirect (196), SpringerLink (254),168 and snowballing (20). After removing 21 duplicates, 481 unique records proceeded to title/abstract screening. Of169"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 10,
+        "cited_text": "45 studies across crop monitoring, mapping, spraying, and yield estimation. However, the review is limited to single-123 UAV operations and predates the 2021–2025 publication wave.124 Chung et al. [8] offer the most technically rigorous survey of aerial swarm robotics, reviewingmore than 80 papers125 on multi-UAV formation control, task allocation, and path planning. The 2018 cutoff predates the post-2020 algorithm126 generation (DBO, NOA, SSA, DOA).127 Puente-Castro et al. [25] review 62 papers on artificial intelligence applied to UAV swarm path planning, with128"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 11,
+        "cited_text": "| Non-SI (4) | Non-UAV platform (4) Included Studies included in review (n = 29) Primary research: 22 | Review articles: 7 Figure 1: PRISMA 2020 flow diagram. Search conducted on 2026-03-16 across IEEE Xplore (32), ScienceDirect (196), and SpringerLink (254), yielding 482 database records; together with 20 records from citation snowballing via Research Rabbit, 502 records were identified in total. After removing 21 duplicates, 481 unique records proceeded to title/abstract screening. Three additional records re-evaluated at the eligibility stage"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 12,
+        "cited_text": "these, 433 records were excluded at this stage. The 48 records that passed title/abstract screening, together with three170 borderline records re-evaluated at full text, yielded 51 records for full-text assessment.171 3.2. Study Selection and Eligibility Criteria172 Inclusion criteria. A study was eligible if it satisfied all of the following: (I1) published between January 2021173 and December 2025; (I2) peer-reviewed journal article or peer-reviewed conference paper with full text available; (I3)174"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 13,
+        "cited_text": "R ev ie w N /A R ev ie w N /A – – – G en . S1 2 Yu et al .[ 38 ]† PS O hy br id Si m Fr am ew or k-on ly 1 – 3 3 G en . S1 3 C hu et al .[ 39 ]† PS O Si m Fr am ew or k-on ly 1 3 – – Sp r. S1 4 Fe vg as et al .[ 40 ]† R ev ie w N /A R ev ie w N /A – – – G en . S1 5 Is ra re ta l. [4 1] † R ev ie w N /A R ev ie w N /A – – – G en . S1 6 Ji et al .[ 42 ]† PS O Si m Fr am ew or k-on ly 1 – – – G en . S1 7 A it Sa ad ie ta l. [1 3] † R ev ie w N /A R ev ie w N /A – – – G en . S1 8 Se lm a et al .[ 43 ]†"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 14,
+        "cited_text": "text available in English; (I4) proposes, evaluates, or reviews at least one SI algorithm applied to path planning for175 UAVs; (I4b) studies proposing multi-UAV coordination frameworks but validating with a single agent are included176 if the framework is explicitly designed for multiple agents; (I5) mentions or implies an agricultural application in the177 abstract, introduction, or methodology.178 Exclusion criteria. A study was excluded if it met any of: (E1) duplicate of an already-included record; (E2)179"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 15,
+        "cited_text": "five Python scripts:191 agregar_todos_papers.py: Extracts bibliographic metadata and consolidates records into a master spread-192 sheet.193 extraer_metricas_v2.py: Performs regex-based extraction of quantitative performance metrics from PDF194 full texts. Extraction success rates over the full corpus of 29 studies: 48.3% for execution time (14 of 29), 13.8%195 for energy consumption (four of 29), and 34.5% for convergence criteria (ten of 29).196 9 enriquecer_gaps.py: Applies a structured gap taxonomy to each study using a codebook of 171 gap descrip-197"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 16,
+        "cited_text": "tors.198 actualizar_estadisticas.py: Computes aggregate statistics and exports summary tables.199 generar_figuras_paper.py: Generates publication-ready figures (300DPI, vector-compatible).200 3.4. Justification for Narrative Synthesis201 A narrative synthesis approach was adopted in preference to a quantitative meta-analysis for three converging202 methodological reasons, consistent with PRISMA 2020 guidance [22] and established practice in engineering system-203 atic reviews [23].204 First, the 29 included studies employ heterogeneous algorithm families that optimise fundamentally different ob-205"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 17,
+        "cited_text": "algorithms.217 Gap prioritisation followed a two-condition rule: a gap was classified as Critical if it (1) appeared in more than218 30% of analysed studies (>8 papers of 29) AND (2) its absence directly prevents real-world field deployment.219 3.6. Expert Validation of Gap Taxonomy220 An expert validation phase was conducted involving six independent reviewers with expertise in swarm intelli-221 gence, agricultural robotics, and UAV path planning. Inter-rater agreement was assessed using Cohen’s kappa coef-222"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 18,
+        "cited_text": "A B C Si m Fr am ew or k-on ly 1 – – 3 G en . S1 9 Sh af iq et al .[ 28 ]† A C O Si m M ul ti-ag en t 2 – – 3 G en . S2 0 A hm ed et al .[ 44 ]† PS O Si m M ul ti-ag en t 4 3 3 3 G en . S2 1 X u et al .[ 45 ]† W ol fP ac k Si m M ul ti-ag en t 5– 15 3 – – G en . S2 2 D en g et al .[ 46 ]† PS O Si m Fr am ew or k-on ly 1 3 – – G en . S2 3 X ia o et al .[ 21 ]† N O A Si m M ul ti-ag en t 6– 8 3 – – G en . S2 4 R ao et al .[ 47 ]† G W O Si m Fr am ew or k-on ly 1 3 – – G en . S2 5 Zh an g & Zh an g [4 8]"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 19,
+        "cited_text": "ficient, yielding 𝜅 ≥ 0.61 (substantial reliability per Landis & Koch, 1977), indicating acceptable consensus among223 reviewers.224 10 Table 3: Deployment Readiness Score (DRS) instrument. 𝑄 = 0.30 𝐶1 + 0.25 𝐶2 + 0.25 𝐶3 + 0.20 𝐶4. Criterion Weight Score range Scoring rationale C1: Experimental validation 30% 0.0–1.0 Real field = 1.0; Sim + hardware testbed = 0.5; Simula- tion only = 0.0. C2: Quantitative metrics 25% 0.0–1.0 All three metrics = 1.0; two metrics = 0.67; one metric = 0.33; none = 0.0."
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 20,
+        "cited_text": "C3: Baseline comparison 25% 0.0 or 1.0 Comparison against at least one established algorithm = 1.0; no comparison = 0.0. C4: Agricultural context 20% 0.0 or 1.0 Explicit agricultural parameters in methodology = 1.0; generic path planning = 0.0. 3.7. Deployment Readiness Score (DRS)225 The Deployment Readiness Score (DRS) is a domain-specific composite instrument developed for this review to226 measure the degree to which a study’s design enables real-world agricultural UAV deployment. The DRS evaluates227"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 21,
+        "cited_text": "all 22 simulation-only primary studies, which substantially depresses scores regardless of algorithmic quality. This233 is by design—the DRS captures a normative judgement that simulation-only evidence is insufficient for deployment-234 readiness claims.235 3.8. Risk of Bias Assessment (MMAT)236 The risk of bias was assessed using the Mixed Methods Appraisal Tool (MMAT, version 2018) [31], adapted for237 computational engineering research. The five core criteria were operationalised as follows: (Q1) explicit research238"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 22,
+        "cited_text": "† PS O Si m Fr am ew or k-on ly 2+ 3 – 3 G en . S2 6 Zu o et al .[ 49 ]† A PF +P SO Si m M ul ti-ag en t 5– 25 3 – – G en . S2 7 Ya ng et al .[ 50 ]† D O A Si m Fr am ew or k-on ly 1 3 – – G en . S2 8 Ya ng et al .[ 51 ]† R ev ie w N /A R ev ie w N /A – – – G en . S2 9 Ta ng et al .[ 52 ]† R ev ie w N /A R ev ie w N /A – – – G en . Su m m ar y (n =2 9) PS O :1 0 (3 4. 5% ) Si m :2 2 (7 5. 9% ) M ul ti: 7 (2 4. 1% ) 1– 25 14 (4 8. 3% ) 4 (1 3. 8% ) 10 (3 4. 5% ) Pr im ar y on ly (n =2 2) PS O :1 0 (4 5. 5%"
+      },
+      {
+        "source_id": "a8a50f5d-0ed6-4b32-8ae8-df9b99027c70",
+        "citation_number": 23,
+        "cited_text": "enable cross-referencing with the supplementary gap database. Of the 29 studies, 22 are primary research articles and257 seven are review articles (S10, S11, S14, S15, S17, S28, S29).258 Note on validation levels across primary studies. Among the 22 primary research studies, all 22 (100%) are259 simulation-only (Val. = Sim). No primary study includes hardware testbed validation (S+T) or results from a real260 agricultural field environment (S+F). This complete absence of hardware validation is the single most critical gap261"
+      }
+    ]
+  }
+}
