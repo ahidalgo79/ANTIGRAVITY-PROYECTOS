@@ -16,3 +16,19 @@ Thumbs.db
 node_modules/
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+# Archivos binarios grandes
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.so
+*.so.*
+*.zip
+*.tar.gz
+
+# PDFs grandes (>10MB) - usa Git LFS si los necesitas versionados
+Comea/
+
+# Node modules (ya excluido pero reforzamos)
+node_modules/
