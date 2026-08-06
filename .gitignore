@@ -13,3 +13,6 @@ requirements.txt
 .idea/
 .DS_Store
 Thumbs.db
+node_modules/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
