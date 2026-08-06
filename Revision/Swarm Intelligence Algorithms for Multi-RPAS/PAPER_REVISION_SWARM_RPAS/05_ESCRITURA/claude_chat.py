@@ -2,7 +2,7 @@
 from anthropic import Anthropic
 
 # Tu clave de Claude (copiada directamente)
-API_KEY = "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"
+API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 print("=" * 50)
 print("CHAT CON CLAUDE - TERMINAL")

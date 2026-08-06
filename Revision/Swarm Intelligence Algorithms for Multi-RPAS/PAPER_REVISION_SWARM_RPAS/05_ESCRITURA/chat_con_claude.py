@@ -6,7 +6,7 @@ from anthropic import Anthropic
 # PEGA TU CLAVE REAL DE CLAUDE AQUÍ
 # (cópiala de tu archivo .env o de donde la tengas)
 # ============================================
-ANTHROPIC_API_KEY = "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"
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 # ============================================
 
 print("=" * 60)

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4d059b11375eb304",
+        "id": "eb68296571dae880",
         "type": "tabs",
         "children": [
           {
-            "id": "00041bfb1c657f49",
+            "id": "00ce7169d80e4523",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "386d0aedcb1bca2e",
@@ -185,7 +186,7 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "00041bfb1c657f49",
+  "active": "00ce7169d80e4523",
   "lastOpenFiles": [
     "Dashboard - Papers.md",
     "Dashboard - Tareas Globales.md",
