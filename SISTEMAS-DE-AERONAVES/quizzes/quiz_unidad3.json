@@ -1,0 +1,525 @@
+{
+  "title": "Controles Cuestionario",
+  "questions": [
+    {
+      "question": "¿Cuál es la composición estándar de los cables de acero trenzado utilizados para los controles primarios en un sistema mecánico?",
+      "answerOptions": [
+        {
+          "text": "$7 \\times 19$",
+          "isCorrect": true,
+          "rationale": "Esta configuración de siete grupos de 19 hilos proporciona la flexibilidad y resistencia mecánica necesarias para los sistemas de control primario."
+        },
+        {
+          "text": "$1 \\times 19$",
+          "isCorrect": false,
+          "rationale": "Esta configuración es demasiado rígida para pasar por las poleas de guiado de un sistema de control de vuelo."
+        },
+        {
+          "text": "$7 \\times 7$",
+          "isCorrect": false,
+          "rationale": "Aunque es común en aviación general para controles secundarios, carece de la flexibilidad del estándar de control primario."
+        },
+        {
+          "text": "$19 \\times 7$",
+          "isCorrect": false,
+          "rationale": "Esta es una configuración de cable antigiratorio que no se utiliza típicamente en los tendidos de control de vuelo tradicionales."
+        }
+      ],
+      "hint": "Se refiere a la cantidad de grupos y al número de hilos en cada uno para asegurar flexibilidad."
+    },
+    {
+      "question": "¿Cuál es la principal ventaja del control de vuelo puramente mecánico frente a los sistemas asistidos?",
+      "answerOptions": [
+        {
+          "text": "Independencia absoluta de sistemas auxiliares eléctricos o hidráulicos.",
+          "isCorrect": true,
+          "rationale": "Al ser un enlace físico directo, el control se mantiene incluso ante una pérdida total de potencia en la aeronave."
+        },
+        {
+          "text": "Reducción significativa del peso total de la aeronave.",
+          "isCorrect": false,
+          "rationale": "Los sistemas mecánicos suelen ser más pesados debido a los cientos de metros de cable, poleas y tensores necesarios."
+        },
+        {
+          "text": "Eliminación de la fatiga de materiales en las partes móviles.",
+          "isCorrect": false,
+          "rationale": "Los cables trenzados sufren desgaste y deshilachamiento constante al doblarse sobre las poleas."
+        },
+        {
+          "text": "Capacidad ilimitada para controlar aeronaves de gran tamaño.",
+          "isCorrect": false,
+          "rationale": "La fuerza muscular humana es insuficiente para vencer las cargas aerodinámicas en aeronaves de transporte grandes."
+        }
+      ],
+      "hint": "Considera qué sucede si el avión se queda sin energía eléctrica o presión hidráulica."
+    },
+    {
+      "question": "En un sistema mecánico, la fuerza necesaria para desviar las superficies crece según la relación física:",
+      "answerOptions": [
+        {
+          "text": "$F \\propto V^2$",
+          "isCorrect": true,
+          "rationale": "La fuerza aerodinámica es proporcional al cuadrado de la velocidad, lo que limita el uso del control mecánico en aviones rápidos."
+        },
+        {
+          "text": "$F \\propto V$",
+          "isCorrect": false,
+          "rationale": "Esta relación lineal no refleja el incremento exponencial de la presión dinámica con la velocidad."
+        },
+        {
+          "text": "$F \\propto \\sqrt{V}$",
+          "isCorrect": false,
+          "rationale": "Esto sugeriría que la fuerza aumenta más lento que la velocidad, lo cual es físicamente incorrecto en aerodinámica."
+        },
+        {
+          "text": "$F \\propto \\frac{1}{V}$",
+          "isCorrect": false,
+          "rationale": "Esta relación indicaría que a mayor velocidad se requiere menos fuerza, lo cual es opuesto a la realidad."
+        }
+      ],
+      "hint": "Recuerda la fórmula de la presión dinámica en aerodinámica."
+    },
+    {
+      "question": "¿Qué principio de control utiliza el sistema Fly-by-Wire para estabilizar la aeronave ante perturbaciones externas?",
+      "answerOptions": [
+        {
+          "text": "Control en bucle cerrado (Closed-loop Feedback Control).",
+          "isCorrect": true,
+          "rationale": "El sistema compara constantemente la actitud real medida por sensores con la solicitada por el piloto para corregir errores automáticamente."
+        },
+        {
+          "text": "Control de bucle abierto (Open-loop Control).",
+          "isCorrect": false,
+          "rationale": "En este modo no habría retroalimentación de los sensores para ajustar la posición de las superficies tras el comando inicial."
+        },
+        {
+          "text": "Transmisión analógica directa por cableado.",
+          "isCorrect": false,
+          "rationale": "Aunque usa señales eléctricas, el procesamiento digital por computadoras es lo que define la estabilización moderna."
+        },
+        {
+          "text": "Estabilización por masa inercial pasiva.",
+          "isCorrect": false,
+          "rationale": "La estabilización en FBW es activa y depende de algoritmos de software, no solo de la inercia física."
+        }
+      ],
+      "hint": "Implica un proceso constante de medición, comparación y corrección."
+    },
+    {
+      "question": "¿Qué componente del sistema FBW es responsable de medir la velocidad, el ángulo de ataque y las aceleraciones de gravedad?",
+      "answerOptions": [
+        {
+          "text": "ADIRU (Air Data and Inertial Reference Unit).",
+          "isCorrect": true,
+          "rationale": "Estas unidades integran los sensores de datos de aire e inerciales fundamentales para que las computadoras calculen las leyes de vuelo."
+        },
+        {
+          "text": "ELAC (Elevator Aileron Computer).",
+          "isCorrect": false,
+          "rationale": "Estas son computadoras que procesan la información, pero no son los sensores que miden los datos físicos del entorno."
+        },
+        {
+          "text": "LVDT (Linear Variable Differential Transformer).",
+          "isCorrect": false,
+          "rationale": "Estos transductores miden la posición de la palanca de mando o actuadores, no los datos de aire del avión."
+        },
+        {
+          "text": "FAC (Flight Augmentation Computer).",
+          "isCorrect": false,
+          "rationale": "Esta computadora gestiona funciones como la guiñada y los límites de envolvente, pero depende de los datos provistos por las ADIRU."
+        }
+      ],
+      "hint": "Son las siglas de las unidades que combinan datos de aire y referencia inercial."
+    },
+    {
+      "question": "Bajo Ley Normal (Normal Law) en el modo de vuelo, ¿qué demanda el sidestick en el eje de cabeceo (pitch)?",
+      "answerOptions": [
+        {
+          "text": "Un factor de carga neto.",
+          "isCorrect": true,
+          "rationale": "El sistema mantiene automáticamente $1\\text{ g}$ con mandos neutros, eliminando la necesidad de compensar (trim) por cambios de velocidad."
+        },
+        {
+          "text": "Una deflexión proporcional del elevador.",
+          "isCorrect": false,
+          "rationale": "Esta respuesta directa es característica de la Ley Directa o el modo de tierra, no del modo de vuelo en Ley Normal."
+        },
+        {
+          "text": "Una tasa de cabeceo constante en grados por segundo.",
+          "isCorrect": false,
+          "rationale": "Aunque parece similar, la lógica de Airbus se basa específicamente en la demanda de factor de carga corregido por gravedad."
+        },
+        {
+          "text": "Un ángulo de actitud absoluto.",
+          "isCorrect": false,
+          "rationale": "El piloto comanda maniobras (cambios), mientras que el sistema protege los límites de actitud, pero no comanda un ángulo fijo directamente."
+        }
+      ],
+      "hint": "Se refiere a la aceleración vertical que el avión intenta mantener de forma autónoma."
+    },
+    {
+      "question": "¿Qué ocurre en Ley Normal cuando el ángulo de ataque excede el valor de $\\alpha_{\\text{prot}}$?",
+      "answerOptions": [
+        {
+          "text": "El cabeceo pasa a comandar ángulo de ataque directo y se anula el autotrim.",
+          "isCorrect": true,
+          "rationale": "Esta protección física hace que el avión limite el cabeceo a $\\alpha_{\\text{max}}$, impidiendo que el piloto entre en pérdida."
+        },
+        {
+          "text": "Se activa automáticamente el respaldo mecánico.",
+          "isCorrect": false,
+          "rationale": "El respaldo mecánico solo se activa por pérdida total de energía eléctrica, no por condiciones de vuelo aerodinámicas."
+        },
+        {
+          "text": "El avión baja el morro de forma suave pero el piloto puede anularlo.",
+          "isCorrect": false,
+          "rationale": "Esta es la 'Estabilidad de Baja Velocidad' propia de la Ley Alternativa, no la protección firme de la Ley Normal."
+        },
+        {
+          "text": "Se desconectan las computadoras ELAC para dar control directo.",
+          "isCorrect": false,
+          "rationale": "Las computadoras permanecen activas para ejecutar precisamente la lógica de protección de alto ángulo de ataque."
+        }
+      ],
+      "hint": "Es una de las protecciones más críticas para evitar el 'stall' de forma irrevocable."
+    },
+    {
+      "question": "¿Cuál es la función del 'Modo Recogida' (Flare Mode) en la Ley Normal de Airbus?",
+      "answerOptions": [
+        {
+          "text": "Introducir una tendencia ligera de morro abajo a los $30\\text{ ft}$ para requerir una acción táctil del piloto.",
+          "isCorrect": true,
+          "rationale": "Al no haber sensación natural de suelo en FBW, esta lógica artificial permite que el aterrizaje se sienta como en un avión convencional."
+        },
+        {
+          "text": "Aumentar automáticamente el ángulo de ataque para asegurar un contacto suave.",
+          "isCorrect": false,
+          "rationale": "El sistema baja el morro artificialmente para evitar que el avión se mantenga flotando indefinidamente debido al modo de vuelo de $1\\text{ g}$."
+        },
+        {
+          "text": "Desplegar los spoilers de tierra antes del contacto con la pista.",
+          "isCorrect": false,
+          "rationale": "Los spoilers de tierra se activan tras el contacto y la compresión del tren, no durante la fase de vuelo de recogida."
+        },
+        {
+          "text": "Resetear el trim del estabilizador a cero de forma instantánea.",
+          "isCorrect": false,
+          "rationale": "El reseteo del trim ocurre en el Modo Tierra tras el aterrizaje, no durante la fase de Flare en el aire."
+        }
+      ],
+      "hint": "Se activa cerca del suelo para simular la pérdida de sustentación natural durante el aterrizaje."
+    },
+    {
+      "question": "En la Ley Alternativa (Alternate Law), ¿cómo se comporta el eje de alabeo (roll)?",
+      "answerOptions": [
+        {
+          "text": "Degrada directamente a Ley Directa.",
+          "isCorrect": true,
+          "rationale": "En esta ley, el alabeo pierde la estabilización del computador y su sensibilidad depende críticamente de la velocidad del aire."
+        },
+        {
+          "text": "Mantiene la demanda de tasa de balanceo constante.",
+          "isCorrect": false,
+          "rationale": "La tasa de balanceo estable es una característica exclusiva de la Ley Normal."
+        },
+        {
+          "text": "Pasa a ser controlado exclusivamente por los pedales de guiada.",
+          "isCorrect": false,
+          "rationale": "El alabeo sigue controlado por el sidestick, pero sin el análisis intermedio de la computadora para normalizar la respuesta."
+        },
+        {
+          "text": "Se bloquea para evitar maniobras bruscas ante fallos de sensores.",
+          "isCorrect": false,
+          "rationale": "El sistema permite el control, aunque con una lógica mucho más básica y sin protecciones activas."
+        }
+      ],
+      "hint": "El eje lateral pierde sus funciones inteligentes y se vuelve lineal y sensible."
+    },
+    {
+      "question": "¿Qué protección se mantiene activa incluso cuando el avión ha degradado a Ley Alternativa?",
+      "answerOptions": [
+        {
+          "text": "Límite de factor de carga.",
+          "isCorrect": true,
+          "rationale": "A pesar de perder protecciones de actitud y de entrada en pérdida, el sistema sigue protegiendo la integridad estructural limitando las fuerzas $g$."
+        },
+        {
+          "text": "Protección de ángulo de ataque máximo.",
+          "isCorrect": false,
+          "rationale": "Esta protección se pierde y es reemplazada por una alarma sonora de 'STALL' tradicional."
+        },
+        {
+          "text": "Protección de actitud angular (Pitch/Roll).",
+          "isCorrect": false,
+          "rationale": "Los límites de actitud desaparecen en Ley Alternativa, lo cual se indica con cruces ámbar en el PFD."
+        },
+        {
+          "text": "Protección de sobrevelocidad irreversible.",
+          "isCorrect": false,
+          "rationale": "En Ley Alternativa, el sistema ya no introduce correcciones de cabeceo automáticas e irrevocables ante sobrevelocidad."
+        }
+      ],
+      "hint": "Es la única protección que evita que el piloto rompa las alas por maniobras bruscas."
+    },
+    {
+      "question": "¿Cuál es la señal más crítica que indica al piloto que el avión está operando en Ley Directa (Direct Law)?",
+      "answerOptions": [
+        {
+          "text": "La indicación ámbar 'USE MAN PITCH TRIM' en el PFD.",
+          "isCorrect": true,
+          "rationale": "En Ley Directa se pierde el autotrim, obligando al piloto a usar manualmente la rueda de compensación."
+        },
+        {
+          "text": "La activación del 'Alpha Floor' en los motores.",
+          "isCorrect": false,
+          "rationale": "El Alpha Floor es una función de la Ley Normal; en Ley Directa no existen protecciones automáticas de empuje."
+        },
+        {
+          "text": "El bloqueo físico de la palanca de mando (Sidestick).",
+          "isCorrect": false,
+          "rationale": "El sidestick nunca se bloquea físicamente; su movimiento sigue enviando señales eléctricas a los actuadores."
+        },
+        {
+          "text": "La aparición de una bandera roja 'MAN PITCH TRIM ONLY'.",
+          "isCorrect": false,
+          "rationale": "Esa advertencia es específica del Respaldo Mecánico, cuando se pierde toda la señal eléctrica de control."
+        }
+      ],
+      "hint": "Advierte sobre la necesidad de usar una rueda física en el pedestal central."
+    },
+    {
+      "question": "¿Qué superficies se pueden controlar en el modo de Respaldo Mecánico (Mechanical Backup)?",
+      "answerOptions": [
+        {
+          "text": "Estabilizador horizontal variable y timón de dirección.",
+          "isCorrect": true,
+          "rationale": "Estos se controlan mediante la rueda de trim manual (cabeceo) y los cables de los pedales (guiñada) respectivamente."
+        },
+        {
+          "text": "Alerones y elevadores únicamente.",
+          "isCorrect": false,
+          "rationale": "Los alerones y elevadores dependen de actuadores eléctricos o hidráulicos que no tienen respaldo mecánico directo en este modo."
+        },
+        {
+          "text": "Spoilers y flaps de borde de ataque.",
+          "isCorrect": false,
+          "rationale": "Estas son superficies secundarias que requieren señales de computadora y potencia que no están disponibles en respaldo mecánico puro."
+        },
+        {
+          "text": "Solo el timón de dirección mediante cables.",
+          "isCorrect": false,
+          "rationale": "Aunque el timón usa cables, también se cuenta con el control del estabilizador a través de la rueda de trim para el cabeceo."
+        }
+      ],
+      "hint": "Son las superficies vinculadas a la rueda de compensación y a los pedales."
+    },
+    {
+      "question": "Los alerones son superficies de control primarias encargadas de gestionar el eje:",
+      "answerOptions": [
+        {
+          "text": "Longitudinal (Alabeo).",
+          "isCorrect": true,
+          "rationale": "Al moverse de forma asimétrica, los alerones generan un momento de rotación que inclina el avión lateralmente."
+        },
+        {
+          "text": "Lateral (Cabeceo).",
+          "isCorrect": false,
+          "rationale": "Este eje es controlado por los elevadores situados en el empenaje horizontal."
+        },
+        {
+          "text": "Vertical (Guiñada).",
+          "isCorrect": false,
+          "rationale": "La guiñada es responsabilidad del timón de dirección (rudder) situado en el empenaje vertical."
+        },
+        {
+          "text": "Transversal (Sustentación total).",
+          "isCorrect": false,
+          "rationale": "Aunque afectan la sustentación, su función primaria es el control rotacional sobre el eje longitudinal."
+        }
+      ],
+      "hint": "Controlan la inclinación de las alas para realizar virajes."
+    },
+    {
+      "question": "¿Cuál es la función asimétrica de los spoilers (deflectores) en vuelo?",
+      "answerOptions": [
+        {
+          "text": "Asistir a los alerones en el control de alabeo.",
+          "isCorrect": true,
+          "rationale": "Al levantarse en una sola ala, destruyen la sustentación de ese lado para ayudar a inclinar la aeronave de forma más efectiva."
+        },
+        {
+          "text": "Reducir la velocidad aerodinámica de forma simétrica.",
+          "isCorrect": false,
+          "rationale": "Esta es su función simétrica (frenos de aire), no la asimétrica mencionada en la pregunta."
+        },
+        {
+          "text": "Aumentar la curvatura del ala para el despegue.",
+          "isCorrect": false,
+          "rationale": "Esta es la función de los flaps y slats, no de los spoilers que destruyen la sustentación."
+        },
+        {
+          "text": "Prevenir la entrada en pérdida a altos ángulos de ataque.",
+          "isCorrect": false,
+          "rationale": "Los spoilers pueden agravar la pérdida al destruir la sustentación; es el sistema FBW el que previene el stall."
+        }
+      ],
+      "hint": "Ayudan a uno de los mandos primarios cuando este no es suficiente por sí solo."
+    },
+    {
+      "question": "En el uso de superficies secundarias, las deflexiones de flaps superiores a los $15\\text{ }^\\circ$ producen principalmente:",
+      "answerOptions": [
+        {
+          "text": "Un incremento masivo de la resistencia parásita.",
+          "isCorrect": true,
+          "rationale": "A partir de este ángulo, el aumento de resistencia es mayor que el de sustentación, permitiendo aproximaciones empinadas sin acelerar."
+        },
+        {
+          "text": "Un aumento óptimo de sustentación con mínima resistencia.",
+          "isCorrect": false,
+          "rationale": "Esto ocurre con deflexiones menores a $15\\text{ }^\\circ$, ideales para la fase de despegue."
+        },
+        {
+          "text": "Un retraso en el desprendimiento de la capa límite.",
+          "isCorrect": false,
+          "rationale": "Esta función es propia de los slats del borde de ataque, no de los flaps de borde de fuga."
+        },
+        {
+          "text": "La neutralización de las fuerzas de control en el sidestick.",
+          "isCorrect": false,
+          "rationale": "Esto es función de los trim tabs o el autotrim, no de la extensión de los flaps."
+        }
+      ],
+      "hint": "Piensa en por qué se usan ángulos grandes de flaps solo para aterrizar y no para despegar."
+    },
+    {
+      "question": "Durante el mantenimiento de cables de control mecánicos, ¿qué técnica se utiliza para detectar hilos rotos?",
+      "answerOptions": [
+        {
+          "text": "Pasar un trapo de algodón a lo largo del cable para detectar enganches.",
+          "isCorrect": true,
+          "rationale": "Las fibras del algodón se enganchan en los hilos deshilachados ('fishhooks'), revelando daños difíciles de ver a simple vista."
+        },
+        {
+          "text": "Aplicar rayos X a toda la longitud del fuselaje.",
+          "isCorrect": false,
+          "rationale": "Es una técnica demasiado costosa y compleja para inspecciones de rutina de cables de acero."
+        },
+        {
+          "text": "Medir la resistencia eléctrica de extremo a extremo.",
+          "isCorrect": false,
+          "rationale": "La continuidad eléctrica no indica si hay hilos rotos que comprometan la integridad mecánica del cable."
+        },
+        {
+          "text": "Sumergir el cable en líquido penetrante fluorescente.",
+          "isCorrect": false,
+          "rationale": "Esta técnica es para grietas superficiales en piezas sólidas, no para cables trenzados donde el líquido se perdería entre los hilos."
+        }
+      ],
+      "hint": "Es un método manual y sencillo que utiliza un material textil común."
+    },
+    {
+      "question": "¿Qué computadora de control de vuelo es la principal encargada de calcular las leyes de guiñada (yaw) y la coordinación de virajes?",
+      "answerOptions": [
+        {
+          "text": "FAC (Flight Augmentation Computer).",
+          "isCorrect": true,
+          "rationale": "La FAC gestiona el timón de dirección y las funciones de aumento de estabilidad en el eje vertical."
+        },
+        {
+          "text": "ELAC (Elevator Aileron Computer).",
+          "isCorrect": false,
+          "rationale": "Como su nombre indica, se enfoca en los elevadores (pitch) y los alerones (roll)."
+        },
+        {
+          "text": "SEC (Spoiler Elevator Computer).",
+          "isCorrect": false,
+          "rationale": "Controla principalmente los spoilers y actúa como respaldo para el control de los elevadores."
+        },
+        {
+          "text": "ADIRU (Air Data Inertial Reference Unit).",
+          "isCorrect": false,
+          "rationale": "No es una computadora de control (vuelo), sino una unidad de referencia de datos (sensores)."
+        }
+      ],
+      "hint": "Sus siglas significan Computadora de Aumento de Vuelo."
+    },
+    {
+      "question": "¿Qué función automática realiza el 'Modo Tierra' (Ground Mode) de la Ley Normal inmediatamente después del aterrizaje?",
+      "answerOptions": [
+        {
+          "text": "Resetea el trim del estabilizador a cero.",
+          "isCorrect": true,
+          "rationale": "Esto prepara la aeronave para el siguiente despegue asegurando que las superficies estén en posición neutra."
+        },
+        {
+          "text": "Bloquea los alerones en posición neutral para evitar daños por viento.",
+          "isCorrect": false,
+          "rationale": "El piloto mantiene el control total de las superficies en tierra para las maniobras de rodaje si es necesario."
+        },
+        {
+          "text": "Activa automáticamente los frenos de estacionamiento.",
+          "isCorrect": false,
+          "rationale": "El frenado de estacionamiento es una acción manual del piloto o parte de otros sistemas, no de la lógica de las leyes de vuelo."
+        },
+        {
+          "text": "Desconecta la alimentación eléctrica de las ADIRU.",
+          "isCorrect": false,
+          "rationale": "Las ADIRU deben permanecer encendidas para proporcionar datos durante el rodaje y hasta el apagado total."
+        }
+      ],
+      "hint": "Prepara una superficie de control específica para su configuración inicial de despegue."
+    },
+    {
+      "question": "¿Por qué el modo de cabeceo conmuta automáticamente a Ley Directa al extender el tren de aterrizaje bajo Ley Alternativa?",
+      "answerOptions": [
+        {
+          "text": "Porque en Ley Alternativa no existe un 'Modo Flare' (Recogida) para el aterrizaje.",
+          "isCorrect": true,
+          "rationale": "Al no poder procesar la recogida automática, el sistema da control directo al piloto para que realice la maniobra manualmente."
+        },
+        {
+          "text": "Para evitar que los sensores inerciales se dañen con el impacto del aterrizaje.",
+          "isCorrect": false,
+          "rationale": "Los sensores están diseñados para soportar el impacto; la conmutación es puramente por lógica de control de software."
+        },
+        {
+          "text": "Para permitir que el piloto use los pedales para frenar.",
+          "isCorrect": false,
+          "rationale": "El frenado y la dirección de morro son sistemas independientes de las leyes de cabeceo del FBW."
+        },
+        {
+          "text": "Debido a una limitación física de los actuadores hidráulicos al bajar el tren.",
+          "isCorrect": false,
+          "rationale": "No es una limitación física, sino una degradación intencional del software para facilitar el aterrizaje manual."
+        }
+      ],
+      "hint": "Tiene que ver con la transición entre el vuelo en crucero y el contacto con la pista."
+    },
+    {
+      "question": "En un sistema Fly-by-Wire, los actuadores que mueven las superficies de control se denominan típicamente:",
+      "answerOptions": [
+        {
+          "text": "Actuadores electrohidráulicos (EHV).",
+          "isCorrect": true,
+          "rationale": "Utilizan señales eléctricas para mover servoválvulas que regulan la potencia hidráulica de alta fuerza."
+        },
+        {
+          "text": "Servomotores de corriente continua.",
+          "isCorrect": false,
+          "rationale": "Los motores eléctricos puros rara vez tienen la densidad de potencia necesaria para mover superficies de grandes aviones comerciales."
+        },
+        {
+          "text": "Solenoides de acción directa.",
+          "isCorrect": false,
+          "rationale": "Un solenoide solo tiene dos posiciones (abierto/cerrado) y no permite el control gradual requerido para el vuelo."
+        },
+        {
+          "text": "Tensores electromecánicos.",
+          "isCorrect": false,
+          "rationale": "Los tensores son dispositivos de ajuste estático en cables mecánicos, no actuadores dinámicos de FBW."
+        }
+      ],
+      "hint": "Combinan el control por señales eléctricas con la fuerza de los fluidos a presión."
+    }
+  ]
+}

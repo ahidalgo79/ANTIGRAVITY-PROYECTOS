@@ -1,0 +1,18 @@
+DATOS PARA ACTUALIZACIÓN EN PLATAFORMA SIDE
+==========================================
+PROYECTO: NVIDIA IA Formación 2026
+FECHA: 29 de Abril 2026
+
+1. MONTO TOTAL DEL PROYECTO:
+   - Nuevo Total: $8,000,000.00 MXN
+   - (Anterior: $7,445,553.21 MXN)
+
+2. DESGLOSE DEL RECURSO:
+   - EQUIPAMIENTO: $7,445,553.21 MXN
+   - ADECUACIÓN E INSTALACIÓN: $554,446.79 MXN
+
+3. FUENTE DE FINANCIAMIENTO:
+   - SIDE Chihuahua: $8,000,000.00 MXN (100%)
+
+4. JUSTIFICACIÓN DEL INCREMENTO:
+   - Se adiciona el rubro de "Adecuación e Instalación" para cubrir el diagnóstico eléctrico, HVAC, obra menor, racks y certificación de laboratorios necesaria para la puesta en marcha del equipamiento especializado (H200 y Estaciones Blackwell).

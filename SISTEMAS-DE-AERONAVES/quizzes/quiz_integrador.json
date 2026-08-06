@@ -1,0 +1,135 @@
+{
+  "title": "Examen Especial (Integrador)",
+  "questions": [
+    {
+      "question": "¿De acuerdo con la norma FAR/CS 25.1309, cuál es el umbral de probabilidad exigido para un fallo de sistema que resulte en una condición catastrófica?",
+      "answerOptions": [
+        {
+          "text": "Menor a 1 x 10^-9 por hora de vuelo (Extremadamente Improbable).",
+          "isCorrect": true,
+          "rationale": "La normativa exige que los fallos con efectos catastróficos tengan una probabilidad casi nula para garantizar la seguridad del vuelo."
+        },
+        {
+          "text": "Menor a 1 x 10^-5 por hora de vuelo.",
+          "isCorrect": false,
+          "rationale": "Este umbral corresponde a fallos mayores, no catastróficos."
+        },
+        {
+          "text": "1 x 10^-3 por ciclo de despegue.",
+          "isCorrect": false,
+          "rationale": "La probabilidad no se mide normalmente por ciclo de despegue para fallos catastróficos generales."
+        },
+        {
+          "text": "Debe ser completamente imposible sin un factor humano externo.",
+          "isCorrect": false,
+          "rationale": "El diseño asume probabilidades matemáticas (< 10^-9), no la imposibilidad absoluta."
+        }
+      ],
+      "hint": "Recuerde el valor exponencial negativo más restrictivo en la certificación."
+    },
+    {
+      "question": "En el contexto de fluidos hidráulicos, ¿qué tipo de sellos se requieren obligatoriamente al utilizar un fluido de éster de fosfato (como Skydrol)?",
+      "answerOptions": [
+        {
+          "text": "Sellos de butilo o teflón.",
+          "isCorrect": true,
+          "rationale": "El Skydrol es altamente corrosivo para muchos materiales, y requiere específicamente sellos sintéticos como butilo o teflón para evitar fugas y fallos del sistema."
+        },
+        {
+          "text": "Sellos de caucho natural o neopreno.",
+          "isCorrect": false,
+          "rationale": "Estos materiales se desintegrarían al contacto con fluidos de éster de fosfato."
+        },
+        {
+          "text": "Sellos de nitrilo (Buna-N).",
+          "isCorrect": false,
+          "rationale": "El nitrilo es compatible con fluidos a base de petróleo (como MIL-H-5606), pero no con Skydrol."
+        },
+        {
+          "text": "Cualquier sello de grado aeroespacial certificado por la FAA.",
+          "isCorrect": false,
+          "rationale": "El material específico del sello es crítico y depende del tipo de fluido, no solo de su grado."
+        }
+      ],
+      "hint": "Considere la agresividad química de los fluidos sintéticos modernos frente a los cauchos convencionales."
+    },
+    {
+      "question": "¿Cuál de los siguientes sistemas se encarga primariamente de proporcionar energía eléctrica y neumática de forma independiente, especialmente cuando la aeronave está en tierra?",
+      "answerOptions": [
+        {
+          "text": "APU (Auxiliary Power Unit).",
+          "isCorrect": true,
+          "rationale": "El APU es un pequeño motor de turbina que proporciona aire comprimido (para arrancar motores y climatización) y electricidad."
+        },
+        {
+          "text": "RAT (Ram Air Turbine).",
+          "isCorrect": false,
+          "rationale": "El RAT se despliega solo en vuelo durante emergencias graves (pérdida total de potencia) para generar energía."
+        },
+        {
+          "text": "TRU (Transformer Rectifier Unit).",
+          "isCorrect": false,
+          "rationale": "El TRU no genera energía, simplemente la convierte de corriente alterna (AC) a continua (DC)."
+        },
+        {
+          "text": "IDG (Integrated Drive Generator).",
+          "isCorrect": false,
+          "rationale": "El IDG está acoplado al motor principal de la aeronave y requiere que éste esté en marcha."
+        }
+      ],
+      "hint": "Es un pequeño motor a reacción ubicado generalmente en la sección de cola de la aeronave."
+    },
+    {
+      "question": "Con respecto a la lógica de advertencias en cabina, ¿a qué altitud equivalente de cabina se dispara típicamente la alarma de despresurización?",
+      "answerOptions": [
+        {
+          "text": "10,000 pies.",
+          "isCorrect": true,
+          "rationale": "Esta es la altitud de cabina estándar en la cual el sistema activa una alerta visual/auditiva indicando pérdida de presurización."
+        },
+        {
+          "text": "8,000 pies.",
+          "isCorrect": false,
+          "rationale": "8,000 pies es la altitud máxima operativa de la cabina en condiciones normales, no el umbral de alarma."
+        },
+        {
+          "text": "14,000 pies.",
+          "isCorrect": false,
+          "rationale": "A 14,000 pies normalmente se despliegan de forma automática las máscaras de oxígeno para los pasajeros."
+        },
+        {
+          "text": "5,000 pies.",
+          "isCorrect": false,
+          "rationale": "Es un valor demasiado bajo; muchas cabinas operan a 6,000 u 8,000 pies rutinariamente."
+        }
+      ],
+      "hint": "Supera la altitud máxima normal de operación de la cabina pero es inferior al límite de despliegue de máscaras."
+    },
+    {
+      "question": "En situaciones críticas de vuelo con múltiples advertencias simultáneas, ¿cuál de los siguientes sistemas tiene la máxima prioridad visual y auditiva sobre los demás?",
+      "answerOptions": [
+        {
+          "text": "Las advertencias de GPWS (terreno) o Stall (pérdida).",
+          "isCorrect": true,
+          "rationale": "Las amenazas inmediatas a la aeronavegabilidad o impacto contra el terreno siempre tienen prioridad sobre los avisos de tráfico."
+        },
+        {
+          "text": "El sistema TCAS (alertas de tráfico).",
+          "isCorrect": false,
+          "rationale": "El TCAS se silencia o subordina frente a advertencias de GPWS o pérdida."
+        },
+        {
+          "text": "Alertas de altitud de cabina (despresurización).",
+          "isCorrect": false,
+          "rationale": "Aunque es una emergencia grave, el impacto contra el terreno o la pérdida aerodinámica son más inminentes."
+        },
+        {
+          "text": "Alertas de configuración de despegue/aterrizaje.",
+          "isCorrect": false,
+          "rationale": "La configuración es importante, pero no prioritaria frente al GPWS."
+        }
+      ],
+      "hint": "Piense en qué escenario representa el peligro más inmediato (cuestión de segundos) de impacto."
+    }
+  ]
+}

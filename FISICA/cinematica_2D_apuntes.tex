@@ -1,0 +1,237 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[margin=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{array,booktabs,tabularx,colortbl}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\definecolor{azul}{HTML}{185FA5}
+\definecolor{azulclr}{HTML}{E6F1FB}
+\definecolor{teal}{HTML}{0F6E56}
+\definecolor{tealclr}{HTML}{E1F5EE}
+\definecolor{gris}{HTML}{5F5E5A}
+\definecolor{grisclr}{HTML}{F1EFE8}
+\definecolor{coral}{HTML}{993C1D}
+\definecolor{amber}{HTML}{BA7517}
+\definecolor{negro}{HTML}{2C2C2A}
+
+\setmainfont{Arial}
+\setsansfont{Arial}
+\renewcommand{\familydefault}{\sfdefault}
+
+\titleformat{\section}{\bfseries\Large\color{azul}}{}{0em}{}[\vspace{-2pt}]
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\color{gris}\small\textbf{Cinemática en Dos Dimensiones — Apuntes}}
+\fancyfoot[C]{\color{gris}\thepage}
+\renewcommand{\headrule}{\color{azul}\rule{\textwidth}{0.4pt}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\newcommand{\resbox}[2]{%
+  \begin{tcolorbox}[colback=tealclr, colframe=teal, arc=4pt, boxrule=0.5pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt, width=\textwidth]
+    \textbf{\textcolor{teal}{#1:}} \textcolor{teal}{#2}
+  \end{tcolorbox}}
+
+\newcommand{\probheader}[3]{%
+  \begin{tcolorbox}[colback=#3, colframe=#3, arc=4pt, boxrule=0.5pt,
+    left=8pt, right=8pt, top=7pt, bottom=7pt, width=\textwidth]
+    \textbf{\large\textcolor{white}{Problema #1}} \hfill \textbf{\large\textcolor{white}{#2}}
+  \end{tcolorbox}}
+
+\newcommand{\databox}[1]{%
+  \begin{tcolorbox}[colback=grisclr, colframe=gris, arc=4pt, boxrule=0.3pt,
+    left=6pt, right=6pt, top=4pt, bottom=4pt, width=\textwidth]
+    \small\textcolor{gris}{#1}
+  \end{tcolorbox}}
+
+\newcommand{\paso}[1]{%
+  \vspace{4pt}\textbf{\textcolor{teal}{#1}}}
+
+\begin{document}
+\thispagestyle{fancy}
+\begin{center}
+  {\Huge\bfseries\color{azul} Cinemática en Dos Dimensiones}\\[4pt]
+  {\large\color{gris} Apuntes — Movimiento de Proyectiles}\\[4pt]
+  {\color{gris} $g = 9.8$ m/s$^2$ $|$ Sistema Internacional (SI)}
+\end{center}
+\vspace{6pt}\hrule height 0.5pt\vspace{10pt}
+\probheader{1}{Lanzamiento horizontal desde una ventana}{azul}
+\databox{$v_0$: 10 m/s (horizontal)  $|$  $t$: 5 s  $|$  $v_{0y}$: 0 m/s}
+\begin{center}
+  \includegraphics[width=14cm]{/home/andres/Documentos/ANTIGRAVITY-PROYECTOS/FISICA/img_apuntes/p1.png}
+\end{center}
+\paso{Concepto clave}
+El movimiento se separa en \textbf{dos ejes independientes}: horizontal (MRU, sin aceleración)
+y vertical (caída libre desde reposo, $v_{0y} = 0$).
+\paso{a) Altura de la ventana}
+En el eje vertical, la única aceleración es la gravedad:
+\begin{align*}
+  h &= \frac{1}{2} g t^2 = \frac{1}{2} \times 9.8 \times 5^2 \\
+    &= \frac{1}{2} \times 9.8 \times 25 = 122.5\ \text{m}
+\end{align*}
+\resbox{Altura de la ventana}{$h = 122.5$ m}
+\paso{b) Distancia horizontal}
+En el eje horizontal no hay aceleración (MRU):
+\begin{align*}
+  x &= v_0 \cdot t = 10 \times 5 = 50\ \text{m}
+\end{align*}
+\resbox{Distancia horizontal}{$x = 50$ m}
+\vspace{6pt}\hrule height 0.5pt\vspace{10pt}
+\probheader{2}{Tiro parabólico — bala disparada a 35°}{coral}
+\databox{$v_0$: 400 m/s  $|$  $\theta$: 35°}
+\begin{center}
+  \includegraphics[width=14cm]{/home/andres/Documentos/ANTIGRAVITY-PROYECTOS/FISICA/img_apuntes/p2.png}
+\end{center}
+\paso{Componentes de la velocidad inicial}
+\begin{align*}
+  v_{0x} &= v_0 \cos\theta = 400 \cos 35^\circ \approx 327.66\ \text{m/s} \\
+  v_{0y} &= v_0 \sin\theta = 400 \sin 35^\circ \approx 229.43\ \text{m/s}
+\end{align*}
+\paso{a) Tiempo total en el aire}
+En el punto más alto $v_y = 0$. El vuelo es simétrico:
+\begin{align*}
+  t_{\text{vuelo}} &= \frac{2 v_{0y}}{g} = \frac{2 \times 229.43}{9.8} \approx 46.82\ \text{s}
+\end{align*}
+\resbox{Tiempo en el aire}{$t \approx 46.82$ s}
+\paso{b) Altura máxima}
+\begin{align*}
+  H &= \frac{v_{0y}^2}{2g} = \frac{229.43^2}{2 \times 9.8} = \frac{52637}{19.6} \\
+    &\approx 2685.6\ \text{m} \approx 2.69\ \text{km}
+\end{align*}
+\resbox{Altura máxima}{$H \approx 2685.6$ m ($\approx 2.69$ km)}
+\paso{c) Alcance horizontal}
+\begin{align*}
+  R &= \frac{v_0^2 \sin(2\theta)}{g} = \frac{400^2 \times \sin 70^\circ}{9.8} \\
+    &= \frac{160000 \times 0.9397}{9.8} \approx 15342\ \text{m} \approx 15.34\ \text{km}
+\end{align*}
+\resbox{Alcance horizontal}{$R \approx 15342$ m (15.34 km)}
+\vspace{6pt}\hrule height 0.5pt\vspace{10pt}
+\probheader{3}{Ángulo de elevación para alcanzar 4000 m}{amber}
+\databox{$v_0$: 350 m/s  $|$  $R$: 4000 m}
+\begin{center}
+  \includegraphics[width=14cm]{/home/andres/Documentos/ANTIGRAVITY-PROYECTOS/FISICA/img_apuntes/p3.png}
+\end{center}
+\paso{Despejar el ángulo de la fórmula de alcance}
+Partimos de $R = v_0^2 \sin(2\theta) / g$ y despejamos:
+\begin{align*}
+  \sin(2\theta) &= \frac{R \cdot g}{v_0^2} = \frac{4000 \times 9.8}{350^2} \\
+               &= \frac{39200}{122500} \approx 0.32
+\end{align*}
+\paso{Dos soluciones del arcoseno}
+La función seno tiene dos valores en $[0^\circ, 180^\circ]$:
+\begin{align*}
+  2\theta_1 &= \arcsin(0.32) \approx 18.66^\circ \quad\to\quad \theta_1 \approx 9.33^\circ \\
+  2\theta_2 &= 180^\circ - 18.66^\circ = 161.34^\circ \quad\to\quad \theta_2 \approx 80.67^\circ
+\end{align*}
+\resbox{Ángulos válidos}{$\theta_1 = 9.33^\circ$ (rasante)  $\cdot$  $\theta_2 = 80.67^\circ$ (parábola alta)}
+\begin{tcolorbox}[colback=grisclr, colframe=gris, arc=4pt, boxrule=0.3pt,
+  left=8pt, right=8pt, top=4pt, bottom=4pt, width=\textwidth]
+  \small\textcolor{gris}{Ambos ángulos producen exactamente el mismo alcance.}
+\end{tcolorbox}
+\vspace{6pt}\hrule height 0.5pt\vspace{10pt}
+\probheader{4}{Proyectil lanzado desde un avión a 800 km/h}{gris}
+\databox{$v$: 800 km/h $\to$ 222.22 m/s  $|$  $h$: 500 m}
+\begin{center}
+  \includegraphics[width=14cm]{/home/andres/Documentos/ANTIGRAVITY-PROYECTOS/FISICA/img_apuntes/p4.png}
+\end{center}
+\paso{Conversión de unidades — paso obligatorio}
+Siempre trabaja en SI. Convertir km/h a m/s:
+\begin{align*}
+  v &= 800 \times \frac{1000}{3600} = 222.22\ \text{m/s}
+\end{align*}
+\paso{a) Tiempo de caída}
+El proyectil se lanza horizontalmente ($v_{0y} = 0$):
+\begin{align*}
+  h &= \frac{1}{2} g t^2 \\
+  t &= \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 500}{9.8}} = \sqrt{102.04} \approx 10.10\ \text{s}
+\end{align*}
+\resbox{Tiempo de caída}{$t \approx 10.10$ s}
+\paso{b) Distancia horizontal}
+\begin{align*}
+  x &= v \cdot t = 222.22 \times 10.10 \approx 2244\ \text{m} \approx 2.24\ \text{km}
+\end{align*}
+\resbox{Distancia horizontal}{$x \approx 2244$ m (2.24 km)}
+\vspace{6pt}\hrule height 0.5pt\vspace{10pt}
+\probheader{5}{Tiro parabólico — balón de fútbol a 40°}{teal}
+\databox{$v_0$: 22 m/s  $|$  $\theta$: 40°}
+\begin{center}
+  \includegraphics[width=14cm]{/home/andres/Documentos/ANTIGRAVITY-PROYECTOS/FISICA/img_apuntes/p5.png}
+\end{center}
+\paso{Componentes de la velocidad inicial}
+\begin{align*}
+  v_{0x} &= 22 \cos 40^\circ \approx 16.85\ \text{m/s} \\
+  v_{0y} &= 22 \sin 40^\circ \approx 14.14\ \text{m/s}
+\end{align*}
+\paso{a) Altura máxima}
+\begin{align*}
+  H &= \frac{v_{0y}^2}{2g} = \frac{14.14^2}{2 \times 9.8} = \frac{199.94}{19.6} \\
+    &\approx 10.20\ \text{m}
+\end{align*}
+\resbox{Altura máxima}{$H \approx 10.20$ m}
+\paso{b) Alcance horizontal}
+\begin{align*}
+  R &= \frac{v_0^2 \sin(2\theta)}{g} = \frac{22^2 \times \sin 80^\circ}{9.8} \\
+    &= \frac{484 \times 0.9848}{9.8} \approx 48.63\ \text{m}
+\end{align*}
+\resbox{Alcance horizontal}{$R \approx 48.63$ m}
+\begin{tcolorbox}[colback=grisclr, colframe=gris, arc=4pt, boxrule=0.3pt,
+  left=8pt, right=8pt, top=4pt, bottom=4pt, width=\textwidth]
+  \small\textcolor{gris}{El alcance máximo se logra con $\theta = 45^\circ$. A $40^\circ$ estamos muy cerca del óptimo.}
+\end{tcolorbox}
+\vspace{6pt}\hrule height 0.5pt\vspace{10pt}
+\section{Resumen de resultados}
+\begin{tabularx}{\textwidth}{CCC}
+  \toprule\rowcolor{azul}
+  \textbf{\textcolor{white}{Problema}} & \textbf{\textcolor{white}{Incógnita}} & \textbf{\textcolor{white}{Resultado}} \\
+  \midrule
+  1a & Altura de la ventana & 122.5 m \\
+  \rowcolor{azulclr}
+  1b & Distancia horizontal & 50 m \\
+  2a & Tiempo en el aire & 46.82 s \\
+  \rowcolor{azulclr}
+  2b & Altura máxima & 2685.6 m \\
+  2c & Alcance horizontal & 15 342 m (15.34 km) \\
+  \rowcolor{azulclr}
+  3 & Ángulo de elevación & $9.33^\circ$  o  $80.67^\circ$ \\
+  4a & Tiempo de caída & 10.10 s \\
+  \rowcolor{azulclr}
+  4b & Distancia horizontal & 2 244 m (2.24 km) \\
+  5a & Altura máxima & 10.20 m \\
+  \rowcolor{azulclr}
+  5b & Alcance horizontal & 48.63 m \\
+  \bottomrule
+\end{tabularx}
+\vspace{10pt}
+\section{Fórmulas de referencia}
+\begin{tabularx}{\textwidth}{LC}
+  \toprule\rowcolor{azul}
+  \textbf{\textcolor{white}{Magnitud}} & \textbf{\textcolor{white}{Fórmula}} \\
+  \midrule\rowcolor{azulclr}
+  Tiempo de vuelo    & $t = \dfrac{2 v_{0y}}{g} = \dfrac{2 v_0 \sin\theta}{g}$ \\
+  \rowcolor{azulclr}
+  Altura máxima      & $H = \dfrac{v_{0y}^2}{2g} = \dfrac{v_0^2 \sin^2\theta}{2g}$ \\
+  \rowcolor{azulclr}
+  Alcance horizontal & $R = \dfrac{v_0^2 \sin(2\theta)}{g}$ \\
+  \rowcolor{azulclr}
+  Lanzamiento horiz. & $h = \dfrac{1}{2} g t^2,\quad x = v_0 t$ \\
+  \rowcolor{azulclr}
+  Conversi\'on km/h $\to$ m/s & $v(\text{m/s}) = v(\text{km/h}) \times \dfrac{1000}{3600}$ \\
+  \bottomrule
+\end{tabularx}
+\vspace{10pt}
+\begin{tcolorbox}[colback=grisclr, colframe=gris, arc=4pt, boxrule=0.3pt,
+  left=8pt, right=8pt, top=4pt, bottom=4pt, width=\textwidth]
+  \small\textcolor{gris}{Todos los cálculos utilizan $g = 9.8$ m/s$^2$. Las unidades deben ser consistentes (SI).}
+\end{tcolorbox}
+\end{document}

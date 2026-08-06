@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma Maestro NVIDIA IA 2026</title>
+    <style>
+        :root {
+            --nvidia-green: #76b900;
+            --dark-bg: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --text-color: #e0e0e0;
+            --accent-color: #00ff88;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-top: 5px solid var(--nvidia-green);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--nvidia-green);
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .gantt-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gantt-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .task-name {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: var(--nvidia-green);
+        }
+
+        .timeline-container {
+            position: relative;
+            background: rgba(255,255,255,0.05);
+            height: 35px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .bar {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(90deg, var(--nvidia-green), var(--accent-color));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 0 15px rgba(118, 185, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .bar:hover {
+            transform: scaleY(1.1);
+            filter: brightness(1.2);
+        }
+
+        /* Positions based on months (Mar 2026 to Jul 2027 = 17 months) */
+        /* 1 month = 100% / 17 = 5.88% */
+        
+        .h4 { left: 0%; width: 47%; background: #4a4a4a; color: white; } /* Mar - Oct */
+        .h1 { left: 23.5%; width: 11.7%; } /* Jul - Aug */
+        .h2 { left: 29.4%; width: 17.6%; } /* Aug - Oct */
+        .h3 { left: 41.1%; width: 11.7%; } /* Oct - Nov */
+        .h5 { left: 41.1%; width: 23.5%; } /* Oct - Feb */
+        .h6 { left: 64.7%; width: 35.3%; } /* Feb - Jul */
+
+        .month-labels {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            margin-top: 10px;
+        }
+
+        .labels-grid {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            font-size: 0.7em;
+            opacity: 0.5;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            opacity: 0.6;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 10px;
+            background: rgba(118, 185, 0, 0.2);
+            color: var(--nvidia-green);
+            font-size: 0.7em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>PROYECTO NVIDIA IA FORMACIÓN 2026</h1>
+        <div class="subtitle">Plan Maestro de Infraestructura y Capacitación Especializada</div>
+        <div class="status-badge">ACTUALIZACIÓN PRESUPUESTAL: $8,000,000.00 MXN</div>
+    </header>
+
+    <div class="gantt-chart">
+        <div class="gantt-row">
+            <div class="task-name">H4: Formación Instructores</div>
+            <div class="timeline-container">
+                <div class="bar h4">Marzo - Octubre 2026</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">H1: Adquisición Equipos</div>
+            <div class="timeline-container">
+                <div class="bar h1">Julio - Agosto</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">H2: Adecuación Física</div>
+            <div class="timeline-container">
+                <div class="bar h2">Agosto - Octubre</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">H3: Instalación y Validación</div>
+            <div class="timeline-container">
+                <div class="bar h3">Octubre - Noviembre</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">H5: Ejecución Cohorte 1</div>
+            <div class="timeline-container">
+                <div class="bar h5">Octubre 2026 - Febrero 2027</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">H6: Vinculación y Cierre</div>
+            <div class="timeline-container">
+                <div class="bar h6">Febrero - Julio 2027</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="month-labels">
+        <div></div>
+        <div class="labels-grid">
+            <span>Mar 26</span>
+            <span>May 26</span>
+            <span>Jul 26</span>
+            <span>Sep 26</span>
+            <span>Nov 26</span>
+            <span>Ene 27</span>
+            <span>Mar 27</span>
+            <span>May 27</span>
+            <span>Jul 27</span>
+        </div>
+    </div>
+
+    <footer>
+        CICH-NVIDIA-2026 | INADET - CENALTEC Ciudad Juárez | Generado para Plataforma SIDE Chihuahua
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+{
+  "title": "Aeronáutica Cuestionario",
+  "questions": [
+    {
+      "question": "¿Cuál es el objetivo principal del estándar ATA 100 en la industria aeronáutica?",
+      "answerOptions": [
+        {
+          "text": "Estandarizar la numeración y organización de la información técnica independientemente del fabricante.",
+          "isCorrect": true,
+          "rationale": "Este estándar permite que pilotos y técnicos localicen información de sistemas bajo la misma estructura en diferentes modelos de aeronaves."
+        },
+        {
+          "text": "Establecer los requisitos de diseño para la certificación de aeronaves de categoría transporte.",
+          "isCorrect": false,
+          "rationale": "Los requisitos de diseño y certificación son competencia de normativas como la FAR Parte 25, no del estándar de documentación ATA."
+        },
+        {
+          "text": "Regular las licencias del personal técnico aeronáutico a nivel internacional.",
+          "isCorrect": false,
+          "rationale": "La regulación de licencias es competencia de las autoridades nacionales bajo los lineamientos de la OACI."
+        },
+        {
+          "text": "Definir exclusivamente los protocolos de comunicación por satélite en la banda L.",
+          "isCorrect": false,
+          "rationale": "El estándar ATA 100 se enfoca en la documentación técnica de mantenimiento y no en protocolos específicos de comunicación satelital."
+        }
+      ],
+      "hint": "Piense en la necesidad de que un mecánico de Boeing pueda entender un manual de Airbus."
+    },
+    {
+      "question": "En el código de seis dígitos del estándar ATA iSpec 2200, ¿qué representa el segundo par de dígitos (SS)?",
+      "answerOptions": [
+        {
+          "text": "El subsistema o sección específica dentro de un sistema principal.",
+          "isCorrect": true,
+          "rationale": "El formato CC-SS-YY divide la información jerárquicamente, donde SS identifica la sección o subsistema del capítulo principal."
+        },
+        {
+          "text": "El número de parte del componente específico que se está reparando.",
+          "isCorrect": false,
+          "rationale": "Los números de parte (P/N) son identificadores de inventario y no forman parte de la estructura de capítulos del manual de mantenimiento."
+        },
+        {
+          "text": "El sistema principal de la aeronave, como el sistema eléctrico o hidráulico.",
+          "isCorrect": false,
+          "rationale": "El sistema principal está representado por el primer par de dígitos, conocido como el capítulo ATA."
+        },
+        {
+          "text": "La zona física de la aeronave donde se ubica el componente.",
+          "isCorrect": false,
+          "rationale": "La zonificación utiliza series numéricas (como la serie 100 para el morro) y es un concepto distinto a la jerarquía de sistemas."
+        }
+      ],
+      "hint": "Considere la estructura jerárquica del código de configuración de tres bloques."
+    },
+    {
+      "question": "¿Qué diferencia fundamental existe entre el Aircraft Maintenance Manual (AMM) y el Component Maintenance Manual (CMM)?",
+      "answerOptions": [
+        {
+          "text": "El AMM es para mantenimiento en la aeronave ('on-aircraft') y el CMM para mantenimiento en taller ('off-aircraft').",
+          "isCorrect": true,
+          "rationale": "El AMM describe tareas en la línea o hangar, mientras que el CMM detalla la reparación profunda de componentes desmontados en talleres especializados."
+        },
+        {
+          "text": "El AMM es un documento legal de vuelo y el CMM es solo un catálogo de piezas.",
+          "isCorrect": false,
+          "rationale": "El catálogo de piezas es el IPC; tanto el AMM como el CMM son manuales de procedimientos técnicos."
+        },
+        {
+          "text": "El AMM lo escribe la autoridad aeronáutica y el CMM lo escribe el fabricante.",
+          "isCorrect": false,
+          "rationale": "Ambos manuales son proporcionados por el fabricante de la aeronave o de los componentes (vendedores)."
+        },
+        {
+          "text": "El AMM cubre solo la estructura y el CMM cubre solo los sistemas eléctricos.",
+          "isCorrect": false,
+          "rationale": "El AMM cubre todos los sistemas de la aeronave, mientras que el CMM se centra en unidades específicas de cualquier sistema."
+        }
+      ],
+      "hint": "Piense en la ubicación física de la tarea de mantenimiento: dentro o fuera del avión."
+    },
+    {
+      "question": "Bajo el estándar ATA 100, ¿a qué sistema corresponde el Capítulo 21?",
+      "answerOptions": [
+        {
+          "text": "Aire Acondicionado y Presurización.",
+          "isCorrect": true,
+          "rationale": "El Capítulo 21 está dedicado exclusivamente a los sistemas que controlan el ambiente y la presión de la cabina."
+        },
+        {
+          "text": "Energía Eléctrica.",
+          "isCorrect": false,
+          "rationale": "El sistema de energía eléctrica está categorizado bajo el Capítulo 24."
+        },
+        {
+          "text": "Controles de Vuelo.",
+          "isCorrect": false,
+          "rationale": "Los controles de vuelo, tanto primarios como secundarios, se encuentran en el Capítulo 27."
+        },
+        {
+          "text": "Protección contra Hielo y Lluvia.",
+          "isCorrect": false,
+          "rationale": "Este sistema de protección se clasifica en el Capítulo 30 del estándar ATA."
+        }
+      ],
+      "hint": "Es el sistema responsable de mantener la atmósfera respirable y confortable para los pasajeros."
+    },
+    {
+      "question": "¿Cuál es la función principal del Illustrated Parts Catalog (IPC)?",
+      "answerOptions": [
+        {
+          "text": "Identificar, aprovisionar y almacenar las partes de la aeronave reemplazables en línea.",
+          "isCorrect": true,
+          "rationale": "El IPC permite a los técnicos identificar visualmente componentes y obtener sus números de referencia para pedidos y logística."
+        },
+        {
+          "text": "Proporcionar los diagramas lógicos para la solución de problemas eléctricos complejos.",
+          "isCorrect": false,
+          "rationale": "Esa función corresponde a manuales de diagramas y esquemas como el ASM o el WDM."
+        },
+        {
+          "text": "Detallar los límites de daño permitidos en la estructura primaria del fuselaje.",
+          "isCorrect": false,
+          "rationale": "Los límites de daño y reparaciones estructurales son el enfoque principal del Structural Repair Manual (SRM)."
+        },
+        {
+          "text": "Establecer los procedimientos de emergencia para la tripulación de mando.",
+          "isCorrect": false,
+          "rationale": "Los procedimientos de emergencia se encuentran en el AFM y se traducen para la tripulación en el FCOM o el QRH."
+        }
+      ],
+      "hint": "Piense en un catálogo visual utilizado para pedir repuestos."
+    },
+    {
+      "question": "¿Qué documento permite el despacho de una aeronave con ciertos equipos inoperativos bajo condiciones específicas?",
+      "answerOptions": [
+        {
+          "text": "Minimum Equipment List (MEL).",
+          "isCorrect": true,
+          "rationale": "La MEL es un documento del operador, basado en la MMEL, que define qué equipos pueden fallar sin comprometer la seguridad del vuelo inmediato."
+        },
+        {
+          "text": "Airplane Flight Manual (AFM).",
+          "isCorrect": false,
+          "rationale": "El AFM contiene limitaciones y procedimientos certificados, pero no es la lista de tolerancia de fallos para despacho."
+        },
+        {
+          "text": "Structural Repair Manual (SRM).",
+          "isCorrect": false,
+          "rationale": "El SRM trata sobre daños físicos en la estructura, no sobre la operatividad de sistemas o equipos."
+        },
+        {
+          "text": "Configuration Deviation List (CDL).",
+          "isCorrect": false,
+          "rationale": "La CDL se refiere a partes externas faltantes (como carenados), no a equipos o sistemas inoperativos."
+        }
+      ],
+      "hint": "Es una lista que personaliza el operador a partir de la guía del fabricante (MMEL)."
+    },
+    {
+      "question": "Si un técnico necesita consultar los diagramas de cableado y las conexiones físicas de un sistema, ¿qué manual debe utilizar?",
+      "answerOptions": [
+        {
+          "text": "Wiring Diagram Manual (WDM).",
+          "isCorrect": true,
+          "rationale": "El WDM (o AWM) detalla específicamente el trazado de cables, tipos de conectores y puntos de conexión eléctrica."
+        },
+        {
+          "text": "Aircraft Maintenance Manual (AMM).",
+          "isCorrect": false,
+          "rationale": "Aunque el AMM menciona componentes eléctricos, no contiene el nivel de detalle de cableado que ofrece el WDM."
+        },
+        {
+          "text": "Troubleshooting Manual (TSM).",
+          "isCorrect": false,
+          "rationale": "El TSM guía en la lógica de diagnóstico de fallos, pero suele referir al WDM para verificar la integridad física del cableado."
+        },
+        {
+          "text": "Master Minimum Equipment List (MMEL).",
+          "isCorrect": false,
+          "rationale": "La MMEL es un documento regulatorio de despacho y no contiene información técnica de mantenimiento o diagramas."
+        }
+      ],
+      "hint": "Busque el manual enfocado exclusivamente en la arquitectura eléctrica 'hilo por hilo'."
+    },
+    {
+      "question": "¿Cuál es la principal evolución que introdujo el estándar ATA iSpec 2200 respecto al ATA 100 original?",
+      "answerOptions": [
+        {
+          "text": "La transición a formatos digitales estructurados mediante XML y DTDs.",
+          "isCorrect": true,
+          "rationale": "iSpec 2200 unificó el ATA 100 y el ATA 2100 para facilitar la gestión electrónica de datos y la interoperabilidad entre fabricantes y aerolíneas."
+        },
+        {
+          "text": "La creación de nuevos capítulos para motores de pistón en la serie 80.",
+          "isCorrect": false,
+          "rationale": "Aunque hubo cambios en la numeración (como el paso a ATA 85 para motores recíprocos), el cambio fundamental fue tecnológico y de formato."
+        },
+        {
+          "text": "La eliminación de la redundancia en los sistemas de control de vuelo.",
+          "isCorrect": false,
+          "rationale": "El estándar regula la documentación, no los principios de ingeniería o diseño de redundancia de los sistemas."
+        },
+        {
+          "text": "La obligatoriedad de usar el sistema métrico decimal en todos los manuales.",
+          "isCorrect": false,
+          "rationale": "Muchos manuales bajo iSpec 2200 siguen utilizando el sistema imperial debido a la normativa estadounidense predominante."
+        }
+      ],
+      "hint": "Piense en cómo se visualizan los manuales modernos en tabletas en lugar de grandes libros de papel."
+    },
+    {
+      "question": "¿Qué capítulo ATA cubre la planta motriz (motores) en términos generales?",
+      "answerOptions": [
+        {
+          "text": "Capítulos 71 a 80.",
+          "isCorrect": true,
+          "rationale": "La serie 70-80 está reservada para la planta motriz, incluyendo instalación, motor básico, combustible del motor, ignición y aire."
+        },
+        {
+          "text": "Capítulo 28.",
+          "isCorrect": false,
+          "rationale": "El Capítulo 28 cubre el sistema de combustible de la célula (tanques y transferencia), no el motor en sí."
+        },
+        {
+          "text": "Capítulo 49.",
+          "isCorrect": false,
+          "rationale": "El Capítulo 49 se refiere específicamente a la Unidad de Potencia Auxiliar (APU), no a los motores principales."
+        },
+        {
+          "text": "Capítulos 52 a 57.",
+          "isCorrect": false,
+          "rationale": "Esta serie de capítulos corresponde a la estructura (puertas, fuselaje, alas), no a los sistemas de propulsión."
+        }
+      ],
+      "hint": "Se encuentra al final de la sección de sistemas, antes de los capítulos de hélices."
+    },
+    {
+      "question": "¿Qué información crítica se encuentra en el Structural Repair Manual (SRM)?",
+      "answerOptions": [
+        {
+          "text": "Instrucciones para reparaciones de campo y materiales de sustitución aprobados.",
+          "isCorrect": true,
+          "rationale": "El SRM permite a los operadores realizar reparaciones estructurales permanentes o temporales sin consultar directamente al fabricante para cada daño."
+        },
+        {
+          "text": "Tiempos límite entre revisiones mayores (Overhaul) de los componentes del motor.",
+          "isCorrect": false,
+          "rationale": "Los límites de tiempo y vida útil se encuentran generalmente en el Capítulo 05 del AMM o manuales específicos de mantenimiento programado."
+        },
+        {
+          "text": "Procedimientos para la remoción e instalación de actuadores hidráulicos.",
+          "isCorrect": false,
+          "rationale": "Estos procedimientos mecánicos de remoción/instalación son parte del AMM."
+        },
+        {
+          "text": "Configuraciones permitidas para el despacho con superficies de control secundarias faltantes.",
+          "isCorrect": false,
+          "rationale": "Esto es competencia de la Configuration Deviation List (CDL)."
+        }
+      ],
+      "hint": "Este manual es la 'biblia' para los mecánicos de estructuras (lámina y pintura)."
+    },
+    {
+      "question": "El Airplane Flight Manual (AFM) se distingue de otros manuales porque:",
+      "answerOptions": [
+        {
+          "text": "Es específico para cada matrícula de aeronave y está aprobado por la autoridad civil.",
+          "isCorrect": true,
+          "rationale": "El AFM es un documento legal cuya aprobación es parte de la certificación de la aeronave y contiene los pesos y rendimientos exactos de esa unidad."
+        },
+        {
+          "text": "Contiene diagramas detallados de los sistemas para el personal de mantenimiento.",
+          "isCorrect": false,
+          "rationale": "El AFM está orientado a la operación; los diagramas de sistemas para mantenimiento están en el AMM y el ASM."
+        },
+        {
+          "text": "Es un documento consultivo que no tiene carácter obligatorio.",
+          "isCorrect": false,
+          "rationale": "Al contrario, el AFM es un documento legal de cumplimiento obligatorio para la operación segura."
+        },
+        {
+          "text": "Es el mismo para toda una flota de aeronaves del mismo modelo.",
+          "isCorrect": false,
+          "rationale": "Aunque el modelo sea el mismo, el AFM debe reflejar el equipo y peso específicos de cada aeronave individual (matrícula)."
+        }
+      ],
+      "hint": "Considere el estatus legal y la personalización del documento según la matrícula."
+    },
+    {
+      "question": "¿A qué se refiere el término 'Normalización' en la industria aeroespacial según el material?",
+      "answerOptions": [
+        {
+          "text": "Al establecimiento de estándares comunes para garantizar calidad y compatibilidad.",
+          "isCorrect": true,
+          "rationale": "La normalización (como los estándares SAE o ATA) permite que la industria hable un mismo lenguaje técnico y use componentes compatibles."
+        },
+        {
+          "text": "Al proceso de demostrar que una aeronave cumple con los requisitos de seguridad para volar.",
+          "isCorrect": false,
+          "rationale": "Ese proceso es la 'Certificación', que es una demostración de cumplimiento ante una autoridad."
+        },
+        {
+          "text": "A la operación de la aeronave dentro de los parámetros de temperatura estándar (ISA).",
+          "isCorrect": false,
+          "rationale": "ISA es un modelo atmosférico, no un proceso de normalización industrial de sistemas."
+        },
+        {
+          "text": "A la reparación de una aeronave para devolverla a su estado original de fábrica.",
+          "isCorrect": false,
+          "rationale": "Esto se conoce como mantenimiento o restauración, no normalización."
+        }
+      ],
+      "hint": "Piense en la creación de reglas técnicas universales, no en el acto de certificar un diseño."
+    },
+    {
+      "question": "Bajo la zonificación ATA, ¿qué área general cubre la serie 100?",
+      "answerOptions": [
+        {
+          "text": "El morro y la sección delantera del fuselaje.",
+          "isCorrect": true,
+          "rationale": "La zonificación divide el avión en áreas lógicas; la 100 empieza en el radomo y cubre la cabina de mando y el compartimento de aviónica delantero."
+        },
+        {
+          "text": "El ala izquierda y su motor.",
+          "isCorrect": false,
+          "rationale": "El ala izquierda suele estar representada por la serie 500."
+        },
+        {
+          "text": "El empenaje y la sección de cola.",
+          "isCorrect": false,
+          "rationale": "La sección de cola suele estar en la serie 300."
+        },
+        {
+          "text": "El tren de aterrizaje principal.",
+          "isCorrect": false,
+          "rationale": "El tren de aterrizaje tiene su propia zonificación (serie 700 en algunos esquemas iSpec 2200)."
+        }
+      ],
+      "hint": "Es la primera zona lógica de la aeronave, empezando por el frente."
+    },
+    {
+      "question": "En el contexto de certificación, ¿qué representa el concepto de 'Hard Law'?",
+      "answerOptions": [
+        {
+          "text": "Reglamentos de cumplimiento obligatorio como las FAR o CS.",
+          "isCorrect": true,
+          "rationale": "Las leyes duras son normas vinculantes emitidas por autoridades gubernamentales (FAA/EASA) que tienen fuerza de ley."
+        },
+        {
+          "text": "Guías de materiales aceptables para la construcción de fuselajes.",
+          "isCorrect": false,
+          "rationale": "Los medios aceptables de cumplimiento suelen considerarse 'Soft Law' o material guía."
+        },
+        {
+          "text": "Leyes físicas inmutables que rigen la aerodinámica del vuelo.",
+          "isCorrect": false,
+          "rationale": "El término se refiere al marco regulatorio legal, no a la física o ingeniería."
+        },
+        {
+          "text": "Estándares industriales voluntarios desarrollados por fabricantes.",
+          "isCorrect": false,
+          "rationale": "Los estándares voluntarios son una forma de autorregulación o normalización, no 'Hard Law' en el sentido estricto."
+        }
+      ],
+      "hint": "Son las reglas que, si no se cumplen, impiden legalmente la operación de la aeronave."
+    },
+    {
+      "question": "¿Cuál es la función del Flight Crew Operating Manual (FCOM)?",
+      "answerOptions": [
+        {
+          "text": "Traducir los datos del AFM en guías procedimentales prácticas para el piloto.",
+          "isCorrect": true,
+          "rationale": "El FCOM expande la información del AFM con descripciones detalladas de sistemas y pasos operativos 'paso a paso' para la tripulación."
+        },
+        {
+          "text": "Listar todos los componentes electrónicos para su reemplazo en tierra.",
+          "isCorrect": false,
+          "rationale": "La identificación de componentes electrónicos para reemplazo es función del IPC y el AMM."
+        },
+        {
+          "text": "Definir las técnicas de pilotaje recomendadas para ahorro de combustible.",
+          "isCorrect": false,
+          "rationale": "Las técnicas y filosofía de vuelo suelen estar en el Flight Crew Techniques Manual (FCTM)."
+        },
+        {
+          "text": "Registrar las horas de vuelo y ciclos de mantenimiento de la aeronave.",
+          "isCorrect": false,
+          "rationale": "Esa información se registra en el libro de vuelo (Logbook), no es parte del contenido del FCOM."
+        }
+      ],
+      "hint": "Es el manual de 'instrucciones de uso' del avión para el piloto en el día a día."
+    },
+    {
+      "question": "Según el estándar ATA 100, el Capítulo 32 se refiere a:",
+      "answerOptions": [
+        {
+          "text": "Tren de Aterrizaje.",
+          "isCorrect": true,
+          "rationale": "El Capítulo 32 cubre la estructura del tren, ruedas, frenos, neumáticos y los sistemas de extensión y retracción."
+        },
+        {
+          "text": "Sistema de Combustible.",
+          "isCorrect": false,
+          "rationale": "El combustible está clasificado bajo el Capítulo 28."
+        },
+        {
+          "text": "Sistema Neumático.",
+          "isCorrect": false,
+          "rationale": "El sistema neumático (aire de sangrado) corresponde al Capítulo 36."
+        },
+        {
+          "text": "Protección contra Incendios.",
+          "isCorrect": false,
+          "rationale": "La protección contra incendios se encuentra en el Capítulo 26."
+        }
+      ],
+      "hint": "Piense en el sistema que soporta el peso del avión en tierra."
+    },
+    {
+      "question": "¿Qué requisito impone la FAR 25.1309 respecto a fallos catastróficos?",
+      "answerOptions": [
+        {
+          "text": "Su probabilidad debe ser extremadamente improbable (menor a $10^{-9}$ por hora de vuelo).",
+          "isCorrect": true,
+          "rationale": "La normativa exige que cualquier fallo que resulte en la pérdida de la aeronave tenga una probabilidad casi nula para garantizar la seguridad."
+        },
+        {
+          "text": "Deben ser detectables por el piloto en menos de 5 segundos.",
+          "isCorrect": false,
+          "rationale": "La detectabilidad es importante, pero el requisito cuantitativo de $10^{-9}$ es la base de la certificación para eventos catastróficos."
+        },
+        {
+          "text": "Cada sistema debe tener al menos cuatro niveles de redundancia mecánica.",
+          "isCorrect": false,
+          "rationale": "La norma no dicta el número exacto de redundancias, sino el objetivo de seguridad probabilístico que debe alcanzarse."
+        },
+        {
+          "text": "Solo se permiten si la aeronave está operando en condiciones meteorológicas visuales (VMC).",
+          "isCorrect": false,
+          "rationale": "Los fallos catastróficos no están permitidos bajo ninguna condición operativa normal o prevista; deben ser evitados por diseño."
+        }
+      ],
+      "hint": "Considere la relación entre la severidad del efecto y la probabilidad permitida."
+    },
+    {
+      "question": "En la codificación ATA, ¿qué grupo de capítulos define la 'Estructura' (Structure) de la aeronave?",
+      "answerOptions": [
+        {
+          "text": "Grupo 3 (Capítulos 51 a 57).",
+          "isCorrect": true,
+          "rationale": "El Grupo 3 se enfoca en la célula, incluyendo fuselaje, alas, estabilizadores y estructuras de las puertas."
+        },
+        {
+          "text": "Grupo 1 (Capítulos 05 a 12).",
+          "isCorrect": false,
+          "rationale": "El Grupo 1 contiene información general, límites de tiempo y procedimientos de servicio."
+        },
+        {
+          "text": "Grupo 2 (Capítulos 20 a 49).",
+          "isCorrect": false,
+          "rationale": "El Grupo 2 está dedicado a los sistemas técnicos de la aeronave (eléctrico, hidráulico, etc.)."
+        },
+        {
+          "text": "Grupo 4 (Capítulos 70 a 89).",
+          "isCorrect": false,
+          "rationale": "El Grupo 4 se reserva para la planta motriz y sus sistemas asociados."
+        }
+      ],
+      "hint": "Es el grupo intermedio entre los sistemas y la planta motriz."
+    },
+    {
+      "question": "¿Qué especifica la Configuration Deviation List (CDL)?",
+      "answerOptions": [
+        {
+          "text": "Partes externas no estructurales que pueden faltar sin invalidar la aeronavegabilidad.",
+          "isCorrect": true,
+          "rationale": "La CDL permite volar si, por ejemplo, falta un carenado pequeño o una tapa de acceso, detallando la penalización en el rendimiento."
+        },
+        {
+          "text": "La lista de herramientas necesarias para realizar un cambio de motor.",
+          "isCorrect": false,
+          "rationale": "Las herramientas se listan en el Tool and Equipment Manual o en la sección de herramientas del AMM."
+        },
+        {
+          "text": "Las desviaciones permitidas en el peso máximo de despegue según la altitud del aeropuerto.",
+          "isCorrect": false,
+          "rationale": "Los cálculos de peso y rendimiento según la altitud se encuentran en las tablas de rendimiento del AFM."
+        },
+        {
+          "text": "El registro de reparaciones estructurales previas realizadas en la aeronave.",
+          "isCorrect": false,
+          "rationale": "El historial de reparaciones se lleva en los registros permanentes de mantenimiento, no en una lista de desviaciones (CDL)."
+        }
+      ],
+      "hint": "Piense en elementos aerodinámicos externos, no en equipos internos inoperativos."
+    },
+    {
+      "question": "El concepto de 'Diseño de fallo seguro' (Fail-safe) implica que:",
+      "answerOptions": [
+        {
+          "text": "Ningún fallo único debe producir un efecto catastrófico en la aeronave.",
+          "isCorrect": true,
+          "rationale": "El principio fail-safe busca que el sistema sea tolerante a fallos, manteniendo la seguridad mediante redundancia o modos de degradación segura."
+        },
+        {
+          "text": "Los sistemas nunca fallarán durante la vida útil de la aeronave.",
+          "isCorrect": false,
+          "rationale": "Es imposible garantizar que nada fallará; por ello se diseña para que, cuando ocurra un fallo, las consecuencias sean controlables."
+        },
+        {
+          "text": "La aeronave se detendrá automáticamente si se detecta cualquier anomalía.",
+          "isCorrect": false,
+          "rationale": "En aviación, detenerse no siempre es seguro; el diseño busca la continuidad del vuelo seguro o un aterrizaje controlado."
+        },
+        {
+          "text": "Todos los sistemas deben ser duplicados exactamente con componentes idénticos.",
+          "isCorrect": false,
+          "rationale": "La redundancia puede ser de diferentes tipos (diversidad), no necesariamente duplicación idéntica, para evitar fallos de modo común."
+        }
+      ],
+      "hint": "Es el principio fundamental que equilibra seguridad y redundancia mencionado en el 'triángulo de certificación'."
+    }
+  ]
+}

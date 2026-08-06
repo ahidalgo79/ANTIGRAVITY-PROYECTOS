@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Resumen}{5}{chapter*.6}%
+\contentsline {chapter}{Abstract}{6}{chapter*.7}%
+\contentsline {chapter}{Introduccion}{7}{chapter*.8}%
+\contentsline {chapter}{Planteamiento}{8}{chapter*.9}%
+\contentsline {chapter}{Justificacion}{9}{chapter*.10}%
+\contentsline {chapter}{Hipotesis}{10}{chapter*.11}%
+\contentsline {chapter}{Objetivos}{11}{chapter*.12}%
+\contentsline {chapter}{Contribucion}{12}{chapter*.13}%
+\contentsline {chapter}{\numberline {1}Antecedentes}{13}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Estado}{14}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Metodologia}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Resultados}{16}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Recomendaciones}{18}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Productos}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Anexos}{20}{chapter.8}%
+\contentsfinish 

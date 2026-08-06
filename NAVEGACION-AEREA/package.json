@@ -1,0 +1,12 @@
+{
+  "name": "navegacion-aerea",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generación de documentos de Navegación Aérea",
+  "scripts": {
+    "generar": "node actividad2_u2.js"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}

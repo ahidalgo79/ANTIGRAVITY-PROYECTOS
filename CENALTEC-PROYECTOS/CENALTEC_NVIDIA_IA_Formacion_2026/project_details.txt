@@ -1,0 +1,1496 @@
+PLAN MAESTRO DE COLABORACIÓN ESTRATÉGICA
+
+CICH-NVIDIA-2026 — INADET & NVIDIA Deep Learning Institute
+
+Equipamiento e Instalación del Centro de Excelencia NVIDIA DLI para la
+Formación de Talento Especializado en IA, Robótica y Manufactura
+Avanzada — CENALTEC Ciudad Juárez
+
+  --------------------- -------------------------------------------------
+  Institución Líder     Instituto de Apoyo al Desarrollo Tecnológico
+  Ejecutora             (INADET)
+
+  Socio Tecnológico     NVIDIA Deep Learning Institute (DLI) & Aliados
+  Estratégico           Académicos Regionales
+
+  Aliados               SIDE Chihuahua, Parque Industrial Taiwanés,
+  Gubernamentales       Foxconn, Jabil, Siemens
+
+  Versión del Documento 3
+
+  Fecha de Emisión      21 de abril de 2026
+
+  Período de Ejecución  Julio 2026 — Julio 2027
+
+  Código de Proyecto    CICH-NVIDIA-2026
+
+  Infraestructura       1x Dell PowerEdge R7725 (2x GPU H200 NVL) +
+  NVIDIA Utilizada      Switch Dell S5248F-ON + Gabinete APC NetShelter
+                        SX 42U, 30x Jetson Orin Nano Super Developer Kit,
+                        10x Dell Pro Max con GB10 + Monitor P2725H,
+                        Licencias NVAIE + Omniverse Enterprise EDU 5 años
+
+  Estado                Propuesta para Aprobación SIDE 2026
+  --------------------- -------------------------------------------------
+
+SECCIÓN 1 — Contexto Estratégico y Justificación
+
+Nota de Justificación Estratégica — Concentración en Ciudad Juárez: La
+decisión de concentrar la operación del proyecto en el Centro
+INADET–CENALTEC Ciudad Juárez (Barranco Azul 5961) responde a una
+estrategia deliberada de optimización de recursos para crear un Centro
+de Excelencia NVIDIA de alto rendimiento. Al consolidar la
+infraestructura GPU H200 NVL, los laboratorios certificados y el
+programa NVIDIA DLI en un único sitio, se maximiza el impacto técnico y
+se reducen los costos de duplicación de adecuaciones físicas. El monto
+total —$7,445,553.21 MXN con IVA incluido, conforme a la cotización P081
+de GlobTech— se invierte íntegramente en la adquisición de
+infraestructura GPU H200 NVL (servidor R7725) y estaciones Blackwell
+GB10 y licencias Enterprise. La operación logística, adecuaciones
+físicas y becas son absorbidas por la contraparte institucional de
+INADET, garantizando la sostenibilidad sin cargo adicional a la SIDE.
+Esta estrategia permite un mayor retorno de inversión por estudiante y
+consolida a Ciudad Juárez como polo regional de talento en Inteligencia
+Artificial y manufactura avanzada.
+
+Chihuahua ocupa el lugar #8 en competitividad nacional y el #1 en
+desempeño de exportaciones entre todos los estados de México, con más de
+18,000 ingenieros activos en su base productiva. Esta fortaleza
+industrial, representada por empresas como Foxconn, Jabil, Siemens y el
+Parque Industrial Taiwanés, posiciona al estado como un candidato
+natural para convertirse en hub de talento avanzado en la cadena de
+valor global de semiconductores.
+
+Sin embargo, el eslabón de Inteligencia Artificial, Ciencia de Datos y
+Robótica Aplicada —tecnologías habilitadoras de la Industria 4.0 y
+cadena de valor de semiconductores— carece de representación curricular
+sistemática en las instituciones de educación superior de Chihuahua.
+
+El presente proyecto responde directamente a esa brecha mediante una
+estrategia de Train-the-Trainer en colaboración con NVIDIA Deep Learning
+Institute (DLI), referente global en inteligencia artificial y cómputo
+acelerado. La propuesta está alineada con las prioridades de la OCDE,
+Agenda Digital México y nearshoring tecnológico (>USD $3,000M inversión
+anunciada 2023-2024) activa en la frontera norte.
+
+SECCIÓN 2 — Datos del Solicitante
+
+  --------------------- -------------------------------------------------
+  Nombre de la Entidad  INSTITUTO DE APOYO AL DESARROLLO TECNOLÓGICO
+  Coordinadora          (INADET)
+
+  Representante Legal   Sergio Mancinas Peña
+
+  Responsable del       Heber Enrique Terrazas García (Director
+  Proyecto              Académico)
+
+  Domicilio Fiscal      Ave Central #8901, Col. Tabalaopa, Chihuahua,
+                        Chih. C.P. 31385
+
+  RFC                   IAD990630MK7
+
+  Égimen Fiscal         Personas Morales con Fines no Lucrativos
+
+  Estatus Fiscal        ACTIVO (Validado al 06/ene/2026)
+
+  Trayectoria           Más de 25 años de operaciones (desde 30 de junio
+  Institucional         de 1999)
+
+  Contacto              heber.terrazas@inadet.edu.mx
+  Administrativo        
+
+  Sitio Web             www.inadet.edu.mx
+  Institucional         
+  --------------------- -------------------------------------------------
+
+SECCIÓN 3 — Datos del Proyecto
+
+  --------------------- -------------------------------------------------
+  Nombre del Proyecto   Centros de Excelencia en IA NVIDIA:
+                        Infraestructura GPU H200 + Programa DLI +
+                        Vinculación Industria-Academia
+
+  Enfoque Principal     Infraestructura física de alto rendimiento (1 Lab
+                        Central) + Certificación NVIDIA DLI + Operación
+                        académica concentrada
+
+  Alcance Geográfico    Centro INADET–CENALTEC Ciudad Juárez (Barranco
+                        Azul 5961)
+
+  Duración Ejecutiva    12 meses — Julio 2026 a Julio 2027
+
+  Beneficiarios         10 Embajadores NVIDIA + 60 estudiantes de
+  Directos (Fase 1)     ingeniería cohorte 1 + 1,000 estudiantes anuales
+                        en IA, Ciencia de Datos y Robótica Aplicada
+
+  Impacto Estudiantil   60 directos año 1 + hasta 2,000 indirectos
+  Estimado              anuales vía centros operativos
+
+  Industrias Clave      Manufactura avanzada, semiconductores,
+  Locales               automotriz, electrónico, agritech, salud digital,
+                        logística 4.0
+
+  Infraestructura       1x Dell PowerEdge R7725 (2x GPU H200 NVL) +
+  NVIDIA Utilizada      Switch Dell S5248F-ON + Gabinete APC NetShelter
+                        SX 42U, 30x Jetson Orin Nano Super Developer Kit,
+                        10x Dell Pro Max con GB10 + Monitor P2725H,
+                        Licencias NVAIE + Omniverse Enterprise EDU 5 años
+
+  Marco Estratégico     Modelo Triple Hélice, Estrategia Nacional de IA,
+                        competitividad regional y retención de talento
+  --------------------- -------------------------------------------------
+
+Notas Aclaratorias:
+
+-   El proyecto se centra en infraestructura física de IA, certificación
+    DLI y vinculación industrial con casos reales, aprovechando la
+    madurez manufacturera actual de Chihuahua.
+
+-   Inversión total de $7,445,553.21 MXN (cotización P081, GlobTech) que
+    cubre hardware H200, gabinete, licencias Enterprise y estaciones
+    edge Blackwell para operación académica en CENALTEC Juárez.
+
+-   El alcance geográfico se concentra en Ciudad Juárez (CENALTEC), con
+    escalabilidad estatal y posibilidad de replicabilidad nacional en
+    fases posteriores, sujetas a disponibilidad presupuestal.
+
+SECCIÓN 4 — Aspectos Financieros
+
+4.1 Resumen de Financiamiento
+
+  -------------------------------------------------------------------------
+  Fuente de Fondos      Monto (MXN)     %       Uso Principal
+  --------------------- --------------- ------- ---------------------------
+  SIDE Chihuahua        $7,445,553.21   100%    Servidor Dell R7725 con 2x
+                                                GPU H200 NVL, Switch
+                                                S5248F-ON, Gabinete APC,
+                                                Software NVAIE + Omniverse
+                                                EDU 5 años, 30x Jetson Orin
+                                                Nano, 10x Dell Pro Max GB10
+                                                — conforme cotización P081,
+                                                GlobTech
+
+  INADET / Contraparte  $0.00           0%      Contraparte operativa no
+                                                monetaria — operación
+                                                académica, logística,
+                                                adecuaciones físicas y
+                                                soporte técnico
+
+  Reserva Contingencia  $0.00           0%      N/A — contingencia cubierta
+                                                por margen operativo de
+                                                INADET
+
+  TOTAL DEL PROYECTO    $7,445,553.21   100%    Presupuesto cerrado,
+                        MXN                     auditado y alineado a hitos
+  -------------------------------------------------------------------------
+
+4.2 Desglose Oficial de Recursos
+
+  ---------------------------------------------------------------------------
+  Rubro         Especificación Técnica Ctd.   Monto (sin IVA) Subtotal
+                (Cotización P081 —                            
+                GlobTech)                                     
+  ------------- ---------------------- ------ --------------- ---------------
+  Servidor +    Dell PowerEdge R7725   1      $2,941,279.89   $2,941,279.89
+  Switch        (2x NVIDIA H200 NVL) +                        
+                Switch Dell S5248F-ON                         
+
+  Gabinete      APC by Schneider       1      $461,233.88     $461,233.88
+                Electric NetShelter SX                        
+                42U — Armario de                              
+                bastidor para servidor                        
+
+  Software      NVAIE + NVIDIA         4 GPUs $208,862.60     $835,450.38
+  NVIDIA        Omniverse Enterprise —                        
+                Licencia perpetua por                         
+                GPU EDU 5 años                                
+                (AC566098) + Soporte                          
+                Business Critical 5                           
+                años (AC566104)                               
+
+  Kits de Borde NVIDIA Jetson Orin     30     $10,945.03      $328,350.80
+                Nano Super Developer                          
+                Kit                                           
+                (945-13766-0000-000)                          
+
+  Estaciones IA New Dell Pro Max con   10     $185,226.54     $1,852,265.41
+                GB10 (FCM1253) +                              
+                Monitor Dell Pro 27                           
+                Plus P2725H — NVIDIA                          
+                GB10 Blackwell GPU,                           
+                128 GB LPDDR5X, 2 TB                          
+                SSD, DGX OS 7                                 
+
+  Subtotal sin                                $6,418,580.35   
+  IVA:                                                        
+
+  IVA 16%:                                    $1,026,972.86   
+
+  TOTAL CON IVA                               $7,445,553.21   
+  (conforme                                   MXN             
+  cotización                                                  
+  P081):                                                      
+  ---------------------------------------------------------------------------
+
+*Los precios incluyen IVA y están sujetos a cotización oficial de
+distribuidores autorizados NVIDIA/Dell en México.
+
+Nota: El monto total de $7,445,553.21 MXN corresponde a la suma exacta
+de infraestructura de cómputo, licencias de software y equipos de borde,
+conforme a la cotización P081 de GlobTech. Las adecuaciones físicas y la
+operación académica son cubiertas mediante contraparte institucional de
+INADET/CENALTEC, conciliado con cotizaciones oficiales de proveedores
+autorizados.
+
+Costo real por beneficiario final: optimizado mediante modelo de
+multiplicación DLI y uso compartido de infraestructura de cómputo
+acelerado.
+
+4.3 Portafolio de Escalamiento (Fases Futuras)
+
+El presupuesto actual cubre exclusivamente la Fase 1. Las siguientes
+fases están ya cotizadas por NVIDIA DLI y se activarán con base en los
+resultados de esta cohorte piloto:
+
+  -----------------------------------------------------------------------
+  Programa         Participantes      Costo Est. (MXN)  Criterio de
+                                                        Activación
+  ---------------- ------------------ ----------------- -----------------
+  Año 1:           10 Embajadores     $7,445,553.21     Aprobado SIDE
+  Implementación   NVIDIA + 1,060                       2026
+  Inicial          estudiantes                          
+
+  Año 2:           15 Embajadores     $3,500,000.00     >90% retención y
+  Escalamiento     NVIDIA + 1,500                       NPS>80
+  Masivo           estudiantes                          
+  (Proyección —                                         
+  financiamiento                                        
+  futuro                                                
+  independiente)                                        
+
+  Año 3:           50 profesionales + $4,200,000.00     Sílabos IA
+  Certificación    casos uso                            activos en 5+
+  Avanzada         industrial                           universidades
+  (Proyección —                                         
+  financiamiento                                        
+  futuro                                                
+  independiente)                                        
+
+  Réplicas         Escalamiento       $14,500,000.00    Demanda
+  Regionales (Fase estatal en fases                     industrial
+  futura — no      posteriores (fuera                   documentada +
+  incluida en el   del alcance del                      financiamiento
+  proyecto SIDE    proyecto SIDE                        
+  2026)            2026)                                
+  -----------------------------------------------------------------------
+
+Nota: El flujo financiero se ejecutará bajo hitos de validación técnica,
+entrega de facturas CFDI 4.0 y liberación formal de recursos por parte
+del Comité Técnico SIDE.
+La liberación de recursos está sujeta a la autorización del Lic. Héctor
+Miguel Samaniego Gámez, Director de Industria de la SIDE.
+
+SECCIÓN 5 — Objetivos
+
+5.1 Objetivo General
+
+Crear un ecosistema integral de talento en IA, robótica y manufactura
+avanzada mediante 1 Centro de Excelencia NVIDIA en Ciudad Juárez y
+adopción del programa DLI, con inversión estratégica en infraestructura
+de cómputo acelerado y adecuaciones físicas certificadas, articulando
+universidades, industria y gobierno bajo el modelo de Triple Hélice. El
+proyecto garantiza 10 Embajadores NVIDIA certificados, 60 estudiantes de
+ingeniería en la cohorte piloto (Año 1) y 1,000 estudiantes por año en
+IA, Ciencia de Datos y Robótica Aplicada mediante grupos rotativos de
+25-30 alumnos, operados con 2x GPU H200 NVL + 30 Jetson Orin Nano + 10
+estaciones Dell Pro Max GB10.
+
+5.2 Metas Específicas
+
+  ------------------------------------------------------------------------------
+  ID   Meta Específica       Indicador de Éxito    Fecha      Responsable
+                                                   Límite     
+  ---- --------------------- --------------------- ---------- ------------------
+  M1   Adecuación e          1 centro operativo    Jul 2026   INADET/Proveedor
+       instalación de        certificado en                   
+       laboratorios          CENALTEC Juárez                  
+
+  M2   Certificación de 10   10 certificados       Oct 2026   NVIDIA/INADET
+       Embajadores NVIDIA    oficiales emitidos               
+
+  M3   Cohorte Ingeniería    60                    Ene 2027   Embajadores NVIDIA
+       (60 estudiantes)      certificados + >30%              
+                             mejora pre/post                  
+
+  M4   Cohorte Masiva (1,000 1,000 registros       Abr 2027   Aliados Académicos
+       estudiantes en        anuales (grupos                  
+       rotación de grupos de rotativos 25-30                  
+       25-30 por sesión)     alumnos) + NPS >80               
+
+  M5   Vinculación           ≥5 proyectos piloto   Jun 2027   Comité Consultivo
+       Industrial            con empresas                     
+                             validadas                        
+
+  M6   Sostenibilidad y      3 informes            Jul 2027   Coordinación
+       Reporteo              trimestrales + plan              General
+                             2027-2032                        
+  ------------------------------------------------------------------------------
+
+SECCIÓN 6 — Rol de Socios Industriales
+
+Los socios industriales (Foxconn, Jabil, Siemens y el Parque Industrial
+Taiwanés) tienen un rol activo y con compromisos concretos en el
+proyecto, no solo de referencia institucional. Su participación está
+documentada en la fase de codiseño y en el reconocimiento post-programa.
+
+  -----------------------------------------------------------------------
+  Empresa          Fase de          Compromisos Concretos
+                   Participación    
+  ---------------- ---------------- -------------------------------------
+  Foxconn          Codiseño y       Participar en 2 sesiones de
+                   validación       definición de casos de uso IA;
+                   técnica          validar pertinencia de contenidos DLI
+                                    para manufactura avanzada
+
+  Jabil            Validación       Aportar requerimientos técnicos de
+                   curricular       perfiles IA/Robótica; validar
+                                    simulaciones en Omniverse Enterprise
+
+  Siemens          Vinculación y    Facilitar acceso a entornos
+                   difusión         industriales para pilotos; difusión
+                                    en cadena de proveedores locales
+
+  Parque           Ecosistema y red Conectar con empresas inquilinas para
+  Industrial                        diagnóstico de brechas; sede opcional
+  Taiwanés                          para Demo Days
+  -----------------------------------------------------------------------
+
+Nota: Se requiere que INADET obtenga carta de intención firmada de al
+menos Foxconn y Jabil antes del inicio de adquisiciones para formalizar
+compromisos en el expediente del proyecto.
+
+SECCIÓN 7 — Metodología de Selección de Participantes
+
+7.1 Convocatoria
+
+Lanzada por INADET y SIDE, dirigida a docentes e investigadores de
+universidades públicas y privadas en Chihuahua que impartan carreras de
+ingeniería (Electrónica, Mecatrónica, Industrial, Materiales). La
+difusión contará con el apoyo de la Agencia de Comunicación Designada,
+designada por NVIDIA DLI para el posicionamiento regional del proyecto.
+
+7.2 Criterios de Elegibilidad
+
+-   Pertenencia a planta docente activa en IES en Chihuahua.
+
+-   Disponibilidad para sesiones en vivo (2 sesiones/mes) de julio a
+    noviembre 2026.
+
+-   Disponibilidad para sesiones presenciales y prácticas en
+    laboratorios (sujeto a calendarización de sedes).
+
+-   Nivel de inglés técnico B1/B2 mínimo — verificable mediante prueba
+    diagnóstica.
+
+7.3 Criterios de Selección y Priorización
+
+-   Pertinencia de la materia que imparte con el ecosistema de
+    inteligencia artificial y manufactura avanzada.
+
+-   Compromiso explícito de actualizar plan de estudios
+    post-capacitación.
+
+-   Vinculación previa documentada con el sector industrial local.
+
+-   Equilibrio de género (fomento activo a docentes mujeres en STEM).
+
+7.4 Diagnóstico de Nivel Técnico
+
+Dado que la convocatoria está abierta a cuatro disciplinas de
+ingeniería, la cohorte puede ser heterogénea en conocimientos base. Para
+garantizar que el programa de NVIDIA DLI sea aprovechable por todos los
+participantes, se aplicará una evaluación diagnóstica de conocimientos
+previos al inicio del programa online (julio 2026). Esta evaluación
+servirá para:
+
+-   Identificar participantes que requieran material preparatorio
+    adicional.
+
+-   Informar a NVIDIA DLI Faculty sobre el nivel base de la cohorte y
+    ajustar la profundidad de los módulos.
+
+-   Establecer la línea base para la evaluación de competencias pre/post
+    (Indicador M3).
+
+7.5 Proceso de Validación
+
+1.  Postulación digital a través de plataforma INADET.
+
+1.  Filtro administrativo: prueba de inglés + diagnóstico técnico.
+
+2.  Evaluación por Comité Técnico (representantes de SIDE, INADET y
+    enlace de NVIDIA DLI).
+
+3.  Publicación de la cohorte oficial (máximo 10 lugares Embajadores).
+
+4.  Registro y validación de credenciales en plataforma NVIDIA DLI.
+
+SECCIÓN 8 — Cronograma Clave
+
+  ----------------------------------------------------------------------------
+  Hito   Actividad        Detalle              Fecha      Responsable
+         Principal                                        
+  ------ ---------------- -------------------- ---------- --------------------
+  H1     Planeación y     Especificaciones     Jul-Ago    INADET/Compras
+         Adquisición      técnicas,            2026       
+                          cotizaciones,                   
+                          órdenes de compra               
+
+  H2     Adecuación       Diagnóstico          Ago-Oct    INADET/Proveedores
+         Física           eléctrico, HVAC,     2026       
+                          obra menor,                     
+                          certificación                   
+
+  H3     Instalación y    Recepción, montaje,  Oct-Nov    NVIDIA/INADET
+         Validación       configuración        2026       
+                          red/SO, benchmarking            
+                          GPU                             
+
+  H4     Formación        Selección, cursos    Mar-Oct    NVIDIA DLI
+         Instructores     DLI, certificación   2026       
+                          oficial                         
+
+  H5     Primera Cohorte  Convocatoria, 8      Oct-Feb    Instructores DLI
+         (60+1000)        programas DLI,       2027       
+                          evaluación pre/post             
+
+  H6     Operación y      Reporte final SIDE,  Feb        Comité Directivo
+         Sostenibilidad   vinculación          2027-Jul   
+                          industrial, plan 5   2027       
+                          años                            
+  ----------------------------------------------------------------------------
+
+SECCIÓN 9 — Entregables
+
+9.1 Entregables Institucionales (INADET / NVIDIA DLI)
+
+-   Informe de la Fase de Codiseño con necesidades específicas validadas
+    por la industria en Chihuahua.
+
+-   Resultados de evaluación de competencias pre/post (línea base vs.
+    salida).
+
+-   Repositorio de acceso a cursos asíncronos y materiales DLI
+    oficiales.
+
+-   Memoria técnica de instalación y puesta en marcha del Centro de
+    Excelencia NVIDIA en CENALTEC Juárez.
+
+-   Lista oficial de 10 instructores DLI certificados + 60 participantes
+    cohorte 1.
+
+-   Reporte de seguimiento curricular (junio 2027) — verificación de
+    implementación real en universidades.
+
+-   Informe ejecutivo de impacto para SIDE con datos cuantitativos y
+    cualitativos del programa.
+
+9.2 Entregables de los Instructores y Participantes
+
+-   Certificado Oficial de NVIDIA Deep Learning Institute (DLI).
+
+-   Propuesta Curricular: módulo o curso completo actualizado con
+    contenidos de IA, visión computacional y robótica, listos para
+    impartir el siguiente semestre.
+
+-   Red de Contactos: vinculación directa con pares en NVIDIA DLI y
+    expertos de la industria.
+
+9.3 Entregables de Comunicación (Agencia de Comunicación Designada / NVIDIA DLI)
+
+-   Estrategia de posicionamiento de Chihuahua como hub emergente de IA
+    y manufactura avanzada (prensa, LinkedIn, entrevistas).
+
+-   Al menos 3 notas de prensa o coberturas regionales sobre el programa
+    y sus resultados.
+
+SECCIÓN 10 — Indicadores de Desempeño
+
+10.1 Indicadores Cuantitativos
+
+  ------------------------------------------------------------------------
+  Indicador                   Meta            Método de Verificación
+  --------------------------- --------------- ----------------------------
+  Instructores certificados   10              Lista de certificados
+  NVIDIA DLI                                  emitidos por NVIDIA DLI
+
+  Horas de cómputo GPU        60 hrs sinc. +  Registro de asistencia y
+  disponibilizadas            120 hrs asinc.  plataforma NVIDIA DLI
+                              por semestre (2 
+                              GPUs H200 NVL,  
+                              grupos de 15    
+                              usuarios c/u)   
+
+  Centros operativos          1 (CENALTEC     Reportes trimestrales +
+  mantenidos                  Juárez, mínimo  auditorías técnicas
+                              5 años)         
+
+  Retención de la cohorte     >90%            Registro de participación
+                                              mensual
+
+  Mejora en evaluación de     >30% mejora     Resultados prueba
+  competencias pre/post       promedio        diagnóstica vs. final
+
+  Estudiantes impactados      ~1,000 anuales  Encuesta de seguimiento
+  (estimado anual)            (Año 1);        junio 2027
+                              escalable a     
+                              1,500+ (Año 2)  
+
+  Proyectos piloto con        5               Informes técnicos + cartas
+  empresas                                    de validación empresarial
+  ------------------------------------------------------------------------
+
+10.2 Indicadores Cualitativos / de Impacto Formativo
+
+-   Capacidad demostrada de enseñar conceptos de IA y robótica aplicados
+    en entornos de cómputo acelerado.
+
+-   Nivel de satisfacción con metodología de Codiseño: NPS > 80.
+
+-   Cartas de reconocimiento de empresas participantes (Foxconn/Jabil)
+    sobre el valor del programa para sus necesidades.
+
+-   Fortalecimiento de Chihuahua como hub regional de talento en IA y
+    manufactura avanzada (cobertura mediática documentada).
+
+SECCIÓN 11 — Gestión de Riesgos
+
+  -------------------------------------------------------------------------------
+  Riesgo            Prob.   Impacto   Estrategia de         Contingencia
+                                      Mitigación            
+  ----------------- ------- --------- --------------------- ---------------------
+  Retraso en        Media   ALTO      Contrato con          Plan B documentado
+  entrega de                          penalidades por       (ver nota)
+  GPUs/Servidores                     retraso + cloud       
+                                      credits NGC           
+                                      temporales + agente   
+                                      aduanal especializado 
+
+  Conflictos de     Alta    Medio     Coordinar con         Reemplazar con
+  agenda docente                      rectores/directores   candidato de lista de
+                                      para liberar cargas   espera
+                                      académicas; incluir   
+                                      en carta de           
+                                      compromiso            
+
+  Variación         Baja    ALTO      Costo fijo y cerrado  Pausar hasta
+  cambiaria MXN/USD                   ($7,445,553.21 MXN);  siguiente ejercicio
+                                      asegurar partida      fiscal
+                                      presupuestal antes de 
+                                      mayo 2026             
+
+  Barrera           Media   Medio     Verificar nivel B1/B2 Apoyo de intérprete
+  idiomática                          o competencias        parcial durante
+                                      técnicas base; módulo actividades clave
+                                      de inglés técnico en  
+                                      recursos asíncronos   
+                                      DLI                   
+
+  Cohorte           Alta    Medio     Diagnóstico técnico   Asignación de tutor
+  heterogénea en                      previo; compartir     par dentro de la
+  nivel técnico                       resultados con NVIDIA cohorte por
+                                      DLI; material         disciplina
+                                      preparatorio          
+                                      diferenciado          
+  -------------------------------------------------------------------------------
+
+11.1 Plan B para Adquisición de Equipos — Protocolo de Contingencia Detallado
+
+En caso de retrasos en la importación de equipos NVIDIA o fallas en
+servidores, se activará:
+
+5.  Escenario A (Retraso <30 días): Priorizar módulos teóricos online y
+    activar créditos cloud NVIDIA NGC temporales.
+
+6.  Escenario B (Retraso 30-60 días): Utilizar equipos de préstamo
+    académico o estaciones locales con GPUs RTX 4080 para prácticas
+    básicas mientras se resuelve la entrega de H200.
+
+7.  Escenario C (Retraso >60 días): Renegociar con proveedor alterno
+    autorizado; ajustar presupuesto con la reserva de imprevistos del
+    0%; comunicar transparentemente a la SIDE.
+
+SECCIÓN 12 — Sostenibilidad del Proyecto
+
+12.1 Capital Institucional Generado
+
+El proyecto entrega infraestructura GPU de alto rendimiento con
+mantenimiento preventivo quinquenal garantizado, además de capital
+humano certificado. Los 10 instructores certificados se convierten en
+multiplicadores locales, capaces de formar a 1,000 estudiantes anuales
+en IA, Ciencia de Datos y Robótica Aplicada mediante metodología DLI
+estandarizada.
+
+12.2 Continuidad por Fases — Criterios de Activación
+
+  -----------------------------------------------------------------------
+  Fase             Descripción                  Criterio de Activación
+  ---------------- ---------------------------- -------------------------
+  Año 2            Escalamiento de Cohortes y   >90% retención +
+                   Nuevos Instructores          NPS >80 + 15+ empresas
+                                                vinculadas
+
+  Año 3            Certificación Avanzada y     Sílabos IA activos en 5+
+                   Digital Twins                universidades + demanda
+                                                industrial
+
+  Réplicas         Nuevos centros en otros      Financiamiento estatal
+  Regionales (Fase estados                      asegurado + modelo
+  futura — no                                   documentado
+  incluida en el                                
+  proyecto SIDE                                 
+  2026)                                         
+  -----------------------------------------------------------------------
+
+12.3 Reconocimiento Internacional a Participantes
+
+El Certificado de NVIDIA Deep Learning Institute otorga prestigio
+internacional a los docentes y a sus instituciones, facilitando futuros
+convenios de investigación, movilidad académica y proyectos conjuntos.
+
+12.4 Transferencia de Conocimiento Continua
+
+Los participantes tendrán acceso perpetuo al repositorio de cursos
+asíncronos de NVIDIA DLI y a materiales de referencia NVIDIA sobre
+despliegue de IA en manufactura avanzada y ecosistemas de innovación
+tecnológica. Esto garantiza que el conocimiento se actualice y consulte
+continuamente después del programa presencial, independientemente de
+cambios en el equipo docente.
+
+SECCIÓN 13 — Evaluación Externa e Independiente
+
+Dado que el proyecto involucra fondos públicos estatales por
+$7,445,553.21 MXN, se establece un mecanismo de evaluación independiente
+para garantizar la rendición de cuentas ante SIDE y la ciudadanía.
+
+-   Evaluador designado: Institución académica local o despacho
+    especializado en evaluación de programas de formación de capital
+    humano, seleccionado mediante proceso transparente por INADET y
+    SIDE.
+
+-   Alcance de la evaluación: Verificación del cumplimiento de hitos,
+    autenticidad de certificados, análisis de resultados pre/post y
+    encuesta de seguimiento curricular (junio 2027).
+
+-   Producto: Informe de evaluación externa entregado a SIDE en agosto
+    2027, con recomendaciones para las fases de escalamiento.
+
+-   Costo estimado de evaluación: $0 MXN para este proyecto. Será
+    absorbido íntegramente en el presupuesto operativo interno de INADET
+    como contraparte institucional, sin cargo a los fondos asignados por
+    la SIDE para ejecución del proyecto.
+
+SECCIÓN 14 — Datos de Contacto
+
+  --------------------------------------------------------------------------------
+  Rol              Nombre          Institución     Correo Electrónico
+  ---------------- --------------- --------------- -------------------------------
+  Representante    Sergio Mancinas INADET          sergio.mancinas@inadet.edu.mx
+  Legal            Peña                            
+
+  Responsable del  Heber Enrique   INADET          heber.terrazas@inadet.edu.mx
+  Proyecto         Terrazas García                 
+
+  Enlace Principal [Contacto       NVIDIA DLI      dlimexico@nvidia.com
+  NVIDIA DLI       NVIDIA DLI                      
+                   México]                         
+
+  Director         [Director       NVIDIA          [correo regional]
+  Alianzas         Alianzas                        
+  Académicas       Académicas]                     
+
+  Enlace           Lic. Héctor     Director de     [correo SIDE]
+  Gubernamental    Miguel          Industria, SIDE 
+                   Samaniego Gámez Chihuahua |     
+                                   Tel.            
+                                   656.595.7125    
+
+  Soporte Técnico  [Soporte        Dell/NVIDIA     [correo soporte]
+  Proveedor        Técnico                         
+                   Proveedor]                      
+
+  Comunicación     Agencia de      PR / Relaciones [correo Agencia de Comunicación
+  Regional         Comunicación    Públicas        Designada]
+                   Designada                       
+  --------------------------------------------------------------------------------
+
+— Fin del Documento —
+Chihuahua, Chih., a 29 de abril de 2026
+
+Lic. Miguel Samaniego Gámez
+Director de Industria
+Secretaría de Innovación y Desarrollo Económico (SIDE)
+Presente. —
+
+Asunto: Actualización de Monto Total Proyecto NVIDIA
+
+Por medio de la presente, y en atención a las instrucciones recibidas,
+se informa la actualización al monto total del Proyecto NVIDIA -
+Formación e Infraestructura 2026, el cual se incrementa de $7,445,553.21
+a $8,000,000.00 MXN.
+
+La distribución del recurso actualizado queda establecida de la
+siguiente manera:
+
+  -----------------------------------------------------------------------
+  Concepto                            Monto (MXN)
+  ----------------------------------- -----------------------------------
+  Equipamiento                        $7,445,553.21
+
+  Adecuación e Instalación            $554,446.79
+
+  TOTAL                               $8,000,000.00
+  -----------------------------------------------------------------------
+
+Derivado de este ajuste, se han realizado las actualizaciones
+correspondientes en el proyecto ejecutivo y se procederá con la carga de
+información en la plataforma SIDE conforme a estos nuevos montos.
+
+Sin más por el momento, quedo a su disposición para cualquier duda o
+comentario adicional.
+
+Atentamente,
+__________________________
+Responsable del Proyecto
+INADET - CENALTEC
+PLAN MAESTRO DE COLABORACIÓN ESTRATÉGICA
+
+CICH-NVIDIA-2026 — INADET & NVIDIA Deep Learning Institute
+
+Equipamiento e Instalación del Centro de Excelencia NVIDIA DLI para la
+Formación de Talento Especializado en IA, Robótica y Manufactura
+Avanzada — CENALTEC Ciudad Juárez
+
+  --------------------- -------------------------------------------------
+  Institución Líder     Instituto de Apoyo al Desarrollo Tecnológico
+  Ejecutora             (INADET)
+
+  Socio Tecnológico     NVIDIA Deep Learning Institute (DLI) & Aliados
+  Estratégico           Académicos Regionales
+
+  Aliados               SIDE Chihuahua, Parque Industrial Taiwanés,
+  Gubernamentales       Foxconn, Jabil, Siemens
+
+  Versión del Documento 4
+
+  Fecha de Emisión      21 de abril de 2026
+
+  Período de Ejecución  Julio 2026 — Julio 2027
+
+  Código de Proyecto    CICH-NVIDIA-2026
+
+  Infraestructura       1x Dell PowerEdge R7725 (2x GPU H200 NVL) +
+  NVIDIA Utilizada      Switch Dell S5248F-ON + Gabinete APC NetShelter
+                        SX 42U, 30x Jetson Orin Nano Super Developer Kit,
+                        10x Dell Pro Max con GB10 + Monitor P2725H,
+                        Licencias NVAIE + Omniverse Enterprise EDU 5 años
+
+  Estado                Propuesta para Aprobación SIDE 2026
+  --------------------- -------------------------------------------------
+
+SECCIÓN 1 — Contexto Estratégico y Justificación
+
+Nota de Justificación Estratégica — Concentración en Ciudad Juárez: La
+decisión de concentrar la operación del proyecto en el Centro
+INADET–CENALTEC Ciudad Juárez (Barranco Azul 5961) responde a una
+estrategia deliberada de optimización de recursos para crear un Centro
+de Excelencia NVIDIA de alto rendimiento. Al consolidar la
+infraestructura GPU H200 NVL, los laboratorios certificados y el
+programa NVIDIA DLI en un único sitio, se maximiza el impacto técnico y
+se reducen los costos de duplicación de adecuaciones físicas. El monto
+total —$8,000,000.00 MXN con IVA incluido, conforme a la cotización P081
+de GlobTech— se invierte íntegramente en la adquisición de
+infraestructura GPU H200 NVL (servidor R7725) y estaciones Blackwell
+GB10 y licencias Enterprise. La operación logística, adecuaciones
+físicas y becas son absorbidas por la contraparte institucional de
+INADET, garantizando la sostenibilidad sin cargo adicional a la SIDE.
+Esta estrategia permite un mayor retorno de inversión por estudiante y
+consolida a Ciudad Juárez como polo regional de talento en Inteligencia
+Artificial y manufactura avanzada.
+
+Chihuahua ocupa el lugar #8 en competitividad nacional y el #1 en
+desempeño de exportaciones entre todos los estados de México, con más de
+18,000 ingenieros activos en su base productiva. Esta fortaleza
+industrial, representada por empresas como Foxconn, Jabil, Siemens y el
+Parque Industrial Taiwanés, posiciona al estado como un candidato
+natural para convertirse en hub de talento avanzado en la cadena de
+valor global de semiconductores.
+
+Sin embargo, el eslabón de Inteligencia Artificial, Ciencia de Datos y
+Robótica Aplicada —tecnologías habilitadoras de la Industria 4.0 y
+cadena de valor de semiconductores— carece de representación curricular
+sistemática en las instituciones de educación superior de Chihuahua.
+
+El presente proyecto responde directamente a esa brecha mediante una
+estrategia de Train-the-Trainer en colaboración con NVIDIA Deep Learning
+Institute (DLI), referente global en inteligencia artificial y cómputo
+acelerado. La propuesta está alineada con las prioridades de la OCDE,
+Agenda Digital México y nearshoring tecnológico (>USD $3,000M inversión
+anunciada 2023-2024) activa en la frontera norte.
+
+SECCIÓN 2 — Datos del Solicitante
+
+  --------------------- -------------------------------------------------
+  Nombre de la Entidad  INSTITUTO DE APOYO AL DESARROLLO TECNOLÓGICO
+  Coordinadora          (INADET)
+
+  Representante Legal   Sergio Mancinas Peña
+
+  Responsable del       Heber Enrique Terrazas García (Director
+  Proyecto              Académico)
+
+  Domicilio Fiscal      Ave Central #8901, Col. Tabalaopa, Chihuahua,
+                        Chih. C.P. 31385
+
+  RFC                   IAD990630MK7
+
+  Égimen Fiscal         Personas Morales con Fines no Lucrativos
+
+  Estatus Fiscal        ACTIVO (Validado al 06/ene/2026)
+
+  Trayectoria           Más de 25 años de operaciones (desde 30 de junio
+  Institucional         de 1999)
+
+  Contacto              heber.terrazas@inadet.edu.mx
+  Administrativo        
+
+  Sitio Web             www.inadet.edu.mx
+  Institucional         
+  --------------------- -------------------------------------------------
+
+SECCIÓN 3 — Datos del Proyecto
+
+  --------------------- -------------------------------------------------
+  Nombre del Proyecto   Centros de Excelencia en IA NVIDIA:
+                        Infraestructura GPU H200 + Programa DLI +
+                        Vinculación Industria-Academia
+
+  Enfoque Principal     Infraestructura física de alto rendimiento (1 Lab
+                        Central) + Certificación NVIDIA DLI + Operación
+                        académica concentrada
+
+  Alcance Geográfico    Centro INADET–CENALTEC Ciudad Juárez (Barranco
+                        Azul 5961)
+
+  Duración Ejecutiva    12 meses — Julio 2026 a Julio 2027
+
+  Beneficiarios         10 Embajadores NVIDIA + 60 estudiantes de
+  Directos (Fase 1)     ingeniería cohorte 1 + 1,000 estudiantes anuales
+                        en IA, Ciencia de Datos y Robótica Aplicada
+
+  Impacto Estudiantil   60 directos año 1 + hasta 2,000 indirectos
+  Estimado              anuales vía centros operativos
+
+  Industrias Clave      Manufactura avanzada, semiconductores,
+  Locales               automotriz, electrónico, agritech, salud digital,
+                        logística 4.0
+
+  Infraestructura       1x Dell PowerEdge R7725 (2x GPU H200 NVL) +
+  NVIDIA Utilizada      Switch Dell S5248F-ON + Gabinete APC NetShelter
+                        SX 42U, 30x Jetson Orin Nano Super Developer Kit,
+                        10x Dell Pro Max con GB10 + Monitor P2725H,
+                        Licencias NVAIE + Omniverse Enterprise EDU 5 años
+
+  Marco Estratégico     Modelo Triple Hélice, Estrategia Nacional de IA,
+                        competitividad regional y retención de talento
+  --------------------- -------------------------------------------------
+
+Notas Aclaratorias:
+
+-   El proyecto se centra en infraestructura física de IA, certificación
+    DLI y vinculación industrial con casos reales, aprovechando la
+    madurez manufacturera actual de Chihuahua.
+
+-   Inversión total de $8,000,000.00 MXN (cotización P081, GlobTech) que
+    cubre hardware H200, gabinete, licencias Enterprise y estaciones
+    edge Blackwell para operación académica en CENALTEC Juárez.
+
+-   El alcance geográfico se concentra en Ciudad Juárez (CENALTEC), con
+    escalabilidad estatal y posibilidad de replicabilidad nacional en
+    fases posteriores, sujetas a disponibilidad presupuestal.
+
+SECCIÓN 4 — Aspectos Financieros
+
+4.1 Resumen de Financiamiento
+
+  -------------------------------------------------------------------------
+  Fuente de Fondos      Monto (MXN)     %       Uso Principal
+  --------------------- --------------- ------- ---------------------------
+  SIDE Chihuahua        $8,000,000.00   100%    Equipamiento
+                                                ($7,445,553.21) +
+                                                Adecuación e instalación
+                                                ($554,446.79). Servidor
+                                                Dell R7725 con 2x GPU H200
+                                                NVL, Switch S5248F-ON,
+                                                Gabinete APC, Software
+                                                NVAIE + Omniverse EDU 5
+                                                años, 30x Jetson Orin Nano,
+                                                10x Dell Pro Max GB10 —
+                                                conforme cotización P081,
+                                                GlobTech
+
+  INADET / Contraparte  $0.00           0%      Contraparte operativa no
+                                                monetaria — operación
+                                                académica, logística,
+                                                adecuaciones físicas y
+                                                soporte técnico
+
+  Reserva Contingencia  $0.00           0%      N/A — contingencia cubierta
+                                                por margen operativo de
+                                                INADET
+
+  TOTAL DEL PROYECTO    $8,000,000.00   100%    Presupuesto cerrado,
+                        MXN                     auditado y alineado a hitos
+  -------------------------------------------------------------------------
+
+4.2 Desglose Oficial de Recursos
+
+  ---------------------------------------------------------------------------
+  Rubro         Especificación Técnica Ctd.   Monto (sin IVA) Subtotal
+                (Cotización P081 —                            
+                GlobTech)                                     
+  ------------- ---------------------- ------ --------------- ---------------
+  Servidor +    Dell PowerEdge R7725   1      $2,941,279.89   $2,941,279.89
+  Switch        (2x NVIDIA H200 NVL) +                        
+                Switch Dell S5248F-ON                         
+
+  Gabinete      APC by Schneider       1      $461,233.88     $461,233.88
+                Electric NetShelter SX                        
+                42U — Armario de                              
+                bastidor para servidor                        
+
+  Software      NVAIE + NVIDIA         4 GPUs $208,862.60     $835,450.38
+  NVIDIA        Omniverse Enterprise —                        
+                Licencia perpetua por                         
+                GPU EDU 5 años                                
+                (AC566098) + Soporte                          
+                Business Critical 5                           
+                años (AC566104)                               
+
+  Kits de Borde NVIDIA Jetson Orin     30     $10,945.03      $328,350.80
+                Nano Super Developer                          
+                Kit                                           
+                (945-13766-0000-000)                          
+
+  Estaciones IA New Dell Pro Max con   10     $185,226.54     $1,852,265.41
+                GB10 (FCM1253) +                              
+                Monitor Dell Pro 27                           
+                Plus P2725H — NVIDIA                          
+                GB10 Blackwell GPU,                           
+                128 GB LPDDR5X, 2 TB                          
+                SSD, DGX OS 7                                 
+
+  Subtotal sin                                $6,418,580.35   
+  IVA:                                                        
+
+  IVA 16%:                                    $1,026,972.86   
+
+  TOTAL CON IVA                               $8,000,000.00   
+  (conforme                                   MXN             
+  cotización                                                  
+  P081):                                                      
+  ---------------------------------------------------------------------------
+
+*Los precios incluyen IVA y están sujetos a cotización oficial de
+distribuidores autorizados NVIDIA/Dell en México.
+
+Nota: El monto total de $8,000,000.00 MXN corresponde a la suma exacta
+de infraestructura de cómputo, licencias de software y equipos de borde,
+conforme a la cotización P081 de GlobTech. Las adecuaciones físicas y la
+operación académica son cubiertas mediante contraparte institucional de
+INADET/CENALTEC, conciliado con cotizaciones oficiales de proveedores
+autorizados.
+
+Costo real por beneficiario final: optimizado mediante modelo de
+multiplicación DLI y uso compartido de infraestructura de cómputo
+acelerado.
+
+4.3 Portafolio de Escalamiento (Fases Futuras)
+
+El presupuesto actual cubre exclusivamente la Fase 1. Las siguientes
+fases están ya cotizadas por NVIDIA DLI y se activarán con base en los
+resultados de esta cohorte piloto:
+
+  -----------------------------------------------------------------------
+  Programa         Participantes      Costo Est. (MXN)  Criterio de
+                                                        Activación
+  ---------------- ------------------ ----------------- -----------------
+  Año 1:           10 Embajadores     $8,000,000.00     Aprobado SIDE
+  Implementación   NVIDIA + 1,060                       2026
+  Inicial          estudiantes                          
+
+  Año 2:           15 Embajadores     $3,500,000.00     >90% retención y
+  Escalamiento     NVIDIA + 1,500                       NPS>80
+  Masivo           estudiantes                          
+  (Proyección —                                         
+  financiamiento                                        
+  futuro                                                
+  independiente)                                        
+
+  Año 3:           50 profesionales + $4,200,000.00     Sílabos IA
+  Certificación    casos uso                            activos en 5+
+  Avanzada         industrial                           universidades
+  (Proyección —                                         
+  financiamiento                                        
+  futuro                                                
+  independiente)                                        
+
+  Réplicas         Escalamiento       $14,500,000.00    Demanda
+  Regionales (Fase estatal en fases                     industrial
+  futura — no      posteriores (fuera                   documentada +
+  incluida en el   del alcance del                      financiamiento
+  proyecto SIDE    proyecto SIDE                        
+  2026)            2026)                                
+  -----------------------------------------------------------------------
+
+Nota: El flujo financiero se ejecutará bajo hitos de validación técnica,
+entrega de facturas CFDI 4.0 y liberación formal de recursos por parte
+del Comité Técnico SIDE.
+La liberación de recursos está sujeta a la autorización del Lic. Héctor
+Miguel Samaniego Gámez, Director de Industria de la SIDE.
+
+SECCIÓN 5 — Objetivos
+
+5.1 Objetivo General
+
+Crear un ecosistema integral de talento en IA, robótica y manufactura
+avanzada mediante 1 Centro de Excelencia NVIDIA en Ciudad Juárez y
+adopción del programa DLI, con inversión estratégica en infraestructura
+de cómputo acelerado y adecuaciones físicas certificadas, articulando
+universidades, industria y gobierno bajo el modelo de Triple Hélice. El
+proyecto garantiza 10 Embajadores NVIDIA certificados, 60 estudiantes de
+ingeniería en la cohorte piloto (Año 1) y 1,000 estudiantes por año en
+IA, Ciencia de Datos y Robótica Aplicada mediante grupos rotativos de
+25-30 alumnos, operados con 2x GPU H200 NVL + 30 Jetson Orin Nano + 10
+estaciones Dell Pro Max GB10.
+
+5.2 Metas Específicas
+
+  ------------------------------------------------------------------------------
+  ID   Meta Específica       Indicador de Éxito    Fecha      Responsable
+                                                   Límite     
+  ---- --------------------- --------------------- ---------- ------------------
+  M1   Adecuación e          1 centro operativo    Jul 2026   INADET/Proveedor
+       instalación de        certificado en                   
+       laboratorios          CENALTEC Juárez                  
+
+  M2   Certificación de 10   10 certificados       Oct 2026   NVIDIA/INADET
+       Embajadores NVIDIA    oficiales emitidos               
+
+  M3   Cohorte Ingeniería    60                    Ene 2027   Embajadores NVIDIA
+       (60 estudiantes)      certificados + >30%              
+                             mejora pre/post                  
+
+  M4   Cohorte Masiva (1,000 1,000 registros       Abr 2027   Aliados Académicos
+       estudiantes en        anuales (grupos                  
+       rotación de grupos de rotativos 25-30                  
+       25-30 por sesión)     alumnos) + NPS >80               
+
+  M5   Vinculación           ≥5 proyectos piloto   Jun 2027   Comité Consultivo
+       Industrial            con empresas                     
+                             validadas                        
+
+  M6   Sostenibilidad y      3 informes            Jul 2027   Coordinación
+       Reporteo              trimestrales + plan              General
+                             2027-2032                        
+  ------------------------------------------------------------------------------
+
+SECCIÓN 6 — Rol de Socios Industriales
+
+Los socios industriales (Foxconn, Jabil, Siemens y el Parque Industrial
+Taiwanés) tienen un rol activo y con compromisos concretos en el
+proyecto, no solo de referencia institucional. Su participación está
+documentada en la fase de codiseño y en el reconocimiento post-programa.
+
+  -----------------------------------------------------------------------
+  Empresa          Fase de          Compromisos Concretos
+                   Participación    
+  ---------------- ---------------- -------------------------------------
+  Foxconn          Codiseño y       Participar en 2 sesiones de
+                   validación       definición de casos de uso IA;
+                   técnica          validar pertinencia de contenidos DLI
+                                    para manufactura avanzada
+
+  Jabil            Validación       Aportar requerimientos técnicos de
+                   curricular       perfiles IA/Robótica; validar
+                                    simulaciones en Omniverse Enterprise
+
+  Siemens          Vinculación y    Facilitar acceso a entornos
+                   difusión         industriales para pilotos; difusión
+                                    en cadena de proveedores locales
+
+  Parque           Ecosistema y red Conectar con empresas inquilinas para
+  Industrial                        diagnóstico de brechas; sede opcional
+  Taiwanés                          para Demo Days
+  -----------------------------------------------------------------------
+
+Nota: Se requiere que INADET obtenga carta de intención firmada de al
+menos Foxconn y Jabil antes del inicio de adquisiciones para formalizar
+compromisos en el expediente del proyecto.
+
+SECCIÓN 7 — Metodología de Selección de Participantes
+
+7.1 Convocatoria
+
+Lanzada por INADET y SIDE, dirigida a docentes e investigadores de
+universidades públicas y privadas en Chihuahua que impartan carreras de
+ingeniería (Electrónica, Mecatrónica, Industrial, Materiales). La
+difusión contará con el apoyo de la Agencia de Comunicación Designada,
+designada por NVIDIA DLI para el posicionamiento regional del proyecto.
+
+7.2 Criterios de Elegibilidad
+
+-   Pertenencia a planta docente activa en IES en Chihuahua.
+
+-   Disponibilidad para sesiones en vivo (2 sesiones/mes) de julio a
+    noviembre 2026.
+
+-   Disponibilidad para sesiones presenciales y prácticas en
+    laboratorios (sujeto a calendarización de sedes).
+
+-   Nivel de inglés técnico B1/B2 mínimo — verificable mediante prueba
+    diagnóstica.
+
+7.3 Criterios de Selección y Priorización
+
+-   Pertinencia de la materia que imparte con el ecosistema de
+    inteligencia artificial y manufactura avanzada.
+
+-   Compromiso explícito de actualizar plan de estudios
+    post-capacitación.
+
+-   Vinculación previa documentada con el sector industrial local.
+
+-   Equilibrio de género (fomento activo a docentes mujeres en STEM).
+
+7.4 Diagnóstico de Nivel Técnico
+
+Dado que la convocatoria está abierta a cuatro disciplinas de
+ingeniería, la cohorte puede ser heterogénea en conocimientos base. Para
+garantizar que el programa de NVIDIA DLI sea aprovechable por todos los
+participantes, se aplicará una evaluación diagnóstica de conocimientos
+previos al inicio del programa online (julio 2026). Esta evaluación
+servirá para:
+
+-   Identificar participantes que requieran material preparatorio
+    adicional.
+
+-   Informar a NVIDIA DLI Faculty sobre el nivel base de la cohorte y
+    ajustar la profundidad de los módulos.
+
+-   Establecer la línea base para la evaluación de competencias pre/post
+    (Indicador M3).
+
+7.5 Proceso de Validación
+
+1.  Postulación digital a través de plataforma INADET.
+
+1.  Filtro administrativo: prueba de inglés + diagnóstico técnico.
+
+2.  Evaluación por Comité Técnico (representantes de SIDE, INADET y
+    enlace de NVIDIA DLI).
+
+3.  Publicación de la cohorte oficial (máximo 10 lugares Embajadores).
+
+4.  Registro y validación de credenciales en plataforma NVIDIA DLI.
+
+SECCIÓN 8 — Cronograma Clave
+
+  ----------------------------------------------------------------------------
+  Hito   Actividad        Detalle              Fecha      Responsable
+         Principal                                        
+  ------ ---------------- -------------------- ---------- --------------------
+  H1     Planeación y     Especificaciones     Jul-Ago    INADET/Compras
+         Adquisición      técnicas,            2026       
+                          cotizaciones,                   
+                          órdenes de compra               
+
+  H2     Adecuación       Diagnóstico          Ago-Oct    INADET/Proveedores
+         Física           eléctrico, HVAC,     2026       
+                          obra menor,                     
+                          certificación                   
+
+  H3     Instalación y    Recepción, montaje,  Oct-Nov    NVIDIA/INADET
+         Validación       configuración        2026       
+                          red/SO, benchmarking            
+                          GPU                             
+
+  H4     Formación        Selección, cursos    Mar-Oct    NVIDIA DLI
+         Instructores     DLI, certificación   2026       
+                          oficial                         
+
+  H5     Primera Cohorte  Convocatoria, 8      Oct-Feb    Instructores DLI
+         (60+1000)        programas DLI,       2027       
+                          evaluación pre/post             
+
+  H6     Operación y      Reporte final SIDE,  Feb        Comité Directivo
+         Sostenibilidad   vinculación          2027-Jul   
+                          industrial, plan 5   2027       
+                          años                            
+  ----------------------------------------------------------------------------
+
+SECCIÓN 9 — Entregables
+
+9.1 Entregables Institucionales (INADET / NVIDIA DLI)
+
+-   Informe de la Fase de Codiseño con necesidades específicas validadas
+    por la industria en Chihuahua.
+
+-   Resultados de evaluación de competencias pre/post (línea base vs.
+    salida).
+
+-   Repositorio de acceso a cursos asíncronos y materiales DLI
+    oficiales.
+
+-   Memoria técnica de instalación y puesta en marcha del Centro de
+    Excelencia NVIDIA en CENALTEC Juárez.
+
+-   Lista oficial de 10 instructores DLI certificados + 60 participantes
+    cohorte 1.
+
+-   Reporte de seguimiento curricular (junio 2027) — verificación de
+    implementación real en universidades.
+
+-   Informe ejecutivo de impacto para SIDE con datos cuantitativos y
+    cualitativos del programa.
+
+9.2 Entregables de los Instructores y Participantes
+
+-   Certificado Oficial de NVIDIA Deep Learning Institute (DLI).
+
+-   Propuesta Curricular: módulo o curso completo actualizado con
+    contenidos de IA, visión computacional y robótica, listos para
+    impartir el siguiente semestre.
+
+-   Red de Contactos: vinculación directa con pares en NVIDIA DLI y
+    expertos de la industria.
+
+9.3 Entregables de Comunicación (Agencia de Comunicación Designada / NVIDIA DLI)
+
+-   Estrategia de posicionamiento de Chihuahua como hub emergente de IA
+    y manufactura avanzada (prensa, LinkedIn, entrevistas).
+
+-   Al menos 3 notas de prensa o coberturas regionales sobre el programa
+    y sus resultados.
+
+SECCIÓN 10 — Indicadores de Desempeño
+
+10.1 Indicadores Cuantitativos
+
+  ------------------------------------------------------------------------
+  Indicador                   Meta            Método de Verificación
+  --------------------------- --------------- ----------------------------
+  Instructores certificados   10              Lista de certificados
+  NVIDIA DLI                                  emitidos por NVIDIA DLI
+
+  Horas de cómputo GPU        60 hrs sinc. +  Registro de asistencia y
+  disponibilizadas            120 hrs asinc.  plataforma NVIDIA DLI
+                              por semestre (2 
+                              GPUs H200 NVL,  
+                              grupos de 15    
+                              usuarios c/u)   
+
+  Centros operativos          1 (CENALTEC     Reportes trimestrales +
+  mantenidos                  Juárez, mínimo  auditorías técnicas
+                              5 años)         
+
+  Retención de la cohorte     >90%            Registro de participación
+                                              mensual
+
+  Mejora en evaluación de     >30% mejora     Resultados prueba
+  competencias pre/post       promedio        diagnóstica vs. final
+
+  Estudiantes impactados      ~1,000 anuales  Encuesta de seguimiento
+  (estimado anual)            (Año 1);        junio 2027
+                              escalable a     
+                              1,500+ (Año 2)  
+
+  Proyectos piloto con        5               Informes técnicos + cartas
+  empresas                                    de validación empresarial
+  ------------------------------------------------------------------------
+
+10.2 Indicadores Cualitativos / de Impacto Formativo
+
+-   Capacidad demostrada de enseñar conceptos de IA y robótica aplicados
+    en entornos de cómputo acelerado.
+
+-   Nivel de satisfacción con metodología de Codiseño: NPS > 80.
+
+-   Cartas de reconocimiento de empresas participantes (Foxconn/Jabil)
+    sobre el valor del programa para sus necesidades.
+
+-   Fortalecimiento de Chihuahua como hub regional de talento en IA y
+    manufactura avanzada (cobertura mediática documentada).
+
+SECCIÓN 11 — Gestión de Riesgos
+
+  -------------------------------------------------------------------------------
+  Riesgo            Prob.   Impacto   Estrategia de         Contingencia
+                                      Mitigación            
+  ----------------- ------- --------- --------------------- ---------------------
+  Retraso en        Media   ALTO      Contrato con          Plan B documentado
+  entrega de                          penalidades por       (ver nota)
+  GPUs/Servidores                     retraso + cloud       
+                                      credits NGC           
+                                      temporales + agente   
+                                      aduanal especializado 
+
+  Conflictos de     Alta    Medio     Coordinar con         Reemplazar con
+  agenda docente                      rectores/directores   candidato de lista de
+                                      para liberar cargas   espera
+                                      académicas; incluir   
+                                      en carta de           
+                                      compromiso            
+
+  Variación         Baja    ALTO      Costo fijo y cerrado  Pausar hasta
+  cambiaria MXN/USD                   ($8,000,000.00 MXN);  siguiente ejercicio
+                                      asegurar partida      fiscal
+                                      presupuestal antes de 
+                                      mayo 2026             
+
+  Barrera           Media   Medio     Verificar nivel B1/B2 Apoyo de intérprete
+  idiomática                          o competencias        parcial durante
+                                      técnicas base; módulo actividades clave
+                                      de inglés técnico en  
+                                      recursos asíncronos   
+                                      DLI                   
+
+  Cohorte           Alta    Medio     Diagnóstico técnico   Asignación de tutor
+  heterogénea en                      previo; compartir     par dentro de la
+  nivel técnico                       resultados con NVIDIA cohorte por
+                                      DLI; material         disciplina
+                                      preparatorio          
+                                      diferenciado          
+  -------------------------------------------------------------------------------
+
+11.1 Plan B para Adquisición de Equipos — Protocolo de Contingencia Detallado
+
+En caso de retrasos en la importación de equipos NVIDIA o fallas en
+servidores, se activará:
+
+5.  Escenario A (Retraso <30 días): Priorizar módulos teóricos online y
+    activar créditos cloud NVIDIA NGC temporales.
+
+6.  Escenario B (Retraso 30-60 días): Utilizar equipos de préstamo
+    académico o estaciones locales con GPUs RTX 4080 para prácticas
+    básicas mientras se resuelve la entrega de H200.
+
+7.  Escenario C (Retraso >60 días): Renegociar con proveedor alterno
+    autorizado; ajustar presupuesto con la reserva de imprevistos del
+    0%; comunicar transparentemente a la SIDE.
+
+SECCIÓN 12 — Sostenibilidad del Proyecto
+
+12.1 Capital Institucional Generado
+
+El proyecto entrega infraestructura GPU de alto rendimiento con
+mantenimiento preventivo quinquenal garantizado, además de capital
+humano certificado. Los 10 instructores certificados se convierten en
+multiplicadores locales, capaces de formar a 1,000 estudiantes anuales
+en IA, Ciencia de Datos y Robótica Aplicada mediante metodología DLI
+estandarizada.
+
+12.2 Continuidad por Fases — Criterios de Activación
+
+  -----------------------------------------------------------------------
+  Fase             Descripción                  Criterio de Activación
+  ---------------- ---------------------------- -------------------------
+  Año 2            Escalamiento de Cohortes y   >90% retención +
+                   Nuevos Instructores          NPS >80 + 15+ empresas
+                                                vinculadas
+
+  Año 3            Certificación Avanzada y     Sílabos IA activos en 5+
+                   Digital Twins                universidades + demanda
+                                                industrial
+
+  Réplicas         Nuevos centros en otros      Financiamiento estatal
+  Regionales (Fase estados                      asegurado + modelo
+  futura — no                                   documentado
+  incluida en el                                
+  proyecto SIDE                                 
+  2026)                                         
+  -----------------------------------------------------------------------
+
+12.3 Reconocimiento Internacional a Participantes
+
+El Certificado de NVIDIA Deep Learning Institute otorga prestigio
+internacional a los docentes y a sus instituciones, facilitando futuros
+convenios de investigación, movilidad académica y proyectos conjuntos.
+
+12.4 Transferencia de Conocimiento Continua
+
+Los participantes tendrán acceso perpetuo al repositorio de cursos
+asíncronos de NVIDIA DLI y a materiales de referencia NVIDIA sobre
+despliegue de IA en manufactura avanzada y ecosistemas de innovación
+tecnológica. Esto garantiza que el conocimiento se actualice y consulte
+continuamente después del programa presencial, independientemente de
+cambios en el equipo docente.
+
+SECCIÓN 13 — Evaluación Externa e Independiente
+
+Dado que el proyecto involucra fondos públicos estatales por
+$8,000,000.00 MXN, se establece un mecanismo de evaluación independiente
+para garantizar la rendición de cuentas ante SIDE y la ciudadanía.
+
+-   Evaluador designado: Institución académica local o despacho
+    especializado en evaluación de programas de formación de capital
+    humano, seleccionado mediante proceso transparente por INADET y
+    SIDE.
+
+-   Alcance de la evaluación: Verificación del cumplimiento de hitos,
+    autenticidad de certificados, análisis de resultados pre/post y
+    encuesta de seguimiento curricular (junio 2027).
+
+-   Producto: Informe de evaluación externa entregado a SIDE en agosto
+    2027, con recomendaciones para las fases de escalamiento.
+
+-   Costo estimado de evaluación: $0 MXN para este proyecto. Será
+    absorbido íntegramente en el presupuesto operativo interno de INADET
+    como contraparte institucional, sin cargo a los fondos asignados por
+    la SIDE para ejecución del proyecto.
+
+SECCIÓN 14 — Datos de Contacto
+
+  --------------------------------------------------------------------------------
+  Rol              Nombre          Institución     Correo Electrónico
+  ---------------- --------------- --------------- -------------------------------
+  Representante    Sergio Mancinas INADET          sergio.mancinas@inadet.edu.mx
+  Legal            Peña                            
+
+  Responsable del  Heber Enrique   INADET          heber.terrazas@inadet.edu.mx
+  Proyecto         Terrazas García                 
+
+  Enlace Principal [Contacto       NVIDIA DLI      dlimexico@nvidia.com
+  NVIDIA DLI       NVIDIA DLI                      
+                   México]                         
+
+  Director         [Director       NVIDIA          [correo regional]
+  Alianzas         Alianzas                        
+  Académicas       Académicas]                     
+
+  Enlace           Lic. Héctor     Director de     [correo SIDE]
+  Gubernamental    Miguel          Industria, SIDE 
+                   Samaniego Gámez Chihuahua |     
+                                   Tel.            
+                                   656.595.7125    
+
+  Soporte Técnico  [Soporte        Dell/NVIDIA     [correo soporte]
+  Proveedor        Técnico                         
+                   Proveedor]                      
+
+  Comunicación     Agencia de      PR / Relaciones [correo Agencia de Comunicación
+  Regional         Comunicación    Públicas        Designada]
+                   Designada                       
+  --------------------------------------------------------------------------------
+
+— Fin del Documento —

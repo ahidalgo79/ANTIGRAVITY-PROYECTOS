@@ -1,0 +1,525 @@
+{
+  "title": "Antihielo Cuestionario",
+  "questions": [
+    {
+      "question": "De acuerdo con las normativas FAA Part 25.1419 y EASA CS 25.1419, ¿cuál es el requisito principal para la certificación de una aeronave en relación con el hielo?",
+      "answerOptions": [
+        {
+          "text": "Demostrar que la aeronave puede operar de manera segura y continuada en condiciones de formación de hielo conocidas.",
+          "isCorrect": true,
+          "rationale": "Esta normativa exige pruebas de funcionamiento seguro en entornos de nubes heladas para garantizar la navegabilidad bajo condiciones atmosféricas adversas."
+        },
+        {
+          "text": "Garantizar que no se forme ninguna capa de escarcha en las superficies de control durante el estacionamiento en tierra.",
+          "isCorrect": false,
+          "rationale": "Las normas de certificación se enfocan principalmente en la seguridad durante la operación en vuelo y no solo en la acumulación estática en tierra."
+        },
+        {
+          "text": "Instalar obligatoriamente sistemas de zapatas neumáticas en todas las superficies aerodinámicas.",
+          "isCorrect": false,
+          "rationale": "La norma exige protección, pero permite diferentes tecnologías como aire de sangrado o resistencia eléctrica según el diseño de la aeronave."
+        },
+        {
+          "text": "Limitar el peso máximo de despegue cuando existan reportes de precipitación sólida en la ruta.",
+          "isCorrect": false,
+          "rationale": "La certificación busca que el sistema sea capaz de mitigar el riesgo, no simplemente restringir la operación de la aeronave por peso."
+        }
+      ],
+      "hint": "Esta regulación se centra en la capacidad del vehículo para mantener su rendimiento aerodinámico en entornos de nubes heladas."
+    },
+    {
+      "question": "¿Cuál es la distinción operativa fundamental entre un sistema de deshielo (de-ice) y uno de anti-hielo (anti-ice)?",
+      "answerOptions": [
+        {
+          "text": "El deshielo actúa de forma reactiva eliminando el hielo formado, mientras que el anti-hielo actúa de forma proactiva evitando su formación.",
+          "isCorrect": true,
+          "rationale": "El deshielo remueve la capa ya acumulada mediante ciclos, mientras que el anti-hielo mantiene la superficie caliente para que el hielo no se adhiera."
+        },
+        {
+          "text": "El deshielo utiliza exclusivamente energía eléctrica y el anti-hielo utiliza solo aire neumático.",
+          "isCorrect": false,
+          "rationale": "Ambos tipos de sistemas pueden utilizar diversas fuentes de energía, como aire de sangrado o electricidad, dependiendo del diseño."
+        },
+        {
+          "text": "El anti-hielo solo se activa en tierra y el deshielo se utiliza únicamente durante la fase de crucero.",
+          "isCorrect": false,
+          "rationale": "Ambos sistemas están diseñados para su uso en vuelo, aunque tienen procedimientos específicos de activación según la fase."
+        },
+        {
+          "text": "El deshielo es de operación continua y el anti-hielo funciona mediante ciclos de tiempo programados.",
+          "isCorrect": false,
+          "rationale": "Es al revés; el anti-hielo suele ser continuo para prevenir la formación, mientras que el deshielo es cíclico para romper la acumulación."
+        }
+      ],
+      "hint": "Considere si el sistema está diseñado para limpiar una superficie ya contaminada o para mantenerla limpia desde el inicio."
+    },
+    {
+      "question": "¿Qué material es el más utilizado históricamente para la fabricación de las zapatas neumáticas de deshielo debido a su elasticidad?",
+      "answerOptions": [
+        {
+          "text": "Goma de neopreno o polímeros sintéticos como Estane.",
+          "isCorrect": true,
+          "rationale": "Estos materiales elásticos permiten la distorsión necesaria para agrietar mecánicamente el hielo acumulado en el borde de ataque."
+        },
+        {
+          "text": "Aleaciones de aluminio anodizado de alta resistencia.",
+          "isCorrect": false,
+          "rationale": "El aluminio es rígido y se utiliza en sistemas anti-hielo térmicos, no en zapatas que requieren expansión física."
+        },
+        {
+          "text": "Compuestos de fibra de carbono con resinas termoestables.",
+          "isCorrect": false,
+          "rationale": "Aunque resistentes, estos materiales no poseen la flexibilidad requerida para el inflado y deflación cíclica del sistema de zapatas."
+        },
+        {
+          "text": "Teflón de baja fricción reforzado con mallas metálicas.",
+          "isCorrect": false,
+          "rationale": "El teflón se usa en sellos hidráulicos o recubrimientos, pero no tiene las propiedades de memoria elástica de las zapatas neumáticas."
+        }
+      ],
+      "hint": "Piense en un material flexible que pueda expandirse y contraerse repetidamente sin deformarse permanentemente."
+    },
+    {
+      "question": "¿Qué función cumple el sistema de vacío en un sistema de deshielo por zapatas neumáticas cuando este no está inflado?",
+      "answerOptions": [
+        {
+          "text": "Mantener la zapata firmemente sujeta contra la curvatura del ala para minimizar la resistencia aerodinámica.",
+          "isCorrect": true,
+          "rationale": "El vacío asegura que la bota no se infle por efecto del viento relativo, evitando turbulencias y arrastre parásito."
+        },
+        {
+          "text": "Extraer el exceso de humedad de los conductos internos para evitar que se congelen.",
+          "isCorrect": false,
+          "rationale": "Aunque el aire seco es importante, la función principal del vacío es mecánica y aerodinámica respecto a la posición de la zapata."
+        },
+        {
+          "text": "Enfriar la superficie del ala tras un ciclo de inflado con aire caliente.",
+          "isCorrect": false,
+          "rationale": "El sistema de zapatas no utiliza aire lo suficientemente caliente como para requerir un enfriamiento activo por vacío."
+        },
+        {
+          "text": "Aumentar la presión de sustentación en el borde de ataque mediante efecto Venturi.",
+          "isCorrect": false,
+          "rationale": "El sistema de protección no está diseñado para modificar la sustentación de forma activa, sino para preservar el perfil alar original."
+        }
+      ],
+      "hint": "Considere el impacto que tendría una bota de goma suelta aleteando en el flujo de aire a alta velocidad."
+    },
+    {
+      "question": "Con respecto al mito del 'puente de hielo' (ice bridging), ¿cuál es la recomendación actual emitida por la NTSB y las autoridades de aviación?",
+      "answerOptions": [
+        {
+          "text": "Activar el sistema de botas neumáticas inmediatamente al primer indicio de entrada en condiciones de formación de hielo.",
+          "isCorrect": true,
+          "rationale": "Investigaciones modernas desmintieron que la activación temprana sea perjudicial, priorizando la reducción inmediata de peso y distorsión aerodinámica."
+        },
+        {
+          "text": "Esperar a que la capa de hielo tenga un espesor de al menos $10\\text{ mm}$ para asegurar que se agriete correctamente.",
+          "isCorrect": false,
+          "rationale": "Esta era la recomendación antigua que hoy se considera peligrosa por el incremento innecesario de peso y pérdida de sustentación."
+        },
+        {
+          "text": "Solo activar el sistema si la temperatura exterior es inferior a $-20\\text{ }^\\circ\\text{C}$.",
+          "isCorrect": false,
+          "rationale": "La formación de hielo puede ocurrir a temperaturas cercanas a $0\\text{ }^\\circ\\text{C}$ y el sistema debe activarse independientemente de cuán baja sea la temperatura."
+        },
+        {
+          "text": "Alternar el uso de repelentes químicos antes de recurrir a la activación de las zapatas.",
+          "isCorrect": false,
+          "rationale": "Los repelentes químicos se usan generalmente en parabrisas, no como sustituto de las zapatas en las alas."
+        }
+      ],
+      "hint": "Piense en la directriz moderna que busca mitigar la acumulación inicial de hielo lo antes posible."
+    },
+    {
+      "question": "¿De dónde proviene típicamente la energía térmica en un sistema de anti-hielo de tipo 'Thermal Bleed Air' en aviones comerciales?",
+      "answerOptions": [
+        {
+          "text": "Del aire supercalentado extraído de las etapas del compresor del motor.",
+          "isCorrect": true,
+          "rationale": "El aire de sangrado (bleed air) se extrae a altas temperaturas ($> 150\\text{ }^\\circ\\text{C}$) para calentar las superficies metálicas por encima del punto de congelación."
+        },
+        {
+          "text": "Del calor generado por la fricción del aire ram en las tomas de impacto.",
+          "isCorrect": false,
+          "rationale": "Aunque el aire ram se calienta por compresión, no alcanza temperaturas suficientes para servir como fuente única de anti-hielo efectivo."
+        },
+        {
+          "text": "De intercambiadores de calor que utilizan el aceite caliente del motor.",
+          "isCorrect": false,
+          "rationale": "El aceite se usa para calentar combustible o enfriar componentes, pero no se distribuye por las alas para anti-hielo debido a su peso y riesgo de fuga."
+        },
+        {
+          "text": "Exclusivamente de la combustión interna en la Unidad de Potencia Auxiliar (APU).",
+          "isCorrect": false,
+          "rationale": "La APU puede suministrar aire en tierra o emergencias, pero la fuente principal en vuelo son los motores principales."
+        }
+      ],
+      "hint": "Relacione este sistema con el componente del motor que comprime el aire antes de la combustión."
+    },
+    {
+      "question": "¿En qué tipo de aeronaves o componentes es más común encontrar sistemas de anti-hielo electrotérmicos?",
+      "answerOptions": [
+        {
+          "text": "En aeronaves grandes como el Boeing 787 y en componentes como hélices, sondas de datos y parabrisas.",
+          "isCorrect": true,
+          "rationale": "Estos sistemas requieren gran potencia eléctrica y son ideales para áreas donde el aire de sangrado es difícil de conducir o ineficiente."
+        },
+        {
+          "text": "En aviones de aviación general ligeros con motores recíprocos de baja potencia.",
+          "isCorrect": false,
+          "rationale": "Los aviones pequeños suelen carecer de la capacidad de generación eléctrica suficiente para alimentar resistencias de alto consumo."
+        },
+        {
+          "text": "Únicamente en el empenaje vertical para evitar interferencias magnéticas con el radar.",
+          "isCorrect": false,
+          "rationale": "El uso de sistemas electrotérmicos se basa en la disponibilidad de potencia y necesidades de diseño, no en interferencias de radar."
+        },
+        {
+          "text": "En los frenos de carbono para evitar que se congelen durante el rodaje.",
+          "isCorrect": false,
+          "rationale": "Los frenos generan calor por fricción; el sistema electrotérmico se enfoca en superficies aerodinámicas y sensores expuestos al flujo de aire."
+        }
+      ],
+      "hint": "Considere sistemas que utilizan el efecto Joule para generar calor mediante el paso de corriente eléctrica."
+    },
+    {
+      "question": "¿Por qué es crítico proteger las tomas de admisión del motor (Engine Inlets) contra la formación de hielo?",
+      "answerOptions": [
+        {
+          "text": "Para evitar que se desprendan placas de hielo que podrían ser ingeridas por el compresor, causando daños catastróficos.",
+          "isCorrect": true,
+          "rationale": "La ingestión de hielo sólido puede destruir los álabes del compresor y provocar un fallo total de la planta motriz."
+        },
+        {
+          "text": "Para mantener la temperatura de la mezcla aire-combustible lo más alta posible y mejorar la ignición.",
+          "isCorrect": false,
+          "rationale": "El sistema anti-hielo busca seguridad mecánica, no optimizar la temperatura de combustión, la cual se regula por otros medios."
+        },
+        {
+          "text": "Para evitar que el hielo obstruya la salida de gases de escape del motor.",
+          "isCorrect": false,
+          "rationale": "El sistema protege la entrada (admisión), no la salida de gases, donde las temperaturas son demasiado altas para que el hielo se forme."
+        },
+        {
+          "text": "Para reducir la firma infrarroja del motor y evitar detección por radar.",
+          "isCorrect": false,
+          "rationale": "Esta es una consideración militar de sigilo, no una función de los sistemas de protección contra hielo en aviación civil."
+        }
+      ],
+      "hint": "Piense en las consecuencias de que un objeto sólido e impacte contra aspas que giran a miles de revoluciones por minuto."
+    },
+    {
+      "question": "¿Cuál es el principio físico por el cual los recubrimientos repelentes químicos mejoran la visibilidad en el parabrisas durante la lluvia?",
+      "answerOptions": [
+        {
+          "text": "Modifican la tensión superficial del vidrio volviéndolo hidrófobo, lo que aumenta el ángulo de contacto de la gota de agua.",
+          "isCorrect": true,
+          "rationale": "Al aumentar el ángulo de contacto ($\\theta > 90\\text{ }^\\circ$), las gotas se vuelven esferas compactas que el viento barre fácilmente sin dejar película."
+        },
+        {
+          "text": "Aumentan la temperatura del cristal para evaporar el agua instantáneamente por calor latente.",
+          "isCorrect": false,
+          "rationale": "Los repelentes químicos actúan sobre las propiedades superficiales del material, no mediante la transferencia de calor."
+        },
+        {
+          "text": "Crean una capa de aire a presión que desvía físicamente la trayectoria de las gotas antes del impacto.",
+          "isCorrect": false,
+          "rationale": "Esa es la función de los sopladores neumáticos de lluvia, no de los recubrimientos químicos aplicados al vidrio."
+        },
+        {
+          "text": "Cambian el color de la luz incidente para filtrar la distorsión causada por las gotas de agua.",
+          "isCorrect": false,
+          "rationale": "La mejora es mecánica y de transparencia óptica, no un filtrado de frecuencias de color."
+        }
+      ],
+      "hint": "Recuerde cómo cambia la forma de una gota de agua cuando toca una superficie que 'repele' el líquido."
+    },
+    {
+      "question": "En el Boeing 737, ¿cuál es la indicación en cabina que confirma que la válvula anti-hielo del capó del motor (Cowl Valve) está completamente abierta?",
+      "answerOptions": [
+        {
+          "text": "La luz azul de indicación se ilumina en un tono tenue (dim).",
+          "isCorrect": true,
+          "rationale": "En la lógica de este sistema, la luz azul brillante indica tránsito o desacuerdo, mientras que el azul tenue indica que la posición es la seleccionada."
+        },
+        {
+          "text": "La luz verde de 'READY' se enciende en el panel superior.",
+          "isCorrect": false,
+          "rationale": "El sistema utiliza luces azules para indicación de válvulas, no luces verdes de estado 'Ready'."
+        },
+        {
+          "text": "La aguja del indicador de presión neumática se mueve a la zona roja.",
+          "isCorrect": false,
+          "rationale": "La zona roja indicaría una sobrepresión peligrosa, no el funcionamiento normal de una válvula de anti-hielo."
+        },
+        {
+          "text": "Se escucha un tono audible intermitente en los auriculares de la tripulación.",
+          "isCorrect": false,
+          "rationale": "Las válvulas de anti-hielo no tienen avisos sonoros de confirmación de apertura; se basan en indicadores visuales."
+        }
+      ],
+      "hint": "Considere la diferencia de intensidad en las luces de aviso para indicar si una válvula está en tránsito o en su posición final."
+    },
+    {
+      "question": "¿Qué efecto óptico negativo produce la presencia de agua sobre el parabrisas, según el material de estudio?",
+      "answerOptions": [
+        {
+          "text": "Altera el índice de refracción óptica, introduciendo errores de paralaje que distorsionan la percepción de la pista.",
+          "isCorrect": true,
+          "rationale": "La película de agua desvía los rayos de luz, lo que puede hacer que el piloto perciba la pista a una altitud o alineación incorrecta."
+        },
+        {
+          "text": "Produce una polarización total de la luz que bloquea la visión de las luces de aproximación.",
+          "isCorrect": false,
+          "rationale": "Aunque hay efectos de luz, el problema principal descrito es la refracción y la distorsión geométrica de la imagen."
+        },
+        {
+          "text": "Incrementa el deslumbramiento por rayos infrarrojos solares.",
+          "isCorrect": false,
+          "rationale": "El principal riesgo es la distorsión visual durante fases críticas de aterrizaje bajo lluvia, no el calor infrarrojo."
+        },
+        {
+          "text": "Disminuye la resistencia mecánica del vidrio al reducir su cohesión molecular.",
+          "isCorrect": false,
+          "rationale": "El agua no afecta la cohesión molecular del vidrio del parabrisas de esta manera; el efecto es puramente óptico y superficial."
+        }
+      ],
+      "hint": "Piense en cómo se ve un objeto sumergido en un vaso con agua."
+    },
+    {
+      "question": "¿Cuál es la función principal de los sopladores neumáticos de lluvia (Rain Removal Blowers)?",
+      "answerOptions": [
+        {
+          "text": "Dirigir un chorro de aire de alta velocidad sobre el vidrio para desviar físicamente la lluvia antes del impacto.",
+          "isCorrect": true,
+          "rationale": "Estos sistemas utilizan aire (a menudo caliente o de sangrado) para crear un escudo neumático que impide que las gotas toquen el cristal."
+        },
+        {
+          "text": "Secar el agua estancada en los bordes de las ventanas tras el aterrizaje.",
+          "isCorrect": false,
+          "rationale": "Su función es operativa durante el vuelo y la aproximación, no de limpieza post-vuelo."
+        },
+        {
+          "text": "Aumentar la presión de la cabina en caso de fallo de las válvulas de salida.",
+          "isCorrect": false,
+          "rationale": "El sistema de protección contra lluvia es independiente del control de presurización de la cabina principal."
+        },
+        {
+          "text": "Lubricar las escobillas de los limpiaparabrisas para evitar que rayen el cristal.",
+          "isCorrect": false,
+          "rationale": "Los sopladores son un sistema alternativo o complementario a los limpiaparabrisas, no un sistema de lubricación para estos."
+        }
+      ],
+      "hint": "Visualice una cortina de aire invisible que protege la superficie exterior de la ventana."
+    },
+    {
+      "question": "En la lógica del sistema anti-hielo del ala del Boeing 737 en tierra, ¿por qué se cierran las válvulas si las palancas de empuje avanzan por encima de los $32^\\circ$ de ángulo?",
+      "answerOptions": [
+        {
+          "text": "Para evitar el sobrecalentamiento de la estructura del ala ante el aumento de la temperatura del aire de sangrado en el despegue.",
+          "isCorrect": true,
+          "rationale": "Al aumentar la potencia, la temperatura y presión del aire de sangrado suben, lo que podría dañar los conductos si no hay flujo de aire exterior suficiente para enfriarlos."
+        },
+        {
+          "text": "Para asegurar que toda la potencia del motor se utilice exclusivamente para la sustentación del avión.",
+          "isCorrect": false,
+          "rationale": "Aunque el sangrado quita algo de potencia, la razón principal en tierra es la protección térmica de los materiales del ala por falta de flujo de aire ram."
+        },
+        {
+          "text": "Porque el sistema de detección de fuego del motor inhibe cualquier salida de aire neumático durante la aceleración.",
+          "isCorrect": false,
+          "rationale": "El sistema de fuego tiene sus propias válvulas de corte, pero el cierre por palancas de empuje es una lógica de protección del sistema anti-hielo."
+        },
+        {
+          "text": "Para evitar que el ruido del aire de sangrado interfiera con las comunicaciones del piloto con la torre.",
+          "isCorrect": false,
+          "rationale": "El ruido neumático no es un factor determinante para la lógica de seguridad de las válvulas anti-hielo."
+        }
+      ],
+      "hint": "Considere qué sucede con la temperatura del aire del motor cuando se aplica potencia máxima sin que el avión se esté moviendo rápido."
+    },
+    {
+      "question": "¿Qué sucede con el sistema anti-hielo de las alas de un Boeing 737 al despegar y pasar de modo 'Tierra' a modo 'Aire'?",
+      "answerOptions": [
+        {
+          "text": "El interruptor de Wing Anti-Ice se dispara automáticamente a la posición OFF.",
+          "isCorrect": true,
+          "rationale": "Esta es una característica de diseño para asegurar que el sistema se reevalúe y no se deje encendido inadvertidamente tras el despegue."
+        },
+        {
+          "text": "Las válvulas se abren al $100\\%$ de su capacidad de forma permanente.",
+          "isCorrect": false,
+          "rationale": "El sistema requiere la intervención o selección manual en vuelo según las condiciones de engelamiento encontradas."
+        },
+        {
+          "text": "Se activa una alarma sonora indicando que el sistema debe ser apagado inmediatamente.",
+          "isCorrect": false,
+          "rationale": "No hay una alarma sonora; el mecanismo es un disparo físico (solenoide) del interruptor a la posición de apagado."
+        },
+        {
+          "text": "El sistema cambia la fuente de aire de los motores a la APU.",
+          "isCorrect": false,
+          "rationale": "La APU generalmente no se usa para anti-hielo del ala en vuelo debido a sus limitaciones de altitud y flujo."
+        }
+      ],
+      "hint": "Recuerde el mecanismo de seguridad del interruptor que evita que el sistema permanezca activo sin supervisión después de dejar el suelo."
+    },
+    {
+      "question": "¿Cuál es la función secundaria del calentamiento eléctrico en los parabrisas, además de la eliminación de hielo y fog?",
+      "answerOptions": [
+        {
+          "text": "Mejorar la resistencia a los impactos, especialmente contra aves (bird strikes), al mantener las capas de vinilo/plástico flexibles.",
+          "isCorrect": true,
+          "rationale": "El calor mantiene el material entre las láminas de vidrio en un estado óptimo de resiliencia para absorber la energía de un impacto sin fracturarse."
+        },
+        {
+          "text": "Reducir la reflexión de la luz solar hacia el interior de la cabina.",
+          "isCorrect": false,
+          "rationale": "Los recubrimientos anti-reflejantes son tratamientos químicos o películas ópticas, no dependen de la calefacción eléctrica."
+        },
+        {
+          "text": "Aumentar la dureza superficial del vidrio para evitar rayaduras por el polvo.",
+          "isCorrect": false,
+          "rationale": "El calor no aumenta la dureza del vidrio; de hecho, su propósito es evitar que el material se vuelva quebradizo ante el frío extremo."
+        },
+        {
+          "text": "Servir como antena de respaldo para las comunicaciones de alta frecuencia (HF).",
+          "isCorrect": false,
+          "rationale": "Las antenas HF son componentes estructurales distintos; los cables de calefacción son resistencias diseñadas para producir calor."
+        }
+      ],
+      "hint": "Considere cómo afecta la temperatura a la capacidad de un material laminado para absorber golpes sin romperse."
+    },
+    {
+      "question": "¿Qué componente regula la presión y el flujo de aire hacia las zapatas de deshielo en un sistema neumático típico?",
+      "answerOptions": [
+        {
+          "text": "Válvulas distribuidoras o de control de deshielo comandadas por un temporizador.",
+          "isCorrect": true,
+          "rationale": "El temporizador asegura que las zapatas se inflen en la secuencia y duración correctas (típicamente $6$ segundos) para romper el hielo efectivamente."
+        },
+        {
+          "text": "La válvula de flujo de salida (outflow valve) del sistema de presurización.",
+          "isCorrect": false,
+          "rationale": "La outflow valve controla la presión de la cabina, no tiene relación directa con el inflado de las zapatas de las alas."
+        },
+        {
+          "text": "Bombas hidráulicas de desplazamiento variable.",
+          "isCorrect": false,
+          "rationale": "El sistema de zapatas es neumático (aire), por lo que no utiliza bombas de fluido hidráulico para su funcionamiento."
+        },
+        {
+          "text": "Sensores de ángulo de ataque conectados directamente a la bota.",
+          "isCorrect": false,
+          "rationale": "Los sensores de ángulo de ataque proporcionan datos de vuelo, pero no regulan físicamente el flujo de aire a las botas."
+        }
+      ],
+      "hint": "Se requiere un componente que gestione el ciclo intermitente de aire a presión y vacío."
+    },
+    {
+      "question": "¿Cuál es la consecuencia directa de una falla en el sistema anti-hielo del ala durante el vuelo en condiciones de engelamiento severo?",
+      "answerOptions": [
+        {
+          "text": "Reducción del coeficiente de sustentación máximo ($C_{L,\\text{max}}$) y aumento de la velocidad de pérdida (stall speed).",
+          "isCorrect": true,
+          "rationale": "La acumulación de hielo distorsiona el perfil aerodinámico, degradando la capacidad del ala para generar sustentación y aumentando la resistencia."
+        },
+        {
+          "text": "Aumento inmediato de la presión total en el sistema de combustible.",
+          "isCorrect": false,
+          "rationale": "El sistema de combustible es independiente de la aerodinámica externa del ala afectada por el hielo."
+        },
+        {
+          "text": "Inversión automática de los controles de vuelo por protección electrónica.",
+          "isCorrect": false,
+          "rationale": "Aunque el sistema de control puede verse afectado, no existe una 'inversión automática' de controles como respuesta estándar al hielo."
+        },
+        {
+          "text": "Descenso de la temperatura de la cabina de pasajeros por debajo de $0\\text{ }^\\circ\\text{C}$.",
+          "isCorrect": false,
+          "rationale": "El sistema de aire acondicionado y calefacción de cabina es independiente de los conductos de anti-hielo de los bordes de ataque."
+        }
+      ],
+      "hint": "Piense en cómo el cambio de forma del borde de ataque del ala afecta su comportamiento aerodinámico básico."
+    },
+    {
+      "question": "¿Qué técnica de deshielo alternativa utiliza aceleraciones de hasta $1000g$ para expulsar la capa de hielo?",
+      "answerOptions": [
+        {
+          "text": "Deshielo por sistema de impulso (neumático o electromagnético).",
+          "isCorrect": true,
+          "rationale": "Este sistema genera movimientos microscópicos pero extremadamente rápidos que rompen la adhesión del hielo por inercia."
+        },
+        {
+          "text": "Calentamiento por microondas de alta frecuencia.",
+          "isCorrect": false,
+          "rationale": "Aunque se ha investigado, el uso de microondas no es una tecnología estándar implementada en aeronaves comerciales para este fin."
+        },
+        {
+          "text": "Vibración por resonancia de los motores a altas revoluciones.",
+          "isCorrect": false,
+          "rationale": "Los motores deben evitar vibraciones excesivas; el deshielo es una función de sistemas específicos, no de la vibración del motor."
+        },
+        {
+          "text": "Inyección de nitrógeno líquido sobre el borde de ataque.",
+          "isCorrect": false,
+          "rationale": "El nitrógeno líquido es extremadamente frío y empeoraría la situación, además de ser logísticamente imposible de transportar para este uso."
+        }
+      ],
+      "hint": "Se trata de un sistema que actúa en fracciones de segundo mediante golpes mecánicos muy energéticos."
+    },
+    {
+      "question": "En un sistema de protección contra lluvia, ¿por qué no se deben usar los limpiaparabrisas sobre un cristal seco?",
+      "answerOptions": [
+        {
+          "text": "Para evitar rayar la superficie del vidrio y dañar las escobillas de caucho.",
+          "isCorrect": true,
+          "rationale": "Sin el agua como lubricante, la fricción es excesiva y puede opacar el cristal, además de sobrecalentar el motor del limpiaparabrisas."
+        },
+        {
+          "text": "Porque se activaría automáticamente el sistema de extinción de incendios de cabina.",
+          "isCorrect": false,
+          "rationale": "No existe ninguna relación lógica ni física entre los limpiaparabrisas y los sistemas de extinción de incendios."
+        },
+        {
+          "text": "Porque el aire seco impide que las escobillas alcancen su velocidad máxima.",
+          "isCorrect": false,
+          "rationale": "Aunque la fricción frena el movimiento, la razón principal es la preservación de la integridad óptica del vidrio y la vida útil del equipo."
+        },
+        {
+          "text": "Para evitar interferir con las señales del radar meteorológico ubicado en el radomo.",
+          "isCorrect": false,
+          "rationale": "Los limpiaparabrisas operan en una zona lejana al haz del radar y no producen interferencia significativa en su funcionamiento."
+        }
+      ],
+      "hint": "Piense en el daño que causa un objeto de caucho frotando a alta velocidad contra una superficie dura sin lubricación."
+    },
+    {
+      "question": "¿Cuál es la función de los 'drenajes de aguas residuales calentados' (Heated Drains) mencionados en los sistemas de protección?",
+      "answerOptions": [
+        {
+          "text": "Evitar que los fluidos de desecho se congelen y bloqueen la salida, formando bloques de hielo externos.",
+          "isCorrect": true,
+          "rationale": "Si el agua de los lavabos se congela al salir, puede acumularse y desprenderse en vuelo, lo que representa un peligro para la estructura o personas en tierra."
+        },
+        {
+          "text": "Calentar el agua de los tanques para el uso de los pasajeros en el baño.",
+          "isCorrect": false,
+          "rationale": "El calentamiento de tanques es una función de confort; los drenajes calentados son para evitar acumulaciones externas de hielo."
+        },
+        {
+          "text": "Aumentar la temperatura del combustible antes de que entre a los inyectores.",
+          "isCorrect": false,
+          "rationale": "Esta función la realizan los intercambiadores de calor combustible-aceite, no los sistemas de drenaje de aguas residuales."
+        },
+        {
+          "text": "Proporcionar una fuente de vapor para humedecer el aire de la cabina.",
+          "isCorrect": false,
+          "rationale": "Los drenajes están diseñados para expulsar fluidos fuera del avión, no para recircularlos como humedad."
+        }
+      ],
+      "hint": "Considere el riesgo de que el agua líquida expulsada a $-50\\text{ }^\\circ\\text{C}$ se convierta instantáneamente en un proyectil de hielo."
+    }
+  ]
+}

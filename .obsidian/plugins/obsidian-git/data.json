@@ -1,0 +1,11 @@
+{
+  "commitMessage": "vault backup: {{date}}",
+  "autoSaveInterval": 30,
+  "autoPullInterval": 30,
+  "pullOnStartup": true,
+  "disablePopups": false,
+  "listChangedFilesInMessageBody": false,
+  "showStatusBar": true,
+  "updateSubmodules": false,
+  "syncMethod": "merge"
+}

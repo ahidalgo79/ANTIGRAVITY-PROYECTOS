@@ -1,0 +1,153 @@
+He revisado el documento y, efectivamente, aunque la estructura base es buena, hay varios puntos que pueden generar confusión en los alumnos (por ejemplo, la bitácora sugiere un vuelo de ida y vuelta, pero las instrucciones no lo mencionan explícamente; o la forma de obtener las cartas no está detallada).
+
+A continuación, te presento una **versión mejorada, ampliada y detallada** de la actividad. He añadido pasos específicos, aclaraciones sobre el uso del G1000, una estructura clara para el reporte y convenciones de nomenclatura para evitar problemas de entrega.
+
+---
+
+# Navegación Aérea | Unidad 2 | Actividad 2: Cartas Aeronáuticas y Navegación con Garmin G1000
+
+**UNIVERSIDAD POLITÉCNICA DE CHIHUAHUA**
+**Navegación Aérea — Unidad 2**
+**Actividad 2: Planificación y Ejecución de Vuelo con Cartas Aeronáuticas y Garmin G1000**
+
+| Integrantes (Nombre completo y matrícula): | 1. _________________________________<br>2. _________________________________<br>3. _________________________________ |
+| :--- | :--- |
+| **Grupo:** ___________ | **Fecha de entrega:** ___________ |
+| **Nombre del archivo a entregar:** `U2_Act2_GrupoX_EquipoY.pdf` | |
+
+---
+
+### 1. Introducción
+Las cartas aeronáuticas son documentos esenciales para la planificación y ejecución segura de cualquier vuelo. En esta actividad, el equipo realizará un vuelo simulado de **ida y vuelta** en Microsoft Flight Simulator X (FSX) a bordo de una aeronave equipada con el sistema aviónico Garmin G1000. El objetivo es identificar, interpretar y aplicar en tiempo real los diferentes tipos de cartas que intervienen en cada fase del vuelo, cruzando esta información con lo que muestra el equipo de navegación.
+
+### 2. Objetivo de Aprendizaje
+Al finalizar la actividad, el alumno será capaz de:
+1. Buscar, descargar e interpretar correctamente 5 tipos de cartas aeronáuticas reales (Aeródromo, SID, En-ruta, STAR y Aproximación) desde fuentes oficiales.
+2. Programar un plan de vuelo completo (incluyendo procedimientos de salida y llegada) en el FMS del Garmin G1000.
+3. Ejecutar un vuelo simulado respetando las altitudes, rumbos y restricciones publicadas en las cartas, documentando el proceso mediante bitácora, reporte y evidencia en video.
+
+### 3. Materiales y Recursos Requeridos
+1. **Simulador:** Microsoft Flight Simulator X (FSX) o Prepar3D. *Aeronave obligatoria:* Cessna 172 SP con Garmin G1000 o Beechcraft Baron G58 con Garmin G1000.
+2. **Cartas Aeronáuticas (Reales y vigentes):** Deben descargarse de fuentes oficiales o confiables como:
+   - eAIP México: `https://www.aip.gob.mx/` (Buscar MMCU y MMCS, u otro par asignado por el docente).
+   - SkyVector: `https://skyvector.com/` (Configurar región a México).
+3. **Software de captura:** OBS Studio, Xbox Game Bar o NVIDIA ShadowPlay para grabar la pantalla del simulador.
+4. **Procesador de texto:** Word o Google Docs para el reporte escrito (exportar finalmente a PDF).
+5. **Bitácora de vuelo:** Debe imprimirse y llenarse a mano con bolígrafo durante o inmediatamente después del vuelo (ver Sección 7).
+
+---
+
+### 4. Instrucciones Detalladas
+
+#### **Fase 1: Planificación en Tierra (Antes de encender el simulador)**
+*El equipo debe trabajar en conjunto para definir la ruta. No se permite volar "Direct-To" en todo el trayecto; deben seguir airways o una ruta RNAV publicada.*
+
+1. **Selección de Aeropuertos:** Vuelo de ida y vuelta entre **MMCU (Chihuahua)** y **MMCS (Ciudad Juárez)** *(O el par de aeropuertos que el docente haya asignado)*.
+2. **Análisis de Cartas (Llenar una hoja de trabajo previa):**
+   - **Carta de Aeródromo (AD):** Identificar la pista en uso, elevación del aeropuerto y ubicación del estacionamiento (Parking) asignado para el inicio.
+   - **Carta SID (Salida):** Elegir una salida por instrumentos válida para la pista de salida. *Identificar:* Nombre de la SID, primer waypoint, rumbo inicial y altitud de restricción.
+   - **Carta En-ruta (Low/High):** Trazar la ruta. *Identificar:* Al menos 2 VORs o NDBs, 2 intersecciones (fixes) y el nombre del Airway (ej. UA301) que conecta ambos aeropuertos.
+   - **Carta STAR (Llegada):** Elegir una llegada estándar al aeropuerto de destino. *Identificar:* Transición, último waypoint antes de la aproximación y altitud esperada.
+   - **Carta de Aproximación:** Elegir una aproximación por instrumentos (ILS, VOR o RNAV/GPS). *Identificar:* Frecuencia del ayudante, curso final, altitud de decisión (DA) o altitud mínima de descenso (MDA).
+3. **Plan de Vuelo:** Anoten en la bitácora (Sección 7) la ruta completa en formato ICAO (ej. `MMCU DCT TORRE UA301 MMCS`).
+
+#### **Fase 2: Ejecución del Vuelo Simulado en FSX con Garmin G1000**
+1. **Configuración:** Inicien la grabación de video *antes* de encender los motores. La grabación debe mostrar claramente las pantallas del G1000 (PFD y MFD).
+2. **Programación del FMS (G1000):**
+   - Presionar el botón `FPL`.
+   - Ingresar aeropuerto de destino (`ENT`).
+   - Presionar el botón `PROC` para seleccionar e insertar la **SID** elegida.
+   - Insertar manualmente los waypoints de la ruta **En-ruta** (si no se cargan automáticamente).
+   - Presionar `PROC` nuevamente para pre-cargar la **STAR** y la **Aproximación** (Activar: `ACTV` solo cuando el ATC o la fase del vuelo lo indiquen).
+3. **Ejecución y Capturas:** Durante el vuelo, asegúrense de que el video capture (o tomen capturas de pantalla adicionales para el reporte) los siguientes momentos clave:
+   - **Momento 1 (Salida):** Pantalla MFD mostrando la SID activa y el avión siguiendo el rumbo.
+   - **Momento 2 (Crucero):** Pantalla PFD mostrando altitud y rumbo estabilizados, y MFD mostrando la posición sobre el Airway.
+   - **Momento 3 (Transición a Llegada):** Pantalla MFD mostrando la activación de la STAR.
+   - **Momento 4 (Aproximación Final):** Pantalla PFD mostrando el localizador/glideslope (ILS) o la barra de desviación de ruta (RNAV) centrada, con las altitudes y velocidades publicadas en la carta.
+   - **Momento 5 (Finalización):** Avión detenido en el parking de destino, motores apagados.
+4. **Regreso:** Repetir el proceso para el vuelo de regreso (MMCS a MMCU), utilizando una SID, ruta y aproximación diferentes si es posible, para demostrar versatilidad.
+
+#### **Fase 3: Llenado de Bitácora y Elaboración del Reporte**
+1. **Bitácora:** Completen la bitácora impresa a mano con los datos *reales* obtenidos del simulador (no los planeados, sino los ejecutados). Debe estar firmada por el "Piloto al Mando" y el "Copiloto". Escanearla o tomarle una foto de alta calidad.
+2. **Reporte Escrito:** Elaboren un documento en PDF siguiendo estrictamente la estructura de la Sección 6.
+
+---
+
+### 5. Estructura Obligatoria del Reporte Escrito (Máx. 5 MB)
+El reporte debe contener las siguientes secciones en este orden:
+
+1. **Portada:** Datos de la universidad, materia, actividad, integrantes, grupo y fecha.
+2. **Resumen del Plan de Vuelo:** Tabla con aeropuertos, aeronave, ruta completa (string de navegación), altitud de crucero y aeropuerto alternativo seleccionado.
+3. **Análisis de Cartas Aeronáuticas:** Por cada una de las 5 cartas (para el vuelo de ida):
+   - Insertar una imagen clara de la carta.
+   - Texto breve explicando: ¿Qué dato crítico extrajeron de esta carta? (ej. "De la carta de aproximación ILS RWY 04, tomamos la frecuencia 110.3 y la altitud de decisión de 2400 ft").
+4. **Análisis del Garmin G1000:**
+   - Insertar las 5 capturas de pantalla solicitadas en la Fase 2.
+   - Debajo de cada captura, explicar qué están mostrando los instrumentos y cómo coinciden con la carta aeronáutica (ej. "En la imagen se observa el cursor magenta del FMS alineado con el radial 045° del VOR TORRE, tal como indica la carta en-ruta").
+5. **Conclusiones del Equipo:** Mínimo 2 párrafos reflexionando sobre la importancia de la cross-check (verificación cruzada) entre la carta en papel/digital y lo que muestra el G1000, y los errores comunes que evitaron.
+6. **Enlace al Video:** Hipervínculo visible y funcional al video de YouTube (No listado) o Google Drive. *El video debe tener una duración mínima de 5 minutos y, de preferencia, incluir audio del equipo narrando brevemente las transiciones.*
+7. **Referencias:** Formato APA 7ª edición (incluir la cita de las cartas del AIP o SkyVector).
+
+---
+
+### 6. Bitácora de Vuelo (Para imprimir y llenar a mano)
+*(Nota para el alumno: Esta hoja debe anexarse escaneada o fotografiada al final del reporte PDF).*
+
+| **Aeropuerto de Salida:** _______________________ | **ICAO:** _________ |
+| :--- | :--- |
+| **Aeropuerto Destino:** _______________________ | **ICAO:** _________ |
+| **Aeronave (Modelo FSX):** ____________________ | **Matrícula Sim:** _________ |
+| **Altitud de Crucero Planeada:** _________ ft | **Aeropuerto Alternativo:** _________ |
+
+**Registro de Tramos (Vuelo de Ida):**
+| Tramo / Waypoint | Carta de Referencia | Altitud Real (ft) | Rumbo Real (°) | Dist. (nm) | Observaciones (Viento, desviaciones, notas) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Salida (SID) | | | | | |
+| En-ruta (Fix 1) | | | | | |
+| En-ruta (Fix 2) | | | | | |
+| Llegada (STAR) | | | | | |
+| Aproximación Final| | | | | |
+
+**Registro de Tramos (Vuelo de Regreso):** *(Llenar de forma resumida los datos más relevantes del regreso)*
+| Tramo / Waypoint | Carta de Referencia | Altitud Real (ft) | Rumbo Real (°) | Observaciones |
+| :--- | :--- | :--- | :--- | :--- |
+| Salida (SID) | | | | |
+| En-ruta | | | | |
+| Aproximación | | | | |
+
+**Firma del Piloto al Mando:** ________________________  **Firma del Copiloto:** ________________________
+**Hora Total de Bloque (Sim):** _________ hrs
+
+---
+
+### 7. Criterios de Evaluación (Rúbrica)
+
+| Criterio | Descripción Detallada | Puntaje |
+| :--- | :--- | :---: |
+| **1. Bitácora de Vuelo** | Está impresa, llenada a mano, firmada y los datos coinciden lógicamente con el reporte y el video. Incluye vuelo de ida y regreso. | 20 |
+| **2. Uso de Cartas** | Identifica y describe correctamente las 5 cartas. Las imágenes de las cartas son legibles y el texto explica el dato crítico extraído de cada una. | 20 |
+| **3. Interpretación G1000** | Las capturas de pantalla del PFD/MFD están correctamente etiquetadas. El análisis explica claramente la relación entre lo que dice la carta y lo que muestra el instrumento. | 20 |
+| **4. Reporte Escrito** | Sigue la estructura solicitada, redacción profesional, sin faltas de ortografía, conclusiones reflexivas y referencias en APA 7. Peso del archivo < 5 MB. | 20 |
+| **5. Evidencia en Video** | El video (mín. 5 min) muestra claramente las pantallas del G1000 durante las transiciones clave. Se aprecia la programación del FMS y la ejecución de la aproximación. | 20 |
+| **TOTAL** | | **100** |
+
+---
+
+### 8. Puntos Críticos para Considerar (Checklist antes de entregar)
+- [ ] ¿El video es accesible? (Si es Drive, verificar que los permisos estén en "Cualquier persona con el enlace puede ver").
+- [ ] ¿Las capturas de pantalla del G1000 son legibles? (Si no lo son, usar una herramienta de zoom o añadir anotaciones con flechas en Word).
+- [ ] ¿Se respetó el límite de 5 MB del PDF? (Comprimir imágenes si es necesario).
+- [ ] ¿Se declaró el uso de herramientas de IA en el reporte, si se utilizaron para corrección de estilo? (Obligatorio por honestidad académica).
+- [ ] ¿La bitácora está firmada a mano?
+
+---
+
+### Principales Mejoras Realizadas (Para tu referencia como docente):
+1. **Claridad en la Misión:** Se especificó explícitamente que es un vuelo de **ida y vuelta**, resolviendo la confusión de la bitácora original.
+2. **Fuentes de Cartas:** Se añadieron enlaces y nombres de plataformas reales (AIP México, SkyVector) para que los alumnos no busquen en lugares incorrectos.
+3. **Pasos del G1000:** Se detallaron los botones específicos (`FPL`, `PROC`, `ACTV`) para que los alumnos sepan *cómo* se programa el equipo, no solo *qué* programar.
+4. **Estructura del Reporte:** Se convirtió en una lista de verificación obligatoria, lo que facilita enormemente tu trabajo de calificación y evita que los alumnos entreguen formatos desordenados.
+5. **Rúbrica Detallada:** Se hizo más objetiva la descripción de cada criterio para reducir disputas sobre la calificación.
+6. **Checklist Final:** Ayuda a los alumnos a auto-evaluarse antes de subir el archivo, reduciendo entregas incompletas o con enlaces rotos.
+
+¿Te gustaría que ajuste algún aeropuerto en específico o que añada una rúbrica de co-evaluación entre los miembros del equipo?

@@ -1,0 +1,633 @@
+const {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, HeadingLevel, BorderStyle, WidthType, ShadingType,
+  LevelFormat, PageNumber, NumberFormat, Footer, Header
+} = require('docx');
+const fs = require('fs');
+
+const border = { style: BorderStyle.SINGLE, size: 1, color: "AAAAAA" };
+const borders = { top: border, bottom: border, left: border, right: border };
+const thickBorder = { style: BorderStyle.SINGLE, size: 4, color: "1F497D" };
+const thickBorders = { top: thickBorder, bottom: thickBorder, left: thickBorder, right: thickBorder };
+const noBorder = { style: BorderStyle.NONE, size: 0, color: "FFFFFF" };
+const noBorders = { top: noBorder, bottom: noBorder, left: noBorder, right: noBorder };
+
+const cellMargin = { top: 100, bottom: 100, left: 150, right: 150 };
+
+function heading1(text) {
+  return new Paragraph({
+    heading: HeadingLevel.HEADING_1,
+    spacing: { before: 300, after: 120 },
+    children: [new TextRun({ text, bold: true, size: 28, font: "Arial", color: "1F497D" })]
+  });
+}
+
+function heading2(text) {
+  return new Paragraph({
+    heading: HeadingLevel.HEADING_2,
+    spacing: { before: 200, after: 80 },
+    children: [new TextRun({ text, bold: true, size: 24, font: "Arial", color: "2E74B5" })]
+  });
+}
+
+function body(text, options = {}) {
+  return new Paragraph({
+    spacing: { before: 60, after: 60 },
+    alignment: options.justify ? AlignmentType.JUSTIFIED : AlignmentType.LEFT,
+    children: [new TextRun({ text, font: "Arial", size: 22, ...options })]
+  });
+}
+
+function bold(text) {
+  return new Paragraph({
+    spacing: { before: 60, after: 60 },
+    children: [new TextRun({ text, bold: true, font: "Arial", size: 22 })]
+  });
+}
+
+function bullet(text, ref = "bullets") {
+  return new Paragraph({
+    numbering: { reference: ref, level: 0 },
+    spacing: { before: 40, after: 40 },
+    children: [new TextRun({ text, font: "Arial", size: 22 })]
+  });
+}
+
+function bulletBold(label, rest) {
+  return new Paragraph({
+    numbering: { reference: "bullets", level: 0 },
+    spacing: { before: 40, after: 40 },
+    children: [
+      new TextRun({ text: label, bold: true, font: "Arial", size: 22 }),
+      new TextRun({ text: rest, font: "Arial", size: 22 })
+    ]
+  });
+}
+
+function spacer() {
+  return new Paragraph({ spacing: { before: 60, after: 60 }, children: [new TextRun("")] });
+}
+
+function sectionDivider(text) {
+  return new Table({
+    width: { size: 9360, type: WidthType.DXA },
+    columnWidths: [9360],
+    rows: [
+      new TableRow({
+        children: [
+          new TableCell({
+            borders: noBorders,
+            shading: { fill: "1F497D", type: ShadingType.CLEAR },
+            margins: cellMargin,
+            width: { size: 9360, type: WidthType.DXA },
+            children: [new Paragraph({
+              alignment: AlignmentType.LEFT,
+              children: [new TextRun({ text, bold: true, font: "Arial", size: 24, color: "FFFFFF" })]
+            })]
+          })
+        ]
+      })
+    ]
+  });
+}
+
+// ─── BITÁCORA TABLE ───────────────────────────────────────────────────────────
+function bitacoraTable() {
+  function headerCell(text, width) {
+    return new TableCell({
+      borders,
+      shading: { fill: "D6E4F0", type: ShadingType.CLEAR },
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, bold: true, font: "Arial", size: 20 })] })]
+    });
+  }
+  function dataCell(text, width) {
+    return new TableCell({
+      borders,
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, font: "Arial", size: 20 })] })]
+    });
+  }
+  function emptyCell(width) {
+    return new TableCell({
+      borders,
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text: "", font: "Arial", size: 20 })] })]
+    });
+  }
+
+  return new Table({
+    width: { size: 9360, type: WidthType.DXA },
+    columnWidths: [1600, 1600, 1400, 1400, 1400, 1960],
+    rows: [
+      // Header
+      new TableRow({
+        children: [
+          headerCell("Tramo", 1600),
+          headerCell("Carta utilizada", 1600),
+          headerCell("Altitud (ft)", 1400),
+          headerCell("Rumbo (°)", 1400),
+          headerCell("Dist. (nm)", 1400),
+          headerCell("Observaciones", 1960),
+        ]
+      }),
+      // Data rows (origin → waypoint → destination)
+      ...["MMCU → MMCS", "MMCS → MMCU", "Desvío / alternativo"].map(tramo =>
+        new TableRow({
+          children: [
+            dataCell(tramo, 1600),
+            emptyCell(1600),
+            emptyCell(1400),
+            emptyCell(1400),
+            emptyCell(1400),
+            emptyCell(1960),
+          ]
+        })
+      )
+    ]
+  });
+}
+
+// ─── RÚBRICA TABLE ────────────────────────────────────────────────────────────
+function rubricaTable() {
+  function hCell(text, width) {
+    return new TableCell({
+      borders,
+      shading: { fill: "1F497D", type: ShadingType.CLEAR },
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, bold: true, font: "Arial", size: 20, color: "FFFFFF" })] })]
+    });
+  }
+  function dCell(text, width, shade = "FFFFFF") {
+    return new TableCell({
+      borders,
+      shading: { fill: shade, type: ShadingType.CLEAR },
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, font: "Arial", size: 20 })] })]
+    });
+  }
+
+  const criteria = [
+    ["Portada y bitácora de vuelo", "Completa y correctamente llenada con datos reales del vuelo simulado.", "20"],
+    ["Identificación y uso de cartas", "Identifica y describe correctamente las 5 tipos de cartas (SID, STAR, En-ruta, Aproximación, Aeródromo) con capturas de pantalla.", "20"],
+    ["Interpretación del Garmin G1000", "Describe correctamente las pantallas PFD y MFD; interpreta datos de navegación mostrados durante el vuelo.", "20"],
+    ["Reporte escrito", "Explica la relación entre cada carta y su aplicación durante el vuelo; incluye evidencias visuales y análisis.", "20"],
+    ["Video del vuelo", "El video muestra el uso real de las cartas en el simulador; hay narración o anotaciones que explican cada transición.", "20"],
+  ];
+
+  return new Table({
+    width: { size: 9360, type: WidthType.DXA },
+    columnWidths: [2500, 4900, 1960],
+    rows: [
+      new TableRow({
+        children: [
+          hCell("Criterio", 2500),
+          hCell("Descripción", 4900),
+          hCell("Puntaje", 1960),
+        ]
+      }),
+      ...criteria.map(([crit, desc, pts], i) =>
+        new TableRow({
+          children: [
+            dCell(crit, 2500, i % 2 === 0 ? "EBF3FB" : "FFFFFF"),
+            dCell(desc, 4900, i % 2 === 0 ? "EBF3FB" : "FFFFFF"),
+            dCell(pts, 1960, i % 2 === 0 ? "EBF3FB" : "FFFFFF"),
+          ]
+        })
+      ),
+      new TableRow({
+        children: [
+          new TableCell({
+            borders,
+            shading: { fill: "1F497D", type: ShadingType.CLEAR },
+            margins: cellMargin,
+            columnSpan: 2,
+            width: { size: 7400, type: WidthType.DXA },
+            children: [new Paragraph({ children: [new TextRun({ text: "Total", bold: true, font: "Arial", size: 22, color: "FFFFFF" })] })]
+          }),
+          new TableCell({
+            borders,
+            shading: { fill: "1F497D", type: ShadingType.CLEAR },
+            margins: cellMargin,
+            width: { size: 1960, type: WidthType.DXA },
+            children: [new Paragraph({ children: [new TextRun({ text: "100", bold: true, font: "Arial", size: 22, color: "FFFFFF" })] })]
+          }),
+        ]
+      })
+    ]
+  });
+}
+
+// ─── CARTA INFO TABLE ─────────────────────────────────────────────────────────
+function cartasTable() {
+  function hCell(text, width) {
+    return new TableCell({
+      borders,
+      shading: { fill: "2E74B5", type: ShadingType.CLEAR },
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, bold: true, font: "Arial", size: 20, color: "FFFFFF" })] })]
+    });
+  }
+  function dCell(text, width, shade = "FFFFFF") {
+    return new TableCell({
+      borders,
+      shading: { fill: shade, type: ShadingType.CLEAR },
+      margins: cellMargin,
+      width: { size: width, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, font: "Arial", size: 20 })] })]
+    });
+  }
+
+  const cartas = [
+    ["1", "Carta de Aeródromo (AD)", "Configura el avión en parking y reconoce la disposición física del aeropuerto de salida (MMCU)."],
+    ["2", "SID — Salida por Instrumentos", "Identifica la salida estándar asignada; introduce el procedimiento en el FMS del G1000."],
+    ["3", "Carta En-ruta (Low / High)", "Planifica la ruta entre MMCU y el aeropuerto de destino; identifica VORs, airways e intersecciones."],
+    ["4", "STAR — Llegada Estándar", "Selecciona e introduce la llegada al aeropuerto destino; verifica con la pantalla MFD."],
+    ["5", "Carta de Aproximación por Instrumentos", "Ejecuta la aproximación final usando ILS o RNAV; corrobora datos en la pantalla PFD del G1000."],
+  ];
+
+  return new Table({
+    width: { size: 9360, type: WidthType.DXA },
+    columnWidths: [500, 2300, 6560],
+    rows: [
+      new TableRow({
+        children: [
+          hCell("#", 500),
+          hCell("Tipo de Carta", 2300),
+          hCell("Qué debe hacer el equipo", 6560),
+        ]
+      }),
+      ...cartas.map(([num, tipo, que], i) =>
+        new TableRow({
+          children: [
+            dCell(num, 500, i % 2 === 0 ? "EBF3FB" : "FFFFFF"),
+            dCell(tipo, 2300, i % 2 === 0 ? "EBF3FB" : "FFFFFF"),
+            dCell(que, 6560, i % 2 === 0 ? "EBF3FB" : "FFFFFF"),
+          ]
+        })
+      )
+    ]
+  });
+}
+
+// ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+const doc = new Document({
+  numbering: {
+    config: [
+      {
+        reference: "bullets",
+        levels: [{
+          level: 0, format: LevelFormat.BULLET, text: "\u2022",
+          alignment: AlignmentType.LEFT,
+          style: { paragraph: { indent: { left: 720, hanging: 360 } } }
+        }]
+      },
+      {
+        reference: "numbers",
+        levels: [{
+          level: 0, format: LevelFormat.DECIMAL, text: "%1.",
+          alignment: AlignmentType.LEFT,
+          style: { paragraph: { indent: { left: 720, hanging: 360 } } }
+        }]
+      },
+    ]
+  },
+  styles: {
+    default: { document: { run: { font: "Arial", size: 22 } } },
+    paragraphStyles: [
+      {
+        id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true,
+        run: { size: 28, bold: true, font: "Arial", color: "1F497D" },
+        paragraph: { spacing: { before: 300, after: 120 }, outlineLevel: 0 }
+      },
+      {
+        id: "Heading2", name: "Heading 2", basedOn: "Normal", next: "Normal", quickFormat: true,
+        run: { size: 24, bold: true, font: "Arial", color: "2E74B5" },
+        paragraph: { spacing: { before: 200, after: 80 }, outlineLevel: 1 }
+      },
+    ]
+  },
+  sections: [{
+    properties: {
+      page: {
+        size: { width: 12240, height: 15840 },
+        margin: { top: 1440, right: 1440, bottom: 1440, left: 1440 }
+      }
+    },
+    headers: {
+      default: new Header({
+        children: [
+          new Paragraph({
+            border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: "2E74B5", space: 1 } },
+            spacing: { after: 100 },
+            children: [
+              new TextRun({ text: "Navegación Aérea  |  Unidad 2  |  Cartas Aeronáuticas y Garmin G1000", font: "Arial", size: 18, color: "555555" }),
+            ]
+          })
+        ]
+      })
+    },
+    footers: {
+      default: new Footer({
+        children: [
+          new Paragraph({
+            border: { top: { style: BorderStyle.SINGLE, size: 6, color: "2E74B5", space: 1 } },
+            alignment: AlignmentType.RIGHT,
+            children: [
+              new TextRun({ text: "Página ", font: "Arial", size: 18, color: "555555" }),
+              new TextRun({ children: [PageNumber.CURRENT], font: "Arial", size: 18, color: "555555" }),
+              new TextRun({ text: " de ", font: "Arial", size: 18, color: "555555" }),
+              new TextRun({ children: [PageNumber.TOTAL_PAGES], font: "Arial", size: 18, color: "555555" }),
+            ]
+          })
+        ]
+      })
+    },
+    children: [
+
+      // ── PORTADA ──────────────────────────────────────────────────────────────
+      new Table({
+        width: { size: 9360, type: WidthType.DXA },
+        columnWidths: [9360],
+        rows: [
+          new TableRow({
+            children: [new TableCell({
+              borders: thickBorders,
+              shading: { fill: "1F497D", type: ShadingType.CLEAR },
+              margins: { top: 400, bottom: 400, left: 400, right: 400 },
+              width: { size: 9360, type: WidthType.DXA },
+              children: [
+                new Paragraph({
+                  alignment: AlignmentType.CENTER,
+                  spacing: { before: 200, after: 80 },
+                  children: [new TextRun({ text: "UNIVERSIDAD POLITÉCNICA DE CHIHUAHUA", bold: true, font: "Arial", size: 26, color: "FFFFFF" })]
+                }),
+                new Paragraph({
+                  alignment: AlignmentType.CENTER,
+                  spacing: { before: 0, after: 200 },
+                  children: [new TextRun({ text: "Navegación Aérea — Unidad 2", font: "Arial", size: 22, color: "D0E8FF" })]
+                }),
+                new Paragraph({
+                  alignment: AlignmentType.CENTER,
+                  spacing: { before: 0, after: 100 },
+                  children: [new TextRun({ text: "Actividad 2", bold: true, font: "Arial", size: 40, color: "FFFFFF" })]
+                }),
+                new Paragraph({
+                  alignment: AlignmentType.CENTER,
+                  spacing: { before: 0, after: 200 },
+                  children: [new TextRun({ text: "Cartas Aeronáuticas y Navegación con Garmin G1000", font: "Arial", size: 26, color: "D0E8FF" })]
+                }),
+              ]
+            })]
+          })
+        ]
+      }),
+
+      spacer(),
+
+      // Datos de identificación
+      new Table({
+        width: { size: 9360, type: WidthType.DXA },
+        columnWidths: [2000, 5360, 2000],
+        rows: [
+          new TableRow({
+            children: [
+              new TableCell({
+                borders, margins: cellMargin, width: { size: 2000, type: WidthType.DXA },
+                shading: { fill: "EBF3FB", type: ShadingType.CLEAR },
+                children: [new Paragraph({ children: [new TextRun({ text: "Integrantes:", bold: true, font: "Arial", size: 20 })] })]
+              }),
+              new TableCell({
+                borders, margins: cellMargin, width: { size: 5360, type: WidthType.DXA },
+                children: [
+                  new Paragraph({ children: [new TextRun({ text: "1. _________________________________", font: "Arial", size: 20 })] }),
+                  new Paragraph({ children: [new TextRun({ text: "2. _________________________________", font: "Arial", size: 20 })] }),
+                  new Paragraph({ children: [new TextRun({ text: "3. _________________________________", font: "Arial", size: 20 })] }),
+                ]
+              }),
+              new TableCell({
+                borders, margins: cellMargin, width: { size: 2000, type: WidthType.DXA },
+                shading: { fill: "EBF3FB", type: ShadingType.CLEAR },
+                children: [
+                  new Paragraph({ children: [new TextRun({ text: "Grupo:", bold: true, font: "Arial", size: 20 })] }),
+                  new Paragraph({ children: [new TextRun({ text: "___________", font: "Arial", size: 20 })] }),
+                  new Paragraph({ spacing: { before: 80 }, children: [new TextRun({ text: "Fecha:", bold: true, font: "Arial", size: 20 })] }),
+                  new Paragraph({ children: [new TextRun({ text: "___________", font: "Arial", size: 20 })] }),
+                ]
+              }),
+            ]
+          })
+        ]
+      }),
+
+      spacer(),
+      spacer(),
+
+      // ── INTRODUCCIÓN ─────────────────────────────────────────────────────────
+      sectionDivider("Introducción"),
+      spacer(),
+      new Paragraph({
+        spacing: { before: 60, after: 60 },
+        alignment: AlignmentType.JUSTIFIED,
+        children: [new TextRun({
+          text: "Las cartas aeronáuticas son documentos esenciales para la planificación y ejecución segura de cualquier vuelo. En esta actividad, el equipo realizará un vuelo simulado en Microsoft Flight Simulator X (FSX) a bordo de una aeronave equipada con el sistema aviónico Garmin G1000, identificando y aplicando en tiempo real los diferentes tipos de cartas que intervienen en cada fase del vuelo.",
+          font: "Arial", size: 22
+        })]
+      }),
+      spacer(),
+
+      // ── OBJETIVO ─────────────────────────────────────────────────────────────
+      sectionDivider("Objetivo"),
+      spacer(),
+      new Paragraph({
+        spacing: { before: 60, after: 60 },
+        alignment: AlignmentType.JUSTIFIED,
+        children: [new TextRun({
+          text: "Identificar, interpretar y aplicar los distintos tipos de cartas aeronáuticas (Aeródromo, SID, En-ruta, STAR y Aproximación) durante la planificación y ejecución de un vuelo en el simulador FSX, integrando la información que proporciona el Garmin G1000 en las pantallas PFD y MFD.",
+          font: "Arial", size: 22
+        })]
+      }),
+      spacer(),
+
+      // ── MATERIALES ────────────────────────────────────────────────────────────
+      sectionDivider("Materiales requeridos"),
+      spacer(),
+      bulletBold("Simulador: ", "Microsoft Flight Simulator X (FSX) — aeronave con Garmin G1000 (ej. Cessna 172 G1000 o Beechcraft Baron G1000)."),
+      bulletBold("Cartas aeronáuticas: ", "SID, STAR, En-ruta (Low/High), Aproximación por instrumentos y Aeródromo. Pueden descargarse de AIP México (aeropuertos MMCU, MMCS u otro par asignado por el docente)."),
+      bulletBold("Software de captura: ", "OBS Studio, Xbox Game Bar o similar para grabar el vuelo."),
+      bulletBold("Procesador de texto: ", "Word, Google Docs u otro para el reporte escrito."),
+      bulletBold("Bitácora de vuelo: ", "Impresa y llenada a mano durante o inmediatamente después del vuelo (ver sección 5)."),
+      spacer(),
+
+      // ── INSTRUCCIONES ────────────────────────────────────────────────────────
+      sectionDivider("Instrucciones"),
+      spacer(),
+
+      heading2("Fase 1 — Planificación en tierra (antes de encender el simulador)"),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Descarguen e impriman las siguientes cartas para el par de aeropuertos asignado:", font: "Arial", size: 22 })]
+      }),
+      spacer(),
+      cartasTable(),
+      spacer(),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "En la bitácora de vuelo (Sección 5), anoten previamente: aeropuerto de salida, destino, altitud de crucero planeada y ruta (airways o directo).", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Identifiquen en la Carta En-ruta al menos un VOR, una intersección y el airway que conecta origen y destino.", font: "Arial", size: 22 })]
+      }),
+      spacer(),
+
+      heading2("Fase 2 — Vuelo simulado en FSX con Garmin G1000"),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Inicien la grabación del vuelo antes de encender los motores.", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "En el FMS del G1000, ingresen el plan de vuelo completo: aeropuerto de salida → SID → En-ruta → STAR → aproximación → aeropuerto de llegada.", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Durante el vuelo, tomen capturas de pantalla en los siguientes momentos (mínimo una por momento):", font: "Arial", size: 22 })]
+      }),
+      bullet("Al momento de la salida: pantalla MFD mostrando el plan de vuelo activo."),
+      bullet("En crucero: pantalla PFD con altitud y rumbo estabilizados."),
+      bullet("Al inicio de la STAR: pantalla MFD con el procedimiento de llegada."),
+      bullet("En la aproximación final: pantalla PFD con el ILS o RNAV activo."),
+      bullet("Después del aterrizaje: pantalla de resumen del vuelo (si está disponible)."),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Terminen la grabación al apagar motores en pista.", font: "Arial", size: 22 })]
+      }),
+      spacer(),
+
+      heading2("Fase 3 — Llenado de bitácora y reporte"),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Completen la bitácora de vuelo a mano con los datos reales del vuelo simulado (tiempos, rumbos, altitudes, observaciones).", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Elaboren un reporte escrito que incluya:", font: "Arial", size: 22 })]
+      }),
+      bullet("Portada con datos del equipo, grupo y fecha."),
+      bullet("Descripción de cada carta utilizada: tipo, contenido relevante identificado y en qué fase del vuelo se aplicó."),
+      bullet("Análisis de la pantalla PFD y MFD del G1000: ¿qué información consultaron en cada fase?"),
+      bullet("Las capturas de pantalla del vuelo, debidamente etiquetadas y con una breve explicación de cada una."),
+      bullet("Conclusiones del equipo sobre la importancia de las cartas aeronáuticas en la navegación real."),
+      bullet("Referencias en formato APA 7ª edición."),
+      spacer(),
+
+      // ── BITÁCORA ─────────────────────────────────────────────────────────────
+      sectionDivider("Bitácora de vuelo"),
+      spacer(),
+      body("Llenen los siguientes campos durante o inmediatamente después del vuelo simulado. Esta sección se entrega firmada a mano.", { color: "444444" }),
+      spacer(),
+      new Table({
+        width: { size: 9360, type: WidthType.DXA },
+        columnWidths: [2340, 4680, 2340],
+        rows: [
+          new TableRow({ children: [
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "Aeropuerto de salida:", bold: true, font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, width: { size: 4680, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "", font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "ICAO salida:", bold: true, font: "Arial", size: 20 })] })] }),
+          ]}),
+          new TableRow({ children: [
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "Aeropuerto destino:", bold: true, font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, width: { size: 4680, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "", font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "ICAO destino:", bold: true, font: "Arial", size: 20 })] })] }),
+          ]}),
+          new TableRow({ children: [
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "Aeronave (FSX):", bold: true, font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, width: { size: 4680, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "", font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "Hora de salida (sim):", bold: true, font: "Arial", size: 20 })] })] }),
+          ]}),
+          new TableRow({ children: [
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "Altitud de crucero:", bold: true, font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, width: { size: 4680, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "", font: "Arial", size: 20 })] })] }),
+            new TableCell({ borders, margins: cellMargin, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, width: { size: 2340, type: WidthType.DXA }, children: [new Paragraph({ children: [new TextRun({ text: "Hora de llegada (sim):", bold: true, font: "Arial", size: 20 })] })] }),
+          ]}),
+        ]
+      }),
+      spacer(),
+      body("Registro de tramos:"),
+      spacer(),
+      bitacoraTable(),
+      spacer(),
+      new Table({
+        width: { size: 9360, type: WidthType.DXA },
+        columnWidths: [4680, 4680],
+        rows: [new TableRow({ children: [
+          new TableCell({ borders, margins: { top: 200, bottom: 200, left: 150, right: 150 }, width: { size: 4680, type: WidthType.DXA }, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, children: [new Paragraph({ children: [new TextRun({ text: "Firma del piloto al mando: ________________________", font: "Arial", size: 20 })] })] }),
+          new TableCell({ borders, margins: { top: 200, bottom: 200, left: 150, right: 150 }, width: { size: 4680, type: WidthType.DXA }, shading: { fill: "EBF3FB", type: ShadingType.CLEAR }, children: [new Paragraph({ children: [new TextRun({ text: "Firma del copiloto: ________________________", font: "Arial", size: 20 })] })] }),
+        ]})]
+      }),
+      spacer(),
+
+      // ── EVALUACIÓN ────────────────────────────────────────────────────────────
+      sectionDivider("Criterios de evaluación"),
+      spacer(),
+      rubricaTable(),
+      spacer(),
+
+      // ── ENTREGABLES ───────────────────────────────────────────────────────────
+      sectionDivider("Entregables"),
+      spacer(),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Bitácora de vuelo llenada a mano y firmada (digitalizada / fotografiada).", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Reporte escrito en PDF o Word (máx. 5 MB) con portada, análisis de cartas, capturas etiquetadas y conclusiones.", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Cartas aeronáuticas utilizadas (PDF o imagen), referenciadas en el reporte.", font: "Arial", size: 22 })]
+      }),
+      new Paragraph({
+        numbering: { reference: "numbers", level: 0 },
+        spacing: { before: 60, after: 40 },
+        children: [new TextRun({ text: "Video del vuelo (mínimo 5 minutos de duración) subido a Google Drive, YouTube no listado u otra plataforma indicada por el docente. Incluir el enlace en el reporte.", font: "Arial", size: 22 })]
+      }),
+      spacer(),
+
+      // ── PUNTOS A CONSIDERAR ────────────────────────────────────────────────
+      sectionDivider("Puntos para considerar"),
+      spacer(),
+      bullet("Citen todas las fuentes consultadas en formato APA 7ª edición, incluyendo las cartas aeronáuticas descargadas."),
+      bullet("El video debe mostrar claramente las pantallas del G1000; si la calidad es baja, agrega anotaciones en el reporte que expliquen lo que se ve."),
+      bullet("Eviten conductas de deshonestidad académica; si usan IA para redactar, decláralo en el reporte."),
+      bullet("El archivo del reporte no debe exceder 5 MB; compriman las imágenes si es necesario."),
+      bullet("Revisen los criterios de evaluación antes de entregar para asegurarse de que el trabajo cumple con todos los elementos solicitados."),
+      spacer(),
+    ]
+  }]
+});
+
+Packer.toBuffer(doc).then(buffer => {
+  fs.writeFileSync("Actividad_2_U2_Cartas_Aeronauticas.docx", buffer);
+  console.log("Done");
+});

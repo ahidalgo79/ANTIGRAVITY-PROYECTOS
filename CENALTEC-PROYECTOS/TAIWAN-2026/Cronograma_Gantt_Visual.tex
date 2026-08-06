@@ -1,0 +1,52 @@
+\documentclass[border=10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{pgfgantt}
+\usepackage{xcolor}
+
+\definecolor{fase_adm}{HTML}{0055AA}
+\definecolor{fase_tec}{HTML}{00AA55}
+\definecolor{fase_cie}{HTML}{AA0000}
+
+\begin{document}
+
+\begin{ganttchart}[
+    vgrid,
+    hgrid,
+    title/.style={draw=none, fill=fase_adm!20},
+    title label font=\bfseries\footnotesize,
+    canvas/.style={draw=black, dotted},
+    bar/.style={fill=fase_adm},
+    bar height=0.6,
+    group right shift=0,
+    group top shift=0.7,
+    group height=.3,
+    x unit=0.4cm,
+    y unit chart=0.8cm,
+    time slot format=isodate
+]{2026-04-01}{2027-06-30}
+
+    \gantttitlecalendar{year, month=name} \\
+
+    % FASE ADMINISTRATIVA
+    \ganttbar[bar/.style={fill=fase_adm}]{\textbf{Firma y Inicio}}{2026-04-01}{2026-04-30} \\
+    \ganttbar[bar/.style={fill=fase_adm}]{Convocatoria y Difusión}{2026-04-01}{2026-05-31} \\
+    \ganttbar[bar/.style={fill=fase_adm}]{Selección de Becarios}{2026-06-01}{2026-07-31} \\
+    \ganttbar[bar/.style={fill=fase_adm}]{Gestión de Visas}{2026-07-01}{2026-07-31} \\
+
+    % FASE TÉCNICA (TAIWAN)
+    \ganttgroup[group/.style={fill=fase_tec}]{\textbf{ENTRENAMIENTO TAIWÁN}}{2026-08-01}{2027-01-31} \\
+    \ganttbar[bar/.style={fill=fase_tec!70}]{Módulo STUST}{2026-08-01}{2026-12-15} \\
+    \ganttbar[bar/.style={fill=fase_tec!70}]{Módulo ITRI}{2026-12-16}{2027-01-31} \\
+    \ganttmilestone{\textbf{HITO: Inicio Taiwán}}{2026-08-01} \\
+
+    % SEGUIMIENTO Y MULTIPLICADOR
+    \ganttbar[bar/.style={fill=orange}]{Seguimiento Mensual}{2026-09-01}{2027-03-31} \\
+    \ganttbar[bar/.style={fill=fase_tec}]{Programa Multiplicador}{2027-02-01}{2027-05-31} \\
+
+    % CIERRE
+    \ganttbar[bar/.style={fill=fase_cie}]{\textbf{Cierre e Informe Final}}{2027-06-01}{2027-06-15} \\
+    \ganttmilestone{\textbf{FIN DE VIGENCIA}}{2027-06-15}
+
+\end{ganttchart}
+\end{document}

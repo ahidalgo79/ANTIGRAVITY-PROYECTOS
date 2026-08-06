@@ -1,0 +1,281 @@
+#!/usr/bin/env python3
+"""Genera un PDF profesional de fórmulas de cinemática vía XeLaTeX."""
+
+import subprocess, os, sys
+from pathlib import Path
+
+TEX = r"""\documentclass[10pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage[margin=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{array,booktabs,tabularx,colortbl}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+% ── Paleta ──
+\definecolor{azul}{HTML}{185FA5}
+\definecolor{azulclr}{HTML}{E6F1FB}
+\definecolor{teal}{HTML}{0F6E56}
+\definecolor{tealclr}{HTML}{E1F5EE}
+\definecolor{gris}{HTML}{5F5E5A}
+\definecolor{grisclr}{HTML}{F1EFE8}
+\definecolor{coral}{HTML}{993C1D}
+\definecolor{negro}{HTML}{2C2C2A}
+\definecolor{alerta}{HTML}{D32F2F}
+\definecolor{alertaclr}{HTML}{FFEBEE}
+
+% ── Fuente sans-serif ──
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setmonofont{Liberation Mono}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Estilos ──
+\titleformat{\section}{\bfseries\Large\color{azul}}{}{0em}{}[\vspace{-2pt}]
+\titleformat{\subsection}{\bfseries\normalsize\color{teal}}{}{0em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\color{gris}\small\textbf{Hoja de Fórmulas de Cinemática — Unidad 2}}
+\fancyfoot[C]{\color{gris}\thepage}
+\renewcommand{\headrule}{\color{azul}\rule{\textwidth}{0.4pt}}
+
+% ── Macros ──
+\newcommand{\formulabox}[2]{%
+  \begin{tcolorbox}[colback=azulclr, colframe=azul, arc=4pt, boxrule=0.5pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt, width=\textwidth]
+    \textbf{\textcolor{azul}{#1}} \quad $\displaystyle #2$
+  \end{tcolorbox}%
+}
+
+\newcommand{\alertbox}[1]{%
+  \begin{tcolorbox}[colback=alertaclr, colframe=alerta, arc=4pt, boxrule=0.5pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt, width=\textwidth]
+    \textbf{\textcolor{alerta}{#1}}
+  \end{tcolorbox}%
+}
+
+\newcommand{\infobox}[1]{%
+  \begin{tcolorbox}[colback=grisclr, colframe=gris, arc=4pt, boxrule=0.3pt,
+    left=8pt, right=8pt, top=4pt, bottom=4pt, width=\textwidth]
+    \small\textcolor{gris}{#1}
+  \end{tcolorbox}%
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{document}
+
+% ═════════════════════════════════════════════════
+% ENCABEZADO
+% ═════════════════════════════════════════════════
+\thispagestyle{fancy}
+\begin{center}
+  {\Huge\bfseries\color{azul} HOJA DE FÓRMULAS DE CINEMÁTICA}\\[4pt]
+  {\large\color{gris} Unidad 2: Correcciones y Complementos}\\[4pt]
+  {\color{gris} $g = 9.8\ \text{m/s}^2$ \;|\; Sistema Internacional de Unidades (SI)}
+\end{center}
+\vspace{6pt}
+\hrule height 0.5pt \color{gris}
+\vspace{10pt}
+
+% ═════════════════════════════════════════════════
+% CORRECCIÓN: DISTANCIA VS DESPLAZAMIENTO
+% ═════════════════════════════════════════════════
+\alertbox{\textbf{CORRECCIÓN IMPORTANTE:} Distancia vs.\ Desplazamiento}
+
+En los apuntes originales se definía la velocidad como ``desplazamiento / tiempo'', pero se usaba $d = \text{distancia}$ en la fórmula. Esto es un error conceptual. La fórmula correcta es:
+
+\formulabox{Velocidad (vectorial)}{v = \frac{\Delta d}{t} \quad (\text{usa DESPLAZAMIENTO, cambio neto de posición})}
+\formulabox{Rapidez (escalar)}{v = \frac{d}{t} \quad (\text{usa DISTANCIA, espacio total recorrido})}
+
+\vspace{6pt}
+\hrule height 0.5pt
+\vspace{12pt}
+
+% ═════════════════════════════════════════════════
+% 1. MRU
+% ═════════════════════════════════════════════════
+\section{1. Movimiento Rectilíneo Uniforme (MRU)}
+
+La velocidad es constante, por lo tanto, la aceleración es cero ($a = 0$).
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{LCC}
+  \toprule
+  \rowcolor{azul}
+  \textbf{\textcolor{white}{Magnitud}} &
+  \textbf{\textcolor{white}{Fórmula}} &
+  \textbf{\textcolor{white}{Cuándo usarla}} \\
+  \midrule
+  Velocidad     & $v = \Delta d / t$     & Conocemos desplazamiento y tiempo \\
+  \rowcolor{azulclr}
+  Desplazamiento & $\Delta d = v \cdot t$ & Conocemos velocidad y tiempo \\
+  Tiempo        & $t = \Delta d / v$     & Conocemos desplazamiento y velocidad \\
+  \bottomrule
+\end{tabularx}
+\vspace{12pt}
+
+% ═════════════════════════════════════════════════
+% 2. MRUA
+% ═════════════════════════════════════════════════
+\section{2. Movimiento Rectilíneo Uniformemente Acelerado (MRUA)}
+
+La aceleración es constante. Estas son las 4 ecuaciones fundamentales que faltaban en los apuntes:
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{CCC}
+  \toprule
+  \rowcolor{azul}
+  \textbf{\textcolor{white}{Ecuación}} &
+  \textbf{\textcolor{white}{Fórmula}} &
+  \textbf{\textcolor{white}{Falta conocer...}} \\
+  \midrule
+  1ª Ecuación & $V_f = V_i + a \cdot t$          & El desplazamiento ($d$) \\
+  \rowcolor{azulclr}
+  2ª Ecuación & $d = V_i \cdot t + \frac{1}{2} a \cdot t^2$ & La velocidad final ($V_f$) \\
+  3ª Ecuación & $V_f^2 = V_i^2 + 2 a \cdot d$   & El tiempo ($t$) \\
+  \rowcolor{azulclr}
+  4ª Ecuación & $d = \dfrac{V_i + V_f}{2} \cdot t$ & La aceleración ($a$) \\
+  \bottomrule
+\end{tabularx}
+\vspace{12pt}
+
+% ═════════════════════════════════════════════════
+% 3. CAÍDA LIBRE
+% ═════════════════════════════════════════════════
+\section{3. Caída Libre}
+
+Movimiento bajo la única influencia de la gravedad ($g = 9.8\ \text{m/s}^2$ hacia abajo). Fórmulas para un objeto que se deja caer desde el reposo ($V_i = 0$):
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{LC}
+  \toprule
+  \rowcolor{azul}
+  \textbf{\textcolor{white}{Magnitud}} &
+  \textbf{\textcolor{white}{Fórmula}} \\
+  \midrule
+  Velocidad final   & $V_f = g \cdot t$ \\
+  \rowcolor{azulclr}
+  Altura caída      & $h = \dfrac{1}{2} \cdot g \cdot t^2$ \\
+  Velocidad vs Altura & $V_f^2 = 2 \cdot g \cdot h$ \\
+  \rowcolor{azulclr}
+  Tiempo de caída   & $t = \sqrt{\dfrac{2h}{g}}$ \\
+  \bottomrule
+\end{tabularx}
+\vspace{12pt}
+
+% ═════════════════════════════════════════════════
+% 4. TIRO VERTICAL
+% ═════════════════════════════════════════════════
+\section{4. Tiro Vertical}
+
+Cuando se lanza un objeto hacia arriba, la gravedad actúa en sentido contrario al movimiento (desaceleración). En el punto más alto, la velocidad es momentáneamente cero ($V_f = 0$).
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{LL}
+  \toprule
+  \rowcolor{teal}
+  \textbf{\textcolor{white}{Fase}} &
+  \textbf{\textcolor{white}{Fórmulas}} \\
+  \midrule
+  Subida (desacelera) &
+  $V_f = V_i - g \cdot t \quad\mid\quad
+   h = V_i \cdot t - \frac{1}{2} g \cdot t^2 \quad\mid\quad
+   V_f^2 = V_i^2 - 2 g \cdot h$ \\
+  \rowcolor{tealclr}
+  Punto más alto &
+  $V_f = 0\ \text{m/s} \quad\mid\quad
+   t_{\text{subida}} = \dfrac{V_i}{g} \quad\mid\quad
+   H_{\text{max}} = \dfrac{V_i^2}{2g}$ \\
+  Bajada (acelera) &
+  $V_f = g \cdot t_{\text{bajada}} \quad\mid\quad
+   h = \dfrac{1}{2} \cdot g \cdot t_{\text{bajada}}^2$ \\
+  \bottomrule
+\end{tabularx}
+\vspace{12pt}
+
+% ═════════════════════════════════════════════════
+% 5. TIRO PARABÓLICO
+% ═════════════════════════════════════════════════
+\section{5. Tiro Parabólico}
+
+Es la superposición de un MRU en el eje X y un MRUA en el eje Y. Lo primero que se debe hacer es descomponer la velocidad inicial, algo que faltaba en los apuntes originales:
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{LL}
+  \toprule
+  \rowcolor{azul}
+  \textbf{\textcolor{white}{Componente}} &
+  \textbf{\textcolor{white}{Fórmula}} \\
+  \midrule
+  Velocidad inicial X & $V_{0x} = V_0 \cdot \cos(\theta)$ \hfill (Se mantiene constante) \\
+  \rowcolor{azulclr}
+  Velocidad inicial Y & $V_{0y} = V_0 \cdot \sin(\theta)$ \hfill (Cambia por la gravedad) \\
+  Posición en X (MRU) & $x = V_{0x} \cdot t$ \\
+  \rowcolor{azulclr}
+  Posición en Y (MRUA) & $y = V_{0y} \cdot t - \dfrac{1}{2} \cdot g \cdot t^2$ \\
+  Velocidad en Y & $V_y = V_{0y} - g \cdot t$ \\
+  \rowcolor{azulclr}
+  Tiempo de vuelo total & $T = \dfrac{2 \cdot V_0 \cdot \sin(\theta)}{g}$ \\
+  Altura máxima & $H = \dfrac{V_0^2 \cdot \sin^2(\theta)}{2g}$ \\
+  \rowcolor{azulclr}
+  Alcance horizontal & $R = \dfrac{V_0^2 \cdot \sin(2\theta)}{g}$ \\
+  \bottomrule
+\end{tabularx}
+\vspace{12pt}
+
+% ═════════════════════════════════════════════════
+% RECORDATORIOS DE CONVERSIÓN
+% ═════════════════════════════════════════════════
+\vspace{6pt}
+\hrule height 0.5pt
+\vspace{12pt}
+
+\section*{Recordatorios de Conversión de Unidades}
+\begin{itemize}[leftmargin=*, nosep]
+  \item De km/h a m/s: dividir entre 3.6 \hfill (ej: $72\ \text{km/h} \div 3.6 = 20\ \text{m/s}$)
+  \item De m/s a km/h: multiplicar por 3.6 \hfill (ej: $15\ \text{m/s} \times 3.6 = 54\ \text{km/h}$)
+  \item De minutos a segundos: multiplicar por 60
+\end{itemize}
+
+\vspace{8pt}
+\infobox{\textbf{Nota:} Esta hoja complementa los apuntes de la Unidad 2, corrigiendo las omisiones y errores conceptuales para garantizar que los cálculos en los ejercicios se realicen con las ecuaciones físicas correctas.}
+
+\end{document}
+"""
+
+
+def main():
+    tex_path = Path(__file__).parent / "formulas_cinematica.tex"
+    pdf_path = tex_path.with_suffix(".pdf")
+
+    tex_path.write_text(TEX, encoding="utf-8")
+    print(f"📄 Archivo .tex generado: {tex_path}")
+
+    # Compilar con XeLaTeX
+    result = subprocess.run(
+        ["xelatex", "-interaction=nonstopmode", "-output-directory", str(tex_path.parent), str(tex_path)],
+        capture_output=True, text=True, timeout=120,
+    )
+
+    if result.returncode != 0:
+        print("❌ Error en compilación XeLaTeX. Últimas líneas del log:")
+        log_path = tex_path.with_suffix(".log")
+        if log_path.exists():
+            print(log_path.read_text(encoding="utf-8")[-2000:])
+        sys.exit(1)
+
+    print(f"✅ PDF generado exitosamente: {pdf_path.resolve()}")
+
+
+if __name__ == "__main__":
+    main()

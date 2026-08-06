@@ -1,0 +1,384 @@
+═══════════════════════════════════════════════════════════════════════════════
+TRANSFORMACIÓN DIGITAL CON IA PARA LA EDUCACIÓN
+Taller Nacional · CENALTEC · INADET · CNAD Noroeste
+23-24 de Junio de 2026 · Chihuahua, Chihuahua
+═══════════════════════════════════════════════════════════════════════════════
+
+ACTIVIDADES ASÍNCRONAS
+Complemento para Constancia de 20 Horas
+
+═══════════════════════════════════════════════════════════════════════════════
+INTRODUCCIÓN
+═══════════════════════════════════════════════════════════════════════════════
+
+Estimado/a participante:
+
+El presente taller tiene una duración total de 20 horas, distribuidas de la 
+siguiente manera:
+
+  • 12 horas presenciales (23 y 24 de junio de 2026)
+  • 8 horas de actividades asíncronas (aplicación práctica en tu contexto)
+
+Las actividades asíncronas están diseñadas para que apliques lo aprendido en 
+tu realidad educativa, generes evidencias de implementación y reflexiones 
+sobre el impacto en tu práctica docente.
+
+Fecha límite final de entrega: Viernes 11 de julio de 2026
+
+═══════════════════════════════════════════════════════════════════════════════
+ACTIVIDAD 1: "Mi Primer Prompt Docente"
+═══════════════════════════════════════════════════════════════════════════════
+
+Duración estimada: 2 horas
+Fecha límite: Miércoles 1 de julio de 2026
+
+OBJETIVO:
+Diseñar y aplicar 3 prompts efectivos para resolver problemas reales de tu 
+contexto educativo, dominando la técnica de prompt engineering.
+
+INSTRUCCIONES:
+
+1. Identifica 3 problemas reales de tu aula o gestión escolar. Ejemplos:
+   • Planeación de una secuencia didáctica compleja
+   • Diseño de rúbrica de evaluación
+   • Redacción de comunicado a padres de familia
+   • Adaptación de contenido para estudiantes con necesidades específicas
+   • Generación de ejercicios prácticos para tu asignatura
+
+2. Para cada problema, diseña un prompt siguiendo la estructura:
+   
+   ┌─────────────────────────────────────────────────────────────┐
+   │ ROL:      "Actúa como un experto en [área específica]"      │
+   │ CONTEXTO: "Trabajo con estudiantes de [nivel/grado] en..."  │
+   │ TAREA:    "Necesito que generes [producto específico]..."   │
+   │ FORMATO:  "Entrégalo en [formato: tabla, lista, texto...]"  │
+   └─────────────────────────────────────────────────────────────┘
+
+3. Aplica cada prompt en ChatGPT, Gemini o Copilot (elige el que prefieras)
+
+4. Si el resultado no es óptimo, itera: ajusta el prompt y vuelve a intentar
+
+5. Documenta TODO el proceso
+
+ENTREGABLE:
+
+Documento PDF o Word que incluya:
+
+  ✅ Los 3 prompts diseñados (estructura completa)
+  ✅ Capturas de pantalla de los resultados obtenidos
+  ✅ Si iteraste, muestra el prompt original y el ajustado
+  ✅ Reflexión de media cuartilla (mínimo 250 palabras) respondiendo:
+     • ¿Qué funcionó bien en cada prompt?
+     • ¿Qué ajustarías para la próxima vez?
+     • ¿Cómo implementarías estos prompts en tu práctica diaria?
+     • ¿Qué beneficios concretos observas para tu gestión docente?
+
+═══════════════════════════════════════════════════════════════════════════════
+ACTIVIDAD 2: "Investigación Inteligente con NotebookLM"
+═══════════════════════════════════════════════════════════════════════════════
+
+Duración estimada: 2 horas
+Fecha límite: Lunes 6 de julio de 2026
+
+OBJETIVO:
+Utilizar NotebookLM para procesar un documento propio, generar recursos 
+educativos y reflexionar sobre su impacto en la preparación docente.
+
+INSTRUCCIONES:
+
+1. Selecciona un documento relevante para tu práctica docente:
+   • Programa de estudios de tu asignatura
+   • Artículo académico sobre tu área
+   • Plan de mejora escolar
+   • Marco teórico de un proyecto
+   • Cualquier documento extenso que necesites procesar
+
+2. Sube el documento a NotebookLM (notebooklm.google.com)
+
+3. Pídele que genere:
+   • Un resumen ejecutivo (máximo 3 párrafos)
+   • 5 preguntas de examen con respuestas
+   • Un podcast de 3-5 minutos (Audio Overview)
+
+4. Utiliza al menos UNO de estos recursos en:
+   • Una clase real
+   • Una simulación con colegas
+   • Tu preparación para una sesión
+
+5. Documenta el proceso completo
+
+ENTREGABLE:
+
+  ✅ Capturas de pantalla de NotebookLM funcionando con tu documento
+  ✅ El resumen ejecutivo generado (texto completo)
+  ✅ Las 5 preguntas de examen generadas
+  ✅ Enlace al podcast generado O archivo de audio descargado
+  ✅ Evidencia de uso (si aplica): foto de clase, captura de presentación, 
+     notas de preparación
+  ✅ Reflexión de 1 cuartilla (mínimo 400 palabras) respondiendo:
+     • ¿Cómo transformó tu preparación este recurso?
+     • ¿Qué tan precisas fueron las respuestas de NotebookLM?
+     • ¿Lo usarías regularmente? ¿Por qué?
+     • ¿Qué limitaciones encontraste?
+
+═══════════════════════════════════════════════════════════════════════════════
+ACTIVIDAD 3: "Evaluación Gamificada en Acción"
+═══════════════════════════════════════════════════════════════════════════════
+
+Duración estimada: 1.5 horas
+Fecha límite: Miércoles 8 de julio de 2026
+
+OBJETIVO:
+Crear y aplicar un instrumento de evaluación gamificada con IA, analizando 
+los resultados para tomar decisiones pedagógicas informadas.
+
+INSTRUCCIONES:
+
+1. Elige un tema de tu asignatura que hayas cubierto recientemente o que 
+   vayas a cubrir pronto
+
+2. Crea un cuestionario en Quizizz AI o Kahoot! con:
+   • Mínimo 10 preguntas
+   • Variedad de tipos (opción múltiple, verdadero/falso, respuesta corta)
+   • Temporizador adecuado para cada pregunta
+   • Retroalimentación inmediata configurada
+
+3. APLICA EL CUESTIONARIO:
+   
+   OPCIÓN A (preferida): Aplícalo con un grupo de estudiantes real
+   
+   OPCIÓN B (condicionada): Si actualmente NO tienes grupo activo frente a ti 
+   (receso, cambio de ciclo, comisión administrativa, etc.), puedes aplicarlo 
+   con colegas o familiares, PERO debes:
+   • Indicarlo explícitamente en tu reporte
+   • Explicar por qué no fue posible con estudiantes reales
+   • Adjuntar evidencia de la situación (calendario escolar, oficio de 
+     comisión, etc.)
+
+4. Analiza los resultados obtenidos:
+   • Tasa de participación
+   • Promedio de aciertos
+   • Preguntas más difíciles
+   • Tiempo promedio de respuesta
+
+ENTREGABLE:
+
+  ✅ Enlace al cuestionario creado (Quizizz o Kahoot!)
+  ✅ Capturas de pantalla de los resultados (estadísticas generales)
+  ✅ Captura de las preguntas más difíciles y sus estadísticas
+  ✅ Reporte breve (1 página) que incluya:
+     • Contexto de aplicación (grupo, nivel, número de participantes)
+     • Si aplicaste Opción B, justificación detallada
+     • Estadísticas clave (participación, promedio, desviación)
+     • Temas más difíciles para los participantes
+     • 3 decisiones pedagógicas concretas a partir de los datos
+     • ¿Cómo modificarías tu enseñanza basándote en estos resultados?
+
+═══════════════════════════════════════════════════════════════════════════════
+ACTIVIDAD 4: "Micro-proyecto IA para mi Aula"
+═══════════════════════════════════════════════════════════════════════════════
+
+Duración estimada: 2.5 horas
+Fecha límite: Viernes 11 de julio de 2026
+
+OBJETIVO:
+Completar el diseño del micro-proyecto iniciado en el Bloque C del Día 2, 
+creando recursos concretos con IA y planificando su implementación real.
+
+INSTRUCCIONES:
+
+1. Retoma la plantilla de micro-proyecto que llenaste durante el taller 
+   (o diseña uno nuevo si prefieres)
+
+2. Desarróllala completamente incluyendo:
+
+   a) PLANEACIÓN DIDÁCTICA COMPLETA:
+      • Datos generales (asignatura, nivel, tiempo estimado)
+      • Objetivo de aprendizaje (SMART)
+      • Secuencia de actividades (inicio, desarrollo, cierre)
+      • Recursos y materiales necesarios
+      • Forma de evaluación con rúbrica
+
+   b) RECURSOS CREADOS CON IA:
+      Crea al menos UNO de estos recursos:
+      • Presentación en Gamma o Canva IA (mínimo 5 slides)
+      • Imagen generada con Bing Image Creator o DALL-E
+      • Video corto con HeyGen o Pictory (1-2 minutos)
+      • Cuestionario interactivo en Quizizz o Kahoot!
+      • Documento adaptado a diferentes niveles con ChatGPT
+      • Podcast educativo generado con NotebookLM
+
+   c) CRONOGRAMA DE IMPLEMENTACIÓN:
+      • ¿Cuándo implementarás este proyecto?
+      • ¿En qué fase del ciclo escolar?
+      • ¿Qué ajustes necesitas hacer?
+
+   d) IMPLEMENTACIÓN (si es posible):
+      • Imparte la clase o una parte de ella
+      • Documenta con fotos o videos (con permiso)
+      • Recoge retroalimentación de estudiantes
+
+⚠️ NOTA SOBRE PLANES GRATUITOS:
+Canva IA y HeyGen tienen funciones limitadas en su versión gratuita. Si 
+encuentras restricciones, usa alternativas:
+  • Gamma (plan gratuito generoso) para presentaciones
+  • Bing Image Creator (gratis, sin límites estrictos) para imágenes
+  • NotebookLM (gratis) para podcasts y resúmenes
+  • ChatGPT/Gemini/Copilot (gratis) para textos adaptados
+
+ENTREGABLE:
+
+  ✅ Documento PDF con la planeación completa (mínimo 3 páginas)
+  ✅ Recurso(s) creado(s) con IA:
+     • Enlaces a recursos en línea (Gamma, Quizizz, etc.)
+     • Archivos de recursos descargables (imágenes, videos, PDFs)
+  ✅ Evidencia de implementación (si aplica):
+     • Fotos de la clase (con permiso de estudiantes)
+     • Videos cortos (máximo 2 minutos)
+     • Retroalimentación de estudiantes (encuestas, comentarios)
+  ✅ Reflexión final de 1 cuartilla (mínimo 400 palabras):
+     • Viabilidad del proyecto en tu contexto
+     • Ajustes necesarios para la implementación real
+     • Impacto esperado en el aprendizaje de los estudiantes
+     • ¿Qué aprendiste sobre el uso de IA en educación?
+     • ¿Cómo planeas seguir explorando herramientas de IA?
+
+═══════════════════════════════════════════════════════════════════════════════
+MINI-RÚBRICA DE EVALUACIÓN
+═══════════════════════════════════════════════════════════════════════════════
+
+Cada actividad será evaluada en 3 niveles:
+
+┌──────────────┬──────────────────────────────────────────────────────────────┐
+│ NIVEL        │ CRITERIOS                                                    │
+├──────────────┼──────────────────────────────────────────────────────────────┤
+│ ✅ COMPLETO  │ • Entrega TODOS los elementos solicitados                    │
+│              │ • Reflexión propia, específica y fundamentada                │
+│              │ • Evidencias claras de aplicación real                       │
+│              │ • Calidad profesional en formato y presentación              │
+├──────────────┼──────────────────────────────────────────────────────────────┤
+│ ⚠️ PARCIAL   │ • Faltan 1-2 elementos solicitados                           │
+│              │ • Reflexión superficial o genérica                           │
+│              │ • Evidencias incompletas                                     │
+│              │ • Necesita mejoras de formato                                │
+├──────────────┼──────────────────────────────────────────────────────────────┤
+│ ❌ INCOMPLETO│ • Faltan más de 2 elementos esenciales                       │
+│              │ • No hay evidencia real de aplicación                        │
+│              │ • Reflexión ausente o copiada                                │
+│              │ • No cumple con los objetivos de la actividad                │
+└──────────────┴──────────────────────────────────────────────────────────────┘
+
+Para obtener la constancia de 20 horas, debes alcanzar al menos el nivel 
+"PARCIAL" en las 4 actividades.
+
+═══════════════════════════════════════════════════════════════════════════════
+CRONOGRAMA DE ENTREGAS
+═══════════════════════════════════════════════════════════════════════════════
+
+┌────────────────────────────────────────┬───────────────────────────────────┐
+│ ACTIVIDAD                              │ FECHA LÍMITE                      │
+├────────────────────────────────────────┼───────────────────────────────────┤
+│ Actividad 1: Mi Primer Prompt Docente  │ Miércoles 1 de julio de 2026      │
+│ Actividad 2: Investigación NotebookLM  │ Lunes 6 de julio de 2026          │
+│ Actividad 3: Evaluación Gamificada     │ Miércoles 8 de julio de 2026      │
+│ Actividad 4: Micro-proyecto IA         │ Viernes 11 de julio de 2026       │
+├────────────────────────────────────────┼───────────────────────────────────┤
+│ TOTAL                                  │ 8 horas asíncronas                │
+└────────────────────────────────────────┴───────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+FORMATO DE ENTREGA
+═══════════════════════════════════════════════════════════════════════════════
+
+Se compartirá una carpeta en Google Drive con 4 subcarpetas:
+
+  📂 Taller_IA_Asyncrona_[TuNombre]/
+     ├── 📂 Actividad_1_Prompts/
+     ├── 📂 Actividad_2_NotebookLM/
+     ├── 📂 Actividad_3_Evaluacion/
+     └── 📂 Actividad_4_Microproyecto/
+
+NOMBRE DE ARCHIVOS:
+
+Usa el formato: Apellido_Nombre_Actividad#
+
+Ejemplos:
+  • Hidalgo_Andres_Actividad1.pdf
+  • Hidalgo_Andres_Actividad2.pdf
+  • Hidalgo_Andres_Actividad3.pdf
+  • Hidalgo_Andres_Actividad4.pdf
+
+FORMATOS ACEPTADOS:
+
+  • Documentos: PDF (preferido), Word (.docx)
+  • Imágenes: JPG, PNG
+  • Videos: MP4 (máximo 50 MB)
+  • Audio: MP3, M4A
+  • Presentaciones: PDF, enlaces a Gamma/Canva
+  • Cuestionarios: Enlaces a Quizizz/Kahoot!
+
+ENLACE A LA CARPETA DE ENTREGA:
+
+[ESPACIO PARA PEGAR EL ENLACE DE GOOGLE DRIVE]
+
+Este enlace se compartirá al final del Día 2 del taller.
+
+═══════════════════════════════════════════════════════════════════════════════
+RECURSOS Y SOPORTE
+═══════════════════════════════════════════════════════════════════════════════
+
+Si tienes dudas o necesitas soporte durante la realización de las actividades:
+
+  📧 Correo: [TU CORREO INSTITUCIONAL]
+  📱 WhatsApp: [TU NÚMERO, SI APLICA]
+  🕐 Horario de atención: Lunes a viernes, 9:00 - 18:00
+
+RECURSOS ADICIONALES:
+
+  • Presentaciones del taller: [ENLACE A SHAREPOINT/TEAMS]
+  • Guía de prompts docentes: [ENLACE SI APLICA]
+  • Canal de YouTube recomendado: Dot CSV, Two Minute Papers
+  • Comunidad de práctica: [ENLACE A GRUPO SI APLICA]
+
+═══════════════════════════════════════════════════════════════════════════════
+COMPROMISO ÉTICO
+═══════════════════════════════════════════════════════════════════════════════
+
+Al entregar estas actividades, confirmo que:
+
+  ✅ El trabajo presentado es de mi autoría
+  ✅ Las evidencias son reales y corresponden a mi práctica
+  ✅ He utilizado las herramientas de IA de manera ética y responsable
+  ✅ He respetado la privacidad de mis estudiantes (no comparto datos 
+     personales identificables)
+  ✅ Comprendo que la falsificación de evidencias puede resultar en la 
+     cancelación de mi constancia
+
+═══════════════════════════════════════════════════════════════════════════════
+¡FELICITACIONES!
+═══════════════════════════════════════════════════════════════════════════════
+
+Has completado el taller presencial "Transformación Digital con IA para la 
+Educación". Las actividades asíncronas son tu oportunidad para consolidar el 
+aprendizaje y llevar la IA a tu práctica cotidiana.
+
+Recuerda: La IA no reemplaza al docente, lo potencia. Tú eres el corazón del 
+proceso educativo. Las herramientas son solo eso: herramientas. Tu creatividad, 
+experiencia y pasión son irremplazables.
+
+¡Éxito en tu camino de transformación digital!
+
+═══════════════════════════════════════════════════════════════════════════════
+FACILITADOR
+═══════════════════════════════════════════════════════════════════════════════
+
+Mtro. Andrés Hidalgo Morales
+Doctorando en Ingeniería en Ciencias de la Ingeniería
+Instituto Tecnológico de Chihuahua II — TecNM
+ORCID: 0000-0002-1074-9395
+
+Taller organizado por:
+CENALTEC · INADET · CNAD Noroeste
+Chihuahua, Chihuahua · Junio 2026
+
+═══════════════════════════════════════════════════════════════════════════════

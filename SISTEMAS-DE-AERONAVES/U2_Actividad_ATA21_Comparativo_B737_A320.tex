@@ -1,0 +1,182 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Ingeniería de Sistemas Aeronáuticos}}
+\fancyhead[R]{\textbf{ATA 21: B737 vs A320}}
+\fancyfoot[C]{\thepage}
+
+\titleformat{\section}{\Large\bfseries\color{blue!70!black}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{blue!50!black}}{\thesubsection}{1em}{}
+
+\title{\vspace{-2cm}\textbf{GUÍA DE TRABAJO AUTÓNOMO: Análisis Comparativo ATA 21}\\ \large Sistemas de Aire Acondicionado y Presurización (B737 vs A320)}
+\author{Unidad 2: Sistemas de Aeronaves \\ \small Tiempo estimado: 60--90 minutos}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1cm}
+
+\noindent\textbf{Nombre:} \rule{6cm}{0.4pt} \hfill \textbf{Matrícula:} \rule{5cm}{0.4pt} \\
+\vspace{0.2cm}
+\noindent\textbf{Fecha:} \rule{4cm}{0.4pt}
+
+\section*{Objetivo}
+Comparar el sistema ATA 21 (aire acondicionado y presurización) entre Boeing 737 y Airbus A320 usando tablas y cálculos básicos.
+
+\section*{Entregables (todo en un solo documento PDF o Word, respuestas numeradas)}
+\begin{enumerate}
+    \item Tabla comparativa de temperaturas en el ciclo ACM (completar con datos dados).
+    \item Cálculo de caída de temperatura en turbina (B737).
+    \item Cálculo de altitud de cabina (A320).
+    \item Análisis de falla: ¿qué pasa si falla el \textit{Zone Controller} en A320?
+    \item Recomendación operacional (máx.\ 3 líneas).
+    \item Tabla comparativa rápida B737 vs A320.
+\end{enumerate}
+
+\section{Paso 1: Tabla de temperaturas del ACM (B737)}
+\textit{Datos proporcionados (no requiere buscar en manual):}
+
+\begin{table}[h]
+\centering
+\caption{Ciclo ACM del Boeing 737}
+\begin{tabular}{|c|l|c|c|}
+\hline
+\textbf{Etapa} & \textbf{Componente} & \textbf{T entrada (°C)} & \textbf{T salida (°C)} \\ \hline
+1 & Primary Heat Exchanger & 215.6 & 76.7 \\ \hline
+2 & Compresor ACM & 76.7 & 110 \\ \hline
+3 & Secondary Heat Exchanger & 110 & 65.6 \\ \hline
+4 & Turbina ACM & 65.6 & 1.6 \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Pregunta:} ¿Cuánto se enfría el aire en la turbina? \\[2pt]
+\[
+\Delta T = 65.6 - 1.6 = \boxed{64.0 \;^{\circ}\text{C}}
+\]
+Explica con tus palabras por qué la turbina es la etapa que más enfría.
+
+\vspace{0.3cm}
+\textbf{Espacio para respuesta:}
+\vspace{1cm}
+
+\section{Paso 2: Cálculo isentrópico de la turbina (B737)}
+Fórmula:
+\[
+T_{out} = T_{in} \times \left( \frac{P_{out}}{P_{in}} \right)^{\frac{\gamma-1}{\gamma}}
+\]
+
+\textbf{Datos:}
+\begin{itemize}[noitemsep]
+    \item \(T_{in} = 65.6 \;^{\circ}\text{C} = 338.75 \text{ K}\)
+    \item \(P_{in} = 45 \text{ psi},\quad P_{out} = 14.7 \text{ psi}\)
+    \item \(\gamma = 1.4\)
+\end{itemize}
+
+\textbf{Realiza los pasos:}
+\begin{enumerate}
+    \item Relación de presiones: \( \dfrac{14.7}{45} = \boxed{0.3267} \)
+    \item Exponente: \( \dfrac{1.4 - 1}{1.4} = \boxed{0.2857} \)
+    \item \( T_{out} = 338.75 \times (0.3267)^{0.2857} \approx \boxed{246.5 \text{ K}} \)
+    \item En °C: \( 246.5 - 273.15 = \boxed{-26.65 \;^{\circ}\text{C}} \) \\
+          En °F: \( (-26.65 \times 9/5) + 32 = \boxed{-15.97 \;^{\circ}\text{F}} \)
+\end{enumerate}
+
+\textbf{Compara} con el valor real del manual (1.6\,°C). ¿Por qué existe diferencia?
+
+\vspace{0.3cm}
+\textbf{Espacio para respuesta:}
+\vspace{1.5cm}
+
+\section{Paso 3: Presurización -- Altitud de cabina (A320)}
+\textbf{Datos:}
+\begin{itemize}[noitemsep]
+    \item Vuelo a FL410 $\rightarrow$ presión exterior $\approx$ 2.72 psi
+    \item \(\Delta P_{\max}\) A320 = 8.06 psi
+    \item Presión nivel del mar = 14.696 psi
+\end{itemize}
+
+\textbf{Fórmula de altitud:}
+\[
+\text{Altitud (ft)} = 145442 \times \left[ 1 - \left( \frac{P_{cab}}{14.696} \right)^{0.1902} \right]
+\]
+
+\textbf{Calcula:}
+\begin{enumerate}
+    \item \( P_{cab} = 2.72 + 8.06 = \boxed{10.78 \text{ psi}} \)
+    \item \( \dfrac{P_{cab}}{14.696} = \dfrac{10.78}{14.696} = \boxed{0.7336} \)
+    \item Eleva a 0.1902: \( 0.7336^{0.1902} \approx \boxed{0.9405} \)
+    \item \( 1 - 0.9405 = \boxed{0.0595} \)
+    \item Multiplica: \( 145442 \times 0.0595 \approx \boxed{8654 \text{ ft}} \)
+\end{enumerate}
+
+\textbf{Pregunta:} Según FAR 25, la altitud de cabina no debe exceder 8000 ft en condiciones normales. ¿Este vuelo cumple? ¿Qué implicaciones tiene?
+
+\vspace{0.3cm}
+\textbf{Espacio para respuesta:}
+\vspace{1.5cm}
+
+\section{Paso 4: Escenario de falla (Airbus A320)}
+\textbf{Situación:} En crucero, el \textit{Zone Controller} falla completamente. \\
+Según el manual Lufthansa A320 (dato proporcionado): el \textit{Pack Controller} entrega una temperatura fija de \textbf{15\,°C} como fallback.
+
+\textbf{Preguntas:}
+\begin{enumerate}
+    \item Si la tripulación había seleccionado 24\,°C para la cabina, ¿cuánto se desvía la temperatura real?
+    \item ¿Qué medidas puede tomar la tripulación? (descender, aumentar flujo, etc.)
+    \item Escribe una \textbf{recomendación operacional} en máximo 3 líneas.
+\end{enumerate}
+
+\vspace{0.3cm}
+\textbf{Espacio para respuestas:}
+\vspace{3cm}
+
+\section{Paso 5: Tabla comparativa rápida}
+Completa con \checkmark\ / \textsf{X} o texto breve:
+
+\begin{table}[h]
+\centering
+\caption{Comparación B737 vs A320}
+\begin{tabularx}{\textwidth}{l X X}
+\toprule
+\textbf{Característica} & \textbf{Boeing 737} & \textbf{Airbus A320} \\ \midrule
+Usa ACM de 2 ruedas & & \\ \midrule
+Temperatura típica a la salida del pack & $\sim$35\,°F (1.6\,°C) & $\sim$2 a 70\,°C (variable) \\ \midrule
+Control de temperatura por zona & Trim Air & Zone Controller + Trim Air \\ \midrule
+Altitud máxima de cabina a FL410 (con $\Delta P_{\max}$) & $\sim$8000 ft (NG) & $\sim$8650 ft \\ \bottomrule
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{Rúbrica de Evaluación (Total: 30 puntos)}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+\textbf{Criterio} & \textbf{Puntaje} \\ \midrule
+Paso 1: Tabla de temperaturas completa & 5 \\ \midrule
+Paso 2: Cálculo de turbina (procedimiento + resultado) & 10 \\ \midrule
+Paso 3: Cálculo de altitud de cabina (pasos + interpretación) & 8 \\ \midrule
+Pasos 4 y 5: Análisis de falla + recomendación + tabla comparativa & 7 \\ \bottomrule
+\textbf{Total} & \textbf{30} \\ \bottomrule
+\end{tabularx}
+\end{table}
+
+\vspace{0.3cm}
+\noindent\textbf{Formato de entrega:} PDF o Word, con nombre, fecha, respuestas numeradas. \\
+\noindent\textbf{No se requiere LaTeX.}
+
+\end{document}

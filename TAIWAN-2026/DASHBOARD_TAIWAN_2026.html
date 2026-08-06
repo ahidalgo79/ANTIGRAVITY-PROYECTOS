@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Taiwan 2.0 - Desarrollo de Talento</title>
+    <style>
+        :root {
+            --taiwan-red: #ff0000;
+            --taiwan-blue: #000095;
+            --tech-cyan: #00f2ff;
+            --dark-bg: #0a0e14;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--taiwan-blue), var(--taiwan-red));
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--tech-cyan);
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 0.8em;
+            opacity: 0.6;
+            margin-top: 5px;
+        }
+
+        .gantt-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .gantt-row {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .task-name {
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .timeline-container {
+            background: rgba(255,255,255,0.05);
+            height: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(90deg, var(--taiwan-blue), var(--tech-cyan));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            font-size: 0.75em;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+        }
+
+        /* Based on Aug 2026 to Jun 2027 (11 months) */
+        /* 1 month approx 9% */
+        .p1 { left: 0%; width: 18%; background: #444; } /* Convocatoria (Ago-Sep) */
+        .p2 { left: 18%; width: 45%; } /* Entrenamiento (Sep-Ene) */
+        .p3 { left: 63%; width: 9%; background: var(--taiwan-red); } /* Cierre (Ene-Feb) */
+        .p4 { left: 72%; width: 28%; background: #333; } /* Multiplicación (Feb-Jun) */
+
+        .month-labels {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            margin-top: 15px;
+        }
+
+        .labels-grid {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7em;
+            opacity: 0.4;
+            padding: 0 10px;
+        }
+
+        .info-box {
+            margin-top: 30px;
+            background: rgba(0, 242, 255, 0.05);
+            padding: 15px;
+            border-left: 4px solid var(--tech-cyan);
+            font-size: 0.9em;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.75em;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Talento Chihuahuense en Taiwán 2.0</h1>
+        <div class="subtitle">Semiconductores · Electromovilidad · IA</div>
+    </header>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-value">$11,312,500</div>
+            <div class="stat-label">Inversión Total (MXN)</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">15</div>
+            <div class="stat-label">Estudiantes Becados</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">20 Semanas</div>
+            <div class="stat-label">Duración del Entrenamiento</div>
+        </div>
+    </div>
+
+    <div class="gantt-chart">
+        <div class="gantt-row">
+            <div class="task-name">Convocatoria y Selección</div>
+            <div class="timeline-container">
+                <div class="bar p1">Agosto - Septiembre 2026</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Entrenamiento (STUST/ITRI)</div>
+            <div class="timeline-container">
+                <div class="bar p2">Septiembre 2026 - Enero 2027</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Evaluación y Cierre</div>
+            <div class="timeline-container">
+                <div class="bar p3">Enero - Febrero 2027</div>
+            </div>
+        </div>
+        <div class="gantt-row">
+            <div class="task-name">Programa Multiplicador</div>
+            <div class="timeline-container">
+                <div class="bar p4">Febrero - Junio 2027</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="month-labels">
+        <div></div>
+        <div class="labels-grid">
+            <span>Ago 26</span>
+            <span>Oct 26</span>
+            <span>Dic 26</span>
+            <span>Feb 27</span>
+            <span>Abr 27</span>
+            <span>Jun 27</span>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <strong>Detalle del Programa:</strong> 18 semanas de especialización en STUST y 2 semanas intensivas en ITRI College (Hsinchu/Tainan). Enfoque en Manufactura de Semiconductores y Automatización Avanzada.
+    </div>
+
+    <footer>
+        CCOL-2026-SIDE-DGV-Taiwan-2aGen | INADET - ITRI - SIDE Chihuahua
+    </footer>
+</div>
+
+</body>
+</html>

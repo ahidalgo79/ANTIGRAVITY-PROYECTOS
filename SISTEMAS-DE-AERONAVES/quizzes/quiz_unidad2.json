@@ -1,0 +1,525 @@
+{
+  "title": "Aeronáutica Cuestionario",
+  "questions": [
+    {
+      "question": "¿Cuál es el ciclo termodinámico fundamental sobre el cual opera una Máquina de Ciclo de Aire (ACM)?",
+      "answerOptions": [
+        {
+          "text": "Ciclo de Brayton Inverso",
+          "isCorrect": true,
+          "rationale": "Este ciclo, también conocido como Bell-Coleman, utiliza la expansión de un gas para absorber calor y proporcionar refrigeración."
+        },
+        {
+          "text": "Ciclo de Rankine",
+          "isCorrect": false,
+          "rationale": "Este ciclo se asocia comúnmente con sistemas de potencia de vapor, no con la refrigeración por aire en aeronaves."
+        },
+        {
+          "text": "Ciclo de Otto",
+          "isCorrect": false,
+          "rationale": "El ciclo de Otto es el principio de funcionamiento de los motores de combustión interna de encendido por chispa."
+        },
+        {
+          "text": "Ciclo de Carnot",
+          "isCorrect": false,
+          "rationale": "Aunque es el ciclo ideal teórico de máxima eficiencia, no es el ciclo práctico utilizado por las máquinas ACM."
+        }
+      ],
+      "hint": "Considere el nombre del ciclo de potencia de las turbinas de gas, pero aplicado de forma opuesta para refrigeración."
+    },
+    {
+      "question": "En el sistema de presurización de una aeronave, ¿cuál es el componente principal encargado de regular la presión interna mediante la modulación de la salida de aire?",
+      "answerOptions": [
+        {
+          "text": "Válvula de descarga (Outflow Valve)",
+          "isCorrect": true,
+          "rationale": "El controlador de presión gestiona la altitud de cabina abriendo o cerrando esta válvula para permitir que el aire escape al exterior."
+        },
+        {
+          "text": "Válvula de seguridad (Safety Valve)",
+          "isCorrect": false,
+          "rationale": "Estas válvulas son dispositivos de alivio puramente mecánicos que actúan solo cuando la presión excede los límites estructurales."
+        },
+        {
+          "text": "Válvula de aislamiento (Isolation Valve)",
+          "isCorrect": false,
+          "rationale": "Se utiliza para conectar o separar los colectores neumáticos de los motores, no para regular la presión de la cabina."
+        },
+        {
+          "text": "Válvula de retención (Check Valve)",
+          "isCorrect": false,
+          "rationale": "Su función es permitir el flujo en una sola dirección dentro de los ductos, evitando el retorno de aire a los motores."
+        }
+      ],
+      "hint": "Piense en el elemento que actúa como un 'grifo' que deja salir el aire acondicionado hacia la atmósfera."
+    },
+    {
+      "question": "¿Por qué se incluye un compresor centrífugo en el conjunto de la Máquina de Ciclo de Aire (ACM) antes del intercambio de calor secundario?",
+      "answerOptions": [
+        {
+          "text": "Para elevar la temperatura y presión del aire, mejorando la transferencia de calor en el radiador siguiente.",
+          "isCorrect": true,
+          "rationale": "Al comprimir el aire, aumenta el gradiente térmico con el aire de impacto exterior, permitiendo que el intercambiador de calor sea más eficiente."
+        },
+        {
+          "text": "Para enfriar el aire antes de que llegue a la turbina de expansión.",
+          "isCorrect": false,
+          "rationale": "La compresión aumenta naturalmente la temperatura del aire debido al trabajo realizado sobre el gas."
+        },
+        {
+          "text": "Para eliminar la humedad del aire de sangrado mediante la presión centrífuga.",
+          "isCorrect": false,
+          "rationale": "La eliminación de humedad se realiza en el separador de agua ciclónico, que se encuentra después del enfriamiento."
+        },
+        {
+          "text": "Para reducir la carga mecánica sobre el motor principal de la aeronave.",
+          "isCorrect": false,
+          "rationale": "El compresor de la ACM es impulsado por su propia turbina y, de hecho, requiere energía del aire de sangrado."
+        }
+      ],
+      "hint": "Considere cómo la diferencia de temperatura afecta la eficiencia de un radiador aire-aire."
+    },
+    {
+      "question": "De acuerdo con el ciclo de Brayton inverso, ¿qué sucede con la temperatura del aire durante el proceso de expansión isentrópica en la turbina?",
+      "answerOptions": [
+        {
+          "text": "Se produce un descenso brusco de la temperatura al extraer trabajo mecánico del flujo.",
+          "isCorrect": true,
+          "rationale": "La turbina convierte la energía interna del aire comprimido en trabajo para mover el eje, lo que reduce drásticamente su entalpía y temperatura."
+        },
+        {
+          "text": "La temperatura aumenta debido a la fricción de los álabes de la turbina.",
+          "isCorrect": false,
+          "rationale": "Aunque existe una mínima fricción, el efecto dominante de la expansión es el enfriamiento significativo del aire."
+        },
+        {
+          "text": "La temperatura permanece constante mientras la presión disminuye proporcionalmente.",
+          "isCorrect": false,
+          "rationale": "En un proceso isentrópico de expansión de gas ideal, la temperatura y la presión están vinculadas y ambas disminuyen."
+        },
+        {
+          "text": "La temperatura desciende solo si el aire está saturado de humedad.",
+          "isCorrect": false,
+          "rationale": "El descenso de temperatura es una propiedad termodinámica de la expansión del gas, independientemente de su contenido de agua."
+        }
+      ],
+      "hint": "Relacione la extracción de energía mecánica con la energía térmica contenida en el aire."
+    },
+    {
+      "question": "En un sistema de Ciclo de Vapor (VCS), ¿cuál es el componente donde el refrigerante absorbe el calor latente del aire de la cabina?",
+      "answerOptions": [
+        {
+          "text": "Evaporador",
+          "isCorrect": true,
+          "rationale": "En este intercambiador, el refrigerante líquido a baja presión hierve al absorber el calor del aire que circula por él."
+        },
+        {
+          "text": "Condensador",
+          "isCorrect": false,
+          "rationale": "El condensador es donde el refrigerante cede calor al exterior para volver a su estado líquido."
+        },
+        {
+          "text": "Compresor de refrigerante",
+          "isCorrect": false,
+          "rationale": "Su función es presurizar el gas para elevar su punto de condensación, no absorber calor del habitáculo."
+        },
+        {
+          "text": "Válvula de expansión térmica (TXV)",
+          "isCorrect": false,
+          "rationale": "Es un dispositivo de control de flujo que reduce la presión del líquido, pero no es el lugar de intercambio de calor principal."
+        }
+      ],
+      "hint": "Busque el componente que realiza la función opuesta al condensador en el ciclo cerrado."
+    },
+    {
+      "question": "¿Cuál es una ventaja crítica del Sistema de Ciclo de Vapor (VCS) frente a la Máquina de Ciclo de Aire (ACM) en aeronaves?",
+      "answerOptions": [
+        {
+          "text": "Posee un Coeficiente de Rendimiento (COP) sustancialmente mayor y es independiente del aire de sangrado.",
+          "isCorrect": true,
+          "rationale": "El ciclo de vapor es mucho más eficiente energéticamente y no penaliza el empuje del motor al no extraer aire comprimido de él."
+        },
+        {
+          "text": "Es mucho más ligero y compacto que los sistemas neumáticos equivalentes.",
+          "isCorrect": false,
+          "rationale": "Los sistemas VCS suelen ser más pesados debido a la necesidad de compresores eléctricos, tuberías de cobre y refrigerantes químicos."
+        },
+        {
+          "text": "No utiliza sustancias químicas que puedan ser tóxicas o inflamables.",
+          "isCorrect": false,
+          "rationale": "A diferencia del ACM que usa aire, el VCS requiere refrigerantes químicos como el HFC-134a."
+        },
+        {
+          "text": "Su funcionamiento no se ve afectado por maniobras de alta gravedad ($G$-loads).",
+          "isCorrect": false,
+          "rationale": "La gravedad variable es un desafío para el VCS porque afecta la separación de fases líquida y gaseosa en los tubos."
+        }
+      ],
+      "hint": "Piense en la eficiencia energética y en de dónde proviene la energía para enfriar."
+    },
+    {
+      "question": "¿Qué función cumple la 'Trim Air Valve' o válvula de aire de modulación en el sistema de aire acondicionado?",
+      "answerOptions": [
+        {
+          "text": "Mezcla aire de sangrado caliente con el aire frío de la ACM para alcanzar la temperatura deseada en cabina.",
+          "isCorrect": true,
+          "rationale": "Esta válvula permite ajustar con precisión la temperatura final inyectando una pequeña cantidad de aire caliente al flujo refrigerado."
+        },
+        {
+          "text": "Regula la cantidad de aire de impacto que entra al intercambiador primario.",
+          "isCorrect": false,
+          "rationale": "Esa función la realizan usualmente los 'Ram Air Flaps' o compuertas de aire de impacto."
+        },
+        {
+          "text": "Cierra el paso de aire en caso de detectar una fuga en el ducto principal.",
+          "isCorrect": false,
+          "rationale": "Las fugas son detectadas y aisladas por las válvulas de purga o válvulas de aislamiento del sistema neumático."
+        },
+        {
+          "text": "Inyecta agua en el flujo de aire para aumentar la humedad relativa de la cabina.",
+          "isCorrect": false,
+          "rationale": "El sistema generalmente busca deshumidificar el aire para proteger la aviónica y evitar la corrosión."
+        }
+      ],
+      "hint": "Considere cómo se logra una temperatura confortable si el aire sale de la turbina a temperaturas bajo cero."
+    },
+    {
+      "question": "En el contexto de la presurización, ¿qué sucede si la presión atmosférica externa llega a ser superior a la presión interna de la cabina?",
+      "answerOptions": [
+        {
+          "text": "Se abren las válvulas de alivio de presión negativa para proteger la estructura del fuselaje.",
+          "isCorrect": true,
+          "rationale": "Estas válvulas evitan que el fuselaje colapse hacia adentro ante un diferencial de presión negativo, algo vital en descensos rápidos."
+        },
+        {
+          "text": "El controlador de presión (CPC) cierra totalmente la válvula de descarga.",
+          "isCorrect": false,
+          "rationale": "Cerrar la válvula de descarga aumentaría la presión interna, pero el sistema requiere una protección mecánica dedicada contra diferenciales negativos."
+        },
+        {
+          "text": "Las válvulas de seguridad de presión positiva se activan automáticamente.",
+          "isCorrect": false,
+          "rationale": "Las válvulas de seguridad de presión positiva solo protegen contra el exceso de presión interna sobre la externa."
+        },
+        {
+          "text": "El sistema activa automáticamente las máscaras de oxígeno de los pasajeros.",
+          "isCorrect": false,
+          "rationale": "Las máscaras se despliegan por alta altitud de cabina (baja presión interna), no por presión negativa."
+        }
+      ],
+      "hint": "Piense en la protección contra deformaciones estructurales inversas."
+    },
+    {
+      "question": "¿Cuál es la configuración de una Máquina de Ciclo de Aire (ACM) denominada de 'tres ruedas'?",
+      "answerOptions": [
+        {
+          "text": "Turbina, compresor centrífugo y ventilador montados en un eje común.",
+          "isCorrect": true,
+          "rationale": "Esta disposición integra los tres componentes rotativos principales para optimizar el flujo de aire en todas las fases de operación."
+        },
+        {
+          "text": "Dos turbinas de expansión y un solo compresor centrífugo.",
+          "isCorrect": false,
+          "rationale": "Esa descripción se asemeja más a una arquitectura de cuatro ruedas o 'dual-spool'."
+        },
+        {
+          "text": "Una turbina impulsando dos compresores en serie.",
+          "isCorrect": false,
+          "rationale": "Aunque existen sistemas complejos, la definición estándar de tres ruedas incluye específicamente el ventilador extractor."
+        },
+        {
+          "text": "Un compresor eléctrico que asiste a una turbina y a un ventilador.",
+          "isCorrect": false,
+          "rationale": "Las ruedas en esta nomenclatura se refieren a componentes mecánicos acoplados en el mismo eje de transmisión."
+        }
+      ],
+      "hint": "Identifique los tres elementos mecánicos que comparten el mismo eje de rotación."
+    },
+    {
+      "question": "Durante la compresión isentrópica en la ACM, ¿cuál es la relación teórica para calcular la temperatura de salida $T_2$?",
+      "answerOptions": [
+        {
+          "text": "$T_2 = T_1 \\cdot (\\frac{P_2}{P_1})^{\\frac{\\gamma - 1}{\\gamma}}$",
+          "isCorrect": true,
+          "rationale": "Esta es la ecuación adiabática fundamental que relaciona presiones y temperaturas absolutas para un gas ideal."
+        },
+        {
+          "text": "$Q_{\\text{evap}} = \\dot{m} \\cdot (h_{\\text{vapor}} - h_{\\text{líquido}})$",
+          "isCorrect": false,
+          "rationale": "Esta fórmula describe el calor absorbido en un cambio de fase, típico del ciclo de vapor, no de la compresión de aire."
+        },
+        {
+          "text": "$\\Delta P = P_{\\text{cabina}} - P_{\\text{exterior}}$",
+          "isCorrect": false,
+          "rationale": "Esta es la definición de presión diferencial para el fuselaje, no una relación de temperaturas del ciclo."
+        },
+        {
+          "text": "$F \\propto V^2$",
+          "isCorrect": false,
+          "rationale": "Esta es una relación de fuerzas aerodinámicas con respecto a la velocidad, sin relación con la termodinámica del ciclo ACM."
+        }
+      ],
+      "hint": "Busque la fórmula que utiliza la relación de presiones y la constante de calores específicos $\\gamma$."
+    },
+    {
+      "question": "¿Cuál es la altitud de cabina máxima permitida en vuelo normal para garantizar la seguridad fisiológica de los ocupantes?",
+      "answerOptions": [
+        {
+          "text": "$8,000\\text{ ft}$",
+          "isCorrect": true,
+          "rationale": "Las normativas de certificación exigen que la presión interna no caiga por debajo de la presión equivalente a esta altitud barométrica."
+        },
+        {
+          "text": "$10,000\\text{ ft}$",
+          "isCorrect": false,
+          "rationale": "A esta altitud suelen activarse las alarmas de advertencia, pero el límite operativo normal es inferior."
+        },
+        {
+          "text": "$14,000\\text{ ft}$",
+          "isCorrect": false,
+          "rationale": "Esta es la altitud aproximada a la que se despliegan automáticamente las máscaras de oxígeno debido a la hipoxia inminente."
+        },
+        {
+          "text": "$5,000\\text{ ft}$",
+          "isCorrect": false,
+          "rationale": "Aunque algunas aeronaves modernas mantienen altitudes de cabina más bajas para mayor confort, el límite legal estándar es superior."
+        }
+      ],
+      "hint": "Recuerde el valor estándar de diseño mencionado en las regulaciones FAR/EASA 25.841."
+    },
+    {
+      "question": "¿Qué se hace con el agua que el separador ciclónico extrae del aire acondicionado antes de ser enviado a la cabina?",
+      "answerOptions": [
+        {
+          "text": "Se inyecta en el flujo de aire de impacto para mejorar la eficiencia de los intercambiadores de calor.",
+          "isCorrect": true,
+          "rationale": "La evaporación de esta agua en el flujo de impacto absorbe calor latente, enfriando más los radiadores y aumentando el rendimiento."
+        },
+        {
+          "text": "Se almacena en un depósito para ser utilizada en el sistema de lavado de la aeronave.",
+          "isCorrect": false,
+          "rationale": "El agua del ECS no se recolecta para uso sanitario debido a posibles contaminantes y complejidad de filtrado."
+        },
+        {
+          "text": "Se drena directamente al exterior a través de una válvula de calefacción.",
+          "isCorrect": false,
+          "rationale": "Aunque se expulsa, se aprovecha primero térmicamente en los intercambiadores para no desperdiciar su capacidad de enfriamiento."
+        },
+        {
+          "text": "Se recircula hacia el compresor de la ACM para enfriar sus rodamientos.",
+          "isCorrect": false,
+          "rationale": "Los rodamientos de alta velocidad de la ACM suelen ser de aire o estar lubricados de forma independiente; el agua causaría daños."
+        }
+      ],
+      "hint": "Considere cómo el calor latente de evaporación puede ser útil para el sistema."
+    },
+    {
+      "question": "En el Boeing 737, ¿qué indicación recibe el piloto si un 'pack' de aire acondicionado se apaga debido a una condición de sobrecalentamiento?",
+      "answerOptions": [
+        {
+          "text": "PACK TRIP OFF",
+          "isCorrect": true,
+          "rationale": "Esta luz indica que el sistema de protección ha desactivado el pack para evitar daños por temperaturas excesivas."
+        },
+        {
+          "text": "BLEED TRIP OFF",
+          "isCorrect": false,
+          "rationale": "Esta luz se refiere específicamente al sobrecalentamiento o sobrepresión en la línea de sangrado del motor, no necesariamente al pack."
+        },
+        {
+          "text": "ZONE TEMP",
+          "isCorrect": false,
+          "rationale": "Indica usualmente un problema con el sistema de control de temperatura de una zona específica o del aire de modulación."
+        },
+        {
+          "text": "DUCT PRESS LOW",
+          "isCorrect": false,
+          "rationale": "Es una indicación de baja presión en los colectores neumáticos, no específicamente de un fallo por temperatura en el pack."
+        }
+      ],
+      "hint": "Busque el término que combina el componente del sistema con la acción de disparo por protección."
+    },
+    {
+      "question": "Según las regulaciones de ventilación (CFR 25.831), ¿cuál es el flujo de aire fresco mínimo requerido por cada ocupante de la aeronave?",
+      "answerOptions": [
+        {
+          "text": "$0.55\\text{ lb/min}$",
+          "isCorrect": true,
+          "rationale": "Este caudal asegura la renovación adecuada del aire y la dilución de contaminantes como el dióxido de carbono."
+        },
+        {
+          "text": "$1.20\\text{ lb/min}$",
+          "isCorrect": false,
+          "rationale": "Este valor es superior a los requisitos mínimos legales estándar establecidos para la certificación de transporte."
+        },
+        {
+          "text": "$0.25\\text{ lb/min}$",
+          "isCorrect": false,
+          "rationale": "Un flujo tan bajo sería insuficiente para mantener la calidad del aire y los niveles de oxígeno adecuados en una cabina llena."
+        },
+        {
+          "text": "$2.00\\text{ lb/min}$",
+          "isCorrect": false,
+          "rationale": "Representaría una carga excesiva para el sistema de sangrado del motor, reduciendo innecesariamente la eficiencia de combustible."
+        }
+      ],
+      "hint": "Identifique el valor numérico específico que define el estándar de suministro de aire limpio por persona."
+    },
+    {
+      "question": "¿Cuál es la función principal de las válvulas de seguridad (Safety Valves) en un sistema de presurización?",
+      "answerOptions": [
+        {
+          "text": "Aliviar automáticamente el exceso de presión diferencial positiva para proteger la integridad estructural.",
+          "isCorrect": true,
+          "rationale": "Actúan como un respaldo mecánico redundante en caso de que el controlador automático falle y mantenga la válvula de descarga cerrada."
+        },
+        {
+          "text": "Mantener un flujo constante de aire hacia la cabina independientemente de la altitud.",
+          "isCorrect": false,
+          "rationale": "El flujo de aire es gestionado por las válvulas de control de flujo (FCV) o las válvulas de purga del motor."
+        },
+        {
+          "text": "Evitar que el aire de la cabina se contamine con humos provenientes del motor.",
+          "isCorrect": false,
+          "rationale": "Esta función de protección contra contaminación recae en filtros, sensores y procedimientos de aislamiento neumático."
+        },
+        {
+          "text": "Controlar la tasa de ascenso y descenso de la cabina para confort de los pasajeros.",
+          "isCorrect": false,
+          "rationale": "Esta es la función principal del Controlador de Presión de Cabina (CPC) operando la válvula de descarga."
+        }
+      ],
+      "hint": "Piense en su papel como último recurso contra la fatiga por presión del cilindro del fuselaje."
+    },
+    {
+      "question": "En la arquitectura de una ACM, ¿qué se entiende por un sistema 'Bootstrap'?",
+      "answerOptions": [
+        {
+          "text": "Un sistema donde la energía extraída por la turbina se utiliza para accionar un compresor que aumenta la presión del ciclo.",
+          "isCorrect": true,
+          "rationale": "Este diseño 'se levanta por sus propios medios' al usar el trabajo de expansión para mejorar la capacidad de enfriamiento mediante compresión previa."
+        },
+        {
+          "text": "Un sistema que utiliza un motor eléctrico externo para iniciar la rotación de la máquina.",
+          "isCorrect": false,
+          "rationale": "Los sistemas ACM son neumáticos y se inician mediante el flujo de aire a presión, no por motores eléctricos auxiliares."
+        },
+        {
+          "text": "Una configuración que solo utiliza aire de impacto (ram air) sin necesidad de aire de sangrado.",
+          "isCorrect": false,
+          "rationale": "Todos los sistemas ACM convencionales requieren aire de sangrado presurizado como fuente de energía motriz."
+        },
+        {
+          "text": "Un sistema de respaldo que solo funciona cuando la aeronave está en tierra.",
+          "isCorrect": false,
+          "rationale": "El ciclo bootstrap es la configuración estándar de alta capacidad utilizada durante todas las fases del vuelo."
+        }
+      ],
+      "hint": "Considere la relación mecánica entre la turbina y el compresor dentro de la unidad."
+    },
+    {
+      "question": "¿Cuál es la principal desventaja operativa de extraer aire de sangrado (bleed air) del motor para el sistema de aire acondicionado?",
+      "answerOptions": [
+        {
+          "text": "Reduce la eficiencia del motor y aumenta el consumo de combustible entre un 2% y 5%.",
+          "isCorrect": true,
+          "rationale": "La desviación de aire comprimido del flujo central del motor reduce el empuje disponible y obliga a quemar más combustible."
+        },
+        {
+          "text": "Provoca una disminución crítica en la temperatura de combustión del motor.",
+          "isCorrect": false,
+          "rationale": "Aunque afecta el ciclo termodinámico, el impacto principal es en la pérdida de trabajo útil y eficiencia, no en la temperatura de llama."
+        },
+        {
+          "text": "Aumenta excesivamente el peso total de la planta propulsora.",
+          "isCorrect": false,
+          "rationale": "Los componentes de sangrado son relativamente ligeros; el problema es la penalización energética del flujo desviado."
+        },
+        {
+          "text": "Requiere el uso de aceites lubricantes especiales que son altamente corrosivos.",
+          "isCorrect": false,
+          "rationale": "El sistema neumático utiliza aire seco y no requiere fluidos lubricantes corrosivos en el flujo de aire de cabina."
+        }
+      ],
+      "hint": "Piense en el impacto económico y de rendimiento en la planta propulsiva."
+    },
+    {
+      "question": "De acuerdo con el material fuente, ¿qué rango de temperatura suele manejar el panel de control del aire acondicionado en un Airbus A320?",
+      "answerOptions": [
+        {
+          "text": "$18\\text{ a }30\\text{ }^\\circ C$",
+          "isCorrect": true,
+          "rationale": "Este es el rango de selección estándar disponible para que la tripulación ajuste el confort térmico en las distintas zonas."
+        },
+        {
+          "text": "$15\\text{ a }25\\text{ }^\\circ C$",
+          "isCorrect": false,
+          "rationale": "Aunque es un rango cómodo, no coincide con los límites de selección específicos del sistema del A320 mencionados."
+        },
+        {
+          "text": "$60\\text{ a }90\\text{ }^\\circ F$",
+          "isCorrect": false,
+          "rationale": "Este rango en Fahrenheit es típico de aeronaves de fabricación estadounidense como el Boeing 737, no del Airbus."
+        },
+        {
+          "text": "$20\\text{ a }24\\text{ }^\\circ C$",
+          "isCorrect": false,
+          "rationale": "Este es el nivel de confort mantenido usualmente en crucero, pero el selector permite un rango de ajuste más amplio."
+        }
+      ],
+      "hint": "Identifique los valores límite en grados Celsius para la selección de temperatura en cabina."
+    },
+    {
+      "question": "En el Boeing 737, ¿cuáles son las etapas del compresor del motor CFM56 de donde se extrae normalmente el aire de sangrado?",
+      "answerOptions": [
+        {
+          "text": "5ta y 9na etapa",
+          "isCorrect": true,
+          "rationale": "Se utiliza la 5ta etapa para operaciones normales y la 9na etapa cuando la presión intermedia es insuficiente (baja potencia)."
+        },
+        {
+          "text": "4ta y 9na etapa",
+          "isCorrect": false,
+          "rationale": "Aunque el material menciona variaciones, la configuración estándar del CFM56 en el B737 NG utiliza la 5ta y 9na."
+        },
+        {
+          "text": "1ra y 5ta etapa",
+          "isCorrect": false,
+          "rationale": "La 1ra etapa (fan) no proporciona presión suficiente para alimentar los sistemas neumáticos y de aire acondicionado."
+        },
+        {
+          "text": "7ma y 12va etapa",
+          "isCorrect": false,
+          "rationale": "Estas etapas no corresponden a los puntos de extracción estándar para el sistema de control ambiental de esta aeronave."
+        }
+      ],
+      "hint": "Busque las etapas de presión intermedia y alta presión específicas para el sangrado."
+    },
+    {
+      "question": "¿Qué función cumple el intercambiador de calor primario en una Máquina de Ciclo de Aire?",
+      "answerOptions": [
+        {
+          "text": "Realiza el enfriamiento inicial del aire de sangrado supercalentado usando aire de impacto.",
+          "isCorrect": true,
+          "rationale": "Es la primera etapa de reducción de temperatura antes de que el aire sea procesado por el compresor de la propia ACM."
+        },
+        {
+          "text": "Calienta el aire de cabina antes de ser distribuido a los pasajeros.",
+          "isCorrect": false,
+          "rationale": "Su propósito es siempre el enfriamiento del aire de sangrado mediante la cesión de calor al exterior."
+        },
+        {
+          "text": "Condensa el vapor de agua para facilitar su eliminación posterior.",
+          "isCorrect": false,
+          "rationale": "La condensación ocurre principalmente después del enfriamiento más profundo en el intercambiador secundario y la turbina."
+        },
+        {
+          "text": "Aumenta la presión del aire para que la turbina pueda girar más rápido.",
+          "isCorrect": false,
+          "rationale": "El intercambiador es un dispositivo pasivo que provoca una ligera caída de presión; el aumento de presión lo hace el compresor."
+        }
+      ],
+      "hint": "Piense en la primera interacción térmica entre el aire del motor y el aire exterior."
+    }
+  ]
+}

@@ -1,0 +1,4355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" mc:Ignorable="w14 w15 wp14">
+  <w:body>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="28"/>
+                <w:szCs w:val="28"/>
+              </w:rPr>
+              <w:t xml:space="preserve">EXAMEN DE UNIDAD 2 — NAVEGACIÓN AÉREA</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="0" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:color w:val="E8F0FF"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Cartas Aeronáuticas • Radionavegación • Velocidades y Altimetría • Uso del E6B</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="4680"/>
+        <w:gridCol w:w="4680"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Nombre: _________________________________________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Fecha: ____________   Grupo: ___________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Matrícula: _______________________________________</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="FFF3CD" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">CALIFICACIÓN TOTAL:  _______ / 100</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F0F4FB" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">📝  INSTRUCCIONES GENERALES</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">1. Lee detenidamente cada pregunta antes de responder.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2. En los problemas prácticos, justifica tus procedimientos paso a paso. Se permite el uso de computador E6B y calculadora.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3. Duración: 90 minutos   │   Puntaje total: 100 puntos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="1560"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Sección</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">A – Cartas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">B – Sistemas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">C – Alt/Vel</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">D – E6B</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">TOTAL</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Puntaje máx.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">40</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="FFF3CD" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">100</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Obtenido</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="FFF3CD" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="18"/>
+                <w:szCs w:val="18"/>
+              </w:rPr>
+              <w:t xml:space="preserve"/>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="160" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve">A</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">SECCIÓN A: Cartas Aeronáuticas (Anexo 4 OACI)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20 puntos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Relaciona columnas sobre los tipos de cartas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 10 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="60" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Escribe la letra correspondiente dentro del paréntesis.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">A) SID          (   ) Facilita la navegación a lo largo de rutas ATS (FIR).</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">B) STAR         (   ) Proporciona información para pasar de fase de ruta a la aproximación.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">C) En-Ruta      (   ) Proporciona info. para la salida normalizada desde el despegue hasta la ruta.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">D) Plano de Aeródromo (   ) Muestra las instalaciones terrestres, pistas y plataforma desde vista general.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">E) IAC          (   ) Procedimiento de aproximación por instrumentos a la pista prevista.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Preguntas de opción múltiple</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 10 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2.1 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">De acuerdo al Anexo 4 OACI, ¿Cuáles son ejemplos de cartas obligatorias? (2 pts)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) Tipo A, Carta Topográfica Precisión, Carta En Ruta, IAC, Plano Aeródromo y Mundial.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ b) Tipo B, Movimientos en tierra, Estacionamiento y Atraque.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ c) Carta de Área, SID, STAR, Aproximación Visual.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2.2 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">¿Cuál es la función del Plano de Estacionamiento y Atraque de Aeronaves? (2 pts)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) Movimiento general entre pistas y plataformas.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ b) Movimiento entre rodajes de acceso y puestos de estacionamiento específicos.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ c) Identificar obstáculos en el área de despegue.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2.3 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">En cartas náuticas, ¿qué tipo de fondo se indica más comúnmente en las zonas costeras seguras? (2 pts)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) Vegetación   ☐ b) Arena   ☐ c) Bosque</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2.4 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">¿Cuál es la escala principal utilizada en las Cartas Seccionales Aeronáuticas? (2 pts)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) 1:500,000    ☐ b) 1:1,000,000    ☐ c) 1:100,000</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2.5 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Método de navegación basado en cálculos matemáticos de velocidad y tiempo sin referencias visuales externas: (2 pts)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) Radionavegación    ☐ b) Navegación visual    ☐ c) Navegación a estima</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="160" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve">B</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">SECCIÓN B: Sistemas y Radionavegación</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20 puntos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Identificación de sistemas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 20 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="60" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Selecciona la respuesta correcta para cada descripción. (4 pts c/u)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3.1 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Sistema de radionavegación que proporciona información de distancia (slant range) a la estación:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) VOR    ☐ b) DME    ☐ c) ADF</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3.2 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Sistema que utiliza satélites para determinar la posición tridimensional de la aeronave:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) GPS    ☐ b) INS    ☐ c) VOR</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3.3 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Sistema utilizado principalmente para aproximación y aterrizaje en condiciones de baja visibilidad, compuesto por localizador y senda de planeo:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) ILS    ☐ b) DME    ☐ c) ADF</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3.4 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Funciona emitiendo señales de radio en la banda VHF, permitiendo al piloto volar radiales magnéticos desde o hacia la estación:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) VOR    ☐ b) INS    ☐ c) Satélite</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3.5 </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Sistema de navegación inercial que utiliza giroscopios y acelerómetros sin necesidad de señales externas:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">  ☐ a) INS    ☐ b) ILS    ☐ c) VOR</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="160" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve">C</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">SECCIÓN C: Velocidades y Altimetría</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">20 puntos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P4</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Verdadero o Falso</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 20 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="60" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Marca con una X indicando si la afirmación es verdadera (V) o falsa (F). (2 pts c/u)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">1. (   ) IAS (Indicated Airspeed) es la velocidad que el piloto lee directamente en su instrumento.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2. (   ) TAS (True Airspeed) es la velocidad real de la aeronave con respecto a la masa de aire circundante.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3. (   ) GS (Ground Speed) es igual a la TAS sumando o restando el efecto del viento.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">4. (   ) V1 es la velocidad de decisión durante la carrera de despegue.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">5. (   ) QNH es la presión atmosférica ajustada para que el altímetro indique cero en el terreno.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">6. (   ) Al ajustar el altímetro a QNE (1013.25 hPa) se lee la altitud de presión (niveles de vuelo).</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">7. (   ) La altitud de densidad disminuye cuando la temperatura exterior aumenta.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">8. (   ) La altura es la distancia vertical desde el nivel medio del mar.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">9. (   ) Vmcg es la velocidad mínima de control en tierra si falla un motor.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">10.(   ) La velocidad GS es la utilizada para estimar la hora de llegada (ETA).</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="160" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="22"/>
+                <w:szCs w:val="22"/>
+              </w:rPr>
+              <w:t xml:space="preserve">D</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="21"/>
+                <w:szCs w:val="21"/>
+              </w:rPr>
+              <w:t xml:space="preserve">SECCIÓN D: Planificación con Computador de Vuelo E6B</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">40 puntos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="EEF5FB" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">📌  CASO PRÁCTICO: BÚSQUEDA Y RESCATE EN ZONA MONTAÑOSA</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="60" w:before="40"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:color w:val="333333"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Se ha recibido una alerta de una aeronave extraviada en zona montañosa. El Centro de Control solicita que una Cessna 182T Skylane despegue de inmediato para realizar la búsqueda. A continuación se presentan los datos operacionales de la misión. Responde cada problema mostrando todos tus procedimientos y cálculos.</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Datos generales de la aeronave:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Aeronave: Cessna 182T Skylane</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • TAS de crucero de búsqueda: 120 kts</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Consumo de combustible: 10 gal/h</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Combustible utilizable a bordo: 56 gal (tanques llenos)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Condiciones: VFR marginal en terreno montañoso — altitud de presión 8 500 ft, OAT = +25 °C</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Viento reportado: 220° / 25 kts</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Rumbo de búsqueda asignado (TC): 270°</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Duración de la búsqueda: 90 min</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Distancia de regreso a base: 54 NM (GS de regreso = 135 kts — dato del ATC)</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   • Reserva legal requerida: 45 min</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P5</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Problema 1: Cálculo de WCA y GS con el E6B</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 12 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Datos para este problema (tomados del caso práctico):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Viento: 220° / 25 kts     |     TAS: 120 kts     |     Rumbo de búsqueda (TC): 270°</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="40"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">1.  Calcula el WCA (Wind Correction Angle):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Procedimiento (E6B o fórmula): _____________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   WCA = ________°     Dirección de corrección: ☐ Left (L)    ☐ Right (R)    ☐ Nula</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2.  Calcula el Ground Speed (GS):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Procedimiento (E6B o fórmula): _____________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   GS = ________ kts</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="20" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3.  Explica brevemente por qu&#xe9; el viento en esta situaci&#xf3;n genera un componente de cola y de costado:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   ____________________________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   ____________________________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="right"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">___ / 12</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Problema 2: Gestión de Combustible</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 16 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Tiempo de búsqueda: 147 min         Consumo: 12 gal/h          Dist. de regreso: 45 NM @ 140 kts GS</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">a) Combustible consumido durante la búsqueda (147 min):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Procedimiento: ______________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Gasto = ________ galones</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">b) Combustible para el regreso (45 NM a 140 kts de GS):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Procedimiento: ______________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Gasto = ________ galones</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">c) Combustible de reserva legal (1 h 30 min):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Procedimiento: ______________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Gasto = ________ galones</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">d) Total requerido vs Total a bordo (Asumiendo tanques llenos a 84 gal):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Total Requerido = ________ galones       ¿Es suficiente el combustible? (Sí/No): _________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="right"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">___ / 16</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="6780"/>
+        <w:gridCol w:w="1800"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">P7</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Problema 3: Corrección por Densidad Altitud</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="D6E4F0" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">[ 12 pts ]</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:left w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:bottom w:val="single" w:color="AAAAAA" w:sz="1"/>
+              <w:right w:val="single" w:color="AAAAAA" w:sz="1"/>
+            </w:tcBorders>
+            <w:shd w:fill="F7FBFF" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Condiciones: Temperatura Exterior (OAT) = 25°C, Presión = 1013 hPa, Altitud Presión = 8,500 ft</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">a) Calcula la Densidad Altitud aproximada (usando E6B o fórmula estándar):</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Procedimiento: ______________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   ____________________________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Densidad Altitud ≈ ____________ ft</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">b) Pregunta de reflexión:</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   Si despegas de un aeropuerto alto y caluroso, ¿cómo se ven afectados la TAS real, el consumo de combustible y la carrera de despegue con respecto al nivel del mar?</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   ____________________________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   ____________________________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b w:val="false"/>
+                <w:bCs w:val="false"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">   ____________________________________________________________________________________</w:t>
+            </w:r>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="80" w:before="0"/>
+            </w:pPr>
+          </w:p>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="right"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">___ / 12</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="160" w:before="0"/>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:type="dxa" w:w="9360"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:color="auto" w:sz="4"/>
+          <w:left w:val="single" w:color="auto" w:sz="4"/>
+          <w:bottom w:val="single" w:color="auto" w:sz="4"/>
+          <w:right w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideH w:val="single" w:color="auto" w:sz="4"/>
+          <w:insideV w:val="single" w:color="auto" w:sz="4"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="9360"/>
+      </w:tblGrid>
+      <w:tr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcBorders>
+              <w:top w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:left w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:bottom w:val="single" w:color="2C5F8A" w:sz="4"/>
+              <w:right w:val="single" w:color="2C5F8A" w:sz="4"/>
+            </w:tcBorders>
+            <w:shd w:fill="1B3A6B" w:val="clear"/>
+            <w:tcMar>
+              <w:top w:type="dxa" w:w="80"/>
+              <w:left w:type="dxa" w:w="140"/>
+              <w:bottom w:type="dxa" w:w="80"/>
+              <w:right w:type="dxa" w:w="140"/>
+            </w:tcMar>
+            <w:vAlign w:val="top"/>
+          </w:tcPr>
+          <w:p>
+            <w:pPr>
+              <w:spacing w:after="40" w:before="0"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+                <w:b/>
+                <w:bCs/>
+                <w:color w:val="FFFFFF"/>
+                <w:sz w:val="19"/>
+                <w:szCs w:val="19"/>
+              </w:rPr>
+              <w:t xml:space="preserve">✅  Fin del examen — Revisa tus respuestas y cálculos de E6B antes de entregar.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:sectPr>
+      <w:pgSz w:w="12240" w:h="15840" w:orient="portrait"/>
+      <w:pgMar w:top="1080" w:right="1080" w:bottom="1080" w:left="1080" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:pgNumType/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
