@@ -121,7 +121,7 @@ export const MemoriaPlugin: Plugin = async ({ directory, client }) => {
   return {
     config: async (cfg) => {
       const inst = Array.isArray(cfg.instructions) ? [...cfg.instructions] : []
-      if (!inst.includes(MEMORY_FILE)) inst.push(MEMORY_FILE)
+      if (!inst.includes(memoriaPath)) inst.push(memoriaPath)
       cfg.instructions = inst
     },
     event: async ({ event }) => {
