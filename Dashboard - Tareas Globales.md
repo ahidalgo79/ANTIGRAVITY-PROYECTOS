@@ -2,7 +2,7 @@
 
 ```dataview
 TASK
-FROM "Proyectos" OR "Clases"
+FROM "Inbox" OR "Proyectos" OR "Clases"
 WHERE !completed
 GROUP BY file.folder
 SORT file.mtime DESC
