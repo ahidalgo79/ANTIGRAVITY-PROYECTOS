@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-6",
+  "small_model": "anthropic/claude-haiku-4-5",
+  "mcp": {
+    "obsidian": {
+      "type": "local",
+      "command": ["node", "/home/andres/.local/share/obsidian-mcp/node_modules/obsidian-mcp/build/main.js", "/home/andres/Documentos/ANTIGRAVITY-PROYECTOS"],
+      "enabled": true,
+      "timeout": 60000
+    }
+  },
+  "provider": {
+    "ollama": {
+      "options": {
+        "baseURL": "http://localhost:11434"
+      },
+      "models": {
+        "qwen2.5:1.5b": {
+          "name": "qwen2.5:1.5b",
+          "tool_call": true,
+          "limit": {
+            "context": 32000,
+            "output": 2048
+          }
+        }
+      }
+    }
+  },
+  "permission": {
+    "bash": { "*": "ask" }
+  },
+  "instructions": ["AGENTS.md"]
+}
