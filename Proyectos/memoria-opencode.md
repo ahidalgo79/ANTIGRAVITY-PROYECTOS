@@ -6,6 +6,28 @@ tags: [memoria, opencode]
 
 Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada sesión por el plugin MemoriaPlugin.
 
+## 2026-08-07 20:00 — Continuando conversación
+
+- **Última petición:** voy a reiniciar dame el comando
+- **Fin de sesión:** Sal del TUI con `Ctrl+C` (o `/exit`) y vuelve a lanzarlo desde la raíz del vault para que recargue el MCP: ```bash cd /home/andres/Documentos/ANTIGRAVITY-PROYECTOS && opencode ```
+
+<!-- session:ses_0223f265effesltHA7jlQAcmSB -->
+
+---
+
+## 2026-08-07 19:27 — Continuación de conversación
+
+- **Última petición:** reiniciamos y continuamos
+- **Fin de sesión:** Estado actual tras el reinicio: **Memoria centralizada** — limpia. El duplicado que recreó el plugin viejo quedó eliminado y la memoria consolidada en `Proyectos/memoria-opencode.md` (commit `90e37f5`). **MCP de Obsidian** — estaba atascado (instancia vieja desde las 12:54 + vault de 16GB). Maté el proceso y subí el timeout a 180s (`77c3bf0`). El servidor responde bien standalone, pero los tools `obsidian_*` ya no están cargados en **esta** sesión — aparecerán al reiniciar opencode. **Inbox** — solo queda la bitácora `07-08-2026.md`; la nota de prueba se eliminó (`ebcc1a8`). Para seguir con las operaciones Obsidian (dashboards, procesar inbox) necesitas reiniciar opencode para que cargue el MCP con el timeout nuevo. ¿Reinicias ahora, o seguimos algo que no dependa del MCP?
+
+<!-- session:ses_0226babe0ffejBEjMuPF00eVVo -->
+
+---
+
+---
+
+---
+
 ## 2026-08-07 19:05 — Continuación de conversación
 
 - **Última petición:** y tambien falta la integracion con antigravity
@@ -15,12 +37,20 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 
 ---
 
+---
+
+---
+
 ## 2026-08-07 18:57 — Continuación de conversación
 
 - **Última petición:** yo decia de la configuracion del segundo cerebro con opencode y obsidian
 - **Fin de sesión:** Sobre la **configuración del segundo cerebro** (opencode + Obsidian), esto es lo que ya está y lo que falta: **✅ Ya configurado y verificado:** - `opencode.json` — MCP de Obsidian conectado al vault `antigravity-proyectos` ✓ - MemoriaPlugin (`memoria.ts`) — probado: inyectó la memoria al inicio de esta sesión ✓ - Skill `pkm-captura` ✓ - Comandos `/captura`, `/inbox`, `/backup` ✓ - Estructura del vault (Inbox, Plantillas, Proyectos, Clases) y dashboards Dataview ✓ - Plugins Obsidian (dataview, templater, git) ✓ **⏳ Pendiente de la configuración:** 1. **Commitear la configuración** — `.opencode/plugins/`, `.opencode/command/`, `opencode.json` y `Proyectos/` están sin commitear (el backup del 12:00 fue antes de crear el plugin). 2. **Probar escritura de memoria** — el plugin solo guarda al quedar la sesión *idle*; aún no hemos visto una entrada nueva escrita por él (las 2 entradas actuales …
 
 <!-- session:ses_0226babe0ffejBEjMuPF00eVVo -->
+
+---
+
+---
 
 ---
 
