@@ -6,10 +6,10 @@ tags: [memoria, opencode]
 
 Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada sesión por el plugin MemoriaPlugin.
 
-## 2026-08-07 20:35 — Continuamos
+## 2026-08-07 21:09 — Continuamos
 
-- **Última petición:** ok dejamos reposar
-- **Fin de sesión:** Listo, dejamos la sesión en reposo. El plugin escribirá el resumen en `Proyectos/memoria-opencode.md` en ~30s. Al reiniciar, el primer paso será leer esa entrada para confirmar que la escritura automática funciona. Hasta entonces.
+- **Última petición:** ok que sigue?
+- **Fin de sesión:** La configuración del segundo cerebro quedó **completa y verificada**. Solo queda un pendiente técnico (commitear la memoria limpia + la entrada de esta sesión cuando el plugin la escriba). De ahí en adelante, el trabajo es de contenido. Lo que sigue, en orden de impacto: 1. **Commitear la memoria** (cuando escriba la entrada de esta sesión al quedar idle). 2. **Procesar papers** → crear la primera nota con `Plantillas/Paper - Investigacion.md` en `Proyectos/Revision-RPAS/` para que `Dashboard - Papers` muestre datos. 3. **Capítulos de Tesis** → `Proyectos/Tesis/` solo tiene el MOC; crear notas por capítulo con el frontmatter (`estado`, `fecha-inicio`, `fecha-fin`) para el dashboard. 4. **Clases A320/B737** → lo que tienes en `SISTEMAS-DE-AERONAVES/` pasarlo a notas de `Clases/Sistemas-de-Aeronaves/`. ¿Con cuál seguimos? O si prefieres, dejamos que la sesión escriba la memoria y cerramos …
 
 <!-- session:ses_0222f45f4ffeTjmbDaQo68YJYC -->
 
@@ -21,8 +21,6 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 - **Fin de sesión:** Sal del TUI con `Ctrl+C` (o `/exit`) y vuelve a lanzarlo desde la raíz del vault para que recargue el MCP: ```bash cd /home/andres/Documentos/ANTIGRAVITY-PROYECTOS && opencode ```
 
 <!-- session:ses_0223f265effesltHA7jlQAcmSB -->
-
----
 
 ---
 
@@ -43,12 +41,6 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 
 ---
 
----
-
----
-
----
-
 ## 2026-08-07 19:05 — Continuación de conversación
 
 - **Última petición:** y tambien falta la integracion con antigravity
@@ -62,24 +54,12 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 
 ---
 
----
-
----
-
----
-
 ## 2026-08-07 18:57 — Continuación de conversación
 
 - **Última petición:** yo decia de la configuracion del segundo cerebro con opencode y obsidian
 - **Fin de sesión:** Sobre la **configuración del segundo cerebro** (opencode + Obsidian), esto es lo que ya está y lo que falta: **✅ Ya configurado y verificado:** - `opencode.json` — MCP de Obsidian conectado al vault `antigravity-proyectos` ✓ - MemoriaPlugin (`memoria.ts`) — probado: inyectó la memoria al inicio de esta sesión ✓ - Skill `pkm-captura` ✓ - Comandos `/captura`, `/inbox`, `/backup` ✓ - Estructura del vault (Inbox, Plantillas, Proyectos, Clases) y dashboards Dataview ✓ - Plugins Obsidian (dataview, templater, git) ✓ **⏳ Pendiente de la configuración:** 1. **Commitear la configuración** — `.opencode/plugins/`, `.opencode/command/`, `opencode.json` y `Proyectos/` están sin commitear (el backup del 12:00 fue antes de crear el plugin). 2. **Probar escritura de memoria** — el plugin solo guarda al quedar la sesión *idle*; aún no hemos visto una entrada nueva escrita por él (las 2 entradas actuales …
 
 <!-- session:ses_0226babe0ffejBEjMuPF00eVVo -->
-
----
-
----
-
----
 
 ---
 
