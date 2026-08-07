@@ -7,7 +7,18 @@
       "type": "local",
       "command": ["node", "/home/andres/.local/share/obsidian-mcp/node_modules/obsidian-mcp/build/main.js", "/home/andres/Documentos/ANTIGRAVITY-PROYECTOS"],
       "enabled": true,
-      "timeout": 180000
+      "timeout": 300000
+    },
+    "duckdb": {
+      "type": "local",
+      "command": ["uvx", "mcp-server-motherduck", "--db-path", ":memory:", "--read-write", "--allow-switch-databases", "--max-rows", "2000", "--query-timeout", "60"],
+      "enabled": true
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "headers": { "Authorization": "Bearer {file:/home/andres/Documentos/ANTIGRAVITY-PROYECTOS/.github_token}" }
     }
   },
   "provider": {

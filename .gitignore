@@ -36,3 +36,4 @@ Comea/
 
 # Node modules (ya excluido pero reforzamos)
 node_modules/
+.github_token
