@@ -6,6 +6,6 @@ fuente: conversación
 
 # Prueba de captura del segundo cerebro
 
-- [ ] Verificar que esta nota aparece en el Dashboard de Tareas (Dataview)
+- [x] Verificar que esta nota aparece en el Dashboard de Tareas (Dataview) [completion:: 2026-08-07]
 - Probar el flujo completo: captura → procesar inbox → mover a proyecto
 - Conecta con: Tesis
