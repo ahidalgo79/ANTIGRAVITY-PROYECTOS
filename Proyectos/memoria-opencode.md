@@ -6,12 +6,156 @@ tags: [memoria, opencode]
 
 Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada sesión por el plugin MemoriaPlugin.
 
+## 2026-08-11 19:45 — Continuamos conversación
+
+- **Última petición:** continuamos
+- **Fin de sesión:** Retomamos. Pendientes según el MOC: **Revision-RPAS** (paper swarm multi-RPAS) - Revisar consistencia BibTeX (`uv run python src/latex_checker.py`) - Validar PRISMA/Elsevier (`uv run python src/prisma_checker.py`) - Auditar citas finales **Tesis Doctoral** - Compilar `make -C Tesis compile` - Revisar capítulos: antecedentes, estado del arte, metodología, resultados **CENALTEC** - Revisar convocatoria Reto Marte 2026 - Avanzar proyecto ejecutivo Reto Marte - Preparar formación NVIDIA IA 2026 **Git**: hay 1 commit local sin publicar en `origin/main` y `memoria-opencode.md` sin commitear. ¿Por dónde arrancamos? ¿O primero publico lo pendiente en git?
+
+<!-- session:ses_00da4943dfferUErRUy60H0R1m -->
+
+---
+
+## 2026-08-11 18:09 — Retomar conversación
+
+- **Última petición:** que teniamos pendiente?
+- **Fin de sesión:** Pendientes según los MOCs: **Revision-RPAS** (paper swarm multi-RPAS) - Revisar consistencia BibTeX (`uv run python src/latex_checker.py`) - Validar PRISMA/Elsevier (`uv run python src/prisma_checker.py`) - Auditar citas finales **Tesis Doctoral** - Compilar `make -C Tesis compile` - Revisar capítulos: antecedentes, estado del arte, metodología, resultados **CENALTEC** - Revisar convocatoria Reto Marte 2026 - Avanzar proyecto ejecutivo Reto Marte - Preparar formación NVIDIA IA 2026 Además quedó un commit local sin publicar en `origin/main` (sesión del 07-08) y `memoria-opencode.md` sin commitear. ¿Por dónde arrancamos?
+
+<!-- session:ses_00e239543ffeiR2KrJYesG4PuT -->
+
+---
+
+---
+
+## 2026-08-10 22:55 — Continuación de conversación
+
+- **Última petición:** voy a apagra la maquina virtual mañana seguimos
+- **Fin de sesión:** Envié la señal de apagado ordenado. Windows se está cerrando solo. Hasta mañana.
+
+<!-- session:ses_0131e9ea9ffeGiclpDi2oBXZMs -->
+
+---
+
+---
+
+---
+
+---
+
+## 2026-08-10 18:01 — Configurar máquina virtual
+
+- **Última petición:** entonces apago la pc, entro al bios y configuro?
+- **Fin de sesión:** Exacto. Pasos: 1. **Apaga la PC** (o reinicia) 2. Enciéndela y pulsa **F10** repetidamente al aparecer el logo de HP (si no funciona, pulsa **ESC** y luego F10) 3. En el BIOS ve a **Security → System Configuration** (en algunas versiones es *Advanced*) 4. Busca **"Virtualization Technology"** (o *Virtualization Technology (VTx)*) 5. Cámbialo a **Enabled** 6. Pulsa **F10** para guardar y salir → reiniciará solo Cuando vuelva a Windows, verifica que ya quedó activado y arráncala: ```bash egrep -oE '\bvmx\b' /proc/cpuinfo | head -1 VBoxManage startvm "Win10-Dev" ``` Si el primer comando imprime `vmx`, ya está listo. Aquí te espero.
+
+<!-- session:ses_013667f54ffepaBO7j2zsT76tZ -->
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ## 2026-08-07 21:30 — Continuamos conversación
 
 - **Última petición:** bye
 - **Fin de sesión:** ¡Hasta la próxima! 👋
 
 <!-- session:ses_021e1460cffeEX4eCx7RUTv21k -->
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 
@@ -40,12 +184,116 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 
 ---
 
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ## 2026-08-07 20:00 — Continuando conversación
 
 - **Última petición:** voy a reiniciar dame el comando
 - **Fin de sesión:** Sal del TUI con `Ctrl+C` (o `/exit`) y vuelve a lanzarlo desde la raíz del vault para que recargue el MCP: ```bash cd /home/andres/Documentos/ANTIGRAVITY-PROYECTOS && opencode ```
 
 <!-- session:ses_0223f265effesltHA7jlQAcmSB -->
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 
@@ -122,6 +370,58 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 
 ---
 
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ## 2026-08-07 19:05 — Continuación de conversación
 
 - **Última petición:** y tambien falta la integracion con antigravity
@@ -163,12 +463,116 @@ Resumen de las últimas sesiones, inyectado automáticamente al inicio de cada s
 
 ---
 
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ## 2026-08-07 18:57 — Continuación de conversación
 
 - **Última petición:** yo decia de la configuracion del segundo cerebro con opencode y obsidian
 - **Fin de sesión:** Sobre la **configuración del segundo cerebro** (opencode + Obsidian), esto es lo que ya está y lo que falta: **✅ Ya configurado y verificado:** - `opencode.json` — MCP de Obsidian conectado al vault `antigravity-proyectos` ✓ - MemoriaPlugin (`memoria.ts`) — probado: inyectó la memoria al inicio de esta sesión ✓ - Skill `pkm-captura` ✓ - Comandos `/captura`, `/inbox`, `/backup` ✓ - Estructura del vault (Inbox, Plantillas, Proyectos, Clases) y dashboards Dataview ✓ - Plugins Obsidian (dataview, templater, git) ✓ **⏳ Pendiente de la configuración:** 1. **Commitear la configuración** — `.opencode/plugins/`, `.opencode/command/`, `opencode.json` y `Proyectos/` están sin commitear (el backup del 12:00 fue antes de crear el plugin). 2. **Probar escritura de memoria** — el plugin solo guarda al quedar la sesión *idle*; aún no hemos visto una entrada nueva escrita por él (las 2 entradas actuales …
 
 <!-- session:ses_0226babe0ffejBEjMuPF00eVVo -->
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 
