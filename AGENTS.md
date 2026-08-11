@@ -56,6 +56,49 @@ Monorepo de investigación académica y ofimática enfocado en: (1) enjambres mu
 └── reports/                # Reportes generados (MD, DOCX)
 ```
 
+## Segundo Cerebro (Obsidian + OpenCode)
+
+El vault Obsidian **antigravity-proyectos** ES la raíz de este repo. OpenCode lo
+trata como un *AI Knowledge OS* local-first: las notas son Markdown plano (sin
+capa propietaria, soberanía total de datos) y el agente razona sobre ellas con
+las herramientas `read`/`edit`/`glob`/`grep` y las `obsidian_*` del MCP. Procesa
+con modelos locales (Ollama) para coste cero y privacidad total.
+
+### Arquitectura del vault (híbrido PARA + Zettelkasten)
+
+```
+Inbox/                # Captura bruta sin procesar → se vacía con /inbox
+Plantillas/           # Dia, Paper, Proyecto-Hito, Clase (respetar frontmatter)
+Proyectos/            # Proyectos activos: CENALTEC, Revision-RPAS, Tesis
+  ├── <X>/MOC - <X>.md  # Mapas de contenido del proyecto
+Clases/               # Áreas de conocimiento: Navegacion-Aerea, Sistemas-de-Aeronaves
+  ├── <X>/MOC - <X>.md
+Dashboard - *.md      # Dashboards Dataview (NO modificar)
+Proyectos/memoria-opencode.md  # Memoria de sesiones (la gestiona MemoriaPlugin)
+```
+
+### Convenciones de etiquetado (propiedades YAML)
+
+- Tags del sistema (filtran los dashboards Dataview): `inbox`, `paper`, `clase`,
+  `proyecto`, `hito`, `memoria`. No inventes tags nuevos salvo que el usuario lo
+  pida.
+- Fechas en formato `DD-MM-YYYY`.
+- Campos comunes: `fecha`, `fuente`, `estado`, `prioridad`, `project`.
+- Nunca añadas campos que rompan los dashboards: usa SOLO los de la plantilla
+  correspondiente. Preserva tags y frontmatter al mover notas.
+
+### Protocolos de automatización
+
+- **`/captura`** — guardar idea/tarea/referencia en `Inbox/` sin procesar.
+- **`/inbox`** — clasificar cada nota según plantilla y moverla a su destino.
+- **`/enlazar`** — sugerir enlaces bidireccionales `[[ ]]` entre notas que
+  comparten conceptos (búsqueda semántica con grep/obsidian_search).
+- **`/patrones`** — analizar diarios y notas para detectar tendencias, temas
+  recurrentes y conexiones temporales ("socio de pensamiento").
+- **`/backup`** — commit git del vault (nunca push sin pedir).
+- Regla de oro: si una nota no encaja claramente en un destino, PREGUNTA antes
+  de moverla. Nunca adivines.
+
 ## Convenciones de Código
 
 ### Naming & Estilo
