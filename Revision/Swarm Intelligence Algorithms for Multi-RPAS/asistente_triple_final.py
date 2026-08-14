@@ -105,13 +105,17 @@ class AsistenteTriple:
         # 2. Intentar en cascada
         for i, modelo_nombre in enumerate(preferencia):
             if modelo_nombre in self.modelos:
-                try:
-                    if i > 0:
-                        print(f"   [FALLBACK] Reintentando con {modelo_nombre.capitalize()}...")
-                    
-                    if modelo_nombre == "gemini": return self.gemini(prompt)
-                    if modelo_nombre == "claude": return self.claude(prompt)
-                    if modelo_nombre == "qwen":   return self.qwen(prompt)
+            try:
+                if i > 0:
+                    print(f"   [FALLBACK] Reintentando con {modelo_nombre.capitalize()}...")
+                    # Modificar el prompt para indicar que es un fallback y debe continuar la tarea
+                    fallback_prompt = f"[FALLBACK MODE - CONTINUE TASK] You are continuing the previous task. Do not ask questions or start over. The original request was: \"{prompt}\""
+                else:
+                    fallback_prompt = prompt
+                
+                if modelo_nombre == "gemini": return self.gemini(fallback_prompt)
+                if modelo_nombre == "claude": return self.claude(fallback_prompt)
+                if modelo_nombre == "qwen":   return self.qwen(fallback_prompt)
                     
                 except Exception:
                     # Si falla, el loop continúa al siguiente modelo de la lista

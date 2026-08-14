@@ -1,0 +1,375 @@
+{
+  "titulo": "UNIDAD 3",
+  "subtitulo": "Publicación de Información Aeronáutica (AIP/PIA) • Servicios de Información Aeronáutica",
+  "descripcion": "Examen de Unidad 3 — AIP/PIA",
+  "opcion_multiple": [
+    {
+      "texto": "Las siglas AIP/PIA se refieren a:",
+      "opciones": [
+        "Publicación de Información Aeronáutica (Aeronautical Information Publication)",
+        "Automatic Information Processing (Procesamiento Automático de Datos)",
+        "Aerodrome Infrastructure Program (Programa de Infraestructura Aeroportuaria)",
+        "Aviation Industry Publication (Publicación de la Industria Aeronáutica)"
+      ],
+      "correcta": 0,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué organismo es responsable de publicar la AIP de un país?",
+      "opciones": [
+        "La Organización de Aviación Civil Internacional (OACI)",
+        "El Servicio de Información Aeronáutica (AIS) del Estado",
+        "La Asociación de Transporte Aéreo Internacional (IATA)",
+        "El proveedor de servicios de navegación aérea del país vecino"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Cuál es el Anexo OACI que establece normas y métodos recomendados para los servicios de información aeronáutica?",
+      "opciones": [
+        "Anexo 11 — Servicios de Tránsito Aéreo",
+        "Anexo 14 — Aeródromos",
+        "Anexo 15 — Servicios de Información Aeronáutica",
+        "Anexo 18 — Transporte sin Riesgo de Mercancías Peligrosas"
+      ],
+      "correcta": 2,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Cuántas partes integran la estructura de la AIP?",
+      "opciones": [
+        "Dos: GEN y AD",
+        "Tres: GEN, ENR y AD",
+        "Cuatro: GEN, ENR, AD y ATM",
+        "Cinco: GEN, ENR, AD, MET y SAR"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué información contiene la Parte 2 (ENR) de la AIP?",
+      "opciones": [
+        "Reglamentos nacionales y procedimientos administrativos",
+        "Rutas de navegación en ruta, estructura del espacio aéreo y ayudas para la navegación",
+        "Datos de aeródromos, helipuertos y sus instalaciones",
+        "Códigos y abreviaturas meteorológicas"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué documento se publica para difundir cambios temporales de larga duración (más de tres meses) de la información aeronáutica?",
+      "opciones": [
+        "NOTAM",
+        "Enmienda AIRAC",
+        "Suplemento AIP",
+        "Circular de Información Aeronáutica (AIC)"
+      ],
+      "correcta": 2,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué tipo de NOTAM difunde información relativa a todas las aeronaves y se distribuye con carácter inmediato y prioritario?",
+      "opciones": [
+        "NOTAM (Clase I)",
+        "NOTAM (Clase II)",
+        "SNOWTAM",
+        "NOTAMC (cancelación)"
+      ],
+      "correcta": 0,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué propósito tiene el sistema AIRAC en la publicación de información aeronáutica?",
+      "opciones": [
+        "Notificar los cambios significativos con antelación y hacerlos efectivos en fechas efectivas comunes",
+        "Publicar exclusivamente información meteorológica",
+        "Sustituir la AIP en papel por formato digital",
+        "Registrar los incidentes de tránsito aéreo"
+      ],
+      "correcta": 0,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué es una Enmienda AIRAC?",
+      "opciones": [
+        "Un cambio temporal de corta duración en la información",
+        "Un cambio permanente a la AIP que requiere una fecha efectiva coordinada (WEF)",
+        "Un documento administrativo de larga duración",
+        "Un aviso meteorológico especial"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué documento se publica para información administrativa y de larga duración que no califica como NOTAM, Suplemento o Enmienda de la AIP?",
+      "opciones": [
+        "Circular de Información Aeronáutica (AIC)",
+        "SNOWTAM",
+        "Carta de acuerdo (LOA)",
+        "Notificación de Cambio (NOTAMC)"
+      ],
+      "correcta": 0,
+      "puntos": 2
+    },
+    {
+      "texto": "El ciclo AIRAC se basa en fechas efectivas separadas por un intervalo de:",
+      "opciones": [
+        "7 días",
+        "14 días",
+        "28 días",
+        "56 días"
+      ],
+      "correcta": 2,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué contenido encontramos en la Parte 1 (GEN) de la AIP?",
+      "opciones": [
+        "Rutas de navegación en ruta y estructuras del espacio aéreo",
+        "Reglamentos, legislación y procedimientos generales del Estado",
+        "Datos de aeródromos y helipuertos",
+        "Cartas de navegación y sus índices"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "Las Enmiendas de la AIP se publican en papel de color:",
+      "opciones": [
+        "Blanco",
+        "Azul",
+        "Verde",
+        "Rosa"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué significa WEF (With Effect From)?",
+      "opciones": [
+        "La fecha efectiva desde la cual un cambio entra en vigor",
+        "Peso y equilibrio de la aeronave",
+        "Aviso de falla del motor",
+        "Código de viento en ruta"
+      ],
+      "correcta": 0,
+      "puntos": 2
+    },
+    {
+      "texto": "El Suplemento AIP se publica en papel de color:",
+      "opciones": [
+        "Azul",
+        "Verde",
+        "Rosa",
+        "Blanco"
+      ],
+      "correcta": 2,
+      "puntos": 2
+    },
+    {
+      "texto": "El NOTAM que anuncia el establecimiento de una nueva ayuda radioeléctrica se identifica como:",
+      "opciones": [
+        "NOTAMC",
+        "NOTAMN",
+        "NOTAMR",
+        "SNOWTAM"
+      ],
+      "correcta": 1,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué serie de NOTAM corresponde a información de nieve, hielo y agua estancada en las pistas?",
+      "opciones": [
+        "NOTAMC",
+        "NOTAMR",
+        "SNOWTAM",
+        "FAL"
+      ],
+      "correcta": 2,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Quién origina y distribuye los NOTAM?",
+      "opciones": [
+        "El Servicio de Información Aeronáutica (AIS)",
+        "Los pilotos en vuelo",
+        "La OACI directamente",
+        "Las aerolíneas a sus tripulaciones"
+      ],
+      "correcta": 0,
+      "puntos": 2
+    },
+    {
+      "texto": "Una Circular de Información Aeronáutica (AIC) se imprime en papel de color:",
+      "opciones": [
+        "Rosa",
+        "Azul",
+        "Blanco",
+        "Verde"
+      ],
+      "correcta": 3,
+      "puntos": 2
+    },
+    {
+      "texto": "¿Qué información NO corresponde publicarse en la AIP?",
+      "opciones": [
+        "Restricciones del espacio aéreo",
+        "Procedimientos de aproximación por instrumentos",
+        "Pronósticos meteorológicos de los aeródromos",
+        "Datos de las pistas de los aeródromos"
+      ],
+      "correcta": 2,
+      "puntos": 2
+    }
+  ],
+  "verdadero_falso": [
+    {
+      "texto": "La AIP es el manual básico de información aeronáutica indispensable para la navegación aérea y las operaciones aeroportuarias.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "La Parte 3 (AD) de la AIP contiene la información sobre aeródromos y helipuertos, incluidos sus procedimientos operacionales.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "La OACI es el organismo que publica la AIP de cada Estado.",
+      "correcta": false,
+      "puntos": 2
+    },
+    {
+      "texto": "Los NOTAM se difunden únicamente en formato impreso en papel.",
+      "correcta": false,
+      "puntos": 2
+    },
+    {
+      "texto": "El Suplemento AIP se utiliza exclusivamente para cambios permanentes de la información.",
+      "correcta": false,
+      "puntos": 2
+    },
+    {
+      "texto": "La AIP debe mantenerse permanentemente disponible y actualizada para todos los usuarios de la navegación aérea.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "Las Enmiendas AIRAC entran en vigor en fechas efectivas coordinadas internacionalmente.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "La información publicada en un NOTAM tiene prioridad sobre la información correspondiente de la AIP hasta que esta se enmiende.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "El Anexo 15 de la OACI regula los servicios de información aeronáutica.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "La AIP es un documento clasificado y de acceso restringido para pilotos autorizados.",
+      "correcta": false,
+      "puntos": 2
+    },
+    {
+      "texto": "El ciclo AIRAC establece fechas efectivas separadas cada 28 días.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "Las Enmiendas de la AIP se imprimen en papel de color azul.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "Los Suplementos de la AIP se imprimen en papel de color verde.",
+      "correcta": false,
+      "puntos": 2
+    },
+    {
+      "texto": "Las Circulares de Información Aeronáutica (AIC) se imprimen en papel de color verde.",
+      "correcta": true,
+      "puntos": 2
+    },
+    {
+      "texto": "Los NOTAM se emiten únicamente para informar sobre cambios permanentes de la información.",
+      "correcta": false,
+      "puntos": 2
+    }
+  ],
+  "caso_estudio": {
+    "escenario": "Un operador prepara una salida internacional desde su aeropuerto base. El despacho debe verificar la información aeronáutica vigente antes de la partida: la AIP y sus enmiendas, los NOTAM del día, las condiciones del aeródromo de salida y la ruta. Además, la pista principal del aeropuerto de destino estará cerrada durante dos semanas por obras de mantenimiento, y un procedimiento de aproximación tendrá un cambio permanente en el próximo ciclo.",
+    "preguntas": [
+      {
+        "texto": "Para la información permanente de ruta y de aeródromos, ¿qué documento debe consultar el despachador?",
+        "opciones": [
+          "Los NOTAM del día",
+          "La AIP con su enmienda vigente",
+          "La Circular de Información Aeronáutica (AIC)",
+          "El Suplemento AIP"
+        ],
+        "correcta": 1,
+        "puntos": 5
+      },
+      {
+        "texto": "El cierre de la pista principal del destino durante dos semanas debe difundirse con carácter inmediato y prioritario. ¿Qué documento se utiliza?",
+        "opciones": [
+          "Enmienda AIRAC",
+          "Suplemento AIP",
+          "NOTAM",
+          "AIC"
+        ],
+        "correcta": 2,
+        "puntos": 5
+      },
+      {
+        "texto": "El cambio permanente del procedimiento de aproximación entrará en vigor en el próximo ciclo AIRAC. ¿Qué documento lo publica?",
+        "opciones": [
+          "Enmienda AIRAC de la AIP",
+          "NOTAM",
+          "SNOWTAM",
+          "Circular de Información Aeronáutica (AIC)"
+        ],
+        "correcta": 0,
+        "puntos": 5
+      },
+      {
+        "texto": "La fecha efectiva coordinada en que entra en vigor el cambio del procedimiento se denomina:",
+        "opciones": [
+          "Fecha de publicación del NOTAM",
+          "Fecha efectiva AIRAC (WEF)",
+          "Fecha de emisión de la AIC",
+          "Fecha de la junta de despacho"
+        ],
+        "correcta": 1,
+        "puntos": 5
+      },
+      {
+        "texto": "Para difundir información administrativa de larga duración, como los horarios de atención del AIS, ¿qué documento es el adecuado?",
+        "opciones": [
+          "NOTAM",
+          "Enmienda AIRAC",
+          "Circular de Información Aeronáutica (AIC)",
+          "Suplemento AIP"
+        ],
+        "correcta": 2,
+        "puntos": 5
+      },
+      {
+        "texto": "El día de la partida, la autoridad cancela el cierre de la pista del destino. ¿Qué documento notifica esta cancelación?",
+        "opciones": [
+          "NOTAMC",
+          "NOTAMN",
+          "Enmienda AIRAC",
+          "AIC"
+        ],
+        "correcta": 0,
+        "puntos": 5
+      }
+    ]
+  }
+}
