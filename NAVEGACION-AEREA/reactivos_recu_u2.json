@@ -1,0 +1,381 @@
+{
+  "salida": "Examen_Recuperacion_NavegacionAerea_U2.docx",
+  "encabezado": "EXAMEN DE RECUPERACIÓN — NAVEGACIÓN AÉREA",
+  "subtitulo": "Unidad 2 • Cartas Aeronáuticas • Radionavegación • Velocidades y Altimetría • E6B",
+  "version": "GRUPO ÚNICO",
+  "puntaje_total": 100,
+  "duracion": "80 minutos",
+  "instrucciones": [
+    "1. Lee detenidamente cada pregunta antes de responder.",
+    "2. En los problemas prácticos, justifica tus procedimientos paso a paso. Se permite el uso del computador E6B y calculadora.",
+    "3. Duración: 80 minutos │ Puntaje total: 100 puntos"
+  ],
+  "formulas": [
+    [
+      "Altitud de presión",
+      "PA = Alt_indicada + 30 ft × (1013 − QNH)"
+    ],
+    [
+      "TAS aproximada",
+      "TAS ≈ IAS × (1 + 0,02 × altitud/1000)"
+    ],
+    [
+      "Densidad altitud",
+      "DA ≈ PA + 120 ft × (OAT − T_ISA)"
+    ],
+    [
+      "Tiempo en ruta",
+      "t = D / GS"
+    ],
+    [
+      "Combustible",
+      "F = consumo × t │ Reserva = consumo × t_reserva"
+    ],
+    [
+      "WCA / GS (triángulo)",
+      "Xwind = V · sen(θ) │ Head/tail = V · cos(θ)"
+    ]
+  ],
+  "secciones": [
+    {
+      "letra": "A",
+      "corto": "A – Cartas",
+      "nombre": "SECCIÓN A: Cartas Aeronáuticas (Anexo 4 OACI)",
+      "puntos": 20,
+      "bloques": [
+        {
+          "tipo": "relacionar",
+          "codigo": "P1",
+          "titulo": "Relaciona columnas sobre los tipos de cartas",
+          "pts": 10,
+          "instruccion": "Escribe la letra correspondiente dentro del paréntesis.",
+          "leyenda": [
+            "A) Plano de Aeródromo",
+            "B) Carta de Rodaje / Movimiento en Tierra",
+            "C) Carta de Estacionamiento y Atraque",
+            "D) Carta de Área (TMA)",
+            "E) Carta de Aproximación Visual"
+          ],
+          "definiciones": [
+            "(   ) Proporciona información para la transición de la fase de ruta a la fase de aproximación alrededor del aeródromo.",
+            "(   ) Muestra pistas, instalaciones terrestres y servicios del aeródromo desde una vista general.",
+            "(   ) Facilita el rodaje entre pistas, plataformas y rodajes de acceso.",
+            "(   ) Permite la aproximación a la pista con referencia visual al terreno.",
+            "(   ) Identifica puestos específicos de estacionamiento y los métodos de atraque."
+          ],
+          "respuestas": [
+            "D",
+            "A",
+            "B",
+            "E",
+            "C"
+          ]
+        },
+        {
+          "tipo": "om",
+          "codigo": "P2",
+          "titulo": "Preguntas de opción múltiple",
+          "pts": 10,
+          "items": [
+            {
+              "texto": "¿Cuál es la escala característica de las Cartas Mundiales (WAC)?",
+              "opciones": [
+                "1 : 250 000",
+                "1 : 500 000",
+                "1 : 1 000 000",
+                "1 : 5 000 000"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "De acuerdo al Anexo 4 OACI, ¿cuál de las siguientes NO es una carta obligatoria?",
+              "opciones": [
+                "Plano de Aeródromo",
+                "Carta de Intercepción Radar",
+                "Carta de Aproximación por Instrumentos",
+                "Carta de Área"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "El Plano de Obstáculos Tipo A se emplea para:",
+              "opciones": [
+                "Determinar obstáculos relevantes en las áreas de despegue, aterrizaje y superficie de maniobras",
+                "Mostrar zonas prohibidas y restringidas",
+                "Representar rutas ATS entre aeródromos",
+                "Publicar frecuencias de ayudas radioeléctricas"
+              ],
+              "correcta": 0,
+              "puntos": 2
+            },
+            {
+              "texto": "La carta utilizada para ejecutar un procedimiento de aproximación por instrumentos a la pista prevista es:",
+              "opciones": [
+                "SID",
+                "STAR",
+                "IAC",
+                "En-Ruta"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "Las cartas aeronáuticas que muestran información para operaciones VFR suelen indicar:",
+              "opciones": [
+                "Únicamente frecuencias ILS",
+                "Relieve, obstáculos, espacio aéreo controlado y referencias visuales",
+                "Solo coordenadas de waypoints",
+                "Procedimientos AIRAC de NOTAM"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letra": "B",
+      "corto": "B – Sistemas",
+      "nombre": "SECCIÓN B: Sistemas y Radionavegación",
+      "puntos": 20,
+      "bloques": [
+        {
+          "tipo": "om",
+          "codigo": "P3",
+          "titulo": "Identificación de sistemas",
+          "pts": 12,
+          "instruccion": "Selecciona la respuesta correcta para cada descripción. (3 pts c/u)",
+          "items": [
+            {
+              "texto": "Sistema que proporciona distancia oblicua en millas náuticas respecto a una estación terrena:",
+              "opciones": [
+                "VOR",
+                "DME",
+                "NDB",
+                "ILS"
+              ],
+              "correcta": 1,
+              "puntos": 3
+            },
+            {
+              "texto": "Ayuda radioeléctrica de VHF (108–117,95 MHz) que emite radiales magnéticos hacia todas direcciones:",
+              "opciones": [
+                "NDB",
+                "Transpondedor",
+                "VOR",
+                "DME"
+              ],
+              "correcta": 2,
+              "puntos": 3
+            },
+            {
+              "texto": "Sistema de aterrizaje por instrumentos que guía lateralmente mediante el localizador y verticalmente mediante el glide path:",
+              "opciones": [
+                "ILS",
+                "VOR",
+                "ADF",
+                "ATCRBS"
+              ],
+              "correcta": 0,
+              "puntos": 3
+            },
+            {
+              "texto": "Estación de ondas medias/largas cuya señal es seguida por el radiogoniómetro automático (ADF):",
+              "opciones": [
+                "DME",
+                "NDB",
+                "Localizador",
+                "Marcador exterior"
+              ],
+              "correcta": 1,
+              "puntos": 3
+            }
+          ]
+        },
+        {
+          "tipo": "vf",
+          "codigo": "P4",
+          "titulo": "Verdadero o Falso — Radionavegación",
+          "pts": 8,
+          "items": [
+            {
+              "texto": "El DME mide la distancia real sobre el terreno entre la aeronave y la estación.",
+              "correcta": false,
+              "justificacion": "El DME mide la distancia OBLICUA (slant range) aeronave–estación, no la distancia sobre el terreno."
+            },
+            {
+              "texto": "El localizador del ILS proporciona guía lateral respecto al eje de pista.",
+              "correcta": true
+            },
+            {
+              "texto": "Las señales del NDB siguen la línea de vista sin afectarse por la propagación terrestre.",
+              "correcta": false,
+              "justificacion": "Las señales del NDB se propagan como onda de superficie (no requieren línea de vista) y sufren errores nocturno y costero."
+            },
+            {
+              "texto": "El código 7700 del transpondedor indica emergencia general de la aeronave.",
+              "correcta": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letra": "C",
+      "corto": "C – Alt/Vel",
+      "nombre": "SECCIÓN C: Velocidades y Altimetría",
+      "puntos": 20,
+      "bloques": [
+        {
+          "tipo": "vf",
+          "codigo": "P5",
+          "titulo": "Verdadero o Falso — Velocidades y altimetría",
+          "pts": 12,
+          "items": [
+            {
+              "texto": "La IAS corregida por error instrumental se denomina velocidad calibrada (CAS).",
+              "correcta": true
+            },
+            {
+              "texto": "Para una misma IAS, la TAS aumenta conforme crece la altitud.",
+              "correcta": true
+            },
+            {
+              "texto": "La velocidad sobre el terreno (GS) resulta de sumar o restar a la TAS la componente longitudinal del viento.",
+              "correcta": true
+            },
+            {
+              "texto": "El altímetro ajustado a QNH indica altitud sobre el nivel medio del mar.",
+              "correcta": true
+            },
+            {
+              "texto": "Los niveles de vuelo (FL) se determinan ajustando el altímetro al QNH local del aeródromo.",
+              "correcta": false,
+              "justificacion": "Los niveles de vuelo se determinan con el altímetro calibrado a 1013 hPa (QNE estándar), no con el QNH local."
+            },
+            {
+              "texto": "La densidad altitud disminuye cuando aumenta la temperatura exterior.",
+              "correcta": false,
+              "justificacion": "Con mayor temperatura el aire se expande y la densidad altitud AUMENTA."
+            }
+          ]
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P6",
+          "titulo": "Problema de altimetría",
+          "pts": 8,
+          "enunciado": "a) Un aeródromo está a 2 000 ft de elevación. El QNH es 993 hPa. Calcula la altitud de presión (PA). (4 pts)",
+          "pasos": [
+            "PA = Alt_indicada + 30 ft × (1013 − QNH)",
+            "PA = ________ + ________ ft"
+          ],
+          "respuesta": "PA: __________ ft",
+          "subproblemas": [
+            {
+              "texto": "b) Con IAS = 140 kts a 5 000 ft de altitud presión, estima la TAS. (4 pts)",
+              "respuesta": "TAS ≈ ________ kts",
+              "solucion": "TAS ≈ 140 × (1 + 0,02 × 5) = 140 × 1,10 → TAS ≈ 154 kts"
+            }
+          ],
+          "solucion": {
+            "pasos": [
+              "PA = 2 000 + 30 × (1013 − 993)",
+              "PA = 2 000 + 600"
+            ],
+            "resultado": "PA = 2 600 ft"
+          }
+        }
+      ]
+    },
+    {
+      "letra": "D",
+      "corto": "D – E6B",
+      "nombre": "SECCIÓN D: Planificación con Computador de Vuelo E6B",
+      "puntos": 40,
+      "bloques": [
+        {
+          "tipo": "contexto",
+          "titulo": "📌 CASO PRÁCTICO: ATAJO SOBRE ZONA DE INCENDIO FORESTAL",
+          "lineas": [
+            "Una aeronave debe sobrevolar una zona de incendio forestal para evaluar el perímetro del fuego y reabastecer a brigadas aisladas.",
+            "Viento: 235° / 25 kts     │     TC: 275°     │     TAS: 130 kts     │     Distancia del tramo: 96 NM",
+            "Consumo: 11 gal/h     │     Reserva exigida: 30 min     │     OAT: 28 °C     │     Altitud presión: 6 000 ft"
+          ]
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P7",
+          "titulo": "Problema 1: Cálculo de WCA, MH y GS con el E6B",
+          "pts": 12,
+          "enunciado": "Con los datos del caso práctico, determina la corrección por viento, el rumbo magnético y la velocidad sobre el terreno. (Valores aproximados; tolerancia ±3° / ±3 kts.)",
+          "pasos": [
+            "Ángulo viento–rumbo: θ = |TC − WD| = ____°",
+            "Componente cruzada: Xwind = 25 × sen(____°) = ______ kts (desde la derecha / izquierda)",
+            "WCA = arcsen(Xwind / TAS) = ____° (hacia la derecha / izquierda)",
+            "Componente longitudinal: 25 × cos(____°) = ______ kts (viento en cola / de frente)",
+            "MH = TC ± WCA = ______°",
+            "GS = TAS ∓ comp. longitudinal = ______ kts"
+          ],
+          "respuesta": "WCA = ____°   │   MH = ______°   │   GS = ______ kts",
+          "solucion": {
+            "pasos": [
+              "θ = |275° − 235°| = 40° (viento desde la izquierda)",
+              "Xwind = 25 × sen 40° ≈ 16,1 kts (desde la izquierda)",
+              "WCA = arcsen(16,1 / 130) ≈ +7° (hacia la derecha)",
+              "Headwind = 25 × cos 40° ≈ 19,2 kts",
+              "MH = 275° + 7° = 282°",
+              "GS = 130 − 19,2 ≈ 110,8 ≈ 111 kts"
+            ],
+            "resultado": "WCA ≈ +7° │ MH ≈ 282° │ GS ≈ 111 kts (±3° / ±3 kts)"
+          }
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P8",
+          "titulo": "Problema 2: Gestión de Combustible",
+          "pts": 16,
+          "enunciado": "Con la GS obtenida en P7, calcula: a) tiempo del tramo; b) combustible del tramo; c) reserva de 30 min; d) combustible total requerido. (4 pts c/u; tolerancia ±1 gal por redondeo de GS.)",
+          "pasos": [
+            "a) t = D / GS = 96 / ______ h = ______ min",
+            "b) F_tramo = 11 gal/h × ______ h = ______ gal",
+            "c) F_reserva = 11 gal/h × 0,5 h = ______ gal",
+            "d) F_total = ______ + ______ = ______ gal"
+          ],
+          "respuesta": "Total requerido: ______ gal",
+          "solucion": {
+            "pasos": [
+              "t = 96 NM ÷ 111 kts ≈ 0,865 h ≈ 52 min",
+              "F_tramo = 11 gal/h × 0,865 h ≈ 9,5 gal",
+              "F_reserva = 11 × 0,5 = 5,5 gal",
+              "F_total ≈ 9,5 + 5,5 ≈ 15 gal"
+            ],
+            "resultado": "Combustible total ≈ 15 gal (±1 gal)"
+          }
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P9",
+          "titulo": "Problema 3: Corrección por Densidad Altitud",
+          "pts": 12,
+          "enunciado": "Con PA = 6 000 ft y OAT = 28 °C: a) calcula la temperatura ISA a esa altitud; b) calcula la densidad altitud. (6 pts c/u)",
+          "pasos": [
+            "a) T_ISA ≈ 15 °C − (2 °C × ______ ) = ______ °C",
+            "b) DA ≈ PA + 120 × (OAT − T_ISA) = ________ ft"
+          ],
+          "respuesta": "Densidad altitud ≈ ________ ft",
+          "solucion": {
+            "pasos": [
+              "T_ISA ≈ 15 °C − (2 °C × 6) = 3 °C",
+              "DA ≈ 6 000 + 120 × (28 − 3) = 6 000 + 3 000"
+            ],
+            "resultado": "DA ≈ 9 000 ft"
+          }
+        }
+      ]
+    }
+  ]
+}

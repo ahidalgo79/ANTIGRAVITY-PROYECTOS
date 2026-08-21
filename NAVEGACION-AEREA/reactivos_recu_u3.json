@@ -1,0 +1,345 @@
+{
+  "salida": "Examen_Recuperacion_NavegacionAerea_U3.docx",
+  "encabezado": "EXAMEN DE RECUPERACIÓN — NAVEGACIÓN AÉREA",
+  "subtitulo": "Unidad 3 • Publicación de Información Aeronáutica (AIP/PIA) • NOTAM • AIRAC • AIS",
+  "version": "GRUPO ÚNICO",
+  "puntaje_total": 80,
+  "duracion": "60 minutos",
+  "instrucciones": [
+    "1. Lee detenidamente cada pregunta antes de responder.",
+    "2. Marca con una X la opción que consideres correcta; no hay puntos negativos.",
+    "3. Duración: 60 minutos │ Puntaje total: 80 puntos"
+  ],
+  "secciones": [
+    {
+      "letra": "A",
+      "corto": "A – Opción Múltiple",
+      "nombre": "SECCIÓN A: Opción Múltiple — AIP/PIA y NOTAM",
+      "puntos": 30,
+      "bloques": [
+        {
+          "tipo": "om",
+          "codigo": "P1",
+          "titulo": "Selecciona la respuesta correcta",
+          "pts": 30,
+          "items": [
+            {
+              "texto": "¿Qué sección de la Parte ENR de la AIP contiene las zonas prohibidas, restringidas y peligrosas?",
+              "opciones": [
+                "ENR 1",
+                "ENR 3",
+                "ENR 5",
+                "ENR 6"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "El NOTAM que sustituye la información de un NOTAM anterior es:",
+              "opciones": [
+                "NOTAMN",
+                "NOTAMR",
+                "NOTAMC",
+                "SNOWTAM"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "¿Qué serie de NOTAM está reservada para informar actividad volcánica, erupciones y nubes de ceniza?",
+              "opciones": [
+                "SNOWTAM",
+                "ASHTAM",
+                "NOTAMR",
+                "AIC"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "El Boletín de Información Previa al Vuelo (PIB) se elabora principalmente a partir de:",
+              "opciones": [
+                "Los pronósticos SIGMET y METAR",
+                "Los NOTAM vigentes y la información integrada de la AIP y suplementos",
+                "Las cartas de aproximación por instrumentos",
+                "Los planes de vuelo presentados"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "La numeración de los NOTAM de cada serie comienza cada año en:",
+              "opciones": [
+                "0001 el 1 de enero",
+                "1000 el 1 de julio",
+                "5001 el 1 de marzo",
+                "Un número aleatorio asignado por el NOF"
+              ],
+              "correcta": 0,
+              "puntos": 2
+            },
+            {
+              "texto": "¿Quién es responsable último de la exactitud y disponibilidad de la información publicada en la AIP?",
+              "opciones": [
+                "La IATA",
+                "El operador aéreo",
+                "El Estado a través de su servicio AIS",
+                "El fabricante de las cartas"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "Una enmienda ordinaria (no AIRAC) de la AIP se caracteriza por:",
+              "opciones": [
+                "Entrar en vigor en cualquier fecha sin aviso previo",
+                "Publicarse conforme al calendario establecido de publicaciones del Estado",
+                "Sustituir a los NOTAM permanentes",
+                "Publicarse exclusivamente en formato digital"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "En el formato estandarizado de un NOTAM, el literal B) contiene:",
+              "opciones": [
+                "El nombre de la oficina originadora",
+                "La fecha y hora UTC en que la información entra en vigor",
+                "El número total de páginas",
+                "La firma digital del funcionario"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "¿Qué documento difunde información explicativa o de advertencia (por ejemplo, riesgo de impacto con aves) que no califica para NOTAM ni enmienda?",
+              "opciones": [
+                "Circular de Información Aeronáutica (AIC)",
+                "SNOWTAM",
+                "ASHTAM",
+                "Suplemento AIP"
+              ],
+              "correcta": 0,
+              "puntos": 2
+            },
+            {
+              "texto": "Dentro de la Parte AD de la AIP, los datos de cada aeródromo internacional se agrupan en:",
+              "opciones": [
+                "AD 1",
+                "AD 2",
+                "AD 4",
+                "GEN 2"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "El sistema AIRAC exige difundir la información significativa con una anticipación mínima respecto a su fecha efectiva de:",
+              "opciones": [
+                "7 días",
+                "14 días",
+                "28 días",
+                "90 días"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "Las siglas WEF impresas junto a una enmienda indican:",
+              "opciones": [
+                "El peso máximo certificado de la aeronave",
+                "La fecha efectiva a partir de la cual el cambio entra en vigor",
+                "La frecuencia de la ayuda radioeléctrica",
+                "El nivel de viento en ruta previsto"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "Un NOTAMC se utiliza para:",
+              "opciones": [
+                "Crear un nuevo NOTAM permanente",
+                "Reemplazar un NOTAM anterior",
+                "Cancelar un NOTAM previamente emitido",
+                "Difundir información de nieve"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "La Parte GEN de la AIP incluye:",
+              "opciones": [
+                "Rutas ATS y zonas restringidas",
+                "Reglamentos nacionales, requisitos generales y listado de ubicaciones del Estado",
+                "Cartas de aproximación de cada pista",
+                "Procedimientos de aproximación instrumental"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            },
+            {
+              "texto": "El SNOWTAM pertenece a la serie de NOTAM:",
+              "opciones": [
+                "A",
+                "C",
+                "F",
+                "Z"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letra": "B",
+      "corto": "B – V / F",
+      "nombre": "SECCIÓN B: Verdadero o Falso",
+      "puntos": 30,
+      "bloques": [
+        {
+          "tipo": "vf",
+          "codigo": "P2",
+          "titulo": "Marca con una X Verdadero (V) o Falso (F)",
+          "pts": 30,
+          "items": [
+            {
+              "texto": "El PIB integra la información de NOTAM, suplementos y AIP indispensable para las fases previas al vuelo.",
+              "correcta": true
+            },
+            {
+              "texto": "Un NOTAMR cancela definitivamente un NOTAM anterior sin sustituir su contenido.",
+              "correcta": false,
+              "justificacion": "El NOTAMR SUSTITUYE el contenido del NOTAM anterior; el que cancela es el NOTAMC."
+            },
+            {
+              "texto": "El ASHTAM informa sobre cambios en la actividad volcánica que puedan afectar a las aeronaves.",
+              "correcta": true
+            },
+            {
+              "texto": "Las enmiendas ordinarias de la AIP deben entrar en vigor únicamente en fechas AIRAC.",
+              "correcta": false,
+              "justificacion": "Las enmiendas ordinarias siguen el calendario regular de publicaciones; solo las AIRAC usan fechas efectivas coordinadas."
+            },
+            {
+              "texto": "La Parte AD de la AIP se divide en AD 1 (general), AD 2 (aeródromos) y AD 3 (helipuertos).",
+              "correcta": true
+            },
+            {
+              "texto": "Un NOTAM conserva validez hasta la fecha indicada en su literal C) o hasta ser cancelado.",
+              "correcta": true
+            },
+            {
+              "texto": "Una Circular de Información Aeronáutica (AIC) puede modificar procedimientos establecidos en la AIP.",
+              "correcta": false,
+              "justificacion": "La AIC informa o advierte, pero NO puede modificar procedimientos establecidos en la AIP."
+            },
+            {
+              "texto": "La AIP incluye cartas de aproximación por instrumentos dentro de la Parte AD.",
+              "correcta": true
+            },
+            {
+              "texto": "El ciclo AIRAC solo es aplicable a los Estados del hemisferio norte.",
+              "correcta": false,
+              "justificacion": "El sistema AIRAC es de aplicación mundial para todos los Estados OACI."
+            },
+            {
+              "texto": "La fecha WEF aparece asociada a las enmiendas AIRAC de la AIP.",
+              "correcta": true
+            },
+            {
+              "texto": "Los NOTAM se distribuyen mediante telecomunicaciones con prioridad de seguridad.",
+              "correcta": true
+            },
+            {
+              "texto": "La AIC de papel verde se emplea para información administrativa de larga duración.",
+              "correcta": true
+            },
+            {
+              "texto": "Cualquier piloto puede originar directamente un NOTAM internacional.",
+              "correcta": false,
+              "justificacion": "Solo las autoridades y proveedores de servicios autorizados pueden originar NOTAM."
+            },
+            {
+              "texto": "La información de un NOTAM tiene prioridad sobre la correspondiente de la AIP hasta que esta sea enmendada.",
+              "correcta": true
+            },
+            {
+              "texto": "La AIP debe revisarse íntegramente cada cinco años como único mecanismo de actualización.",
+              "correcta": false,
+              "justificacion": "La AIP se mantiene actualizada mediante enmiendas, suplementos y NOTAM de forma continua."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letra": "C",
+      "corto": "C – Caso",
+      "nombre": "SECCIÓN C: Caso de Estudio",
+      "puntos": 20,
+      "bloques": [
+        {
+          "tipo": "contexto",
+          "titulo": "📌 CASO PRÁCTICO: VUELO DE TRASLADO INTERNACIONAL",
+          "lineas": [
+            "Una empresa prepara el traslado de una aeronave ligera hacia un aeropuerto extranjero. Durante la planificación descubre que: hay un volcán activo cerca de la ruta; la pista del destino presenta contaminación por nieve; la frecuencia de un VOR de la ruta cambiará permanentemente en el próximo ciclo; y un taxiway del destino estará cerrado durante 48 horas."
+          ]
+        },
+        {
+          "tipo": "om",
+          "codigo": "P3",
+          "titulo": "Responder a partir del escenario",
+          "pts": 20,
+          "items": [
+            {
+              "texto": "Para informar la actividad volcánica cercana a la ruta, ¿qué documento especializado debe consultar el despacho?",
+              "opciones": [
+                "SNOWTAM",
+                "ASHTAM",
+                "NOTAMR",
+                "AIC"
+              ],
+              "correcta": 1,
+              "puntos": 5
+            },
+            {
+              "texto": "La contaminación por nieve de la pista del destino se difunde mediante:",
+              "opciones": [
+                "SNOWTAM",
+                "ASHTAM",
+                "Enmienda AIRAC",
+                "PIB permanente"
+              ],
+              "correcta": 0,
+              "puntos": 5
+            },
+            {
+              "texto": "El cambio permanente de la frecuencia del VOR entrará en vigor en el próximo ciclo. ¿Qué documento lo publica?",
+              "opciones": [
+                "NOTAM",
+                "Suplemento AIP",
+                "Enmienda AIRAC",
+                "SNOWTAM"
+              ],
+              "correcta": 2,
+              "puntos": 5
+            },
+            {
+              "texto": "El cierre temporal del taxiway por 48 horas debe notificarse mediante:",
+              "opciones": [
+                "NOTAM",
+                "Enmienda AIRAC",
+                "AIC verde",
+                "Circular OACI"
+              ],
+              "correcta": 0,
+              "puntos": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

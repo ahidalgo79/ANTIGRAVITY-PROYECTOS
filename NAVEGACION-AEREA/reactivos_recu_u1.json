@@ -1,0 +1,353 @@
+{
+  "salida": "Examen_Recuperacion_NavegacionAerea_U1_v3.docx",
+  "encabezado": "EXAMEN DE RECUPERACIÓN — NAVEGACIÓN AÉREA",
+  "subtitulo": "Unidad 1 • Coordenadas Geográficas • Husos Horarios • Escalas • Cálculo de Rumbos",
+  "version": "GRUPO ÚNICO — VERSIÓN 3 (NUEVA)",
+  "puntaje_total": 80,
+  "duracion": "80 minutos",
+  "instrucciones": [
+    "1. Justifica todos los procedimientos paso a paso. Las respuestas sin desarrollo no reciben puntaje.",
+    "2. Incluye unidades en todos tus resultados.",
+    "3. Se permite calculadora científica. No se permite el uso de dispositivos electrónicos con conexión a internet."
+  ],
+  "formulas": [
+    [
+      "Grados → Decimal",
+      "θ_dec = D + M/60 + S/3600"
+    ],
+    [
+      "Decimal → Grados",
+      "D = parte entera · M = frac×60 · S = frac(M)×60"
+    ],
+    [
+      "Diferencia horaria",
+      "Δt = UTC_dest − UTC_origen"
+    ],
+    [
+      "Longitud–tiempo",
+      "15° = 1 h → 1° = 4 min"
+    ],
+    [
+      "Distancia real",
+      "D_real = D_mapa × N"
+    ],
+    [
+      "Cadena de rumbos",
+      "TC ± WCA = TH ± Var = MH ± Dev = CH"
+    ]
+  ],
+  "secciones": [
+    {
+      "letra": "A",
+      "corto": "A – Coord.",
+      "nombre": "SECCIÓN A: Coordenadas Geográficas",
+      "puntos": 20,
+      "bloques": [
+        {
+          "tipo": "vf",
+          "codigo": "P1",
+          "titulo": "Verdadero o Falso — Coordenadas geográficas",
+          "pts": 6,
+          "items": [
+            {
+              "texto": "Los paralelos son círculos máximos que convergen en los polos.",
+              "correcta": false,
+              "justificacion": "Los MERIDIANOS son los que convergen en los polos; los paralelos son círculos menores que nunca se cortan (solo el Ecuador es círculo máximo)."
+            },
+            {
+              "texto": "El meridiano de Greenwich es el origen (0°) para la medición de la longitud.",
+              "correcta": true
+            },
+            {
+              "texto": "La latitud se mide desde el Ecuador desde 0° hasta 90° hacia el Norte o el Sur.",
+              "correcta": true
+            }
+          ]
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P2",
+          "titulo": "Conversión DMS → Decimal",
+          "pts": 4,
+          "enunciado": "Convierte 34° 41' 24\" a grados decimales. Muestra cada paso.",
+          "pasos": [
+            "θ_dec = ____ + ____/60 + ____/3600",
+            "θ_dec = ____ + ________ + ________"
+          ],
+          "respuesta": "34° 41' 24\"  =  ______ °decimal",
+          "solucion": {
+            "pasos": [
+              "θ_dec = 34 + 41/60 + 24/3600",
+              "= 34 + 0,68333 + 0,00667"
+            ],
+            "resultado": "34,69°"
+          }
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P3",
+          "titulo": "Conversión Decimal → DMS",
+          "pts": 4,
+          "enunciado": "Expresa 128,5375° en formato grados, minutos y segundos. Muestra cada paso.",
+          "pasos": [
+            "Grados: ______",
+            "Minutos: 0,5375 × 60 = ______",
+            "Segundos: ______ × 60 = ______"
+          ],
+          "respuesta": "128,5375°  =  ____° ____' ____\"",
+          "solucion": {
+            "pasos": [
+              "Minutos: 0,5375 × 60 = 32,25 → 32'",
+              "Segundos: 0,25 × 60 = 15\""
+            ],
+            "resultado": "128° 32' 15\""
+          }
+        },
+        {
+          "tipo": "om",
+          "codigo": "P4",
+          "titulo": "Conceptos de coordenadas",
+          "pts": 6,
+          "items": [
+            {
+              "texto": "Un punto situado en 60°N, 90°E pertenece a los hemisferios:",
+              "opciones": [
+                "Norte y Oriental",
+                "Norte y Occidental",
+                "Sur y Oriental",
+                "Sur y Occidental"
+              ],
+              "correcta": 0,
+              "puntos": 2
+            },
+            {
+              "texto": "¿Qué paralelo posee la menor circunferencia?",
+              "opciones": [
+                "El Ecuador",
+                "El Trópico de Cáncer",
+                "Los polos (90°N / 90°S)",
+                "El paralelo 45°N"
+              ],
+              "correcta": 2,
+              "puntos": 2
+            },
+            {
+              "texto": "La distancia angular medida sobre el Ecuador desde Greenwich hasta el meridiano del lugar recibe el nombre de:",
+              "opciones": [
+                "Latitud",
+                "Longitud",
+                "Colatitud",
+                "Rumbo verdadero"
+              ],
+              "correcta": 1,
+              "puntos": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letra": "B",
+      "corto": "B – Horarios",
+      "nombre": "SECCIÓN B: Husos Horarios y UTC",
+      "puntos": 20,
+      "bloques": [
+        {
+          "tipo": "vf",
+          "codigo": "P5",
+          "titulo": "Verdadero o Falso — Husos horarios",
+          "pts": 8,
+          "items": [
+            {
+              "texto": "Cada huso horario comprende 15° de longitud y equivale a una hora de diferencia.",
+              "correcta": true
+            },
+            {
+              "texto": "Al cruzar la Línea Internacional de Cambio de Fecha de Oeste a Este se adelanta un día en el calendario.",
+              "correcta": false,
+              "justificacion": "Al cruzar la LICF de Oeste a Este se RETROCEDE un día; se adelanta un día viajando hacia el Oeste."
+            },
+            {
+              "texto": "El UTC es la escala temporal de referencia de la aviación y no aplica horario de verano.",
+              "correcta": true
+            },
+            {
+              "texto": "Dos lugares separados 30° de longitud tienen entre sí una diferencia horaria de 3 horas.",
+              "correcta": false,
+              "justificacion": "30° ÷ 15°/h = 2 horas de diferencia."
+            }
+          ]
+        },
+        {
+          "tipo": "problema",
+          "codigo": "P6",
+          "titulo": "Cálculo de diferencias horarias",
+          "pts": 12,
+          "enunciado": "Resuelve cada inciso mostrando el procedimiento completo (Δt, conversión a UTC cuando aplique y hora local final).",
+          "subproblemas": [
+            {
+              "texto": "a) Si en Sídney (UTC +10) son las 22:00 del sábado, ¿qué día y hora es en Ciudad de México (UTC −6)?",
+              "respuesta": "Hora y fecha: ____ : ____ , ____",
+              "solucion": "Δt = (−6) − (+10) = −16 h │ 22:00 − 16 h = 06:00 del día siguiente (domingo)"
+            },
+            {
+              "texto": "b) Un avión sale de Dubái (UTC +4) a las 09:00 hora local con destino a Toronto (UTC −5). El vuelo dura 8 horas. ¿Qué hora local será al aterrizar?",
+              "respuesta": "Hora de llegada: ____ : ____",
+              "solucion": "Salida UTC: 09:00 − 4 h = 05:00 UTC │ Llegada UTC: 05:00 + 8 h = 13:00 UTC │ Toronto: 13:00 − 5 h = 08:00 del mismo día"
+            },
+            {
+              "texto": "c) Dos ciudades están separadas por 90° de longitud hacia el Este. Si en la ciudad occidental son las 03:00 AM, ¿qué hora solar es en la oriental?",
+              "respuesta": "Hora en ciudad oriental: ____ : ____",
+              "solucion": "90° ÷ 15°/h = 6 h │ 03:00 AM + 6 h = 09:00 AM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "letra": "C",
+      "corto": "C – Escalas",
+      "nombre": "SECCIÓN C: Escalas y Cartas Aeronáuticas",
+      "puntos": 5,
+      "bloques": [
+        {
+          "tipo": "problema",
+          "codigo": "P7",
+          "titulo": "Conversión de escala cartográfica",
+          "pts": 5,
+          "enunciado": "En una carta de escala 1 : 250 000, un recorrido mide 9,6 cm. Calcula la distancia real en kilómetros.",
+          "pasos": [
+            "D_real = D_mapa × N",
+            "D_real = ______ cm × __________ = __________ cm",
+            "= __________ m = __________ km"
+          ],
+          "respuesta": "Distancia real: ______ km",
+          "solucion": {
+            "pasos": [
+              "D_real = 9,6 cm × 250 000 = 2 400 000 cm",
+              "= 24 000 m"
+            ],
+            "resultado": "24 km"
+          }
+        }
+      ]
+    },
+    {
+      "letra": "D",
+      "corto": "D – Naveg.",
+      "nombre": "SECCIÓN D: Navegación Práctica — Cálculo del Curso de Brújula (CH)",
+      "puntos": 35,
+      "bloques": [
+        {
+          "tipo": "contexto",
+          "lineas": [
+            "Variación magnética (Var) = 0° (se asume 0° para este ejercicio)",
+            "WCA Tramo A→B = −30°     WCA Tramo B→C = +15°",
+            "Cadena de cálculo: TC ± WCA → TH ± Var → MH → buscar FOR más próximo → Dev → CH = MH ± Dev"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "codigo": null,
+          "titulo": "Tabla de Desviación (Dev = STEER − FOR)",
+          "nota": "Nota: El MH cae exactamente sobre valores FOR en ambos tramos → no requiere interpolación.",
+          "headers": [
+            "FOR",
+            "000°",
+            "030°",
+            "060°",
+            "090°",
+            "120°",
+            "150°",
+            "180°",
+            "210°",
+            "240°",
+            "270°",
+            "300°",
+            "330°"
+          ],
+          "rows": [
+            [
+              "STEER",
+              "002°",
+              "033°",
+              "057°",
+              "088°",
+              "122°",
+              "153°",
+              "184°",
+              "207°",
+              "236°",
+              "265°",
+              "303°",
+              "327°"
+            ],
+            [
+              "Dev",
+              "+2°",
+              "+3°",
+              "−3°",
+              "−2°",
+              "+2°",
+              "+3°",
+              "+4°",
+              "−3°",
+              "−4°",
+              "−5°",
+              "+3°",
+              "−3°"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabla_pasos_ch",
+          "codigo": "P8a",
+          "titulo": "Tramo A → B   (TC = 300°, WCA = −30°, Var = 0°)",
+          "pts": 15,
+          "pasos": [
+            "Paso 1 — TH | TC ± WCA",
+            "Paso 2 — MH | TH ± Var",
+            "Paso 3 — Dev | (de la tabla)",
+            "Paso 4 — CH | MH ± Dev"
+          ],
+          "respuesta": "CH Tramo A → B:  ______ °",
+          "solucion_pasos": [
+            "TH = 300° − 30° = 270°",
+            "MH = 270° ± 0° = 270°",
+            "FOR próximo: 270° → STEER 265° → Dev = −5°",
+            "CH = 270° + (−5°) = 265°"
+          ],
+          "resultado": "CH Tramo A→B = 265°"
+        },
+        {
+          "tipo": "tabla_pasos_ch",
+          "codigo": "P8b",
+          "titulo": "Tramo B → C   (TC = 165°, WCA = +15°, Var = 0°)",
+          "pts": 15,
+          "pasos": [
+            "Paso 1 — TH | TC ± WCA",
+            "Paso 2 — MH | TH ± Var",
+            "Paso 3 — Dev | (de la tabla)",
+            "Paso 4 — CH | MH ± Dev"
+          ],
+          "respuesta": "CH Tramo B → C:  ______ °",
+          "solucion_pasos": [
+            "TH = 165° + 15° = 180°",
+            "MH = 180° ± 0° = 180°",
+            "FOR próximo: 180° → STEER 184° → Dev = +4°",
+            "CH = 180° + 4° = 184°"
+          ],
+          "resultado": "CH Tramo B→C = 184°"
+        },
+        {
+          "tipo": "grafica_rumbos",
+          "codigo": "P8c–d",
+          "titulo": "Representación gráfica de los rumbos (2,5 pts c/u)",
+          "pts": 5,
+          "descripcion_a": "CH = 265° — casi directo al Sur, desviado 5° hacia el Oeste del Sur.",
+          "descripcion_b": "CH = 184° — casi al Sur, 4° hacia el Oeste del Sur."
+        }
+      ]
+    }
+  ]
+}
